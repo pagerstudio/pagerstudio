@@ -58,9 +58,9 @@ export default function ShockingStats() {
           The numbers don&apos;t lie.
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           {/* Card 1 — 47% use AI to research providers */}
-          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-6 sm:p-8 flex flex-col relative" delay={0}>
+          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-6 sm:p-8 flex flex-col relative md:col-span-2" delay={0}>
             <div className="flex items-start gap-4 mb-5">
               <div ref={counter1.ref} className="text-display-lg text-ps-ink">{counter1.value}</div>
               <div className="flex flex-col gap-1 pt-5">
@@ -116,7 +116,7 @@ export default function ShockingStats() {
           </TiltCard>
 
           {/* Card 2 — 55% canceled/avoided booking because of reviews */}
-          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-6 sm:p-8 flex flex-col items-center justify-center relative" delay={0.1}>
+          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-6 sm:p-8 flex flex-col items-center justify-center relative md:col-span-1" delay={0.1}>
             <div className="border border-[#E5E5E5] rounded-xl p-4 mb-5 w-full">
               <div className="flex items-center justify-between mb-2">
                 <span className="font-sans text-[10px] text-[#999] uppercase tracking-wider">Canceled or avoided booking</span>
@@ -146,7 +146,7 @@ export default function ShockingStats() {
           </TiltCard>
 
           {/* Card 3 — 36% bar chart: what influences patient choice */}
-          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-6 sm:p-8 flex flex-col md:flex-row relative" delay={0.2}>
+          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-6 sm:p-8 flex flex-col md:flex-row relative md:col-span-1" delay={0.2}>
             <div className="flex flex-col justify-between flex-1 md:pr-6 md:pl-2">
               <div>
                 <span className="font-sans text-[10px] font-semibold tracking-[0.1em] uppercase text-[#999] block mb-2">Patient Choice Report · 2026</span>
@@ -209,7 +209,7 @@ export default function ShockingStats() {
           </TiltCard>
 
           {/* Card 4 — 89% Google AI Overview */}
-          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-6 sm:p-8 flex flex-col relative" delay={0.3}>
+          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-6 sm:p-8 flex flex-col relative md:col-span-2" delay={0.3}>
             <div className="border border-[#DDD] rounded-xl p-4 mb-4">
               <div className="flex items-center gap-2.5 border border-[#E5E5E5] rounded-full px-4 py-2 mb-3">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#999" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
