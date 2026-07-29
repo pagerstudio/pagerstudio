@@ -147,7 +147,7 @@ export default function ShockingStats() {
 
           {/* Card 3 — 36% bar chart: what influences patient choice */}
           <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-6 sm:p-8 flex flex-col md:flex-row relative md:col-span-2" delay={0.2}>
-            <div className="flex flex-col justify-between flex-1 md:pr-6 md:pl-2">
+            <div className="flex flex-col justify-between flex-1 md:pr-10 md:pl-4">
               <div>
                 <span className="font-sans text-[10px] font-semibold tracking-[0.1em] uppercase text-[#999] block mb-2">Patient Choice Report · 2026</span>
                 <div ref={counter3.ref} className="text-display-lg text-ps-ink">{counter3.value}</div>
