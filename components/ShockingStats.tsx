@@ -61,9 +61,9 @@ export default function ShockingStats() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           {/* Card 1 — 47% use AI to research providers */}
           <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-6 sm:p-8 flex flex-col relative md:col-span-2" delay={0}>
-            <div className="flex items-start gap-4 mb-5">
-              <div ref={counter1.ref} className="text-display-lg text-ps-ink">{counter1.value}</div>
-              <div className="flex flex-col gap-1 pt-5">
+            <div className="flex items-start gap-3 sm:gap-4 mb-5">
+              <div ref={counter1.ref} className="text-[48px] sm:text-display-lg text-ps-ink leading-none font-sans font-light tracking-tight">{counter1.value}</div>
+              <div className="flex flex-col gap-1 pt-2 sm:pt-5">
                 <span className="text-body-sm font-semibold text-ps-ink leading-[1.3]">of patients used AI tools to research healthcare providers</span>
                 <span className="text-caption text-ps-faint normal-case">Up from 31% in 2025 — +16pts in 9 months.</span>
               </div>
@@ -138,7 +138,7 @@ export default function ShockingStats() {
                 <span className="font-sans text-[9px] text-[#CCC]">2026: 55%</span>
               </div>
             </div>
-            <div ref={counter2.ref} className="text-display-lg text-ps-ink">{counter2.value}</div>
+            <div ref={counter2.ref} className="text-[48px] sm:text-display-lg text-ps-ink leading-none font-sans font-light tracking-tight">{counter2.value}</div>
             <p className="text-body-sm text-ps-muted mt-3 text-center max-w-[260px]">
               of patients canceled or avoided booking because of online reviews.
             </p>
@@ -150,7 +150,7 @@ export default function ShockingStats() {
             <div className="flex flex-col flex-1 md:pr-10 md:pl-4">
               <div>
                 <span className="font-sans text-[10px] font-semibold tracking-[0.1em] uppercase text-[#999] block mb-2">Patient Choice Report · 2026</span>
-                <div ref={counter3.ref} className="text-display-lg text-ps-ink">{counter3.value}</div>
+                <div ref={counter3.ref} className="text-[48px] sm:text-display-lg text-ps-ink leading-none font-sans font-light tracking-tight">{counter3.value}</div>
               </div>
               <p className="text-body-sm text-ps-muted mt-4 max-w-[240px]">
                 of patients say AI tools most influence which doctor they choose.
@@ -238,7 +238,7 @@ export default function ShockingStats() {
             </div>
 
             <div className="flex items-center gap-3 mt-auto">
-              <div ref={counter4.ref} className="text-display-lg text-ps-ink">{counter4.value}</div>
+              <div ref={counter4.ref} className="text-[48px] sm:text-display-lg text-ps-ink leading-none font-sans font-light tracking-tight">{counter4.value}</div>
               <div className="flex flex-col gap-1">
                 <span className="text-body-sm font-semibold text-ps-ink">of Google healthcare searches</span>
                 <span className="text-caption text-ps-faint normal-case">trigger an AI Overview before websites.</span>

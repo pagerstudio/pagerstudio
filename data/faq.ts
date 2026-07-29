@@ -28,7 +28,7 @@ export const faqs: SchemaFaq[] = [
   {
     question: 'Do you work with all healthcare specialties?',
     answer:
-      'We focus on high-value specialties where AI recommendations directly influence patient decisions: IVF, Dental, Dermatology, LASIK, Hair Transplant, Plastic Surgery, and Cardiology.',
+      'We focus on high-value specialties where AI recommendations directly influence patient decisions: IVF, Dental, Dermatology, LASIK, Hair Transplant, and Plastic Surgery.',
   },
   {
     question: 'How does exclusivity work?',

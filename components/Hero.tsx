@@ -74,8 +74,8 @@ export default function Hero() {
                 Patients are shifting from Google to AI to find specialists. AI picks one clinic and sends them there. That clinic is either yours or your competitor&apos;s.
               </p>
 
-              <div className="mt-10 sm:mt-12 flex items-center justify-center relative z-[3]">
-                <form onSubmit={handleSubmit} aria-label="Free audit signup" className="relative flex flex-col sm:flex-row items-center gap-4 sm:gap-3 bg-white rounded-full px-6 sm:px-2 py-5 sm:py-2">
+              <div className="mt-10 sm:mt-12 flex items-center justify-center relative z-[3] w-full max-w-[400px] sm:max-w-none">
+                <form onSubmit={handleSubmit} aria-label="Free audit signup" className="relative flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-3 bg-white rounded-2xl sm:rounded-full px-5 sm:px-2 py-4 sm:py-2 w-full">
                   <input
                     type="email"
                     id="hero-email"
@@ -84,7 +84,7 @@ export default function Hero() {
                     placeholder="Enter your email"
                     required
                     aria-label="Email address"
-                    className="w-full sm:w-[280px] text-body-sm text-ps-ink placeholder:text-ps-faint rounded-full px-5 py-3 outline-none border border-ps-line transition-all duration-200 focus:ring-2 focus:ring-ps-ink/10 focus:border-ps-ink/30 bg-white"
+                    className="w-full sm:w-[280px] text-body-sm text-ps-ink placeholder:text-ps-faint rounded-xl sm:rounded-full px-5 py-3 outline-none border border-ps-line transition-all duration-200 focus:ring-2 focus:ring-ps-ink/10 focus:border-ps-ink/30 bg-white"
                   />
                   <button
                     type="submit"
@@ -119,8 +119,8 @@ export default function Hero() {
                 Patients are shifting from Google to AI to find specialists. AI picks one clinic and sends them there. That clinic is either yours or your competitor&apos;s.
               </motion.p>
 
-              <motion.div className="mt-10 sm:mt-12 flex items-center justify-center relative z-[3]" variants={formVariant}>
-                <form onSubmit={handleSubmit} aria-label="Free audit signup" className="relative flex flex-col sm:flex-row items-center gap-4 sm:gap-3 bg-white rounded-full px-6 sm:px-2 py-5 sm:py-2">
+              <motion.div className="mt-10 sm:mt-12 flex items-center justify-center relative z-[3] w-full max-w-[400px] sm:max-w-none" variants={formVariant}>
+                <form onSubmit={handleSubmit} aria-label="Free audit signup" className="relative flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-3 bg-white rounded-2xl sm:rounded-full px-5 sm:px-2 py-4 sm:py-2 w-full">
                   <input
                     type="email"
                     id="hero-email"
@@ -129,7 +129,7 @@ export default function Hero() {
                     placeholder="Enter your email"
                     required
                     aria-label="Email address"
-                    className="w-full sm:w-[280px] text-body-sm text-ps-ink placeholder:text-ps-faint rounded-full px-5 py-3 outline-none border border-ps-line transition-all duration-200 focus:ring-2 focus:ring-ps-ink/10 focus:border-ps-ink/30 bg-white"
+                    className="w-full sm:w-[280px] text-body-sm text-ps-ink placeholder:text-ps-faint rounded-xl sm:rounded-full px-5 py-3 outline-none border border-ps-line transition-all duration-200 focus:ring-2 focus:ring-ps-ink/10 focus:border-ps-ink/30 bg-white"
                   />
                   <button
                     type="submit"

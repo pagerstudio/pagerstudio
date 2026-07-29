@@ -180,9 +180,9 @@ export default function Nav() {
               <CloseIcon className="w-5 h-5" />
             </motion.button>
 
-            {/* Pages row */}
+            {/* Pages — vertical list on mobile, horizontal on desktop */}
             <motion.div
-              className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4"
+              className="flex flex-col items-center gap-y-6 sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-x-8 sm:gap-y-4"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
@@ -196,10 +196,10 @@ export default function Nav() {
                   className="group inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors duration-300 focus:outline-none"
                   aria-current={pathname === href ? 'page' : undefined}
                 >
-                  <span className="font-serif text-[80px] sm:text-[96px] leading-none tracking-[-0.03em]">
+                  <span className="font-serif text-[52px] sm:text-[80px] md:text-[96px] leading-none tracking-[-0.03em]">
                     {label}
                   </span>
-                  <svg className="text-white/30 group-hover:text-white/60 w-[28px] h-[28px] sm:w-[36px] sm:h-[36px] transition-all duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="text-white/30 group-hover:text-white/60 w-[20px] h-[20px] sm:w-[28px] sm:h-[28px] md:w-[36px] md:h-[36px] transition-all duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M7 17L17 7" />
                     <path d="M7 7h10v10" />
                   </svg>
@@ -209,7 +209,7 @@ export default function Nav() {
 
             {/* Social row */}
             <motion.div
-              className="flex items-center justify-center gap-x-6 mt-14 sm:mt-20"
+              className="flex flex-col items-center gap-y-4 mt-10 sm:flex-row sm:items-center sm:justify-center sm:gap-x-6 sm:mt-14 md:mt-20"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
