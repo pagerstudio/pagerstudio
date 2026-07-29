@@ -67,7 +67,7 @@ export default function Hero() {
             <div className="w-full max-w-[900px] flex flex-col items-center text-center">
               <h1 className="text-display-xl text-white mb-6">
                 <span className="block">Healthcare discovery has <span className="font-serif italic">changed</span>.</span>
-                <span className="block">Patients Now Ask <span className="font-serif italic">AI</span>.</span>
+                <span className="block">Patients Now Ask AI.</span>
               </h1>
 
               <p className="text-body-lg text-white/55 max-w-[520px]">
@@ -76,7 +76,7 @@ export default function Hero() {
 
               <div className="mt-10 sm:mt-12 flex items-center justify-center relative z-[3]">
                 <form onSubmit={handleSubmit} aria-label="Free audit signup" className="relative flex flex-col sm:flex-row items-center gap-4 sm:gap-3 bg-white rounded-full px-6 sm:px-2 py-5 sm:py-2">
-                  <span className="font-serif text-[24px] text-ps-black text-center sm:text-left whitespace-nowrap sm:pl-5 sm:pr-3">
+                  <span className="font-sans font-semibold text-[24px] text-ps-black text-center sm:text-left whitespace-nowrap sm:pl-5 sm:pr-3">
                     See if AI mentions your clinic
                   </span>
                   <input
@@ -114,7 +114,7 @@ export default function Hero() {
                   Healthcare discovery has <span className="font-serif italic">changed</span>.
                 </motion.span>
                 <motion.span className="block" variants={childVariants}>
-                  Patients Now Ask <span className="font-serif italic">AI</span>.
+                  Patients Now Ask AI.
                 </motion.span>
               </h1>
 
@@ -124,7 +124,7 @@ export default function Hero() {
 
               <motion.div className="mt-10 sm:mt-12 flex items-center justify-center relative z-[3]" variants={formVariant}>
                 <form onSubmit={handleSubmit} aria-label="Free audit signup" className="relative flex flex-col sm:flex-row items-center gap-4 sm:gap-3 bg-white rounded-full px-6 sm:px-2 py-5 sm:py-2">
-                  <span className="font-serif text-[24px] text-ps-black text-center sm:text-left whitespace-nowrap sm:pl-5 sm:pr-3">
+                  <span className="font-sans font-semibold text-[24px] text-ps-black text-center sm:text-left whitespace-nowrap sm:pl-5 sm:pr-3">
                     See if AI mentions your clinic
                   </span>
                   <input
