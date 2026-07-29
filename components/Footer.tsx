@@ -32,9 +32,9 @@ const LEGAL_LINKS = [
 export default function Footer() {
   return (
     <footer className="bg-ps-black overflow-hidden">
-      <div className="container pt-16 sm:pt-20 pb-0">
+      <div className="container pt-8 sm:pt-12 pb-0">
         {/* Logo */}
-        <div className="mb-16 sm:mb-20">
+        <div className="mb-10 sm:mb-14">
           <Link
             href="/"
             className="font-serif text-[28px] sm:text-[32px] leading-none tracking-tight text-white inline-block shrink-0"
