@@ -32,7 +32,8 @@ function useCountUp(target: number, prefix = '', suffix = '', duration = 1.4, de
 export default function ShockingStats() {
   const counter1 = useCountUp(47, '', '%', 1.4);
   const counter2 = useCountUp(55, '', '%', 1.2);
-  const counter3 = useCountUp(89, '', '%', 1.4);
+  const counter3 = useCountUp(36, '', '%', 1.4);
+  const counter4 = useCountUp(89, '', '%', 1.4);
   const gradientId = useId();
 
   return (
@@ -57,7 +58,7 @@ export default function ShockingStats() {
           The numbers don&apos;t lie.
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-[1.6fr_1fr] gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {/* Card 1 — 47% use AI to research providers */}
           <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-5 sm:p-6 flex flex-col min-h-0 sm:min-h-[380px] relative" delay={0}>
             <div className="flex items-start gap-4 mb-4">
@@ -165,7 +166,71 @@ export default function ShockingStats() {
             <a href="https://rater8.com/2026-patient-choice-report/" target="_blank" rel="noopener noreferrer" className="text-caption-sm text-ps-faint mt-2 hover:underline block normal-case">Source: rater8 2026 Patient Choice Report</a>
           </TiltCard>
 
-          {/* Card 3 — 89% Google AI Overview */}
+          {/* Card 3 — 36% bar chart: what influences patient choice */}
+          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-5 sm:p-6 flex flex-col md:flex-row relative" delay={0.2}>
+            {/* Left side — title, stat, subtext */}
+            <div className="flex flex-col justify-between flex-1 md:pr-8 md:pl-4 py-2">
+              <div>
+                <span className="font-sans text-[10px] font-semibold tracking-[0.1em] uppercase text-[#999] block mb-2">Patient Choice Report · 2026</span>
+                <div ref={counter3.ref} className="text-display-lg text-ps-ink">{counter3.value}</div>
+              </div>
+              <p className="text-body-sm text-ps-muted mt-4 md:mt-6 max-w-[280px]">
+                of patients say AI tools most influence which doctor they choose — ahead of Google search and doctor referrals.
+              </p>
+              <div className="mt-auto pt-4 md:pt-6">
+                <div className="flex items-center gap-2.5">
+                  <span className="w-5 h-5 rounded-full bg-[#111] flex items-center justify-center">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L9.5 8.5L3 12l6.5 3.5L12 22l2.5-6.5L21 12l-6.5-3.5L12 2z"/></svg>
+                  </span>
+                  <span className="font-sans text-[11px] font-semibold text-[#111]">AI is now the deciding layer</span>
+                </div>
+                <a href="https://rater8.com/2026-patient-choice-report/" target="_blank" rel="noopener noreferrer" className="text-caption-sm text-ps-faint mt-2 block hover:underline normal-case">Source: rater8 2026 Patient Choice Report</a>
+              </div>
+            </div>
+
+            {/* Right side — bar chart */}
+            <div className="bg-white rounded-2xl border border-black/20 p-5 sm:p-6 flex flex-col w-full md:w-[380px] flex-shrink-0 mt-4 md:mt-0">
+              <span className="font-sans text-[10px] font-semibold text-[#999] uppercase tracking-wider block mb-5">Which source influenced your choice?</span>
+
+              {/* Mobile bars */}
+              <div className="relative md:hidden" style={{ height: '200px' }}>
+                <div className="absolute left-2 right-2 border-t-2 border-dashed border-[#D1D5DB]" style={{ bottom: '188px' }} />
+                <div className="absolute bottom-0 left-3 right-3 flex items-end justify-center gap-3">
+                  {[
+                    { label: 'AI tools', value: '36%', h: 168, highlight: true },
+                    { label: 'Google', value: '34%', h: 158, highlight: false },
+                    { label: 'Doctor', value: '32%', h: 149, highlight: false },
+                  ].map((item) => (
+                    <div key={item.label} className="flex flex-col items-center gap-1 w-[55px]">
+                      <span className="font-sans text-[9px] font-semibold text-[#111]">{item.value}</span>
+                      <div className="w-full rounded-2xl" style={{ height: item.h, backgroundColor: item.highlight ? '#111' : '#F0F0F0', backgroundImage: item.highlight ? 'repeating-linear-gradient(45deg, transparent, transparent 4px, rgba(255,255,255,0.12) 4px, rgba(255,255,255,0.12) 8px)' : 'repeating-linear-gradient(45deg, transparent, transparent 4px, #E0E0E0 4px, #E0E0E0 8px)' }} />
+                      <span className={`font-sans text-[10px] whitespace-nowrap ${item.highlight ? 'font-semibold text-[#111]' : 'text-[#999]'}`}>{item.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Desktop bars */}
+              <div className="relative hidden md:block" style={{ height: '350px' }}>
+                <div className="absolute left-2 right-2 border-t-2 border-dashed border-[#D1D5DB]" style={{ bottom: '330px' }} />
+                <div className="absolute bottom-0 left-4 right-4 flex items-end justify-center gap-6">
+                  {[
+                    { label: 'AI tools', value: '36%', h: 330, highlight: true },
+                    { label: 'Google', value: '34%', h: 311, highlight: false },
+                    { label: 'Doctor', value: '32%', h: 293, highlight: false },
+                  ].map((item) => (
+                    <div key={item.label} className="flex flex-col items-center gap-1 w-[80px]">
+                      <span className="font-sans text-[10px] font-semibold text-[#111]">{item.value}</span>
+                      <div className="w-full rounded-2xl" style={{ height: item.h, backgroundColor: item.highlight ? '#111' : '#F0F0F0', backgroundImage: item.highlight ? 'repeating-linear-gradient(45deg, transparent, transparent 4px, rgba(255,255,255,0.12) 4px, rgba(255,255,255,0.12) 8px)' : 'repeating-linear-gradient(45deg, transparent, transparent 4px, #E0E0E0 4px, #E0E0E0 8px)' }} />
+                      <span className={`font-sans text-[10px] whitespace-nowrap font-semibold text-[#111]`}>{item.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </TiltCard>
+
+          {/* Card 4 — 89% Google AI Overview */}
           <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-5 sm:p-6 flex flex-col min-h-0 sm:min-h-[420px] relative" delay={0.3}>
             <div className="border border-[#DDD] rounded-xl p-3 sm:p-4 mb-4">
               <div className="flex items-center gap-2.5 border border-[#E5E5E5] rounded-full px-3 py-2 mb-3">
@@ -214,7 +279,7 @@ export default function ShockingStats() {
             </div>
 
             <div className="flex items-center gap-3 sm:gap-4 mt-auto pt-4 sm:pt-6">
-              <div ref={counter3.ref} className="text-display-lg text-ps-ink">{counter3.value}</div>
+              <div ref={counter4.ref} className="text-display-lg text-ps-ink">{counter4.value}</div>
               <div className="flex flex-col gap-1">
                 <span className="text-body-sm font-semibold text-ps-ink">of Google healthcare searches</span>
                 <span className="text-caption text-ps-faint normal-case">now trigger an AI Overview before websites.</span>
