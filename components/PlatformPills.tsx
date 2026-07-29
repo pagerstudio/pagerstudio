@@ -70,6 +70,7 @@ export default function PlatformPills() {
               itemScope
               itemType="https://schema.org/SoftwareApplication"
             >
+              {/* eslint-disable-next-line @next/next/no-img-element -- external CDN logos */}
               <img
                 src={p.logo}
                 alt={`${p.name} logo — ${p.description}`}

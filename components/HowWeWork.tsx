@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { useScroll, useMotionValueEvent, useReducedMotion, motion } from 'framer-motion';
+import { useScroll, useMotionValueEvent, motion } from 'framer-motion';
 import { steps } from '@/data/steps';
 import TiltCard from './TiltCard';
 
@@ -73,7 +73,6 @@ export default function HowWeWork() {
   const [mounted, setMounted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const activeIndexRef = useRef(0);
-  const prefersReducedMotion = useReducedMotion();
 
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 768);

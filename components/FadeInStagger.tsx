@@ -5,7 +5,6 @@ import { motion, type Variants } from 'framer-motion';
 interface FadeInStaggerProps {
   children: React.ReactNode;
   className?: string;
-  delay?: number;
   stagger?: number;
   blur?: number;
   y?: number;
@@ -24,27 +23,9 @@ const containerVariants: Variants = {
   }),
 };
 
-const childVariants: Variants = {
-  hidden: {
-    opacity: 0,
-    y: 40,
-    filter: 'blur(8px)',
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    filter: 'blur(0px)',
-    transition: {
-      duration: 0.8,
-      ease: EASE,
-    },
-  },
-};
-
 export default function FadeInStagger({
   children,
   className = '',
-  delay = 0,
   stagger = 0.1,
   blur = 8,
   y = 40,
