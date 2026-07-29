@@ -147,7 +147,7 @@ export default function ShockingStats() {
 
           {/* Card 3 — 36% bar chart: what influences patient choice */}
           <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-6 sm:p-8 flex flex-col md:flex-row relative md:col-span-2" delay={0.2}>
-            <div className="flex flex-col justify-between flex-1 md:pr-10 md:pl-4">
+            <div className="flex flex-col flex-1 md:pr-10 md:pl-4">
               <div>
                 <span className="font-sans text-[10px] font-semibold tracking-[0.1em] uppercase text-[#999] block mb-2">Patient Choice Report · 2026</span>
                 <div ref={counter3.ref} className="text-display-lg text-ps-ink">{counter3.value}</div>
@@ -155,7 +155,7 @@ export default function ShockingStats() {
               <p className="text-body-sm text-ps-muted mt-4 max-w-[240px]">
                 of patients say AI tools most influence which doctor they choose.
               </p>
-              <div className="mt-4">
+              <div className="mt-auto pt-4">
                 <div className="flex items-center gap-2">
                   <span className="w-5 h-5 rounded-full bg-[#111] flex items-center justify-center">
                     <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L9.5 8.5L3 12l6.5 3.5L12 22l2.5-6.5L21 12l-6.5-3.5L12 2z"/></svg>
