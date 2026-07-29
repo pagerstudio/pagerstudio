@@ -31,7 +31,7 @@ const LEGAL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-ps-black">
+    <footer className="bg-ps-black pb-16 sm:pb-24">
       <div className="container py-16 sm:py-20">
         {/* Logo */}
         <div className="mb-16 sm:mb-20">
