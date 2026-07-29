@@ -73,7 +73,7 @@ export default function Faq() {
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.7, delay: 0.05, ease: EASE }}
         >
-          Got questions? We&apos;ve got answers.
+          Got questions? We&apos;ve got <span className="font-serif italic">answers</span>.
         </motion.h2>
         <motion.p
           className="text-body-sm text-ps-muted text-center max-w-[520px] mx-auto mb-8 sm:mb-16 section-sub"
