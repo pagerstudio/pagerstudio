@@ -23,7 +23,7 @@ export default function WhyPagerStudio() {
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.7, ease: EASE }}
           >
-            What we bring in.
+            What we <span className="font-serif italic">bring</span> in.
           </motion.h2>
           <motion.p
             className="text-body-sm text-ps-muted mt-5 max-w-[460px] mx-auto"
