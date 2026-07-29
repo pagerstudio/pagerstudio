@@ -62,15 +62,16 @@ export default function Hero() {
       <div className="bg-ps-black w-full mx-auto relative flex-1 flex flex-col overflow-hidden">
         <PixelGrid />
 
-        <div className="relative z-[2] flex-1 flex flex-col items-center justify-center px-10 sm:px-12 md:px-20 pb-10 md:pb-24 pt-10 sm:pt-20 md:pt-32">
+        <div className="relative z-[2] flex-1 flex flex-col items-center justify-center px-10 sm:px-12 md:px-20 pb-10 md:pb-24 pt-16 sm:pt-24 md:pt-36">
           {prefersReducedMotion ? (
             <div className="w-full max-w-[900px] flex flex-col items-center text-center">
               <h1 className="text-display-xl text-white mb-6">
-                <span className="block">Healthcare discovery has <span className="font-serif italic">changed</span>.</span>
+                <span className="block">Healthcare discovery</span>
+                <span className="block">has <span className="font-serif italic">changed</span>.</span>
                 <span className="block">Patients Now Ask AI.</span>
               </h1>
 
-              <p className="text-body-lg text-white/55 max-w-[520px]">
+              <p className="text-[15px] sm:text-body-lg text-white/55 max-w-[520px] leading-relaxed">
                 Patients are shifting from Google to AI to find specialists. AI picks one clinic and sends them there. That clinic is either yours or your competitor&apos;s.
               </p>
 
@@ -108,14 +109,17 @@ export default function Hero() {
             >
               <h1 className="text-display-xl text-white mb-6">
                 <motion.span className="block" variants={childVariants}>
-                  Healthcare discovery has <span className="font-serif italic">changed</span>.
+                  Healthcare discovery
+                </motion.span>
+                <motion.span className="block" variants={childVariants}>
+                  has <span className="font-serif italic">changed</span>.
                 </motion.span>
                 <motion.span className="block" variants={childVariants}>
                   Patients Now Ask AI.
                 </motion.span>
               </h1>
 
-              <motion.p className="text-body-lg text-white/55 max-w-[520px]" variants={bodyVariant}>
+              <motion.p className="text-[15px] sm:text-body-lg text-white/55 max-w-[520px] leading-relaxed" variants={bodyVariant}>
                 Patients are shifting from Google to AI to find specialists. AI picks one clinic and sends them there. That clinic is either yours or your competitor&apos;s.
               </motion.p>
 
