@@ -112,8 +112,9 @@ export default function Nav() {
         role="navigation"
         aria-label="Main navigation"
         initial={prefersReducedMotion ? {} : { opacity: 0, y: -24 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9, ease: EASE, delay: 2.4 }}
+        animate={{ opacity: mobileOpen ? 0 : 1, y: mobileOpen ? -24 : 0 }}
+        transition={{ duration: 0.5, ease: EASE, delay: mobileOpen ? 0 : 2.4 }}
+        style={{ pointerEvents: mobileOpen ? 'none' : 'auto' }}
       >
         <div className="relative w-full max-w-[260px] sm:max-w-[340px]">
           <div
