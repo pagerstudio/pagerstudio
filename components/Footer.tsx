@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 const NAV_LINKS = [
+  { href: '/', label: 'Home' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/blog', label: 'Blog' },
   { href: '/faq', label: 'FAQ' },
@@ -32,6 +33,17 @@ export default function Footer() {
   return (
     <footer className="bg-ps-black">
       <div className="container py-16 sm:py-20">
+        {/* Logo */}
+        <div className="mb-16 sm:mb-20">
+          <Link
+            href="/"
+            className="font-serif text-[28px] sm:text-[32px] leading-none tracking-tight text-white inline-block"
+            aria-label="Pager Studio home"
+          >
+            Pager <span className="italic">Studio</span>
+          </Link>
+        </div>
+
         {/* Main grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-[1fr_1fr_1fr_1fr] gap-10 sm:gap-12 mb-16 sm:mb-20">
           {/* Navigation */}
