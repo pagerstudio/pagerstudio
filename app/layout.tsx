@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Instrument_Serif, Manrope } from 'next/font/google';
 import Script from 'next/script';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 
 const instrumentSerif = Instrument_Serif({
@@ -199,6 +200,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans text-ps-ink antialiased">
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
