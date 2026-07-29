@@ -49,7 +49,7 @@ export default function Footer() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[50px] font-serif text-white/70 hover:text-white transition-colors duration-200"
+                className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
               >
                 {label}
               </a>
