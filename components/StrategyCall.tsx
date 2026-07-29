@@ -94,7 +94,7 @@ export default function StrategyCall() {
                 'A free AI Visibility Audit of your clinic.',
                 'A report showing how ChatGPT and Google AI Overviews see your practice.',
                 'Which AI platforms mention you — and which don\'t.',
-                'Your audit report delivered within 48 hours.',
+                'You keep the audit anyway — we cover the cost.',
               ].map((item, i) => (
                 <li
                   key={i}
