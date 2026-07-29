@@ -1,13 +1,10 @@
-'use client';
-
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
-const SERVICES = [
+const NAV_LINKS = [
   { href: '/pricing', label: 'Pricing' },
-  { href: '/faq', label: 'FAQ' },
   { href: '/blog', label: 'Blog' },
-  { href: '/contact', label: 'Free Audit' },
+  { href: '/faq', label: 'FAQ' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 const SPECIALTIES = [
@@ -19,64 +16,82 @@ const SPECIALTIES = [
   'Plastic Surgery',
 ];
 
+const SOCIAL_LINKS = [
+  { href: 'https://linkedin.com/company/pagerstudio', label: 'LinkedIn' },
+  { href: 'https://instagram.com/pagerstudio', label: 'Instagram' },
+  { href: 'https://x.com/pagerstudio', label: 'X' },
+];
+
 const LEGAL_LINKS = [
   { href: '/privacy', label: 'Privacy Policy' },
-  { href: '/terms', label: 'Terms of Service' },
+  { href: '/terms', label: 'Terms & Conditions' },
   { href: '/disclaimer', label: 'Disclaimer' },
 ];
 
-const SOCIAL_LINKS = [
-  { href: 'https://linkedin.com/company/pagerstudio', label: 'LinkedIn' },
-  { href: 'https://twitter.com/pagerstudio', label: 'X' },
-  { href: 'https://instagram.com/pagerstudio', label: 'Instagram' },
-];
-
 export default function Footer() {
-  const pathname = usePathname();
-
   return (
-    <footer className="border-t border-ps-line bg-white">
-      <div className="container py-12 sm:py-16">
-        {/* Top section — brand + CTA */}
-        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-8 mb-12 sm:mb-16">
-          <div className="max-w-[360px]">
-            <Link
-              href="/"
-              className="font-serif text-[28px] leading-none tracking-tight text-ps-ink inline-block mb-4"
-              aria-label="Pager Studio home"
-            >
-              Pager <span className="italic">Studio</span>
-            </Link>
-            <p className="text-body-sm text-ps-muted leading-[1.7] mb-5">
-              We help healthcare practices get discovered and recommended inside AI answers — ChatGPT, Gemini, Perplexity, Google AI Overviews, and more.
-            </p>
-            <a
-              href="mailto:hello.pagerstudio@gmail.com"
-              className="text-body-sm text-ps-ink font-medium hover:text-ps-muted transition-colors duration-200"
-            >
-              hello.pagerstudio@gmail.com
-            </a>
+    <footer className="bg-ps-black">
+      <div className="container py-16 sm:py-20">
+        {/* Main grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-[1fr_1fr_1fr_1fr] gap-10 sm:gap-12 mb-16 sm:mb-20">
+          {/* Navigation */}
+          <div>
+            <h3 className="text-[10px] font-semibold tracking-[0.15em] uppercase text-white/40 mb-5">Navigation</h3>
+            <nav className="flex flex-col gap-3" aria-label="Footer navigation">
+              {NAV_LINKS.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
+                >
+                  {label}
+                </Link>
+              ))}
+            </nav>
           </div>
 
-          <div className="flex flex-col items-start sm:items-end gap-4">
-            <Link
-              href="/contact"
-              className="btn btn-primary text-[13px] h-11 px-6"
-            >
-              Get Your Free Audit
-              <svg className="btn-arrow w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M7 17L17 7" />
-                <path d="M7 7h10v10" />
-              </svg>
-            </Link>
-            <div className="flex gap-5">
+          {/* Specialties */}
+          <div>
+            <h3 className="text-[10px] font-semibold tracking-[0.15em] uppercase text-white/40 mb-5">Specialties</h3>
+            <ul className="flex flex-col gap-3">
+              {SPECIALTIES.map((s) => (
+                <li key={s} className="text-[15px] text-white/70">
+                  {s}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h3 className="text-[10px] font-semibold tracking-[0.15em] uppercase text-white/40 mb-5">Contact Us</h3>
+            <div className="flex flex-col gap-3">
+              <a
+                href="mailto:hello.pagerstudio@gmail.com"
+                className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
+              >
+                hello.pagerstudio@gmail.com
+              </a>
+              <Link
+                href="/contact"
+                className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
+              >
+                Get Your Free Audit
+              </Link>
+            </div>
+          </div>
+
+          {/* Follow Us */}
+          <div>
+            <h3 className="text-[10px] font-semibold tracking-[0.15em] uppercase text-white/40 mb-5">Follow Us</h3>
+            <div className="flex flex-col gap-3">
               {SOCIAL_LINKS.map(({ href, label }) => (
                 <a
                   key={href}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-caption-sm text-ps-faint hover:text-ps-ink active:text-ps-ink active:opacity-70 transition-colors duration-200"
+                  className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
                 >
                   {label}
                 </a>
@@ -85,59 +100,31 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Middle section — links grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-12 mb-12 sm:mb-16">
-          <div>
-            <h3 className="text-caption-sm text-ps-ink mb-4">Company</h3>
-            <nav className="flex flex-col gap-2.5" aria-label="Company links">
-              {SERVICES.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-body-sm text-ps-muted hover:text-ps-ink active:text-ps-ink active:opacity-70 transition-colors duration-200"
-                  aria-current={pathname === href ? 'page' : undefined}
-                >
-                  {label}
-                </Link>
-              ))}
-            </nav>
-          </div>
+        {/* Divider */}
+        <div className="h-px bg-white/10 mb-8" />
 
-          <div>
-            <h3 className="text-caption-sm text-ps-ink mb-4">Specialties</h3>
-            <ul className="flex flex-col gap-2.5">
-              {SPECIALTIES.map((s) => (
-                <li key={s} className="text-body-sm text-ps-muted">
-                  {s}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-caption-sm text-ps-ink mb-4">Legal</h3>
-            <nav className="flex flex-col gap-2.5" aria-label="Legal links">
-              {LEGAL_LINKS.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-body-sm text-ps-muted hover:text-ps-ink active:text-ps-ink active:opacity-70 transition-colors duration-200"
-                  aria-current={pathname === href ? 'page' : undefined}
-                >
-                  {label}
-                </Link>
-              ))}
-            </nav>
+        {/* Bottom bar */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-12">
+          <p className="text-[13px] text-white/30">
+            © {new Date().getFullYear()} Pager Studio. All rights reserved.
+          </p>
+          <div className="flex gap-6">
+            {LEGAL_LINKS.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className="text-[13px] text-white/30 hover:text-white/60 transition-colors duration-200"
+              >
+                {label}
+              </Link>
+            ))}
           </div>
         </div>
 
-        {/* Bottom — copyright */}
-        <div className="pt-8 border-t border-ps-line flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <p className="text-caption-sm text-ps-faint">
-            © {new Date().getFullYear()} Pager Studio. All rights reserved.
-          </p>
-          <p className="text-caption-sm text-ps-faint">
-            AI visibility for healthcare practices.
+        {/* Large brand name */}
+        <div className="overflow-hidden">
+          <p className="font-serif text-[clamp(60px,12vw,160px)] leading-none tracking-tight text-white/[0.04] whitespace-nowrap">
+            Pager <span className="italic">Studio</span>
           </p>
         </div>
       </div>
