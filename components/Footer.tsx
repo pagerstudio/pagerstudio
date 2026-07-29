@@ -32,7 +32,7 @@ const LEGAL_LINKS = [
 export default function Footer() {
   return (
     <footer className="bg-ps-black overflow-hidden">
-      <div className="container py-16 sm:py-20">
+      <div className="container pt-16 sm:pt-20 pb-0">
         {/* Logo */}
         <div className="mb-16 sm:mb-20">
           <Link
