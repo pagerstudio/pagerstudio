@@ -122,7 +122,7 @@ export default function ShockingStats() {
                 <span className="font-sans text-[10px] text-[#999] uppercase tracking-wider">Canceled or avoided booking</span>
                 <span className="font-sans text-[10px] text-[#DC2626] font-semibold">+15pts YoY</span>
               </div>
-              <svg width="100%" height="80" viewBox="0 0 200 50" fill="none" preserveAspectRatio="none">
+              <svg width="100%" height="100" viewBox="0 0 200 60" fill="none" preserveAspectRatio="none">
                 <defs>
                   <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
                     <stop offset="0%" stopColor="#DC2626" stopOpacity="0.12"/>
@@ -171,13 +171,13 @@ export default function ShockingStats() {
               <span className="font-sans text-[10px] font-semibold text-[#999] uppercase tracking-wider block mb-4">Which source influenced your choice?</span>
 
               {/* Mobile bars */}
-              <div className="relative md:hidden" style={{ height: '130px' }}>
-                <div className="absolute left-2 right-2 border-t-2 border-dashed border-[#D1D5DB]" style={{ bottom: '118px' }} />
+              <div className="relative md:hidden" style={{ height: '160px' }}>
+                <div className="absolute left-2 right-2 border-t-2 border-dashed border-[#D1D5DB]" style={{ bottom: '148px' }} />
                 <div className="absolute bottom-0 left-3 right-3 flex items-end justify-center gap-4">
                   {[
-                    { label: 'AI tools', value: '36%', h: 108, highlight: true },
-                    { label: 'Google', value: '34%', h: 102, highlight: false },
-                    { label: 'Doctor', value: '32%', h: 96, highlight: false },
+                    { label: 'AI tools', value: '36%', h: 138, highlight: true },
+                    { label: 'Google', value: '34%', h: 130, highlight: false },
+                    { label: 'Doctor', value: '32%', h: 122, highlight: false },
                   ].map((item) => (
                     <div key={item.label} className="flex flex-col items-center gap-1 w-[55px]">
                       <span className="font-sans text-[9px] font-semibold text-[#111]">{item.value}</span>
@@ -189,13 +189,13 @@ export default function ShockingStats() {
               </div>
 
               {/* Desktop bars */}
-              <div className="relative hidden md:block" style={{ height: '200px' }}>
-                <div className="absolute left-2 right-2 border-t-2 border-dashed border-[#D1D5DB]" style={{ bottom: '188px' }} />
+              <div className="relative hidden md:block" style={{ height: '250px' }}>
+                <div className="absolute left-2 right-2 border-t-2 border-dashed border-[#D1D5DB]" style={{ bottom: '238px' }} />
                 <div className="absolute bottom-0 left-4 right-4 flex items-end justify-center gap-6">
                   {[
-                    { label: 'AI tools', value: '36%', h: 188, highlight: true },
-                    { label: 'Google', value: '34%', h: 177, highlight: false },
-                    { label: 'Doctor', value: '32%', h: 166, highlight: false },
+                    { label: 'AI tools', value: '36%', h: 238, highlight: true },
+                    { label: 'Google', value: '34%', h: 224, highlight: false },
+                    { label: 'Doctor', value: '32%', h: 210, highlight: false },
                   ].map((item) => (
                     <div key={item.label} className="flex flex-col items-center gap-1 w-[75px]">
                       <span className="font-sans text-[10px] font-semibold text-[#111]">{item.value}</span>

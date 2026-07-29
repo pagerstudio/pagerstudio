@@ -20,6 +20,14 @@ const SOCIAL_LINKS = [
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
+function CloseIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 6L16 16M16 6L6 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export default function Nav() {
   const navRef = useRef<HTMLElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -132,7 +140,7 @@ export default function Nav() {
               aria-controls="mobile-menu"
             >
               {mobileOpen ? (
-                <span className="text-[24px] leading-none font-light">×</span>
+                <CloseIcon className="w-5 h-5" />
               ) : (
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3 7h16M3 15h16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -158,14 +166,18 @@ export default function Nav() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, ease: EASE }}
           >
-            {/* Close button — top right */}
-            <button
+            {/* Close button — top right, inside a subtle circle */}
+            <motion.button
               onClick={closeMobile}
-              className="fixed top-4 sm:top-5 right-5 sm:right-6 z-[110] text-white text-[28px] font-light leading-none focus:outline-none hover:opacity-60 transition-opacity duration-300"
+              className="fixed top-4 sm:top-5 right-5 sm:right-6 z-[110] flex items-center justify-center w-11 h-11 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors duration-300 focus:outline-none"
               aria-label="Close menu"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.3, delay: 0.1, ease: EASE }}
             >
-              ×
-            </button>
+              <CloseIcon className="w-5 h-5" />
+            </motion.button>
 
             {/* Pages row */}
             <motion.div
