@@ -5,7 +5,7 @@ import { blogPost } from './sanity/schemas/blogPost';
 export default defineConfig({
   name: 'pager-studio',
   title: 'Pager Studio',
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '',
+  projectId: '97eftwco',
   dataset: 'production',
   plugins: [structureTool()],
   schema: {
