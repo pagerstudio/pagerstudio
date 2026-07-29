@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 const NAV_LINKS = [
-  { href: '/#audit', label: 'Home' },
+  { href: '/', label: 'Home' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/blog', label: 'Blog' },
   { href: '/faq', label: 'FAQ' },

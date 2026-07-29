@@ -7,8 +7,8 @@ const GAP = 3;
 const STEP = CELL + GAP;
 const IDLE_TIMEOUT = 1500;
 const SETTLE_BRIGHTNESS = 0.005;
-const AMBIENT_BASE = 0.06;
-const AMBIENT_VARIANCE = 0.05;
+const AMBIENT_BASE = 0.035;
+const AMBIENT_VARIANCE = 0.03;
 
 export default function PixelGrid() {
   const ref = useRef<HTMLCanvasElement>(null);
@@ -35,7 +35,7 @@ export default function PixelGrid() {
     let shimmerDone = false;
     let raf = 0;
     let lastDrawTime = 0;
-    const AMBIENT_FRAME_INTERVAL = 50;
+    const AMBIENT_FRAME_INTERVAL = 80;
     let lastX = -1, lastY = -1;
     let lastMoveTime = 0;
 
@@ -63,7 +63,7 @@ export default function PixelGrid() {
 
       for (let i = 0; i < total; i++) {
         ambientPhase[i] = Math.random() * Math.PI * 2;
-        ambientSpeed[i] = 0.001 + Math.random() * 0.002;
+        ambientSpeed[i] = 0.0005 + Math.random() * 0.001;
       }
     }
 
@@ -88,7 +88,7 @@ export default function PixelGrid() {
             if (dist > -sweepWidth && dist < sweepWidth) {
               const norm = 1 - Math.abs(dist) / sweepWidth;
               const smooth = norm * norm * (3 - 2 * norm);
-              const intensity = smooth * (0.3 + smooth * 0.4);
+              const intensity = smooth * (0.2 + smooth * 0.3);
               const idx = r * cols + c;
 
               const wave = Math.sin(norm * Math.PI) * 0.6 + 0.4;
@@ -140,7 +140,7 @@ export default function PixelGrid() {
           if (c < 0 || r < 0 || c >= cols || r >= rows) continue;
           const idx = r * cols + c;
           if (brightness[idx] > 0.01) continue;
-          brightness[idx] = 0.5 + Math.random() * 0.5;
+          brightness[idx] = 0.3 + Math.random() * 0.3;
           fadeDelay[idx] = Math.floor(Math.random() * 20 + 5);
           fadeSpeedArr[idx] = 0.03 + Math.random() * 0.05;
         }
@@ -193,7 +193,7 @@ export default function PixelGrid() {
             }
           }
 
-          const alpha = brightness[idx] * 0.35;
+          const alpha = brightness[idx] * 0.2;
           if (alpha < 0.005) continue;
 
           const size = pixelSize[idx] || CELL;
