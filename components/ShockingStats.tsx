@@ -122,7 +122,7 @@ export default function ShockingStats() {
                 <span className="font-sans text-[10px] text-[#999] uppercase tracking-wider">Canceled or avoided booking</span>
                 <span className="font-sans text-[10px] text-[#DC2626] font-semibold">+15pts YoY</span>
               </div>
-              <svg width="100%" height="100" viewBox="0 0 200 60" fill="none" preserveAspectRatio="none">
+              <svg width="100%" height="130" viewBox="0 0 200 65" fill="none" preserveAspectRatio="none">
                 <defs>
                   <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
                     <stop offset="0%" stopColor="#DC2626" stopOpacity="0.12"/>
