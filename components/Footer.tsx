@@ -135,7 +135,7 @@ export default function Footer() {
 
         {/* Large brand name */}
         <div className="overflow-hidden -mb-8 sm:-mb-12">
-          <p className="font-serif text-[clamp(80px,18vw,220px)] leading-[0.85] tracking-tight text-white whitespace-nowrap">
+          <p className="font-serif text-[clamp(80px,18vw,220px)] leading-[0.85] tracking-tight text-white whitespace-nowrap text-center">
             Pager <span className="italic">Studio</span>
           </p>
         </div>
