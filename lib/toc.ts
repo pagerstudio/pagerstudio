@@ -4,6 +4,34 @@ export interface TocEntry {
   level: 2 | 3;
 }
 
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+}
+
+function extractTextFromBlock(block: Record<string, unknown>): string {
+  if (!block.children || !Array.isArray(block.children)) return '';
+  return block.children
+    .map((child: Record<string, unknown>) => (typeof child.text === 'string' ? child.text : ''))
+    .join('');
+}
+
+export function extractHeadingsFromPortableText(blocks: Record<string, unknown>[]): TocEntry[] {
+  const headings: TocEntry[] = [];
+  for (const block of blocks) {
+    if (block._type === 'block' && (block.style === 'h2' || block.style === 'h3')) {
+      const text = extractTextFromBlock(block);
+      if (text) {
+        headings.push({ id: slugify(text), text, level: block.style === 'h2' ? 2 : 3 });
+      }
+    }
+  }
+  return headings;
+}
+
 export function extractHeadings(content: string): TocEntry[] {
   const headings: TocEntry[] = [];
   const lines = content.split('\n');
@@ -18,12 +46,7 @@ export function extractHeadings(content: string): TocEntry[] {
         .replace(/`(.+?)`/g, '$1')
         .replace(/\[(.+?)\]\(.+?\)/g, '$1')
         .trim();
-      const id = text
-        .toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, '')
-        .replace(/\s+/g, '-')
-        .replace(/-+/g, '-');
-      headings.push({ id, text, level });
+      headings.push({ id: slugify(text), text, level });
     }
   }
 

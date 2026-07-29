@@ -3,8 +3,8 @@ import { getAllPosts } from '@/lib/blog';
 
 const siteUrl = 'https://pagerstudio.space';
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const posts = getAllPosts();
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const posts = await getAllPosts();
 
   const blogPostUrls = posts.map((post) => ({
     url: `${siteUrl}/blog/${post.slug}`,

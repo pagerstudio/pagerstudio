@@ -11,15 +11,20 @@
   "dependencies": {
     "@hugeicons/core-free-icons": "^4.2.3",
     "@hugeicons/react": "^1.1.9",
+    "@portabletext/react": "^7.0.1",
+    "@sanity/client": "^7.25.0",
+    "@sanity/image-url": "^2.1.1",
     "@upstash/ratelimit": "^2.0.8",
     "@upstash/redis": "^1.38.0",
     "framer-motion": "^12.42.2",
     "gray-matter": "^4.0.3",
     "next": "16.2.6",
     "next-mdx-remote": "^6.0.0",
+    "next-sanity": "^13.2.3",
     "react": "^19",
     "react-dom": "^19",
-    "resend": "^6.18.0"
+    "resend": "^6.18.0",
+    "sanity": "^5.31.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",

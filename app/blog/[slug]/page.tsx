@@ -1,29 +1,28 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { MDXRemote } from 'next-mdx-remote/rsc';
 import { getPostBySlug, getAllSlugs } from '@/lib/blog';
-import { extractHeadings } from '@/lib/toc';
+import { extractHeadings, extractHeadingsFromPortableText } from '@/lib/toc';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import BlogPostClient from './BlogPostClient';
 import ReadingProgress from './ReadingProgress';
 import BackToTop from './BackToTop';
 import TableOfContents from './TableOfContents';
-import { mdxComponents } from './mdx-components';
+import ContentRenderer from './ContentRenderer';
 
 interface Props {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  const slugs = getAllSlugs();
+  const slugs = await getAllSlugs();
   return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
   if (!post) return {};
 
   return {
@@ -48,10 +47,12 @@ function formatDate(dateStr: string) {
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
   if (!post) notFound();
 
-  const headings = extractHeadings(post.content);
+  const headings = post.source === 'sanity'
+    ? extractHeadingsFromPortableText(JSON.parse(post.content))
+    : extractHeadings(post.content);
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -138,7 +139,7 @@ export default async function BlogPostPage({ params }: Props) {
 
           <BlogPostClient>
             <div className="prose-custom font-sans text-[18px] leading-[1.8] text-[#374151]">
-              <MDXRemote source={post.content} components={mdxComponents} />
+              <ContentRenderer source={post.content} type={post.source} />
             </div>
           </BlogPostClient>
 
