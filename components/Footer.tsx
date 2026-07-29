@@ -49,7 +49,7 @@ export default function Footer() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
+                className="text-[50px] font-serif text-white/70 hover:text-white transition-colors duration-200"
               >
                 {label}
               </a>
@@ -67,7 +67,7 @@ export default function Footer() {
                 <Link
                   key={href}
                   href={href}
-                className="text-[50px] text-white/70 hover:text-white transition-colors duration-200"
+                className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
                 >
                   {label}
                 </Link>
