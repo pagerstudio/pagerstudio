@@ -160,7 +160,7 @@ export default function PricingPageClient() {
       <Nav />
 
       {/* ── Plans ── */}
-      <section className="section section-white px-5 sm:px-6 md:px-10" id="plans">
+      <section className="section section-white px-5 sm:px-6 md:px-10 !pt-[100px] sm:!pt-[140px]" id="plans">
         <div className="container">
           <div className="text-center mb-14">
             <p className="text-caption-sm text-ps-faint mb-4">
