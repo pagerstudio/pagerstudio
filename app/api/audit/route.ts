@@ -45,10 +45,6 @@ function getRatelimit() {
   return ratelimit;
 }
 
-function checkRateLimitFallback(ip: string): boolean {
-  return true;
-}
-
 export async function POST(req: NextRequest) {
   try {
     const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown';
@@ -58,8 +54,6 @@ export async function POST(req: NextRequest) {
       if (!success) {
         return NextResponse.json({ error: 'Too many requests. Please try again later.' }, { status: 429 });
       }
-    } else if (!checkRateLimitFallback(ip)) {
-      return NextResponse.json({ error: 'Too many requests. Please try again later.' }, { status: 429 });
     }
 
     const body = await req.json();
@@ -192,7 +186,7 @@ export async function POST(req: NextRequest) {
 
     if (error) {
       console.error('Resend error:', error);
-      return NextResponse.json({ error: 'Failed to send email', details: error.message }, { status: 500 });
+      return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
     }
 
     return NextResponse.json({ success: true, id: data?.id });

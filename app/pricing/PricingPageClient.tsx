@@ -82,8 +82,8 @@ const comparisonRows = [
   { label: 'Annual price/mo', values: ['₹40,000', '₹68,000', '₹1,20,000'] },
   { label: 'AI Visibility Audit', values: ['Included', 'Included', 'Included'] },
   { label: 'Clinic pages optimized/mo', values: ['20', '50', '100'] },
-  { label: 'Directory placements (6 mo)', values: ['30+', '90+', '150+'] },
-  { label: 'AI citation sources (6 mo)', values: ['30+', '90+', '150+'] },
+  { label: 'Directory placements/mo', values: ['5', '15', '25'] },
+  { label: 'AI citation sources/mo', values: ['5', '15', '25'] },
   { label: 'AI platforms', values: ['3', '7', '7'] },
   { label: 'Cities', values: ['1', '1', '3'] },
   { label: 'Search queries monitored', values: ['50', '100', '200'] },
@@ -95,6 +95,30 @@ const comparisonRows = [
 
 import { CORE_SPECIALTIES } from '@/lib/specialties';
 import { pricingFaq } from '@/data/faq';
+
+/* ──────────────── FAQ Schema ──────────────── */
+
+function PricingFaqSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: pricingFaq.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a,
+      },
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
 
 /* ──────────────── FAQ Item ──────────────── */
 
@@ -132,6 +156,7 @@ export default function PricingPageClient() {
 
   return (
     <main>
+      <PricingFaqSchema />
       <Nav />
 
       {/* ── Plans ── */}
@@ -141,9 +166,9 @@ export default function PricingPageClient() {
             <p className="text-caption-sm text-ps-faint mb-4">
               Plans
             </p>
-            <h2 className="text-heading-xl text-ps-ink mb-4">
+            <h1 className="text-heading-xl text-ps-ink mb-4">
               Choose your <span className="font-serif italic">plan</span>
-            </h2>
+            </h1>
             <p className="text-body text-ps-muted max-w-[500px] mx-auto mb-8">
               6-month engagement. One clinic per specialty per city (Authority and Dominant). Cancel anytime after. 20% off annual plans.
             </p>
@@ -306,8 +331,7 @@ export default function PricingPageClient() {
               Named doctor credentials. Medical schema markup — MedicalClinic, Physician, MedicalProcedure, FAQPage —
               the machine-readable layer that tells AI exactly what your clinic does and why it should trust you.
               Medically structured content that answers exactly what patients ask. E-E-A-T signals on every page —
-              visible author credentials, review dates, medical source citations, accreditation signals. Research shows
-              adding statistics increases AI citation by 22%. Named clinician quotes increase it by 37%.
+              visible author credentials, review dates, medical source citations, accreditation signals.
               Location-specific content, optimized Google Business Profile, consistent directory presence.
             </p>
             <p className="text-body-lg text-ps-ink font-medium">

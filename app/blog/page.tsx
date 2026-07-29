@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { getAllPosts } from '@/lib/blog';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
@@ -7,6 +8,9 @@ import BlogIndexClient from './BlogIndexClient';
 export const metadata: Metadata = {
   title: 'Blog — Pager Studio',
   description: 'Insights on AI visibility, medical schema markup, and how healthcare practices get recommended by AI.',
+  alternates: {
+    canonical: '/blog',
+  },
 };
 
 export default function BlogPage() {
@@ -17,7 +21,8 @@ export default function BlogPage() {
       <Nav />
 
       {/* JSON-LD ItemList */}
-      <script
+      <Script
+        id="blog-item-list-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
