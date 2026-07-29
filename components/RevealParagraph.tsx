@@ -154,15 +154,18 @@ export default function RevealParagraph() {
         {REVEAL_LINES.map((line, lineIdx) => (
           <p key={lineIdx} className={`reveal-text text-heading-xl whitespace-normal md:whitespace-nowrap text-center text-ps-ink ${lineIdx < REVEAL_LINES.length - 1 ? 'mb-2' : ''}`}>
             {mounted ? (
-              lineArrays[lineIdx].map((w, i) => (
-                <span
-                  key={i}
-                  className={`word${ITALIC_WORDS.has(w) ? ' font-serif italic' : ''}`}
-                  style={{ display: 'inline-block', transition: 'none' }}
-                >
-                  {w}{i < lineArrays[lineIdx].length - 1 ? '\u00A0' : ''}
-                </span>
-              ))
+              lineArrays[lineIdx].map((w, i) => {
+                const clean = w.replace(/[^a-zA-Z]/g, '');
+                return (
+                  <span
+                    key={i}
+                    className={`word${ITALIC_WORDS.has(clean) ? ' font-serif italic' : ''}`}
+                    style={{ display: 'inline-block', transition: 'none' }}
+                  >
+                    {w}{i < lineArrays[lineIdx].length - 1 ? '\u00A0' : ''}
+                  </span>
+                );
+              })
             ) : (
               line
             )}
