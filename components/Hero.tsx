@@ -76,9 +76,6 @@ export default function Hero() {
 
               <div className="mt-10 sm:mt-12 flex items-center justify-center relative z-[3]">
                 <form onSubmit={handleSubmit} aria-label="Free audit signup" className="relative flex flex-col sm:flex-row items-center gap-4 sm:gap-3 bg-white rounded-full px-6 sm:px-2 py-5 sm:py-2">
-                  <span className="font-sans font-semibold text-[24px] text-ps-black text-center sm:text-left whitespace-nowrap sm:pl-5 sm:pr-3">
-                    See if AI mentions your clinic
-                  </span>
                   <input
                     type="email"
                     id="hero-email"
@@ -124,9 +121,6 @@ export default function Hero() {
 
               <motion.div className="mt-10 sm:mt-12 flex items-center justify-center relative z-[3]" variants={formVariant}>
                 <form onSubmit={handleSubmit} aria-label="Free audit signup" className="relative flex flex-col sm:flex-row items-center gap-4 sm:gap-3 bg-white rounded-full px-6 sm:px-2 py-5 sm:py-2">
-                  <span className="font-sans font-semibold text-[24px] text-ps-black text-center sm:text-left whitespace-nowrap sm:pl-5 sm:pr-3">
-                    See if AI mentions your clinic
-                  </span>
                   <input
                     type="email"
                     id="hero-email"
