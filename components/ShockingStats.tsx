@@ -173,13 +173,13 @@ export default function ShockingStats() {
               {/* Mobile bars */}
               <div className="relative md:hidden" style={{ height: '160px' }}>
                 <div className="absolute left-2 right-2 border-t-2 border-dashed border-[#D1D5DB]" style={{ bottom: '148px' }} />
-                <div className="absolute bottom-0 left-0 right-0 flex items-end justify-evenly px-2">
+                <div className="absolute bottom-0 left-2 right-2 flex items-end justify-between">
                   {[
                     { label: 'AI tools', value: '36%', h: 138, highlight: true },
                     { label: 'Google', value: '34%', h: 130, highlight: false },
                     { label: 'Doctor', value: '32%', h: 122, highlight: false },
                   ].map((item) => (
-                    <div key={item.label} className="flex flex-col items-center gap-1 w-[60px]">
+                    <div key={item.label} className="flex flex-col items-center gap-1" style={{ width: '28%' }}>
                       <span className="font-sans text-[9px] font-semibold text-[#111]">{item.value}</span>
                       <div className="w-full rounded-xl" style={{ height: item.h, backgroundColor: item.highlight ? '#111' : '#F0F0F0', backgroundImage: item.highlight ? 'repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(255,255,255,0.12) 3px, rgba(255,255,255,0.12) 6px)' : 'repeating-linear-gradient(45deg, transparent, transparent 3px, #E0E0E0 3px, #E0E0E0 6px)' }} />
                       <span className={`font-sans text-[10px] whitespace-nowrap ${item.highlight ? 'font-semibold text-[#111]' : 'text-[#999]'}`}>{item.label}</span>
@@ -191,13 +191,13 @@ export default function ShockingStats() {
               {/* Desktop bars */}
               <div className="relative hidden md:block" style={{ height: '250px' }}>
                 <div className="absolute left-2 right-2 border-t-2 border-dashed border-[#D1D5DB]" style={{ bottom: '238px' }} />
-                <div className="absolute bottom-0 left-0 right-0 flex items-end justify-evenly px-1">
+                <div className="absolute bottom-0 left-2 right-2 flex items-end justify-between">
                   {[
                     { label: 'AI tools', value: '36%', h: 238, highlight: true },
                     { label: 'Google', value: '34%', h: 224, highlight: false },
                     { label: 'Doctor', value: '32%', h: 210, highlight: false },
                   ].map((item) => (
-                    <div key={item.label} className="flex flex-col items-center gap-1 w-[80px]">
+                    <div key={item.label} className="flex flex-col items-center gap-1" style={{ width: '28%' }}>
                       <span className="font-sans text-[10px] font-semibold text-[#111]">{item.value}</span>
                       <div className="w-full rounded-xl" style={{ height: item.h, backgroundColor: item.highlight ? '#111' : '#F0F0F0', backgroundImage: item.highlight ? 'repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(255,255,255,0.12) 3px, rgba(255,255,255,0.12) 6px)' : 'repeating-linear-gradient(45deg, transparent, transparent 3px, #E0E0E0 3px, #E0E0E0 6px)' }} />
                       <span className="font-sans text-[10px] whitespace-nowrap font-semibold text-[#111]">{item.label}</span>
