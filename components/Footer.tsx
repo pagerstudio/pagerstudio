@@ -18,9 +18,9 @@ const SPECIALTIES = [
 ];
 
 const SOCIAL_LINKS = [
-  { href: 'https://linkedin.com/company/pagerstudio', label: 'LinkedIn' },
   { href: 'https://instagram.com/pagerstudio', label: 'Instagram' },
   { href: 'https://x.com/pagerstudio', label: 'X' },
+  { href: 'https://linkedin.com/company/pagerstudio', label: 'LinkedIn' },
 ];
 
 const LEGAL_LINKS = [
@@ -67,7 +67,7 @@ export default function Footer() {
                 <Link
                   key={href}
                   href={href}
-                  className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
+                className="text-[18px] text-white/70 hover:text-white transition-colors duration-200"
                 >
                   {label}
                 </Link>
