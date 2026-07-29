@@ -168,7 +168,7 @@ export default function ShockingStats() {
 
             {/* Bar chart */}
             <div className="bg-white rounded-2xl border border-black/20 p-5 flex flex-col w-full md:w-[340px] flex-shrink-0 mt-4 md:mt-0">
-              <span className="font-sans text-[10px] font-semibold text-[#999] uppercase tracking-wider block mb-4">Which source influenced your choice?</span>
+              <span className="font-sans text-[10px] font-semibold text-[#999] uppercase tracking-wider block mb-8">Which source influenced your choice?</span>
 
               {/* Mobile bars */}
               <div className="relative md:hidden" style={{ height: '160px' }}>
