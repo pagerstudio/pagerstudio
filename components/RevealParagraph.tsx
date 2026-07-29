@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 
+const ITALIC_WORDS = new Set(['Googling', 'patients']);
+
 const REVEAL_LINES = [
   "Patients aren't Googling to find clinics anymore",
   "— they're just asking AI.",
@@ -155,7 +157,7 @@ export default function RevealParagraph() {
               lineArrays[lineIdx].map((w, i) => (
                 <span
                   key={i}
-                  className="word"
+                  className={`word${ITALIC_WORDS.has(w) ? ' font-serif italic' : ''}`}
                   style={{ display: 'inline-block', transition: 'none' }}
                 >
                   {w}{i < lineArrays[lineIdx].length - 1 ? '\u00A0' : ''}

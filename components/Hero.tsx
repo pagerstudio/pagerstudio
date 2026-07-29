@@ -84,7 +84,7 @@ export default function Hero() {
                     placeholder="Enter your email"
                     required
                     aria-label="Email address"
-                    className="w-full sm:w-[200px] text-body-sm text-ps-ink placeholder:text-ps-faint rounded-full px-5 py-3 outline-none border border-ps-line transition-all duration-200 focus:ring-2 focus:ring-ps-ink/10 focus:border-ps-ink/30 bg-white"
+                    className="w-full sm:w-[280px] text-body-sm text-ps-ink placeholder:text-ps-faint rounded-full px-5 py-3 outline-none border border-ps-line transition-all duration-200 focus:ring-2 focus:ring-ps-ink/10 focus:border-ps-ink/30 bg-white"
                   />
                   <button
                     type="submit"
@@ -129,7 +129,7 @@ export default function Hero() {
                     placeholder="Enter your email"
                     required
                     aria-label="Email address"
-                    className="w-full sm:w-[200px] text-body-sm text-ps-ink placeholder:text-ps-faint rounded-full px-5 py-3 outline-none border border-ps-line transition-all duration-200 focus:ring-2 focus:ring-ps-ink/10 focus:border-ps-ink/30 bg-white"
+                    className="w-full sm:w-[280px] text-body-sm text-ps-ink placeholder:text-ps-faint rounded-full px-5 py-3 outline-none border border-ps-line transition-all duration-200 focus:ring-2 focus:ring-ps-ink/10 focus:border-ps-ink/30 bg-white"
                   />
                   <button
                     type="submit"
