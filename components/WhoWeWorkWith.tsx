@@ -29,7 +29,7 @@ export default function WhoWeWorkWith() {
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            Who we work with
+            Who we <span className="font-serif italic">work</span> with
           </motion.h2>
           <motion.p
             className="text-body-sm text-ps-muted max-w-[560px] mx-auto"
