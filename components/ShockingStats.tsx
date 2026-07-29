@@ -55,7 +55,7 @@ export default function ShockingStats() {
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.7, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
         >
-          The numbers don&apos;t lie.
+          The <span className="font-serif italic">numbers</span> don&apos;t lie.
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
