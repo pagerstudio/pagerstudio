@@ -30,14 +30,13 @@ function useCountUp(target: number, prefix = '', suffix = '', duration = 1.4, de
 }
 
 export default function ShockingStats() {
-  const counter3 = useCountUp(36, '', '%', 1.4);
-  const counter4 = useCountUp(47, '', '%', 1.2);
-  const counter5 = useCountUp(89, '', '%', 1.4);
-  const counterRevenue = useCountUp(1.5, '−₹', 'Cr', 1.6, 1);
+  const counter1 = useCountUp(47, '', '%', 1.4);
+  const counter2 = useCountUp(55, '', '%', 1.2);
+  const counter3 = useCountUp(89, '', '%', 1.4);
   const gradientId = useId();
 
   return (
-    <section className="section section-white" aria-label="Shocking Stats">
+    <section className="section section-white" aria-label="Industry Data">
       <div className="container">
         <motion.p
           className="text-caption-sm text-ps-faint mb-4"
@@ -46,7 +45,7 @@ export default function ShockingStats() {
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
-          Shocking Stats
+          Industry Data
         </motion.p>
         <motion.h2
           className="text-heading-xl text-ps-ink mb-12"
@@ -59,28 +58,24 @@ export default function ShockingStats() {
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-[1.6fr_1fr] gap-3">
-          {/* Card 1 — 47% with ChatGPT chat */}
+          {/* Card 1 — 47% use AI to research providers */}
           <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-5 sm:p-6 flex flex-col min-h-0 sm:min-h-[380px] relative" delay={0}>
-            {/* Stat header */}
             <div className="flex items-start gap-4 mb-4">
-              <div ref={counter4.ref} className="text-display-lg text-ps-ink">{counter4.value}</div>
+              <div ref={counter1.ref} className="text-display-lg text-ps-ink">{counter1.value}</div>
               <div className="flex flex-col gap-1 pt-6">
-                <span className="text-body-sm font-semibold text-ps-ink leading-[1.4]">of patients use AI search tools like ChatGPT, Gemini, Claude, and Perplexity</span>
-                <span className="text-caption text-ps-faint leading-[1.5] normal-case">to find answers, recommendations, and healthcare providers.</span>
+                <span className="text-body-sm font-semibold text-ps-ink leading-[1.4]">of patients have used AI tools like ChatGPT and Gemini to research healthcare providers</span>
+                <span className="text-caption text-ps-faint leading-[1.5] normal-case">Up from 31% in 2025 — a 16-point jump in 9 months.</span>
               </div>
             </div>
 
-            {/* ChatGPT interface */}
+            {/* ChatGPT interface mockup */}
             <div className="bg-[#F7F7F8] rounded-xl flex-1 flex flex-col overflow-hidden border border-[#E5E5E5]">
-              {/* Chat messages */}
               <div className="flex-1 p-3 sm:p-4 space-y-4 sm:space-y-5 overflow-hidden">
-                {/* User message */}
                 <div className="flex justify-end">
                   <div className="bg-[#E8E8E8] rounded-3xl rounded-tr-lg px-4 py-2.5 max-w-[280px]">
                     <span className="font-sans text-[11px] text-[#333] leading-relaxed block">best dermatologist near me in Mumbai</span>
                   </div>
                 </div>
-                {/* AI message */}
                 <div className="flex gap-3">
                   <div className="w-7 h-7 rounded-full bg-[#10A37F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.985 5.985 0 0 0-3.998 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.515 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073z"/></svg>
@@ -111,7 +106,6 @@ export default function ShockingStats() {
                       </div>
                       <p className="font-sans text-[11px] text-[#999] mt-3 leading-relaxed italic">Would you like me to check appointment availability for any of these?</p>
                     </div>
-                    {/* Action buttons */}
                     <div className="flex items-center gap-1 mt-2 ml-1">
                       <button type="button" className="w-7 h-7 rounded-full flex items-center justify-center hover:bg-[#E8E8E8] active:bg-[#DCDCDC] transition-colors" aria-label="Like">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#999" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
@@ -129,8 +123,6 @@ export default function ShockingStats() {
                   </div>
                 </div>
               </div>
-
-              {/* Input bar */}
               <div className="px-4 pb-4">
                 <div className="flex items-center gap-2 bg-white border border-[#E5E5E5] rounded-2xl px-4 py-3 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
                   <span className="font-sans text-[12px] text-[#999] flex-1">Message ChatGPT...</span>
@@ -140,16 +132,15 @@ export default function ShockingStats() {
                 </div>
               </div>
             </div>
-            <a href="https://rater8.com/2026-patient-choice-report/" target="_blank" rel="noopener noreferrer" className="text-caption-sm text-ps-faint mt-3 hover:underline block normal-case">Source: rater8, 2026</a>
+            <a href="https://rater8.com/2026-patient-choice-report/" target="_blank" rel="noopener noreferrer" className="text-caption-sm text-ps-faint mt-3 hover:underline block normal-case">Source: rater8 2026 Patient Choice Report</a>
           </TiltCard>
 
-          {/* Card 2 — −₹1.5Cr Revenue loss stat */}
+          {/* Card 2 — 55% canceled/avoided booking because of reviews */}
           <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-5 sm:p-8 flex flex-col items-center justify-center min-h-0 sm:min-h-[340px] relative" delay={0.1}>
-            {/* Red decline graph in a box */}
             <div className="border border-[#E5E5E5] rounded-xl p-5 mb-5 w-full max-w-[480px]">
               <div className="flex items-center justify-between mb-2">
-                <span className="font-sans text-[9px] text-[#999] uppercase tracking-wider">Revenue trend</span>
-                <span className="font-sans text-[9px] text-[#DC2626] font-semibold">−12%</span>
+                <span className="font-sans text-[9px] text-[#999] uppercase tracking-wider">Canceled or avoided booking</span>
+                <span className="font-sans text-[9px] text-[#DC2626] font-semibold">+15pts YoY</span>
               </div>
               <svg width="100%" height="130" viewBox="0 0 200 50" fill="none" preserveAspectRatio="none">
                 <defs>
@@ -158,97 +149,31 @@ export default function ShockingStats() {
                     <stop offset="100%" stopColor="#DC2626" stopOpacity="0"/>
                   </linearGradient>
                 </defs>
-                <path d="M0 8 L40 12 L80 16 L120 22 L160 32 L200 45 L200 50 L0 50 Z" fill={`url(#${gradientId})`} />
-                <polyline points="0,8 40,12 80,16 120,22 160,32 200,45" stroke="#DC2626" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                <circle cx="200" cy="45" r="2.5" fill="#DC2626" />
+                <path d="M0 30 L40 28 L80 22 L120 16 L160 12 L200 8 L200 50 L0 50 Z" fill={`url(#${gradientId})`} />
+                <polyline points="0,30 40,28 80,22 120,16 160,12 200,8" stroke="#DC2626" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+                <circle cx="200" cy="8" r="2.5" fill="#DC2626" />
               </svg>
               <div className="flex items-center justify-between mt-1.5">
-                <span className="font-sans text-[8px] text-[#CCC]">Jan</span>
-                <span className="font-sans text-[8px] text-[#CCC]">Jul</span>
-                <span className="font-sans text-[8px] text-[#CCC]">Dec</span>
+                <span className="font-sans text-[8px] text-[#CCC]">2025: 40%</span>
+                <span className="font-sans text-[8px] text-[#CCC]">2026: 55%</span>
               </div>
             </div>
-            <div ref={counterRevenue.ref} className="text-display-lg text-ps-ink block">{counterRevenue.value}</div>
-            <p className="text-body-sm text-ps-muted mt-4 text-center max-w-[260px]">
-              Estimated annual revenue loss if AI sends 5 patients a month elsewhere.
+            <div ref={counter2.ref} className="text-display-lg text-ps-ink block">{counter2.value}</div>
+            <p className="text-body-sm text-ps-muted mt-4 text-center max-w-[280px]">
+              of patients have canceled or avoided booking because of what they read in online reviews.
             </p>
-            <a href="https://rater8.com/2026-patient-choice-report/" target="_blank" rel="noopener noreferrer" className="text-caption-sm text-ps-faint mt-2 hover:underline block normal-case">Source: rater8, 2026</a>
+            <a href="https://rater8.com/2026-patient-choice-report/" target="_blank" rel="noopener noreferrer" className="text-caption-sm text-ps-faint mt-2 hover:underline block normal-case">Source: rater8 2026 Patient Choice Report</a>
           </TiltCard>
 
-          {/* Card 3 — 36% research report with bar chart */}
-          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-5 sm:p-6 flex flex-col md:flex-row relative" delay={0.2}>
-            {/* Left side — title, stat, subtext */}
-            <div className="flex flex-col justify-between flex-1 md:pr-8 md:pl-4 py-2">
-              <div>
-                <span className="font-sans text-[10px] font-semibold tracking-[0.1em] uppercase text-[#999] block mb-2">Patient Choice Report · 2026</span>
-                <div ref={counter3.ref} className="text-display-lg text-ps-ink">{counter3.value}</div>
-              </div>
-              <p className="text-body-sm text-ps-muted mt-4 md:mt-6 max-w-[280px]">
-                of patients say AI decided which doctor they chose — ahead of Google search and doctor referrals.
-              </p>
-              <div className="mt-auto pt-4 md:pt-6">
-                <div className="flex items-center gap-2.5">
-                  <span className="w-5 h-5 rounded-full bg-[#111] flex items-center justify-center">
-                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L9.5 8.5L3 12l6.5 3.5L12 22l2.5-6.5L21 12l-6.5-3.5L12 2z"/></svg>
-                  </span>
-                  <span className="font-sans text-[11px] font-semibold text-[#111]">AI is now the deciding layer</span>
-                </div>
-                <a href="https://rater8.com/2026-patient-choice-report/" target="_blank" rel="noopener noreferrer" className="text-caption-sm text-ps-faint mt-2 block hover:underline normal-case">Source: rater8, 2026</a>
-              </div>
-            </div>
-
-            {/* Right side — bar chart in box */}
-            <div className="bg-white rounded-2xl border border-black/20 p-5 sm:p-6 flex flex-col w-full md:w-[380px] flex-shrink-0 mt-4 md:mt-0">
-              <span className="font-sans text-[10px] font-semibold text-[#999] uppercase tracking-wider block mb-5">Which source influenced your choice?</span>
-
-              {/* Mobile bars */}
-              <div className="relative md:hidden" style={{ height: '200px' }}>
-                <div className="absolute left-2 right-2 border-t-2 border-dashed border-[#D1D5DB]" style={{ bottom: '188px' }} />
-                <div className="absolute bottom-0 left-3 right-3 flex items-end justify-center gap-3">
-                  {[
-                    { label: 'AI tools', h: 188, highlight: true },
-                    { label: 'Google', h: 154, highlight: false },
-                    { label: 'Doctor', h: 120, highlight: false },
-                  ].map((item) => (
-                    <div key={item.label} className="flex flex-col items-center gap-1 w-[55px]">
-                      <div className="w-full rounded-2xl" style={{ height: item.h, backgroundColor: item.highlight ? '#111' : '#F0F0F0', backgroundImage: item.highlight ? 'repeating-linear-gradient(45deg, transparent, transparent 4px, rgba(255,255,255,0.12) 4px, rgba(255,255,255,0.12) 8px)' : 'repeating-linear-gradient(45deg, transparent, transparent 4px, #E0E0E0 4px, #E0E0E0 8px)' }} />
-                      <span className={`font-sans text-[10px] whitespace-nowrap ${item.highlight ? 'font-semibold text-[#111]' : 'text-[#999]'}`}>{item.label}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Desktop bars */}
-              <div className="relative hidden md:block" style={{ height: '350px' }}>
-                <div className="absolute left-2 right-2 border-t-2 border-dashed border-[#D1D5DB]" style={{ bottom: '330px' }} />
-                <div className="absolute bottom-0 left-4 right-4 flex items-end justify-center gap-6">
-                  {[
-                    { label: 'AI tools', h: 330, highlight: true },
-                    { label: 'Google', h: 270, highlight: false },
-                    { label: 'Doctor', h: 210, highlight: false },
-                  ].map((item) => (
-                    <div key={item.label} className="flex flex-col items-center gap-1 w-[80px]">
-                      <div className="w-full rounded-2xl" style={{ height: item.h, backgroundColor: item.highlight ? '#111' : '#F0F0F0', backgroundImage: item.highlight ? 'repeating-linear-gradient(45deg, transparent, transparent 4px, rgba(255,255,255,0.12) 4px, rgba(255,255,255,0.12) 8px)' : 'repeating-linear-gradient(45deg, transparent, transparent 4px, #E0E0E0 4px, #E0E0E0 8px)' }} />
-                      <span className={`font-sans text-[10px] whitespace-nowrap font-semibold text-[#111]`}>{item.label}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </TiltCard>
-
-          {/* Card 4 — 89% Google AI Overview mockup */}
+          {/* Card 3 — 89% Google AI Overview */}
           <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-5 sm:p-6 flex flex-col min-h-0 sm:min-h-[420px] relative" delay={0.3}>
-            {/* Google AI Overview in a box frame */}
             <div className="border border-[#DDD] rounded-xl p-3 sm:p-4 mb-4">
-              {/* Search bar */}
               <div className="flex items-center gap-2.5 border border-[#E5E5E5] rounded-full px-3 py-2 mb-3">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#999" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
                 <span className="font-sans text-[11px] text-[#111]">best dermatologist near me</span>
                 <svg className="ml-auto" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#999" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6M9 9l6 6"/></svg>
               </div>
 
-              {/* AI Overview header */}
               <div className="flex items-center gap-1.5 mb-2.5">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
                   <path d="M12 2L9.5 8.5L3 12l6.5 3.5L12 22l2.5-6.5L21 12l-6.5-3.5L12 2z" fill="#111" stroke="#111" strokeWidth="0.5"/>
@@ -257,12 +182,10 @@ export default function ShockingStats() {
                 <span className="font-sans text-[9px] text-[#999] ml-0.5">· Generating...</span>
               </div>
 
-              {/* AI generated answer */}
               <div className="bg-[#F8F9FA] rounded-lg p-3 mb-3">
                 <p className="font-sans text-[11px] leading-[1.7] text-[#333]">
                   The top-rated dermatologists in your area include <span className="font-semibold">Dr. Priya Sharma</span> (4.9★, 2,400+ reviews), <span className="font-semibold">Dr. Rahul Mehta</span> (4.8★, 1,800+ reviews), and <span className="font-semibold">Dr. Anjali Patel</span> (4.8★, 1,200+ reviews).
                 </p>
-                {/* Source chips */}
                 <div className="flex flex-wrap gap-1.5 mt-2">
                   {['Practo', 'Google Reviews', 'Justdial'].map((name) => (
                     <span key={name} className="inline-flex items-center gap-1 bg-white border border-[#E5E5E5] rounded-full px-2 py-0.5">
@@ -273,7 +196,6 @@ export default function ShockingStats() {
                 </div>
               </div>
 
-              {/* Organic results */}
               <div className="space-y-2">
                 {[
                   { title: 'Top 10 Dermatologists in Your City', url: 'practo.com/dermatologist', desc: 'Find the best rated skin specialists...' },
@@ -291,15 +213,14 @@ export default function ShockingStats() {
               </div>
             </div>
 
-            {/* Stat below */}
             <div className="flex items-center gap-3 sm:gap-4 mt-auto pt-4 sm:pt-6">
-              <div ref={counter5.ref} className="text-display-lg text-ps-ink">{counter5.value}</div>
+              <div ref={counter3.ref} className="text-display-lg text-ps-ink">{counter3.value}</div>
               <div className="flex flex-col gap-1">
                 <span className="text-body-sm font-semibold text-ps-ink">of Google healthcare searches</span>
-                <span className="text-caption text-ps-faint normal-case">now show an AI Overview before websites.</span>
+                <span className="text-caption text-ps-faint normal-case">now trigger an AI Overview before websites.</span>
               </div>
             </div>
-            <a href="https://www.brightedge.com/resources/weekly-ai-search-insights/healthcare-ai-evolution-google-2023-2025" target="_blank" rel="noopener noreferrer" className="text-caption-sm text-ps-faint mt-1 sm:mt-3 hover:underline block normal-case">Source: BrightEdge Research, 2026</a>
+            <a href="https://www.brightedge.com/resources/weekly-ai-search-insights/healthcare-ai-evolution-google-2023-2025" target="_blank" rel="noopener noreferrer" className="text-caption-sm text-ps-faint mt-1 sm:mt-3 hover:underline block normal-case">Source: BrightEdge Research</a>
           </TiltCard>
         </div>
       </div>
