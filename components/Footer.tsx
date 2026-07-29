@@ -31,7 +31,7 @@ const LEGAL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-ps-black pb-16 sm:pb-24">
+    <footer className="bg-ps-black pb-12 sm:pb-16">
       <div className="container py-16 sm:py-20">
         {/* Logo */}
         <div className="mb-16 sm:mb-20">
@@ -134,7 +134,7 @@ export default function Footer() {
         </div>
 
         {/* Large brand name */}
-        <div className="overflow-hidden -mb-24 sm:-mb-32 lg:-mb-40">
+        <div className="overflow-hidden -mb-16 sm:-mb-20 lg:-mb-24">
           <p className="font-serif text-[clamp(90px,20vw,260px)] leading-[0.85] tracking-tight text-white whitespace-nowrap text-center">
             Pager <span className="italic">Studio</span>
           </p>
