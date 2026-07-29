@@ -33,8 +33,8 @@ export default function Footer() {
   return (
     <footer className="bg-ps-black overflow-hidden">
       <div className="container pt-16 sm:pt-20 pb-0">
-        {/* Logo + Social */}
-        <div className="flex items-center gap-8 mb-16 sm:mb-20">
+        {/* Logo */}
+        <div className="mb-16 sm:mb-20">
           <Link
             href="/"
             className="font-serif text-[28px] sm:text-[32px] leading-none tracking-tight text-white inline-block shrink-0"
@@ -42,19 +42,6 @@ export default function Footer() {
           >
             Pager <span className="italic">Studio</span>
           </Link>
-          <div className="flex flex-col gap-3">
-            {SOCIAL_LINKS.map(({ href, label }) => (
-              <a
-                key={href}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
-              >
-                {label}
-              </a>
-            ))}
-          </div>
         </div>
 
         {/* Main grid */}
@@ -90,7 +77,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="text-[10px] font-semibold tracking-[0.15em] uppercase text-white/40 mb-5">Contact Us</h3>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 mb-6">
               <a
                 href="mailto:hello.pagerstudio@gmail.com"
                 className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
@@ -103,6 +90,20 @@ export default function Footer() {
               >
                 Get Your Free Audit
               </Link>
+            </div>
+            <h3 className="text-[10px] font-semibold tracking-[0.15em] uppercase text-white/40 mb-5">Follow Us</h3>
+            <div className="flex flex-col gap-3">
+              {SOCIAL_LINKS.map(({ href, label }) => (
+                <a
+                  key={href}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
+                >
+                  {label}
+                </a>
+              ))}
             </div>
           </div>
 
