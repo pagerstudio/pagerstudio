@@ -11,3 +11,7 @@ node_modules
 next-env.d.ts
 .vercel
 .env*
+
+# Sanity build output
+dist/
+.sanity/
