@@ -1,7 +1,5 @@
-import StudioClient from './StudioClient';
-
-export const dynamic = 'force-dynamic';
+import { redirect } from 'next/navigation';
 
 export default function StudioPage() {
-  return <StudioClient />;
+  redirect('https://pager-studio.sanity.studio');
 }
