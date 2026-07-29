@@ -60,7 +60,7 @@ export default function ShockingStats() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {/* Card 1 — 47% use AI to research providers */}
-          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-5 sm:p-6 flex flex-col min-h-0 sm:min-h-[380px] relative" delay={0}>
+          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-5 sm:p-6 flex flex-col min-h-0 sm:min-h-[320px] relative" delay={0}>
             <div className="flex items-start gap-4 mb-4">
               <div ref={counter1.ref} className="text-display-lg text-ps-ink">{counter1.value}</div>
               <div className="flex flex-col gap-1 pt-6">
@@ -137,13 +137,13 @@ export default function ShockingStats() {
           </TiltCard>
 
           {/* Card 2 — 55% canceled/avoided booking because of reviews */}
-          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-5 sm:p-8 flex flex-col items-center justify-center min-h-0 sm:min-h-[340px] relative" delay={0.1}>
+          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-5 sm:p-6 flex flex-col items-center justify-center min-h-0 sm:min-h-[300px] relative" delay={0.1}>
             <div className="border border-[#E5E5E5] rounded-xl p-5 mb-5 w-full max-w-[480px]">
               <div className="flex items-center justify-between mb-2">
                 <span className="font-sans text-[9px] text-[#999] uppercase tracking-wider">Canceled or avoided booking</span>
                 <span className="font-sans text-[9px] text-[#DC2626] font-semibold">+15pts YoY</span>
               </div>
-              <svg width="100%" height="130" viewBox="0 0 200 50" fill="none" preserveAspectRatio="none">
+              <svg width="100%" height="100" viewBox="0 0 200 50" fill="none" preserveAspectRatio="none">
                 <defs>
                   <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
                     <stop offset="0%" stopColor="#DC2626" stopOpacity="0.12"/>
@@ -193,13 +193,13 @@ export default function ShockingStats() {
               <span className="font-sans text-[10px] font-semibold text-[#999] uppercase tracking-wider block mb-5">Which source influenced your choice?</span>
 
               {/* Mobile bars */}
-              <div className="relative md:hidden" style={{ height: '200px' }}>
-                <div className="absolute left-2 right-2 border-t-2 border-dashed border-[#D1D5DB]" style={{ bottom: '188px' }} />
+              <div className="relative md:hidden" style={{ height: '160px' }}>
+                <div className="absolute left-2 right-2 border-t-2 border-dashed border-[#D1D5DB]" style={{ bottom: '148px' }} />
                 <div className="absolute bottom-0 left-3 right-3 flex items-end justify-center gap-3">
                   {[
-                    { label: 'AI tools', value: '36%', h: 168, highlight: true },
-                    { label: 'Google', value: '34%', h: 158, highlight: false },
-                    { label: 'Doctor', value: '32%', h: 149, highlight: false },
+                    { label: 'AI tools', value: '36%', h: 135, highlight: true },
+                    { label: 'Google', value: '34%', h: 127, highlight: false },
+                    { label: 'Doctor', value: '32%', h: 120, highlight: false },
                   ].map((item) => (
                     <div key={item.label} className="flex flex-col items-center gap-1 w-[55px]">
                       <span className="font-sans text-[9px] font-semibold text-[#111]">{item.value}</span>
@@ -211,13 +211,13 @@ export default function ShockingStats() {
               </div>
 
               {/* Desktop bars */}
-              <div className="relative hidden md:block" style={{ height: '350px' }}>
-                <div className="absolute left-2 right-2 border-t-2 border-dashed border-[#D1D5DB]" style={{ bottom: '330px' }} />
+              <div className="relative hidden md:block" style={{ height: '260px' }}>
+                <div className="absolute left-2 right-2 border-t-2 border-dashed border-[#D1D5DB]" style={{ bottom: '248px' }} />
                 <div className="absolute bottom-0 left-4 right-4 flex items-end justify-center gap-6">
                   {[
-                    { label: 'AI tools', value: '36%', h: 330, highlight: true },
-                    { label: 'Google', value: '34%', h: 311, highlight: false },
-                    { label: 'Doctor', value: '32%', h: 293, highlight: false },
+                    { label: 'AI tools', value: '36%', h: 248, highlight: true },
+                    { label: 'Google', value: '34%', h: 233, highlight: false },
+                    { label: 'Doctor', value: '32%', h: 219, highlight: false },
                   ].map((item) => (
                     <div key={item.label} className="flex flex-col items-center gap-1 w-[80px]">
                       <span className="font-sans text-[10px] font-semibold text-[#111]">{item.value}</span>
@@ -231,7 +231,7 @@ export default function ShockingStats() {
           </TiltCard>
 
           {/* Card 4 — 89% Google AI Overview */}
-          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-5 sm:p-6 flex flex-col min-h-0 sm:min-h-[420px] relative" delay={0.3}>
+          <TiltCard className="bg-white rounded-[24px] border border-[#E5E5E5] p-5 sm:p-6 flex flex-col min-h-0 sm:min-h-[340px] relative" delay={0.3}>
             <div className="border border-[#DDD] rounded-xl p-3 sm:p-4 mb-4">
               <div className="flex items-center gap-2.5 border border-[#E5E5E5] rounded-full px-3 py-2 mb-3">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#999" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
