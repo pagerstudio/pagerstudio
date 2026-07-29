@@ -52,7 +52,7 @@ export default function Faq() {
 
   return (
     <section
-      className="section section-white px-5 sm:px-10"
+      className="section section-white px-5 sm:px-10 !pb-0"
       id="faq"
       aria-label="Frequently asked questions"
     >
