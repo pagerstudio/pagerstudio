@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 const NAV_LINKS = [
-  { href: '/', label: 'Home' },
+  { href: '/#audit', label: 'Home' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/blog', label: 'Blog' },
   { href: '/faq', label: 'FAQ' },
@@ -42,7 +42,7 @@ export default function Footer() {
           >
             Pager <span className="italic">Studio</span>
           </Link>
-          <div className="flex items-center gap-5">
+          <div className="flex flex-col gap-3">
             {SOCIAL_LINKS.map(({ href, label }) => (
               <a
                 key={href}
