@@ -92,7 +92,7 @@ export default function StrategyCall() {
             <ul className="flex flex-col gap-0">
               {[
                 'A report showing how ChatGPT and Google AI Overviews see your practice.',
-                'Which AI platforms mention you — and which don\'t.',
+                'How ChatGPT and Google AI Overviews describe your practice — and what\'s missing.',
                 'Your audit report delivered within 48 hours.',
                 'You keep the audit anyway — we cover the cost.',
               ].map((item, i) => (

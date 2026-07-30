@@ -5,7 +5,8 @@ import { motion, useInView, animate } from 'framer-motion';
 import TiltCard from './TiltCard';
 
 function useCountUp(target: number, prefix = '', suffix = '', duration = 1.4, decimals = 0) {
-  const [value, setValue] = useState(prefix + '0' + suffix);
+  const finalValue = prefix + target + suffix;
+  const [value, setValue] = useState(finalValue);
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.05 });
   const animated = useRef(false);
@@ -13,6 +14,8 @@ function useCountUp(target: number, prefix = '', suffix = '', duration = 1.4, de
   useEffect(() => {
     if (!inView || animated.current) return;
     animated.current = true;
+
+    setValue(prefix + '0' + suffix);
 
     const controls = animate(0, target, {
       duration,

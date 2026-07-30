@@ -100,8 +100,6 @@ export default function HowWeWork() {
     return <HowWeWorkMobile />;
   }
 
-  const s = steps[activeIndex];
-
   return (
     <section
       ref={sectionRef}
@@ -147,31 +145,37 @@ export default function HowWeWork() {
             </div>
           </div>
 
-          <TiltCard
-            key={activeIndex}
-            className="rounded-[20px] p-8 md:p-10 border border-ps-line shadow-[0_1px_3px_rgba(0,0,0,0.04),0_8px_24px_rgba(0,0,0,0.06)]"
-            intensity={6}
-          >
-            <span className="text-caption-sm block mb-3 text-ps-muted">
-              {s.step}
-            </span>
-            <h3 className="text-heading-lg mb-5 text-ps-ink">
-              <span className="font-serif italic">{s.title}</span>
-              <br />
-              <span className="text-ps-muted">{s.titleBreak}</span>
-            </h3>
-            <p className="text-body-sm mb-6 max-w-[520px] text-ps-muted">{s.body}</p>
-            <ul className="flex flex-col gap-2.5">
-              {s.bullets.map((b) => (
-                <li
-                  key={b}
-                  className="text-body-sm pl-5 relative before:content-[''] before:absolute before:left-0 before:top-[5px] before:w-1.5 before:h-1.5 before:rounded-full text-ps-ink before:bg-ps-ink/30"
-                >
-                  {b}
-                </li>
-              ))}
-            </ul>
-          </TiltCard>
+          <div className="relative min-h-[280px]">
+            {steps.map((s, i) => (
+              <TiltCard
+                key={i}
+                className={`rounded-[20px] p-8 md:p-10 border border-ps-line shadow-[0_1px_3px_rgba(0,0,0,0.04),0_8px_24px_rgba(0,0,0,0.06)] transition-opacity duration-500 ${
+                  i === activeIndex ? 'relative' : 'absolute inset-0 opacity-0 pointer-events-none'
+                }`}
+                intensity={6}
+              >
+                <span className="text-caption-sm block mb-3 text-ps-muted">
+                  {s.step}
+                </span>
+                <h3 className="text-heading-lg mb-5 text-ps-ink">
+                  <span className="font-serif italic">{s.title}</span>
+                  <br />
+                  <span className="text-ps-muted">{s.titleBreak}</span>
+                </h3>
+                <p className="text-body-sm mb-6 max-w-[520px] text-ps-muted">{s.body}</p>
+                <ul className="flex flex-col gap-2.5">
+                  {s.bullets.map((b) => (
+                    <li
+                      key={b}
+                      className="text-body-sm pl-5 relative before:content-[''] before:absolute before:left-0 before:top-[5px] before:w-1.5 before:h-1.5 before:rounded-full text-ps-ink before:bg-ps-ink/30"
+                    >
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+              </TiltCard>
+            ))}
+          </div>
         </div>
       </div>
     </section>
