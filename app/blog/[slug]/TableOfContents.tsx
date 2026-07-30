@@ -9,6 +9,7 @@ export default function TableOfContents({ headings }: { headings: TocEntry[] }) 
   const [isVisible, setIsVisible] = useState(false);
   const prefersReducedMotion = useReducedMotion();
   const observerRef = useRef<IntersectionObserver | null>(null);
+  const listRef = useRef<HTMLUListElement>(null);
 
   useEffect(() => {
     if (headings.length === 0) return;
@@ -43,6 +44,14 @@ export default function TableOfContents({ headings }: { headings: TocEntry[] }) 
   }, [headings]);
 
   useEffect(() => {
+    if (!activeId || !listRef.current) return;
+    const activeButton = listRef.current.querySelector(`[data-heading="${activeId}"]`);
+    if (activeButton) {
+      activeButton.scrollIntoView({ block: 'nearest', behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+    }
+  }, [activeId, prefersReducedMotion]);
+
+  useEffect(() => {
     const onScroll = () => {
       setIsVisible(window.scrollY > 300);
     };
@@ -75,12 +84,13 @@ export default function TableOfContents({ headings }: { headings: TocEntry[] }) 
               On this page
             </p>
             <div className="max-h-[50vh] overflow-y-auto scrollbar-thin pr-2">
-              <ul className="flex flex-col gap-0.5">
+              <ul ref={listRef} className="flex flex-col gap-0.5">
                 {headings.map((h) => {
                   const isActive = activeId === h.id;
                   return (
                     <li key={h.id}>
                       <button
+                        data-heading={h.id}
                         onClick={() => scrollTo(h.id)}
                         className={`group flex items-center gap-2 w-full text-left transition-colors duration-150 ${
                           h.level === 3 ? 'pl-3' : ''
