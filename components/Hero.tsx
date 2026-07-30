@@ -76,7 +76,7 @@ export default function Hero() {
               </p>
 
               <div className="mt-10 sm:mt-12 flex items-center justify-center relative z-[3] w-full max-w-[400px] sm:max-w-none">
-                <form onSubmit={handleSubmit} aria-label="Free audit signup" className="relative flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-3 bg-white rounded-2xl sm:rounded-full px-5 sm:px-2 py-4 sm:py-2 w-full">
+                <form onSubmit={handleSubmit} aria-label="Free audit signup" className="relative flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-3 bg-white rounded-2xl sm:rounded-full px-5 sm:px-2 py-4 sm:py-2 w-full sm:w-auto">
                   <input
                     type="email"
                     id="hero-email"
@@ -124,7 +124,7 @@ export default function Hero() {
               </motion.p>
 
               <motion.div className="mt-10 sm:mt-12 flex items-center justify-center relative z-[3] w-full max-w-[400px] sm:max-w-none" variants={formVariant}>
-                <form onSubmit={handleSubmit} aria-label="Free audit signup" className="relative flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-3 bg-white rounded-2xl sm:rounded-full px-5 sm:px-2 py-4 sm:py-2 w-full">
+                <form onSubmit={handleSubmit} aria-label="Free audit signup" className="relative flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-3 bg-white rounded-2xl sm:rounded-full px-5 sm:px-2 py-4 sm:py-2 w-full sm:w-auto">
                   <input
                     type="email"
                     id="hero-email"
