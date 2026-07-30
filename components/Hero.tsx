@@ -67,7 +67,7 @@ export default function Hero() {
             <div className="w-full max-w-[900px] flex flex-col items-center text-center">
               <h1 className="text-display-xl text-white mb-6">
                 <span className="block">Healthcare discovery</span>
-                <span className="block">has <span className="font-serif italic" style={{ color: '#F8F32B' }}>changed</span>.</span>
+                <span className="block">has <span className="font-serif italic">changed</span>.</span>
                 <span className="block">Patients Now Ask AI.</span>
               </h1>
 
@@ -112,7 +112,7 @@ export default function Hero() {
                   Healthcare discovery
                 </motion.span>
                 <motion.span className="block" variants={childVariants}>
-                  has <span className="font-serif italic" style={{ color: '#F8F32B' }}>changed</span>.
+                  has <span className="font-serif italic">changed</span>.
                 </motion.span>
                 <motion.span className="block" variants={childVariants}>
                   Patients Now Ask AI.
