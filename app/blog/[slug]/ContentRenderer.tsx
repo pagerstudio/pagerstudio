@@ -54,6 +54,9 @@ const portableTextComponents: PortableTextComponents = {
     bullet: ({ children }) => <li>{children}</li>,
     number: ({ children }) => <li>{children}</li>,
   },
+  types: {
+    span: ({ value }) => <span>{value?.text}</span>,
+  },
 };
 
 interface ContentRendererProps {
