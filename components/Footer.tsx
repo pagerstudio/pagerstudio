@@ -9,12 +9,12 @@ const NAV_LINKS = [
 ];
 
 const SPECIALTIES = [
-  'IVF & Fertility',
-  'Dental Implants',
-  'Cosmetic Dermatology',
-  'LASIK & Eye Care',
-  'Hair Transplant',
-  'Plastic Surgery',
+  { name: 'IVF & Fertility Centers', desc: 'Helping fertility providers become the trusted recommendation for patients researching their path to parenthood.' },
+  { name: 'Hair Restoration Clinics', desc: 'Increasing AI visibility for clinics offering advanced hair restoration and transplant procedures.' },
+  { name: 'Cosmetic Dermatology Clinics', desc: 'Helping aesthetic skin clinics stand out when patients seek trusted cosmetic care.' },
+  { name: 'Dental Implant Centers', desc: 'Making dental implant providers easier for AI to discover, understand, and recommend.' },
+  { name: 'LASIK & Vision Correction Centers', desc: 'Positioning vision correction specialists to appear in AI-powered healthcare recommendations.' },
+  { name: 'Plastic Surgery Practices', desc: 'Helping cosmetic and reconstructive surgery practices build visibility and trust across AI platforms.' },
 ];
 
 const SOCIAL_LINKS = [
@@ -63,15 +63,16 @@ export default function Footer() {
           </div>
 
           {/* Specialties */}
-          <div>
+          <div className="col-span-2 sm:col-span-3">
             <h3 className="text-[10px] font-semibold tracking-[0.15em] uppercase text-white/40 mb-5">Specialties</h3>
-            <ul className="flex flex-col gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {SPECIALTIES.map((s) => (
-                <li key={s} className="text-[15px] text-white/70">
-                  {s}
-                </li>
+                <div key={s.name}>
+                  <h4 className="text-[15px] text-white font-medium mb-1">{s.name}</h4>
+                  <p className="text-[13px] text-white/40 leading-relaxed">{s.desc}</p>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
 
           {/* Contact */}
