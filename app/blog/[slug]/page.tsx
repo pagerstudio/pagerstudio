@@ -75,7 +75,7 @@ export default async function BlogPostPage({ params }: Props) {
       },
     },
     description: post.excerpt,
-    image: 'https://www.pagerstudio.space/og.png',
+    image: 'https://www.pagerstudio.space/api/og',
     medicalSpecialty: post.specialty,
     mainEntityOfPage: {
       '@type': 'WebPage',

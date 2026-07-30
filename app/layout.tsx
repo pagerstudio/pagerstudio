@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: 'Pager Studio — AI Visibility for Healthcare Practices',
     description:
       'Pager Studio helps healthcare practices get discovered and recommended inside AI answers — ChatGPT, Gemini, Claude, Perplexity, Grok, and Google AI Overviews.',
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Pager Studio — AI Visibility for Healthcare' }],
+    images: [{ url: '/api/og', width: 1200, height: 630, alt: 'Pager Studio — AI Visibility for Healthcare' }],
   },
   twitter: {
     card: 'summary_large_image',
