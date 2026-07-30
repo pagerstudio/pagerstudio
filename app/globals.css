@@ -644,3 +644,9 @@ button, a, input, [role="button"] {
 .prose-custom ol li {
   padding-left: 0;
 }
+
+/* ── Text Selection ─────────────────────────────────────────── */
+::selection {
+  background-color: #111;
+  color: #fff;
+}
