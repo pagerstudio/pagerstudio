@@ -31,7 +31,7 @@ export default async function BlogPage() {
             itemListElement: posts.map((post, i) => ({
               '@type': 'ListItem',
               position: i + 1,
-              url: `https://pagerstudio.space/blog/${post.slug}`,
+              url: `https://www.pagerstudio.space/blog/${post.slug}`,
               name: post.title,
             })),
           }),

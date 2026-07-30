@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: post.title,
       description: post.excerpt,
       type: 'article',
-      url: `https://pagerstudio.space/blog/${post.slug}`,
+      url: `https://www.pagerstudio.space/blog/${post.slug}`,
     },
   };
 }
@@ -59,21 +59,27 @@ export default async function BlogPostPage({ params }: Props) {
     '@type': 'Article',
     headline: post.title,
     datePublished: post.date,
+    dateModified: post.date,
     author: {
       '@type': 'Organization',
       name: 'Pager Studio',
-      url: 'https://pagerstudio.space',
+      url: 'https://www.pagerstudio.space',
     },
     publisher: {
       '@type': 'Organization',
       name: 'Pager Studio',
-      url: 'https://pagerstudio.space',
+      url: 'https://www.pagerstudio.space',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.pagerstudio.space/icon.svg',
+      },
     },
     description: post.excerpt,
+    image: 'https://www.pagerstudio.space/og.png',
     medicalSpecialty: post.specialty,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://pagerstudio.space/blog/${post.slug}`,
+      '@id': `https://www.pagerstudio.space/blog/${post.slug}`,
     },
   };
 

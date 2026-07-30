@@ -41,4 +41,4 @@ Disallow: /admin/
 Disallow: /dashboard/
 Allow: /
 
-Sitemap: https://pagerstudio.space/sitemap.xml
+Sitemap: https://www.pagerstudio.space/sitemap.xml

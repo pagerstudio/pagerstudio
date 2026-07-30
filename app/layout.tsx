@@ -18,7 +18,7 @@ const manrope = Manrope({
   display: 'swap',
 });
 
-const siteUrl = 'https://pagerstudio.space';
+const siteUrl = 'https://www.pagerstudio.space';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -158,6 +158,26 @@ const websiteSchema = {
   name: 'Pager Studio',
   url: siteUrl,
   description: 'AI visibility for healthcare practices.',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: `${siteUrl}/blog?q={search_term_string}`,
+    },
+    'query-input': 'required name=search_term_string',
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
+    { '@type': 'ListItem', position: 2, name: 'Pricing', item: `${siteUrl}/pricing` },
+    { '@type': 'ListItem', position: 3, name: 'Blog', item: `${siteUrl}/blog` },
+    { '@type': 'ListItem', position: 4, name: 'FAQ', item: `${siteUrl}/faq` },
+    { '@type': 'ListItem', position: 5, name: 'Contact', item: `${siteUrl}/contact` },
+  ],
 };
 
 export default function RootLayout({
@@ -205,6 +225,11 @@ export default function RootLayout({
           id="website-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <Script
+          id="breadcrumb-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </head>
       <body className="font-sans text-ps-ink antialiased">
