@@ -74,38 +74,40 @@ export default function TableOfContents({ headings }: { headings: TocEntry[] }) 
             <p className="font-sans text-[11px] font-semibold text-ps-muted tracking-widest uppercase mb-3">
               On this page
             </p>
-            <ul className="flex flex-col gap-0.5">
-              {headings.map((h) => {
-                const isActive = activeId === h.id;
-                return (
-                  <li key={h.id}>
-                    <button
-                      onClick={() => scrollTo(h.id)}
-                      className={`group flex items-center gap-2 w-full text-left transition-colors duration-150 ${
-                        h.level === 3 ? 'pl-3' : ''
-                      }`}
-                    >
-                      <span
-                        className={`block w-1.5 h-1.5 rounded-full shrink-0 transition-all duration-200 ${
-                          isActive
-                            ? 'bg-ps-ink scale-110'
-                            : 'bg-ps-line group-hover:bg-ps-faint'
-                        }`}
-                      />
-                      <span
-                        className={`font-sans text-[12px] leading-[1.4] transition-colors duration-150 line-clamp-2 ${
-                          isActive
-                            ? 'text-ps-ink font-medium'
-                            : 'text-ps-faint group-hover:text-ps-muted'
+            <div className="max-h-[50vh] overflow-y-auto scrollbar-thin pr-2">
+              <ul className="flex flex-col gap-0.5">
+                {headings.map((h) => {
+                  const isActive = activeId === h.id;
+                  return (
+                    <li key={h.id}>
+                      <button
+                        onClick={() => scrollTo(h.id)}
+                        className={`group flex items-center gap-2 w-full text-left transition-colors duration-150 ${
+                          h.level === 3 ? 'pl-3' : ''
                         }`}
                       >
-                        {h.text}
-                      </span>
-                    </button>
-                  </li>
-                );
-              })}
-            </ul>
+                        <span
+                          className={`block w-1.5 h-1.5 rounded-full shrink-0 transition-all duration-200 ${
+                            isActive
+                              ? 'bg-ps-ink scale-110'
+                              : 'bg-ps-line group-hover:bg-ps-faint'
+                          }`}
+                        />
+                        <span
+                          className={`font-sans text-[12px] leading-[1.4] transition-colors duration-150 line-clamp-2 ${
+                            isActive
+                              ? 'text-ps-ink font-medium'
+                              : 'text-ps-faint group-hover:text-ps-muted'
+                          }`}
+                        >
+                          {h.text}
+                        </span>
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
         </motion.nav>
       )}
