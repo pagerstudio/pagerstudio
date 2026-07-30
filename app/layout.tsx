@@ -192,6 +192,16 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(monitoringServiceSchema) }}
         />
         <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZYNBJTTZH9"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ZYNBJTTZH9');`}
+        </Script>
+        <Script
           id="website-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
