@@ -182,7 +182,7 @@ export default function Nav() {
 
             {/* Pages — vertical list on mobile, horizontal on desktop */}
             <motion.div
-              className="flex flex-col items-center gap-y-6 sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-x-8 sm:gap-y-4"
+              className="flex flex-col items-center gap-y-6 pt-16 sm:pt-0 sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-x-8 sm:gap-y-4"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
