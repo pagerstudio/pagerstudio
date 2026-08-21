@@ -50,8 +50,12 @@ export default function AboutPageClient() {
               <h2 className="text-heading-md text-ps-ink mb-4">
                 Why <span className="font-serif italic"> Pager Studio</span> exists
               </h2>
+              {/*
+                TEMPLATE: Edit this section to tell your story.
+                Explain the problem you saw and why you started the company.
+                Keep it honest and direct.
+              */}
               <p className="text-body text-ps-muted mb-3">
-                <!-- TEMPLATE: Edit this section to tell your story. Explain the problem you saw and why you started the company. Keep it honest and direct. -->
                 When patients ask ChatGPT or Google AI Overviews for a recommendation, AI picks one clinic and sends them there. That clinic is either yours or your competitor's. Most healthcare practices have no idea this is happening — and even fewer know how to influence it.
               </p>
               <p className="text-body text-ps-muted">
