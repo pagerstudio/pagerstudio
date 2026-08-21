@@ -112,9 +112,9 @@ export default function Nav() {
         className="fixed inset-x-0 z-[101] flex justify-center px-5 sm:px-6 top-4 sm:top-5"
         role="navigation"
         aria-label="Main navigation"
-        initial={prefersReducedMotion ? {} : { opacity: 0, y: -24 }}
-        animate={{ opacity: mobileOpen ? 0 : 1, y: mobileOpen ? -24 : 0 }}
-        transition={{ duration: 0.4, ease: EASE, delay: mobileOpen ? 0 : 2.4 }}
+        initial={prefersReducedMotion ? {} : { opacity: 0, y: -12 }}
+        animate={{ opacity: mobileOpen ? 0 : 1, y: mobileOpen ? -12 : 0 }}
+        transition={{ duration: 0.3, ease: EASE, delay: mobileOpen ? 0 : 0.3 }}
         style={{ pointerEvents: mobileOpen ? 'none' : 'auto' }}
       >
         <div className="relative w-full max-w-[260px] sm:max-w-[340px]">
