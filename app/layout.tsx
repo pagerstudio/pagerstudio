@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Instrument_Serif, Manrope } from 'next/font/google';
 import Script from 'next/script';
-import AsciiTransition from '@/components/AsciiTransition';
 import './globals.css';
 
 const instrumentSerif = Instrument_Serif({
@@ -208,7 +207,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body className="font-sans text-ps-ink antialiased">
-        <AsciiTransition>{children}</AsciiTransition>
+        {children}
       </body>
     </html>
   );
