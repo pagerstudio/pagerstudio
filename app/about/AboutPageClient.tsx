@@ -79,7 +79,7 @@ export default function AboutPageClient() {
     <main>
       <Nav />
 
-      {/* ─── Hero: editorial spread ────────────────────────────── */}
+      {/* ─── Hero ───────────────────────────────────────────────── */}
       <section
         className="section-white px-5 sm:px-6 md:px-10"
         style={{ paddingTop: 'clamp(100px, 14vw, 160px)', paddingBottom: 'clamp(60px, 8vw, 100px)' }}
@@ -97,28 +97,27 @@ export default function AboutPageClient() {
             </Link>
           </FadeIn>
 
-          {/* Asymmetric two-column: serif statement left, body right */}
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_0.8fr] gap-8 md:gap-16 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-8 md:gap-20 items-start">
             <motion.div
               initial={{ opacity: 0, y: 30, filter: 'blur(6px)' }}
               animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
               transition={{ duration: 0.7, ease: EASE }}
             >
-              <h1 className="font-serif font-normal italic text-ps-ink leading-[0.95] tracking-[-0.03em]" style={{ fontSize: 'clamp(3rem, 8vw, 6.5rem)' }}>
+              <h1 className="font-serif font-normal italic text-ps-ink leading-[0.92] tracking-[-0.03em]" style={{ fontSize: 'clamp(3.5rem, 9vw, 7.5rem)' }}>
                 AEO is<br />not SEO.
               </h1>
             </motion.div>
 
             <motion.div
-              className="md:pt-4"
+              className="md:pt-6"
               initial={{ opacity: 0, y: 20, filter: 'blur(4px)' }}
               animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
               transition={{ duration: 0.6, delay: 0.15, ease: EASE }}
             >
-              <p className="text-body text-ps-ink font-medium mb-4 max-w-[440px]">
+              <p className="text-body text-ps-ink font-medium mb-4 max-w-[420px]">
                 <BrandText text="Pager Studio is a boutique AEO agency that helps elite healthcare practices become visible and citable inside AI answer engines." />
               </p>
-              <p className="text-body-sm text-ps-muted max-w-[400px]">
+              <p className="text-body-sm text-ps-muted max-w-[380px]">
                 Founded and operated by a single strategist. Maximum ten clients at a time across the United States, United Kingdom, and United Arab Emirates.
               </p>
             </motion.div>
@@ -132,7 +131,7 @@ export default function AboutPageClient() {
         style={{ paddingTop: 0, paddingBottom: 'clamp(60px, 8vw, 100px)' }}
       >
         <div className="max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-[0.4fr_1fr] gap-8 md:gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_1.3fr] gap-8 md:gap-20">
             <FadeIn blur={6} y={30}>
               <p className="text-caption-sm text-ps-faint mb-3">What we do</p>
               <h2 className="text-heading-lg text-ps-ink">
@@ -141,19 +140,17 @@ export default function AboutPageClient() {
             </FadeIn>
 
             <div className="relative">
-              {/* Vertical rule */}
               <div className="absolute left-0 top-0 bottom-0 w-px bg-ps-line hidden md:block" />
 
               <div className="space-y-0">
                 {FRAMEWORK.map((f, i) => (
                   <FadeIn key={f.phase} blur={4} y={20} delay={0.1 + i * 0.08}>
                     <div className="md:pl-10 relative py-6 border-b border-ps-line last:border-b-0">
-                      {/* Dot on the rule */}
                       <div className="absolute left-[-3px] top-[30px] w-[7px] h-[7px] rounded-full bg-ps-ink hidden md:block" />
                       <p className="font-serif italic text-ps-ink mb-2" style={{ fontSize: 'clamp(1.5rem, 2.5vw, 2rem)', lineHeight: 1.15, letterSpacing: '-0.01em' }}>
                         {f.phase}
                       </p>
-                      <p className="text-body-sm text-ps-muted leading-relaxed max-w-[480px]">
+                      <p className="text-body-sm text-ps-muted leading-relaxed max-w-[520px]">
                         {f.body}
                       </p>
                     </div>
@@ -165,13 +162,13 @@ export default function AboutPageClient() {
         </div>
       </section>
 
-      {/* ─── Who we serve: typographic masthead ─────────────────── */}
+      {/* ─── Who we serve: masthead ────────────────────────────── */}
       <section
         className="section-surface px-5 sm:px-6 md:px-10"
         style={{ paddingTop: 'clamp(60px, 8vw, 100px)', paddingBottom: 'clamp(60px, 8vw, 100px)' }}
       >
         <div className="max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-[0.4fr_1fr] gap-8 md:gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-[0.3fr_1fr] gap-8 md:gap-16">
             <FadeIn blur={6} y={30}>
               <p className="text-caption-sm text-ps-faint mb-3">Specialties</p>
               <h2 className="text-heading-lg text-ps-ink">
@@ -181,14 +178,14 @@ export default function AboutPageClient() {
 
             <div>
               <FadeIn blur={4} y={20} delay={0.1}>
-                <div className="flex flex-wrap items-baseline gap-x-[0.3em] gap-y-2">
+                <div className="flex flex-wrap items-baseline gap-x-[0.4em] gap-y-1">
                   {SPECIALTIES.map((s, i) => (
                     <span key={s} className="contents">
-                      <span className="font-serif italic text-ps-ink" style={{ fontSize: 'clamp(1.25rem, 2.2vw, 1.75rem)', lineHeight: 1.3, letterSpacing: '-0.01em' }}>
+                      <span className="font-serif italic text-ps-ink" style={{ fontSize: 'clamp(1.75rem, 3.5vw, 3rem)', lineHeight: 1.2, letterSpacing: '-0.015em' }}>
                         {s}
                       </span>
                       {i < SPECIALTIES.length - 1 && (
-                        <span className="text-ps-faint text-[0.7em] select-none">&middot;</span>
+                        <span className="text-ps-faint text-[0.5em] select-none">&middot;</span>
                       )}
                     </span>
                   ))}
@@ -196,7 +193,7 @@ export default function AboutPageClient() {
               </FadeIn>
 
               <FadeIn blur={4} y={20} delay={0.2}>
-                <p className="text-body-sm text-ps-muted mt-8 max-w-[520px] leading-relaxed">
+                <p className="text-body-sm text-ps-muted mt-8 max-w-[480px] leading-relaxed">
                   Each of these specialties involves high-value, research-intensive patient decisions \u2014 exactly the kind of query where AI engines are increasingly the first stop before a phone call or consultation is booked.
                 </p>
               </FadeIn>
@@ -205,17 +202,17 @@ export default function AboutPageClient() {
         </div>
       </section>
 
-      {/* ─── Solo operator: full-bleed pull-quote on black ──────── */}
+      {/* ─── Solo operator: pull-quote on black ─────────────────── */}
       <section className="section-black px-5 sm:px-6 md:px-10 texture-lines" style={{ paddingTop: 'clamp(80px, 10vw, 140px)', paddingBottom: 'clamp(80px, 10vw, 140px)' }}>
         <div className="max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_0.6fr] gap-10 md:gap-20 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-10 md:gap-20 items-center">
             <motion.div
               initial={{ opacity: 0, y: 30, filter: 'blur(6px)' }}
               whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: EASE }}
             >
-              <p className="font-serif italic text-white leading-[0.95] tracking-[-0.03em]" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
+              <p className="font-serif italic text-white leading-[0.92] tracking-[-0.03em]" style={{ fontSize: 'clamp(2.5rem, 6.5vw, 5.5rem)' }}>
                 One strategist.<br />No handoffs.<br />No junior staff.
               </p>
             </motion.div>
@@ -240,22 +237,18 @@ export default function AboutPageClient() {
         </div>
       </section>
 
-      {/* ─── Founder: magazine profile ──────────────────────────── */}
+      {/* ─── Founder: editorial profile ─────────────────────────── */}
       <section
         className="section-white px-5 sm:px-6 md:px-10"
         style={{ paddingTop: 'clamp(80px, 10vw, 140px)', paddingBottom: 'clamp(60px, 8vw, 100px)' }}
       >
         <div className="max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_0.7fr] gap-10 md:gap-20">
-            {/* Pull-quote as centerpiece */}
+          <div className="grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-10 md:gap-20">
+            {/* Pull-quote as the visual anchor — no caption label */}
             <div>
               <FadeIn blur={6} y={30}>
-                <p className="text-caption-sm text-ps-faint mb-6">Founder</p>
-              </FadeIn>
-
-              <FadeIn blur={6} y={30} delay={0.05}>
                 <blockquote className="mb-0">
-                  <p className="font-serif italic text-ps-ink leading-[1.05] tracking-[-0.02em] mb-6" style={{ fontSize: 'clamp(1.75rem, 3.5vw, 3rem)' }}>
+                  <p className="font-serif italic text-ps-ink leading-[1.0] tracking-[-0.02em] mb-8" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>
                     Healthcare agencies were applying SEO tactics to a problem that no longer worked that way.
                   </p>
                   <footer className="flex items-center gap-3">
@@ -271,8 +264,8 @@ export default function AboutPageClient() {
               </FadeIn>
             </div>
 
-            {/* Biographical facts — narrow column */}
-            <div className="md:pt-16">
+            {/* Biographical facts */}
+            <div className="md:pt-8">
               <FadeIn blur={4} y={20} delay={0.1}>
                 <p className="text-body text-ps-muted mb-4 leading-relaxed">
                   Patients researching high-stakes procedures like IVF or hair restoration were increasingly asking AI engines directly, and most practices had no visibility there at all.
@@ -298,14 +291,13 @@ export default function AboutPageClient() {
         </div>
       </section>
 
-      {/* ─── Security + Engagement: paired compact columns ──────── */}
+      {/* ─── Security + Engagement ──────────────────────────────── */}
       <section
         className="section-surface px-5 sm:px-6 md:px-10"
         style={{ paddingTop: 'clamp(50px, 6vw, 80px)', paddingBottom: 'clamp(50px, 6vw, 80px)' }}
       >
         <div className="max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
-            {/* Security */}
+          <div className="grid grid-cols-1 md:grid-cols-[0.5fr_1fr] gap-10 md:gap-20">
             <FadeIn blur={4} y={20}>
               <div className="border-t border-ps-line pt-6">
                 <p className="text-caption-sm text-ps-faint mb-3">Security</p>
@@ -318,7 +310,6 @@ export default function AboutPageClient() {
               </div>
             </FadeIn>
 
-            {/* Engagement */}
             <FadeIn blur={4} y={20} delay={0.08}>
               <div className="border-t border-ps-line pt-6">
                 <p className="text-caption-sm text-ps-faint mb-3">Engagement</p>
@@ -334,7 +325,7 @@ export default function AboutPageClient() {
         </div>
       </section>
 
-      {/* ─── FAQ: static two-column ledger ──────────────────────── */}
+      {/* ─── FAQ: ledger ────────────────────────────────────────── */}
       <section
         className="section-white px-5 sm:px-6 md:px-10"
         style={{ paddingTop: 'clamp(60px, 8vw, 100px)', paddingBottom: 'clamp(60px, 8vw, 100px)' }}
@@ -352,7 +343,7 @@ export default function AboutPageClient() {
           <div className="border-t border-ps-line">
             {FAQS.map((faq, i) => (
               <FadeIn key={faq.q} blur={4} y={16} delay={0.08 + i * 0.05}>
-                <div className="grid grid-cols-1 md:grid-cols-[0.4fr_1fr] gap-3 md:gap-10 py-5 border-b border-ps-line">
+                <div className="grid grid-cols-1 md:grid-cols-[0.35fr_1fr] gap-3 md:gap-12 py-5 border-b border-ps-line">
                   <p className="text-body-sm font-semibold text-ps-ink">{faq.q}</p>
                   <p className="text-body-sm text-ps-muted leading-relaxed"><BrandText text={faq.a} /></p>
                 </div>
