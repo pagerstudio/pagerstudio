@@ -6,7 +6,6 @@ interface FadeInProps {
   children: React.ReactNode;
   className?: string;
   delay?: number;
-  duration?: number;
   blur?: number;
   y?: number;
   once?: boolean;
@@ -14,15 +13,12 @@ interface FadeInProps {
   as?: keyof React.JSX.IntrinsicElements;
 }
 
-const EASE = [0.22, 1, 0.36, 1] as const;
-
 export default function FadeIn({
   children,
   className = '',
   delay = 0,
-  duration = 0.8,
-  blur = 8,
-  y = 40,
+  blur = 0,
+  y = 16,
   once = true,
   amount = 0.15,
   as = 'div',
@@ -31,16 +27,15 @@ export default function FadeIn({
     hidden: {
       opacity: 0,
       y,
-      filter: `blur(${blur}px)`,
     },
     visible: {
       opacity: 1,
       y: 0,
-      filter: 'blur(0px)',
       transition: {
-        duration,
+        type: 'spring' as const,
+        stiffness: 350,
+        damping: 30,
         delay,
-        ease: EASE,
       },
     },
   };

@@ -5,42 +5,40 @@ import { useRouter } from 'next/navigation';
 import PixelGrid from './PixelGrid';
 import { motion, useReducedMotion } from 'framer-motion';
 
-const EASE = [0.22, 1, 0.36, 1] as const;
-
 const containerVariants = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.15,
+      staggerChildren: 0.06,
+      delayChildren: 0.1,
     },
   },
 };
 
 const childVariants = {
-  hidden: { y: 30, opacity: 0 },
+  hidden: { y: 20, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 0.5, ease: EASE },
+    transition: { type: 'spring' as const, stiffness: 400, damping: 30 },
   },
 };
 
 const bodyVariant = {
-  hidden: { y: 16, opacity: 0 },
+  hidden: { y: 12, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 0.45, ease: EASE, delay: 0.1 },
+    transition: { type: 'spring' as const, stiffness: 350, damping: 30, delay: 0.08 },
   },
 };
 
 const formVariant = {
-  hidden: { y: 16, opacity: 0 },
+  hidden: { y: 12, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 0.45, ease: EASE, delay: 0.2 },
+    transition: { type: 'spring' as const, stiffness: 350, damping: 30, delay: 0.15 },
   },
 };
 
