@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useReducedMotion } from 'framer-motion';
 
 const CHARS = '/\\|-_*<>[]=';
@@ -57,6 +57,7 @@ export default function AsciiTransition({ children }: { children: React.ReactNod
   const phaseRef = useRef<'idle' | 'enter' | 'hold' | 'exit'>('idle');
   const gridRef = useRef<GridData | null>(null);
   const visRef = useRef<boolean[]>([]);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -174,6 +175,7 @@ export default function AsciiTransition({ children }: { children: React.ReactNod
           rafRef.current = requestAnimationFrame(tick);
         } else {
           phaseRef.current = 'idle';
+          setVisible(false);
         }
       }
       rafRef.current = requestAnimationFrame(tick);
@@ -184,6 +186,7 @@ export default function AsciiTransition({ children }: { children: React.ReactNod
       resize();
       const g = buildGrid(window.innerWidth, window.innerHeight);
       gridRef.current = g;
+      setVisible(true);
       if (reduce) {
         const n = g.chars.length;
         visRef.current = new Array<boolean>(n).fill(true);
@@ -191,6 +194,7 @@ export default function AsciiTransition({ children }: { children: React.ReactNod
         phaseRef.current = 'hold';
         timerRef.current = setTimeout(() => {
           phaseRef.current = 'idle';
+          setVisible(false);
         }, HOLD_MS);
       } else {
         startEnter();
@@ -208,6 +212,7 @@ export default function AsciiTransition({ children }: { children: React.ReactNod
       if (e.key === 'Escape' && phaseRef.current !== 'idle') {
         cleanup();
         phaseRef.current = 'idle';
+        setVisible(false);
         const ctx2 = canvasRef.current?.getContext('2d');
         if (ctx2) {
           const dpr = window.devicePixelRatio || 1;
@@ -254,7 +259,7 @@ export default function AsciiTransition({ children }: { children: React.ReactNod
           inset: 0,
           zIndex: 9999,
           pointerEvents: 'none',
-          display: 'block',
+          display: visible ? 'block' : 'none',
         }}
       />
       {children}
