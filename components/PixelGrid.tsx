@@ -59,63 +59,12 @@ export default function PixelGrid() {
       pixelSize = new Float32Array(total);
       ambientPhase = new Float32Array(total);
       ambientSpeed = new Float32Array(total);
-      shimmerDone = false;
+      shimmerDone = true;
 
       for (let i = 0; i < total; i++) {
         ambientPhase[i] = Math.random() * Math.PI * 2;
         ambientSpeed[i] = 0.0005 + Math.random() * 0.001;
       }
-    }
-
-    function shimmer() {
-      if (reducedMotion || cols === 0 || rows === 0) return;
-      const totalWidth = cols * STEP;
-      const sweepWidth = totalWidth * 0.35;
-      const duration = 2400;
-      const start = performance.now();
-
-      function tickShimmer(now: number) {
-        const elapsed = now - start;
-        const t = Math.min(elapsed / duration, 1);
-        const ease = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
-        const sweepX = ease * (totalWidth + sweepWidth * 2) - sweepWidth;
-
-        for (let r = 0; r < rows; r++) {
-          for (let c = 0; c < cols; c++) {
-            const x = c * STEP;
-            if (x + CELL > canvas.width / (window.devicePixelRatio || 1)) continue;
-            const dist = x - sweepX;
-            if (dist > -sweepWidth && dist < sweepWidth) {
-              const norm = 1 - Math.abs(dist) / sweepWidth;
-              const smooth = norm * norm * (3 - 2 * norm);
-              const intensity = smooth * (0.2 + smooth * 0.3);
-              const idx = r * cols + c;
-
-              const wave = Math.sin(norm * Math.PI) * 0.6 + 0.4;
-              pixelSize[idx] = CELL + smooth * 3 * wave;
-
-              if (intensity > brightness[idx]) {
-                brightness[idx] = intensity;
-                fadeDelay[idx] = 0;
-                fadeSpeedArr[idx] = 0.008 + Math.random() * 0.008;
-              }
-            }
-          }
-        }
-
-        wake();
-
-        if (t < 1) {
-          requestAnimationFrame(tickShimmer);
-        } else {
-          shimmerDone = true;
-          for (let i = 0; i < cols * rows; i++) {
-            pixelSize[i] = CELL;
-          }
-        }
-      }
-
-      requestAnimationFrame(tickShimmer);
     }
 
     function lightPath(x: number, y: number, px: number, py: number) {
@@ -316,7 +265,6 @@ export default function PixelGrid() {
     const ro = new ResizeObserver(resize);
     ro.observe(parent);
     resize();
-    shimmer();
 
     parent.addEventListener('pointermove', onPointerMove);
     parent.addEventListener('pointerleave', onPointerLeave);
