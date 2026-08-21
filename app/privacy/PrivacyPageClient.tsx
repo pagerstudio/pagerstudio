@@ -28,7 +28,7 @@ export default function PrivacyPageClient() {
             <section>
               <h2 className="text-heading-md text-ps-ink mb-4">Who <span className="font-serif italic">we</span> are</h2>
               <p className="text-body text-ps-muted">
-                Pager Studio is a healthcare AI visibility agency operated out of India. We help clinics — including IVF, dental, dermatology, LASIK, and other specialties — get recommended inside AI platforms like ChatGPT, Google Gemini, Perplexity, and Google AI Overviews. This policy explains how we handle your data when you visit our website, run a free audit, or work with us as a client.
+                <span className="font-serif italic">Pager Studio</span> is a healthcare AI visibility agency operated out of India. We help clinics — including IVF, dental, dermatology, LASIK, and other specialties — get recommended inside AI platforms like ChatGPT, Google Gemini, Perplexity, and Google AI Overviews. This policy explains how we handle your data when you visit our website, run a free audit, or work with us as a client.
               </p>
             </section>
 

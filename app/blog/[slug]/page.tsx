@@ -128,7 +128,7 @@ export default async function BlogPostPage({ params }: Props) {
                   <span className="font-sans text-[11px] font-bold text-white">PS</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-sans text-[13px] font-medium text-ps-ink">Pager Studio</span>
+                  <span className="font-sans text-[13px] font-medium text-ps-ink">Pager <span className="font-serif italic">Studio</span></span>
                   <span className="font-sans text-[11px] text-ps-faint">Healthcare AI Visibility</span>
                 </div>
               </div>

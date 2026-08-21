@@ -121,7 +121,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-12">
           <p className="text-[13px] text-white/30">
-            © {new Date().getFullYear()} Pager Studio. All rights reserved.
+            © {new Date().getFullYear()} Pager <span className="font-serif italic">Studio</span>. All rights reserved.
           </p>
           <div className="flex gap-6">
             {LEGAL_LINKS.map(({ href, label }) => (

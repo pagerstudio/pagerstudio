@@ -39,7 +39,7 @@ function FeaturedPost({ post }: { post: BlogPost }) {
             <div className="w-6 h-6 rounded-full bg-ps-ink flex items-center justify-center">
               <span className="font-sans text-[9px] font-bold text-white">PS</span>
             </div>
-            <span className="text-body-sm font-medium text-ps-ink">Pager Studio</span>
+            <span className="text-body-sm font-medium text-ps-ink">Pager <span className="font-serif italic">Studio</span></span>
           </div>
           <span className="text-ps-line">·</span>
           <time className="text-body-sm text-ps-faint" dateTime={post.date}>
@@ -84,7 +84,7 @@ function PostCard({ post, index }: { post: BlogPost; index: number }) {
               <div className="w-5 h-5 rounded-full bg-ps-ink flex items-center justify-center">
                 <span className="font-sans text-[8px] font-bold text-white">PS</span>
               </div>
-              <span className="text-caption text-ps-faint" style={{ textTransform: 'none', letterSpacing: 0 }}>Pager Studio</span>
+              <span className="text-caption text-ps-faint" style={{ textTransform: 'none', letterSpacing: 0 }}>Pager <span className="font-serif italic">Studio</span></span>
             </div>
             <span className="text-ps-line text-[10px]">·</span>
             <time className="text-caption text-ps-faint" style={{ textTransform: 'none', letterSpacing: 0 }} dateTime={post.date}>

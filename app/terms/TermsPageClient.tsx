@@ -4,6 +4,21 @@ import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 
+function BrandText({ text }: { text: string }) {
+  const parts = text.split(/(Pager Studio)/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        part === 'Pager Studio' ? (
+          <span key={i} className="font-serif italic">Pager Studio</span>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </>
+  );
+}
+
 export default function TermsPageClient() {
   return (
     <main>
@@ -28,7 +43,7 @@ export default function TermsPageClient() {
             <section>
               <h2 className="text-heading-md text-ps-ink mb-4">What <span className="font-serif italic">we</span> do</h2>
               <p className="text-body text-ps-muted">
-                Pager Studio helps healthcare practices get discovered and recommended inside AI platforms — ChatGPT, Google Gemini, Perplexity, Claude, Grok, Meta AI, and Google AI Overviews. Our services include AI visibility audits, website schema markup implementation, authority content creation, physician profile optimization, and ongoing citation monitoring.
+                <span className="font-serif italic">Pager Studio</span> helps healthcare practices get discovered and recommended inside AI platforms — ChatGPT, Google Gemini, Perplexity, Claude, Grok, Meta AI, and Google AI Overviews. Our services include AI visibility audits, website schema markup implementation, authority content creation, physician profile optimization, and ongoing citation monitoring.
               </p>
             </section>
 
@@ -92,14 +107,14 @@ export default function TermsPageClient() {
             <section>
               <h2 className="text-heading-md text-ps-ink mb-4">Intellectual <span className="font-serif italic">property</span></h2>
               <p className="text-body text-ps-muted">
-                All content, schema markup, and assets we create for your practice become your property upon full payment. Pager Studio retains the right to reference anonymized, aggregated case study data for marketing purposes — but only with your prior written consent. We will never use your practice name, logo, or identifiable information in marketing without permission.
+                All content, schema markup, and assets we create for your practice become your property upon full payment. <span className="font-serif italic">Pager Studio</span> retains the right to reference anonymized, aggregated case study data for marketing purposes — but only with your prior written consent. We will never use your practice name, logo, or identifiable information in marketing without permission.
               </p>
             </section>
 
             <section>
               <h2 className="text-heading-md text-ps-ink mb-4">Limitation of <span className="font-serif italic">liability</span></h2>
               <p className="text-body text-ps-muted">
-                Pager Studio is not liable for any indirect, incidental, or consequential damages arising from your use of our services. Our total liability is limited to the amount you paid us in the 12 months preceding the claim. We are not responsible for changes in AI platform algorithms, outages, or third-party decisions that affect your visibility.
+                <span className="font-serif italic">Pager Studio</span> is not liable for any indirect, incidental, or consequential damages arising from your use of our services. Our total liability is limited to the amount you paid us in the 12 months preceding the claim. We are not responsible for changes in AI platform algorithms, outages, or third-party decisions that affect your visibility.
               </p>
             </section>
 

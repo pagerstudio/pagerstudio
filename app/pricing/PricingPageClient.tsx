@@ -357,7 +357,7 @@ export default function PricingPageClient() {
                 The <span className="font-serif italic">specialties</span> we work with
               </h2>
               <p className="text-body-lg text-ps-muted max-w-[560px] mx-auto">
-                Pager Studio exclusively partners with high-value healthcare providers where patient decisions are driven by trust, research, and AI recommendations.
+                Pager <span className="font-serif italic">Studio</span> exclusively partners with high-value healthcare providers where patient decisions are driven by trust, research, and AI recommendations.
               </p>
             </div>
 
@@ -398,7 +398,7 @@ export default function PricingPageClient() {
                 It wouldn&apos;t be fair and it wouldn&apos;t work.
               </p>
               <p className="text-body-lg text-ps-ink font-medium">
-                When you sign with Pager Studio, your specialty in your city is reserved. The spot is either yours or your competitor&apos;s.
+                When you sign with Pager <span className="font-serif italic">Studio</span>, your specialty in your city is reserved. The spot is either yours or your competitor&apos;s.
               </p>
             </div>
 

@@ -210,6 +210,21 @@ function FaqSchema() {
 
 /* ──────────────── Accordion Item ──────────────── */
 
+function BrandText({ text }: { text: string }) {
+  const parts = text.split(/(Pager Studio)/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        part === 'Pager Studio' ? (
+          <span key={i} className="font-serif italic">Pager Studio</span>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </>
+  );
+}
+
 function FaqAccordion({ item, isOpen, onToggle, index }: { item: FaqItem; isOpen: boolean; onToggle: () => void; index: number }) {
   const answerId = `faq-answer-${index}`;
   return (
@@ -237,7 +252,7 @@ function FaqAccordion({ item, isOpen, onToggle, index }: { item: FaqItem; isOpen
         style={{ maxHeight: isOpen ? '800px' : '0px' }}
       >
         <div className="px-6 pb-5">
-          <p className="text-body text-ps-muted">{item.a}</p>
+          <p className="text-body text-ps-muted"><BrandText text={item.a} /></p>
         </div>
       </div>
     </div>
@@ -273,7 +288,7 @@ export default function FaqPageClient() {
             Everything you want to <span className="font-serif italic">know</span>.
           </h1>
           <p className="text-body-lg text-ps-muted max-w-[520px] mx-auto">
-            Straight answers about AI visibility, our process, and what working with Pager Studio actually looks like.
+            Straight answers about AI visibility, our process, and what working with Pager <span className="font-serif italic">Studio</span> actually looks like.
           </p>
         </div>
       </section>

@@ -28,7 +28,7 @@ export default function DisclaimerPageClient() {
             <section>
               <h2 className="text-heading-md text-ps-ink mb-4">AI visibility results are not <span className="font-serif italic">guaranteed</span></h2>
               <p className="text-body text-ps-muted">
-                Pager Studio helps healthcare practices build the technical and content foundation needed to appear in AI-generated answers. However, AI platforms — including ChatGPT, Google Gemini, Perplexity, Claude, Grok, Meta AI, and Google AI Overviews — are independent systems with their own algorithms, data sources, and decision-making processes. We do not control these platforms and cannot guarantee that your practice will be cited, recommended, or ranked in any specific way.
+                <span className="font-serif italic">Pager Studio</span> helps healthcare practices build the technical and content foundation needed to appear in AI-generated answers. However, AI platforms — including ChatGPT, Google Gemini, Perplexity, Claude, Grok, Meta AI, and Google AI Overviews — are independent systems with their own algorithms, data sources, and decision-making processes. We do not control these platforms and cannot guarantee that your practice will be cited, recommended, or ranked in any specific way.
               </p>
               <p className="text-body text-ps-muted mt-3">
                 Results vary based on your specialty, location, competition, starting baseline, and the current state of AI platform algorithms. Most practices see measurable improvement within 60 to 90 days, but timelines are not guaranteed.
@@ -38,7 +38,7 @@ export default function DisclaimerPageClient() {
             <section>
               <h2 className="text-heading-md text-ps-ink mb-4">Healthcare content is for <span className="font-serif italic">informational</span> purposes</h2>
               <p className="text-body text-ps-muted">
-                Any healthcare-related content we create — including website copy, FAQ answers, authority articles, and provider profiles — is written for marketing and visibility purposes. It is not medical advice. Patients should always consult qualified healthcare professionals for medical decisions. Pager Studio is not a medical practice and does not provide healthcare services.
+                Any healthcare-related content we create — including website copy, FAQ answers, authority articles, and provider profiles — is written for marketing and visibility purposes. It is not medical advice. Patients should always consult qualified healthcare professionals for medical decisions. <span className="font-serif italic">Pager Studio</span> is not a medical practice and does not provide healthcare services.
               </p>
             </section>
 
@@ -52,14 +52,14 @@ export default function DisclaimerPageClient() {
             <section>
               <h2 className="text-heading-md text-ps-ink mb-4">No <span className="font-serif italic">patient volume</span> guarantees</h2>
               <p className="text-body text-ps-muted">
-                Increased AI visibility does not automatically translate to increased patient appointments or revenue. AI citations drive awareness and consideration — but patients make their own decisions based on many factors including reviews, pricing, location, and personal preference. Pager Studio does not guarantee any specific number of patients, appointments, or revenue.
+                Increased AI visibility does not automatically translate to increased patient appointments or revenue. AI citations drive awareness and consideration — but patients make their own decisions based on many factors including reviews, pricing, location, and personal preference. <span className="font-serif italic">Pager Studio</span> does not guarantee any specific number of patients, appointments, or revenue.
               </p>
             </section>
 
             <section>
               <h2 className="text-heading-md text-ps-ink mb-4"><span className="font-serif italic">Third-party</span> platforms</h2>
               <p className="text-body text-ps-muted">
-                Our services involve interaction with third-party platforms including AI services, directories, and analytics tools. These platforms operate under their own terms of service and privacy policies. Pager Studio is not responsible for changes in their algorithms, policies, or availability that may affect your visibility.
+                Our services involve interaction with third-party platforms including AI services, directories, and analytics tools. These platforms operate under their own terms of service and privacy policies. <span className="font-serif italic">Pager Studio</span> is not responsible for changes in their algorithms, policies, or availability that may affect your visibility.
               </p>
             </section>
 

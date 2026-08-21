@@ -38,7 +38,7 @@ export default function WhoWeWorkWith() {
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           >
-            Pager Studio exclusively partners with high-value healthcare providers where patient decisions are driven by trust, research, and AI recommendations.
+            Pager <span className="font-serif italic">Studio</span> exclusively partners with high-value healthcare providers where patient decisions are driven by trust, research, and AI recommendations.
           </motion.p>
         </div>
 
