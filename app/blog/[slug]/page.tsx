@@ -36,6 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.excerpt,
       type: 'article',
       url: `https://www.pagerstudio.space/blog/${post.slug}`,
+      images: [{ url: '/api/og', width: 1200, height: 630, alt: post.title }],
     },
   };
 }
@@ -61,9 +62,10 @@ export default async function BlogPostPage({ params }: Props) {
     datePublished: post.date,
     dateModified: post.date,
     author: {
-      '@type': 'Organization',
-      name: 'Pager Studio',
+      '@type': 'Person',
+      name: 'Sandeep Kumar',
       url: 'https://www.pagerstudio.space',
+      jobTitle: 'Founder',
     },
     publisher: {
       '@type': 'Organization',
@@ -71,7 +73,7 @@ export default async function BlogPostPage({ params }: Props) {
       url: 'https://www.pagerstudio.space',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.pagerstudio.space/icon.svg',
+        url: 'https://www.pagerstudio.space/logo.png',
       },
     },
     description: post.excerpt,

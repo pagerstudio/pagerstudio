@@ -115,7 +115,7 @@ export default function ShockingStats() {
                 </div>
               </div>
             </div>
-            <a href="https://rater8.com/2026-patient-choice-report/" target="_blank" rel="noopener noreferrer" className="text-caption-sm text-ps-faint mt-3 hover:underline block normal-case">Source: rater8 2026 Patient Choice Report</a>
+            <a href="https://rater8.com/2026-patient-choice-report/" target="_blank" rel="noopener noreferrer" className="link-underline text-caption-sm text-ps-faint mt-3 block normal-case">Source: rater8 2026 Patient Choice Report</a>
           </TiltCard>
 
           {/* Card 2 — 55% canceled/avoided booking because of reviews */}
@@ -145,7 +145,7 @@ export default function ShockingStats() {
             <p className="text-body-sm text-ps-muted mt-3 text-center max-w-[260px]">
               of patients canceled or avoided booking because of online reviews.
             </p>
-            <a href="https://rater8.com/2026-patient-choice-report/" target="_blank" rel="noopener noreferrer" className="text-caption-sm text-ps-faint mt-2 hover:underline block normal-case">Source: rater8 2026 Patient Choice Report</a>
+            <a href="https://rater8.com/2026-patient-choice-report/" target="_blank" rel="noopener noreferrer" className="link-underline text-caption-sm text-ps-faint mt-2 block normal-case">Source: rater8 2026 Patient Choice Report</a>
           </TiltCard>
 
           {/* Card 3 — 36% bar chart: what influences patient choice */}
@@ -165,7 +165,7 @@ export default function ShockingStats() {
                   </span>
                   <span className="font-sans text-xs font-semibold text-[#111]">AI is now the deciding layer</span>
                 </div>
-                <a href="https://rater8.com/2026-patient-choice-report/" target="_blank" rel="noopener noreferrer" className="text-caption-sm text-ps-faint mt-1.5 block hover:underline normal-case">Source: rater8 2026 Patient Choice Report</a>
+                <a href="https://rater8.com/2026-patient-choice-report/" target="_blank" rel="noopener noreferrer" className="link-underline text-caption-sm text-ps-faint mt-1.5 block normal-case">Source: rater8 2026 Patient Choice Report</a>
               </div>
             </div>
 
@@ -247,7 +247,7 @@ export default function ShockingStats() {
                 <span className="text-caption text-ps-faint normal-case">trigger an AI Overview before websites.</span>
               </div>
             </div>
-            <a href="https://www.brightedge.com/resources/weekly-ai-search-insights/healthcare-ai-evolution-google-2023-2025" target="_blank" rel="noopener noreferrer" className="text-caption-sm text-ps-faint mt-2 hover:underline block normal-case">Source: BrightEdge Research</a>
+            <a href="https://www.brightedge.com/resources/weekly-ai-search-insights/healthcare-ai-evolution-google-2023-2025" target="_blank" rel="noopener noreferrer" className="link-underline text-caption-sm text-ps-faint mt-2 block normal-case">Source: BrightEdge Research</a>
           </TiltCard>
         </div>
       </div>

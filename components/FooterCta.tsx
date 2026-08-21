@@ -11,7 +11,7 @@ export default function FooterCta() {
       className="section section-white px-4"
       aria-label="Final call to action"
     >
-      <div className="bg-ps-black rounded-[20px] sm:rounded-[28px] max-w-[1200px] mx-auto px-5 sm:px-6 md:px-[60px] py-[50px] sm:py-[60px] md:py-[100px] text-center">
+      <div className="bg-ps-black texture-lines texture-shimmer rounded-[20px] sm:rounded-[28px] max-w-[1200px] mx-auto px-5 sm:px-6 md:px-[60px] py-[50px] sm:py-[60px] md:py-[100px] text-center">
         <motion.p
           className="text-caption-sm text-white/45 mb-4 text-center"
           initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import DisclaimerPageClient from './DisclaimerPageClient';
 
 export const metadata: Metadata = {
-  title: 'Disclaimer',
+  title: 'Disclaimer — AI Visibility Services',
   description:
     'Important disclaimers about AI visibility results, healthcare content, and services provided by Pager Studio.',
   alternates: {

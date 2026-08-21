@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: '%s | Pager Studio',
   },
   description:
-    'Pager Studio helps healthcare practices get discovered and recommended inside AI answers — ChatGPT, Gemini, Claude, Perplexity, Grok, and Google AI Overviews.',
+    'Pager Studio helps healthcare practices get recommended inside AI answers — ChatGPT, Gemini, Perplexity, and Google AI Overviews.',
   keywords: [
     'AI visibility',
     'healthcare SEO',
@@ -54,19 +54,25 @@ export const metadata: Metadata = {
     siteName: 'Pager Studio',
     title: 'Pager Studio — AI Visibility for Healthcare Practices',
     description:
-      'Pager Studio helps healthcare practices get discovered and recommended inside AI answers — ChatGPT, Gemini, Claude, Perplexity, Grok, and Google AI Overviews.',
+      'Pager Studio helps healthcare practices get recommended inside AI answers — ChatGPT, Gemini, Perplexity, and Google AI Overviews.',
     images: [{ url: '/api/og', width: 1200, height: 630, alt: 'Pager Studio — AI Visibility for Healthcare' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Pager Studio — AI Visibility for Healthcare Practices',
     description:
-      'Pager Studio helps healthcare practices get discovered and recommended inside AI answers.',
+      'Pager Studio helps healthcare practices get recommended inside AI answers.',
+    images: ['/api/og'],
   },
   robots: {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: '/favicon-64.png',
+    apple: '/logo.png',
+  },
+  manifest: '/manifest.json',
 };
 
 export const viewport: Viewport = {
@@ -84,11 +90,16 @@ const organizationSchema = {
   email: 'hello.pagerstudio@gmail.com',
   description:
     'AI visibility agency helping healthcare practices get discovered and recommended on ChatGPT, Google Gemini, Perplexity, Claude, Grok, Meta AI, and Google AI Overviews.',
+  logo: `${siteUrl}/logo.png`,
   founder: {
     '@type': 'Person',
     name: 'Sandeep Kumar',
+    sameAs: 'https://linkedin.com/in/sandeep-kumar',
   },
-  areaServed: 'IN',
+  areaServed: {
+    '@type': 'Country',
+    name: 'India',
+  },
   knowsAbout: [
     'AI Visibility',
     'AEO',
@@ -99,7 +110,7 @@ const organizationSchema = {
   ],
   sameAs: [
     'https://linkedin.com/company/pagerstudio',
-    'https://twitter.com/pagerstudio',
+    'https://x.com/pagerstudio',
     'https://instagram.com/pagerstudio',
   ],
 };
@@ -158,27 +169,15 @@ const websiteSchema = {
   name: 'Pager Studio',
   url: siteUrl,
   description: 'AI visibility for healthcare practices.',
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: {
-      '@type': 'EntryPoint',
-      urlTemplate: `${siteUrl}/blog?q={search_term_string}`,
-    },
-    'query-input': 'required name=search_term_string',
-  },
 };
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
-    { '@type': 'ListItem', position: 2, name: 'Pricing', item: `${siteUrl}/pricing` },
-    { '@type': 'ListItem', position: 3, name: 'Blog', item: `${siteUrl}/blog` },
-    { '@type': 'ListItem', position: 4, name: 'FAQ', item: `${siteUrl}/faq` },
-    { '@type': 'ListItem', position: 5, name: 'Contact', item: `${siteUrl}/contact` },
-  ],
-};
+const allSchemas = [
+  organizationSchema,
+  freeAuditServiceSchema,
+  implementationServiceSchema,
+  monitoringServiceSchema,
+  websiteSchema,
+];
 
 export default function RootLayout({
   children,
@@ -192,24 +191,9 @@ export default function RootLayout({
     >
       <head>
         <Script
-          id="organization-schema"
+          id="structured-data"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-        <Script
-          id="free-audit-service-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(freeAuditServiceSchema) }}
-        />
-        <Script
-          id="implementation-service-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(implementationServiceSchema) }}
-        />
-        <Script
-          id="monitoring-service-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(monitoringServiceSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(allSchemas) }}
         />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-ZYNBJTTZH9"
@@ -221,16 +205,6 @@ export default function RootLayout({
           gtag('js', new Date());
           gtag('config', 'G-ZYNBJTTZH9');`}
         </Script>
-        <Script
-          id="website-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-        />
-        <Script
-          id="breadcrumb-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-        />
       </head>
       <body className="font-sans text-ps-ink antialiased">
         {children}

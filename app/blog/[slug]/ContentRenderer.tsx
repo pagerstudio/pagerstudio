@@ -27,20 +27,29 @@ function slugFromChildren(children: React.ReactNode): string {
   return slugify(text);
 }
 
+const headingCounters = new Map<string, number>();
+
+function uniqueSlug(children: React.ReactNode): string {
+  const baseId = slugFromChildren(children);
+  const count = headingCounters.get(baseId) || 0;
+  headingCounters.set(baseId, count + 1);
+  return count > 0 ? `${baseId}-${count}` : baseId;
+}
+
 const portableTextComponents: PortableTextComponents = {
   block: {
     h2: ({ children, ...props }) => {
-      const id = slugFromChildren(children);
+      const id = uniqueSlug(children);
       return <h2 id={id} {...props}>{children}</h2>;
     },
     h3: ({ children, ...props }) => {
-      const id = slugFromChildren(children);
+      const id = uniqueSlug(children);
       return <h3 id={id} {...props}>{children}</h3>;
     },
   },
   marks: {
     link: ({ children, value }) => (
-      <a href={value?.href} target="_blank" rel="noopener noreferrer">{children}</a>
+      <a href={value?.href} target="_blank" rel="noopener noreferrer" className="link-underline">{children}</a>
     ),
     strong: ({ children }) => <strong>{children}</strong>,
     em: ({ children }) => <em>{children}</em>,
@@ -66,6 +75,7 @@ interface ContentRendererProps {
 
 export default function ContentRenderer({ source, type }: ContentRendererProps) {
   if (type === 'sanity') {
+    headingCounters.clear();
     const blocks = JSON.parse(source);
     return (
       <PortableText value={blocks} components={portableTextComponents} />

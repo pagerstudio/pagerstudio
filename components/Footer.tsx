@@ -31,30 +31,37 @@ const LEGAL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-ps-black overflow-hidden">
+    <footer className="bg-ps-black texture-lines overflow-hidden">
       <div className="container pt-8 sm:pt-12 pb-0">
         {/* Logo */}
         <div className="mb-10 sm:mb-14">
           <Link
             href="/"
-            className="font-serif text-[28px] sm:text-[32px] leading-none tracking-tight text-white inline-block shrink-0"
+            className="flex items-center gap-2.5 shrink-0"
             aria-label="Pager Studio home"
           >
-            Pager <span className="italic">Studio</span>
+            <img
+              src="/logo-light.png"
+              alt=""
+              className="h-[22px] sm:h-[26px] w-auto"
+            />
+            <span className="font-serif text-[28px] sm:text-[32px] leading-none tracking-tight text-white">
+              Pager <span className="italic">Studio</span>
+            </span>
           </Link>
         </div>
 
         {/* Main grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-10 sm:gap-12 mb-16 sm:mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-16 mb-16 sm:mb-20">
           {/* Navigation */}
-          <div>
+          <div className="w-full">
             <h3 className="text-[10px] font-semibold tracking-[0.15em] uppercase text-white/40 mb-5">Navigation</h3>
             <nav className="flex flex-col gap-3" aria-label="Footer navigation">
               {NAV_LINKS.map(({ href, label }) => (
                 <Link
                   key={href}
                   href={href}
-                className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
+                className="link-underline text-[15px] text-white/70 hover:text-white transition-colors duration-200"
                 >
                   {label}
                 </Link>
@@ -63,31 +70,28 @@ export default function Footer() {
           </div>
 
           {/* Specialties */}
-          <div className="col-span-2 sm:col-span-3">
+          <div className="w-full">
             <h3 className="text-[10px] font-semibold tracking-[0.15em] uppercase text-white/40 mb-5">Specialties</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="flex flex-col gap-3">
               {SPECIALTIES.map((s) => (
-                <div key={s.name}>
-                  <h4 className="text-[15px] text-white font-medium mb-1">{s.name}</h4>
-                  <p className="text-[13px] text-white/40 leading-relaxed">{s.desc}</p>
-                </div>
+                <h4 key={s.name} className="text-[15px] text-white/70">{s.name}</h4>
               ))}
             </div>
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="w-full sm:pl-20">
             <h3 className="text-[10px] font-semibold tracking-[0.15em] uppercase text-white/40 mb-5">Contact Us</h3>
             <div className="flex flex-col gap-3 mb-6">
               <a
                 href="mailto:hello.pagerstudio@gmail.com"
-                className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
+                className="link-underline text-[15px] text-white/70 hover:text-white transition-colors duration-200"
               >
                 hello.pagerstudio@gmail.com
               </a>
               <Link
                 href="/contact"
-                className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
+                className="link-underline text-[15px] text-white/70 hover:text-white transition-colors duration-200"
               >
                 Get Your Free Audit
               </Link>
@@ -100,7 +104,7 @@ export default function Footer() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[15px] text-white/70 hover:text-white transition-colors duration-200"
+                  className="link-underline text-[15px] text-white/70 hover:text-white transition-colors duration-200"
                 >
                   {label}
                 </a>
@@ -123,7 +127,7 @@ export default function Footer() {
               <Link
                 key={href}
                 href={href}
-                className="text-[13px] text-white/30 hover:text-white/60 transition-colors duration-200"
+                className="link-underline text-[13px] text-white/30 hover:text-white/60 transition-colors duration-200"
               >
                 {label}
               </Link>

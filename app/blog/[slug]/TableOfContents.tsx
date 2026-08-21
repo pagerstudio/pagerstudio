@@ -53,9 +53,18 @@ export default function TableOfContents({ headings }: { headings: TocEntry[] }) 
 
   useEffect(() => {
     const onScroll = () => {
-      setIsVisible(window.scrollY > 300);
+      const scrollY = window.scrollY;
+      const footer = document.querySelector('footer');
+      if (footer) {
+        const footerTop = footer.getBoundingClientRect().top + window.scrollY;
+        const viewportBottom = scrollY + window.innerHeight;
+        setIsVisible(scrollY > 300 && viewportBottom < footerTop - 100);
+      } else {
+        setIsVisible(scrollY > 300);
+      }
     };
     window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 

@@ -126,10 +126,17 @@ export default function Nav() {
           <div className="relative flex items-center justify-between rounded-full pl-5 sm:pl-6 pr-3 sm:pr-4 py-2 sm:py-2.5">
             <Link
               href="/"
-              className="font-serif leading-none tracking-tight text-ps-ink whitespace-nowrap text-[21px] sm:text-[26px] shrink-0 active:opacity-70"
+              className="flex items-center gap-2 shrink-0 active:opacity-70"
               aria-label="Pager Studio home"
             >
-              Pager <span className="italic">Studio</span>
+              <img
+                src="/logo-dark.png"
+                alt=""
+                className="h-[18px] sm:h-[22px] w-auto"
+              />
+              <span className="font-serif leading-none tracking-tight text-ps-ink whitespace-nowrap text-[21px] sm:text-[26px]">
+                Pager <span className="italic">Studio</span>
+              </span>
             </Link>
 
             <button

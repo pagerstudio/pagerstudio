@@ -4,12 +4,23 @@ const isDev = process.env.NODE_ENV === 'development';
 const nextConfig = {
   poweredByHeader: false,
   images: {
+    formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       { protocol: 'https', hostname: 'cdn.brandfetch.io' },
       { protocol: 'https', hostname: 'www.gstatic.com' },
       { protocol: 'https', hostname: 'www.google.com' },
       { protocol: 'https', hostname: 'unpkg.com' },
     ],
+  },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'pagerstudio.space' }],
+        destination: 'https://www.pagerstudio.space/:path*',
+        permanent: true,
+      },
+    ];
   },
   async headers() {
     return [

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import ContactPageClient from './ContactPageClient';
 
 export const metadata: Metadata = {
@@ -15,6 +16,33 @@ export const metadata: Metadata = {
   },
 };
 
+const contactSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'Contact Pager Studio',
+  url: 'https://www.pagerstudio.space/contact',
+  mainEntity: {
+    '@type': 'ProfessionalService',
+    name: 'Pager Studio',
+    url: 'https://www.pagerstudio.space',
+    email: 'hello.pagerstudio@gmail.com',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      email: 'hello.pagerstudio@gmail.com',
+      contactType: 'customer service',
+    },
+  },
+};
+
 export default function ContactPage() {
-  return <ContactPageClient />;
+  return (
+    <>
+      <Script
+        id="contact-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
+      <ContactPageClient />
+    </>
+  );
 }

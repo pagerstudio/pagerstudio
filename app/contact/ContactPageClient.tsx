@@ -191,7 +191,7 @@ function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen bg-ps-black">
+    <main className="min-h-screen bg-ps-black texture-lines">
       <Nav />
 
       <section className="min-h-screen flex items-center px-5 sm:px-6 md:px-10 pt-24 sm:pt-32 pb-16">

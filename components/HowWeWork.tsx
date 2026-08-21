@@ -7,7 +7,7 @@ import TiltCard from './TiltCard';
 export default function HowWeWork() {
   return (
     <section className="py-16 px-5 sm:px-8 md:px-12 lg:px-16" id="how-we-work">
-      <div className="max-w-[1200px] mx-auto bg-ps-black rounded-[32px] py-16 px-8 sm:px-16 md:px-20 lg:px-24">
+      <div className="max-w-[1200px] mx-auto bg-ps-black texture-lines texture-shimmer rounded-[32px] py-16 px-8 sm:px-16 md:px-20 lg:px-24">
         <div className="text-center mb-10">
           <motion.h2
             className="text-heading-xl text-white"
