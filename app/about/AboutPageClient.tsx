@@ -79,12 +79,9 @@ export default function AboutPageClient() {
     <main>
       <Nav />
 
-      {/* ─── Hero ───────────────────────────────────────────────── */}
-      <section
-        className="section-white px-5 sm:px-6 md:px-10"
-        style={{ paddingTop: 'clamp(100px, 14vw, 160px)', paddingBottom: 'clamp(60px, 8vw, 100px)' }}
-      >
-        <div className="max-w-[1200px] mx-auto">
+      {/* ─── Hero ─────────────────────────────────────────────── */}
+      <section className="section section-white">
+        <div className="container">
           <FadeIn blur={4} y={16}>
             <Link
               href="/"
@@ -97,139 +94,140 @@ export default function AboutPageClient() {
             </Link>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-8 md:gap-20 items-start">
-            <motion.div
+          <div className="max-w-[720px]">
+            <motion.h1
+              className="text-display-xl text-ps-ink mb-8"
               initial={{ opacity: 0, y: 30, filter: 'blur(6px)' }}
               animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
               transition={{ duration: 0.7, ease: EASE }}
             >
-              <h1 className="font-serif font-normal italic text-ps-ink leading-[0.92] tracking-[-0.03em]" style={{ fontSize: 'clamp(3.5rem, 9vw, 7.5rem)' }}>
-                AEO is<br />not SEO.
-              </h1>
-            </motion.div>
+              About <span className="font-serif italic">Pager Studio</span>
+            </motion.h1>
 
             <motion.div
-              className="md:pt-6"
+              className="space-y-4"
               initial={{ opacity: 0, y: 20, filter: 'blur(4px)' }}
               animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-              transition={{ duration: 0.6, delay: 0.15, ease: EASE }}
+              transition={{ duration: 0.6, delay: 0.1, ease: EASE }}
             >
-              <p className="text-body text-ps-ink font-medium mb-4 max-w-[420px]">
-                <BrandText text="Pager Studio is a boutique AEO agency that helps elite healthcare practices become visible and citable inside AI answer engines." />
+              <p className="text-body-lg text-ps-ink font-medium">
+                <BrandText text="Pager Studio is a boutique AEO (AI Engine Optimization) agency that helps elite healthcare practices become visible and citable inside AI answer engines \u2014 including ChatGPT, Perplexity, Google AI Overviews, and Gemini." />
               </p>
-              <p className="text-body-sm text-ps-muted max-w-[380px]">
-                Founded and operated by a single strategist. Maximum ten clients at a time across the United States, United Kingdom, and United Arab Emirates.
+              <p className="text-body text-ps-muted">
+                Founded and operated by a single strategist, <span className="font-serif italic">Pager Studio</span> works with a maximum of ten healthcare practices at a time across the United States, United Kingdom, and United Arab Emirates.
+              </p>
+              <p className="text-body text-ps-muted">
+                <span className="font-serif italic">Pager Studio</span> does not offer traditional SEO. Its work is limited to how AI systems retrieve, understand, and recommend healthcare providers \u2014 a distinct discipline from ranking in search engine results pages.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* ─── What we do: vertical ledger ───────────────────────── */}
-      <section
-        className="section-white px-5 sm:px-6 md:px-10"
-        style={{ paddingTop: 0, paddingBottom: 'clamp(60px, 8vw, 100px)' }}
-      >
-        <div className="max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_1.3fr] gap-8 md:gap-20">
+      {/* ─── What we do ───────────────────────────────────────── */}
+      <section className="section section-white !pt-0">
+        <div className="container">
+          <div className="max-w-[720px]">
             <FadeIn blur={6} y={30}>
               <p className="text-caption-sm text-ps-faint mb-3">What we do</p>
-              <h2 className="text-heading-lg text-ps-ink">
-                Three phases,<br />one <span className="font-serif italic">strategist</span>.
+            </FadeIn>
+            <FadeIn blur={6} y={30} delay={0.05}>
+              <h2 className="text-heading-lg text-ps-ink mb-6">
+                What <span className="font-serif italic">Pager Studio</span> does
               </h2>
             </FadeIn>
+            <FadeIn blur={4} y={20} delay={0.1}>
+              <p className="text-body text-ps-muted mb-8">
+                <BrandText text="Pager Studio audits, implements, and monitors the technical and authority signals that determine whether an AI engine surfaces a practice when a prospective patient asks a question like \u201Cbest IVF clinic in London\u201D or \u201Ctop-rated hair transplant surgeon in Dubai.\u201D" />
+              </p>
+            </FadeIn>
 
-            <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-px bg-ps-line hidden md:block" />
-
-              <div className="space-y-0">
-                {FRAMEWORK.map((f, i) => (
-                  <FadeIn key={f.phase} blur={4} y={20} delay={0.1 + i * 0.08}>
-                    <div className="md:pl-10 relative py-6 border-b border-ps-line last:border-b-0">
-                      <div className="absolute left-[-3px] top-[30px] w-[7px] h-[7px] rounded-full bg-ps-ink hidden md:block" />
-                      <p className="font-serif italic text-ps-ink mb-2" style={{ fontSize: 'clamp(1.5rem, 2.5vw, 2rem)', lineHeight: 1.15, letterSpacing: '-0.01em' }}>
-                        {f.phase}
-                      </p>
-                      <p className="text-body-sm text-ps-muted leading-relaxed max-w-[520px]">
-                        {f.body}
-                      </p>
-                    </div>
-                  </FadeIn>
-                ))}
-              </div>
+            <div className="border-t border-ps-line">
+              {FRAMEWORK.map((f, i) => (
+                <FadeIn key={f.phase} blur={4} y={20} delay={0.15 + i * 0.08}>
+                  <div className="flex gap-6 py-5 border-b border-ps-line">
+                    <span className="font-serif italic text-ps-faint shrink-0 pt-0.5" style={{ fontSize: 'clamp(1.25rem, 2vw, 1.5rem)', lineHeight: 1.2 }}>
+                      {f.phase}
+                    </span>
+                    <p className="text-body-sm text-ps-muted leading-relaxed">
+                      {f.body}
+                    </p>
+                  </div>
+                </FadeIn>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* ─── Who we serve: masthead ────────────────────────────── */}
-      <section
-        className="section-surface px-5 sm:px-6 md:px-10"
-        style={{ paddingTop: 'clamp(60px, 8vw, 100px)', paddingBottom: 'clamp(60px, 8vw, 100px)' }}
-      >
-        <div className="max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-[0.3fr_1fr] gap-8 md:gap-16">
+      {/* ─── Who we serve ─────────────────────────────────────── */}
+      <section className="section section-surface">
+        <div className="container">
+          <div className="max-w-[720px]">
             <FadeIn blur={6} y={30}>
               <p className="text-caption-sm text-ps-faint mb-3">Specialties</p>
-              <h2 className="text-heading-lg text-ps-ink">
+            </FadeIn>
+            <FadeIn blur={6} y={30} delay={0.05}>
+              <h2 className="text-heading-lg text-ps-ink mb-6">
                 Who we <span className="font-serif italic">serve</span>
               </h2>
             </FadeIn>
+            <FadeIn blur={4} y={20} delay={0.1}>
+              <p className="text-body text-ps-muted mb-6">
+                <BrandText text="Pager Studio works exclusively with six healthcare specialties:" />
+              </p>
+            </FadeIn>
 
-            <div>
-              <FadeIn blur={4} y={20} delay={0.1}>
-                <div className="flex flex-wrap items-baseline gap-x-[0.4em] gap-y-1">
-                  {SPECIALTIES.map((s, i) => (
-                    <span key={s} className="contents">
-                      <span className="font-serif italic text-ps-ink" style={{ fontSize: 'clamp(1.75rem, 3.5vw, 3rem)', lineHeight: 1.2, letterSpacing: '-0.015em' }}>
-                        {s}
-                      </span>
-                      {i < SPECIALTIES.length - 1 && (
-                        <span className="text-ps-faint text-[0.5em] select-none">&middot;</span>
-                      )}
-                    </span>
-                  ))}
-                </div>
-              </FadeIn>
-
-              <FadeIn blur={4} y={20} delay={0.2}>
-                <p className="text-body-sm text-ps-muted mt-8 max-w-[480px] leading-relaxed">
-                  Each of these specialties involves high-value, research-intensive patient decisions \u2014 exactly the kind of query where AI engines are increasingly the first stop before a phone call or consultation is booked.
-                </p>
-              </FadeIn>
+            <div className="flex flex-wrap items-baseline gap-x-[0.35em] gap-y-1 mb-6">
+              {SPECIALTIES.map((s, i) => (
+                <span key={s} className="contents">
+                  <span className="font-serif italic text-ps-ink" style={{ fontSize: 'clamp(1.5rem, 2.8vw, 2.25rem)', lineHeight: 1.25, letterSpacing: '-0.01em' }}>
+                    {s}
+                  </span>
+                  {i < SPECIALTIES.length - 1 && (
+                    <span className="text-ps-faint text-[0.5em] select-none">&middot;</span>
+                  )}
+                </span>
+              ))}
             </div>
+
+            <FadeIn blur={4} y={20} delay={0.15}>
+              <p className="text-body text-ps-muted">
+                This scope is intentional. Each of these specialties involves high-value, research-intensive patient decisions \u2014 exactly the kind of query where AI engines are increasingly the first stop before a phone call or consultation is booked.
+              </p>
+            </FadeIn>
           </div>
         </div>
       </section>
 
-      {/* ─── Solo operator: pull-quote on black ─────────────────── */}
-      <section className="section-black px-5 sm:px-6 md:px-10 texture-lines" style={{ paddingTop: 'clamp(80px, 10vw, 140px)', paddingBottom: 'clamp(80px, 10vw, 140px)' }}>
-        <div className="max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-10 md:gap-20 items-center">
-            <motion.div
+      {/* ─── Solo operator ────────────────────────────────────── */}
+      <section className="section section-black texture-lines">
+        <div className="container">
+          <div className="max-w-[720px]">
+            <motion.p
+              className="text-heading-xl text-white mb-6"
               initial={{ opacity: 0, y: 30, filter: 'blur(6px)' }}
               whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: EASE }}
             >
-              <p className="font-serif italic text-white leading-[0.92] tracking-[-0.03em]" style={{ fontSize: 'clamp(2.5rem, 6.5vw, 5.5rem)' }}>
-                One strategist.<br />No handoffs.<br />No junior staff.
-              </p>
-            </motion.div>
+              Why a <span className="font-serif italic">solo operator</span>, not an agency team
+            </motion.p>
 
             <motion.div
+              className="space-y-4"
               initial={{ opacity: 0, y: 20, filter: 'blur(4px)' }}
               whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.6, delay: 0.15, ease: EASE }}
+              transition={{ duration: 0.6, delay: 0.1, ease: EASE }}
             >
-              <p className="text-body-sm text-white/50 leading-relaxed mb-4">
-                <BrandText text="Pager Studio is built and run by one strategist, not a rotating team of account managers. Every client works directly with the person doing the audit, implementation, and monitoring." />
+              <p className="text-body text-white/60">
+                <BrandText text="Pager Studio is built and run by one strategist, not a rotating team of account managers. Every client works directly with the person doing the audit, implementation, and monitoring \u2014 no handoffs, no junior staff." />
               </p>
-              <p className="text-body-sm text-white/50 leading-relaxed mb-4">
+              <p className="text-body text-white/60">
                 AI-assisted workflows allow this single-operator model to deliver the depth of work that would typically require a full agency team, without the coordination overhead or diluted attention that comes with it.
               </p>
-              <p className="text-body-sm text-white font-medium">
+              <p className="text-body text-white font-medium">
                 Capacity is deliberately capped at ten active clients at any time.
               </p>
             </motion.div>
@@ -237,124 +235,105 @@ export default function AboutPageClient() {
         </div>
       </section>
 
-      {/* ─── Founder: editorial profile ─────────────────────────── */}
-      <section
-        className="section-white px-5 sm:px-6 md:px-10"
-        style={{ paddingTop: 'clamp(80px, 10vw, 140px)', paddingBottom: 'clamp(60px, 8vw, 100px)' }}
-      >
-        <div className="max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-10 md:gap-20">
-            {/* Pull-quote as the visual anchor — no caption label */}
-            <div>
-              <FadeIn blur={6} y={30}>
-                <blockquote className="mb-0">
-                  <p className="font-serif italic text-ps-ink leading-[1.0] tracking-[-0.02em] mb-8" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>
-                    Healthcare agencies were applying SEO tactics to a problem that no longer worked that way.
-                  </p>
-                  <footer className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-ps-ink flex items-center justify-center shrink-0">
-                      <span className="font-serif text-[14px] text-white italic">SK</span>
-                    </div>
-                    <div>
-                      <p className="text-body-sm font-semibold text-ps-ink">Sandeep Kumar GR</p>
-                      <p className="text-caption text-ps-faint" style={{ fontSize: '10px' }}>Founder & Sole Strategist</p>
-                    </div>
-                  </footer>
-                </blockquote>
-              </FadeIn>
-            </div>
-
-            {/* Biographical facts */}
-            <div className="md:pt-8">
-              <FadeIn blur={4} y={20} delay={0.1}>
-                <p className="text-body text-ps-muted mb-4 leading-relaxed">
-                  Patients researching high-stakes procedures like IVF or hair restoration were increasingly asking AI engines directly, and most practices had no visibility there at all.
+      {/* ─── Founder ──────────────────────────────────────────── */}
+      <section className="section section-white">
+        <div className="container">
+          <div className="max-w-[720px]">
+            <FadeIn blur={6} y={30}>
+              <p className="text-caption-sm text-ps-faint mb-3">Founder</p>
+            </FadeIn>
+            <FadeIn blur={6} y={30} delay={0.05}>
+              <h2 className="text-heading-lg text-ps-ink mb-6">
+                <span className="font-serif italic">Sandeep Kumar GR</span>
+              </h2>
+            </FadeIn>
+            <FadeIn blur={4} y={20} delay={0.1}>
+              <blockquote className="border-l-2 border-ps-ink pl-6 mb-8">
+                <p className="font-serif italic text-ps-ink leading-[1.1] tracking-[-0.015em]" style={{ fontSize: 'clamp(1.5rem, 2.8vw, 2.25rem)' }}>
+                  Healthcare agencies were applying SEO tactics to a problem that no longer worked that way.
                 </p>
-              </FadeIn>
-              <FadeIn blur={4} y={20} delay={0.15}>
-                <p className="text-body text-ps-muted mb-4 leading-relaxed">
-                  Rather than adapting an existing SEO offering, he built AEO as a standalone discipline from the ground up, deliberately scoped to a small number of high-value healthcare specialties rather than horizontal across industries.
-                </p>
-              </FadeIn>
-              <FadeIn blur={4} y={20} delay={0.2}>
-                <p className="text-body text-ps-muted mb-4 leading-relaxed">
-                  To support the agency&apos;s audit process, Sandeep also built <span className="font-serif italic">Pager Studio</span>&apos;s proprietary AI visibility audit tool \u2014 a Next.js application powered by Groq and OpenAI that scores healthcare websites on their current AI visibility.
-                </p>
-              </FadeIn>
-              <FadeIn blur={4} y={20} delay={0.25}>
-                <p className="text-body-sm text-ps-muted leading-relaxed">
-                  Every practice that works with <span className="font-serif italic">Pager Studio</span> works directly with Sandeep \u2014 there is no account manager layer and no handoff to junior staff at any stage of the engagement.
-                </p>
-              </FadeIn>
-            </div>
+              </blockquote>
+            </FadeIn>
+            <FadeIn blur={4} y={20} delay={0.15}>
+              <p className="text-body text-ps-muted mb-4">
+                Sandeep built <span className="font-serif italic">Pager Studio</span>&apos;s methodology around a specific observation: patients researching high-stakes procedures like IVF or hair restoration were increasingly asking AI engines directly, and most practices had no visibility there at all.
+              </p>
+            </FadeIn>
+            <FadeIn blur={4} y={20} delay={0.2}>
+              <p className="text-body text-ps-muted mb-4">
+                Rather than adapting an existing SEO offering, he built AEO as a standalone discipline from the ground up, deliberately scoped to a small number of high-value healthcare specialties rather than horizontal across industries.
+              </p>
+            </FadeIn>
+            <FadeIn blur={4} y={20} delay={0.25}>
+              <p className="text-body text-ps-muted mb-4">
+                To support the agency&apos;s audit process, Sandeep also built <span className="font-serif italic">Pager Studio</span>&apos;s proprietary AI visibility audit tool \u2014 a Next.js application powered by Groq and OpenAI that scores healthcare websites on their current AI visibility. This tool underpins the Audit phase of every client engagement.
+              </p>
+            </FadeIn>
+            <FadeIn blur={4} y={20} delay={0.3}>
+              <p className="text-body text-ps-muted">
+                Every practice that works with <span className="font-serif italic">Pager Studio</span> works directly with Sandeep \u2014 there is no account manager layer and no handoff to junior staff at any stage of the engagement.
+              </p>
+            </FadeIn>
           </div>
         </div>
       </section>
 
-      {/* ─── Security + Engagement ──────────────────────────────── */}
-      <section
-        className="section-surface px-5 sm:px-6 md:px-10"
-        style={{ paddingTop: 'clamp(50px, 6vw, 80px)', paddingBottom: 'clamp(50px, 6vw, 80px)' }}
-      >
-        <div className="max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-[0.5fr_1fr] gap-10 md:gap-20">
+      {/* ─── Security + Engagement ────────────────────────────── */}
+      <section className="section section-surface">
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 max-w-[960px]">
             <FadeIn blur={4} y={20}>
-              <div className="border-t border-ps-line pt-6">
-                <p className="text-caption-sm text-ps-faint mb-3">Security</p>
-                <h3 className="font-serif italic text-ps-ink mb-4" style={{ fontSize: 'clamp(1.25rem, 2vw, 1.5rem)', lineHeight: 1.2, letterSpacing: '-0.01em' }}>
-                  No patient data. Ever.
-                </h3>
-                <p className="text-body-sm text-ps-muted leading-relaxed">
-                  <BrandText text="Pager Studio does not collect, store, or process patient data of any kind. All work is limited to the practice's public-facing business information. Every client engagement is governed by a signed legal agreement, and client performance data is never used in Pager Studio's own marketing or case studies." />
-                </p>
-              </div>
+              <p className="text-caption-sm text-ps-faint mb-3">Security</p>
+              <h3 className="text-heading-md text-ps-ink mb-4">
+                No patient data. <span className="font-serif italic">Ever.</span>
+              </h3>
+              <p className="text-body text-ps-muted">
+                <BrandText text="Pager Studio does not collect, store, or process patient data of any kind. All work is limited to the practice's public-facing business information. Every client engagement is governed by a signed legal agreement, and client performance data is never used in Pager Studio's own marketing or case studies." />
+              </p>
             </FadeIn>
 
             <FadeIn blur={4} y={20} delay={0.08}>
-              <div className="border-t border-ps-line pt-6">
-                <p className="text-caption-sm text-ps-faint mb-3">Engagement</p>
-                <h3 className="font-serif italic text-ps-ink mb-4" style={{ fontSize: 'clamp(1.25rem, 2vw, 1.5rem)', lineHeight: 1.2, letterSpacing: '-0.01em' }}>
-                  Minimum six months.
-                </h3>
-                <p className="text-body-sm text-ps-muted leading-relaxed">
-                  AI engines build trust in a provider gradually, through sustained technical optimization, off-page authority development, and directory consistency \u2014 this cannot be compressed into a short-term project. Pricing is value-based and customized to each practice&apos;s size, specialties, provider count, and market.
-                </p>
-              </div>
+              <p className="text-caption-sm text-ps-faint mb-3">Engagement</p>
+              <h3 className="text-heading-md text-ps-ink mb-4">
+                Minimum six <span className="font-serif italic">months.</span>
+              </h3>
+              <p className="text-body text-ps-muted">
+                AI engines build trust in a provider gradually, through sustained technical optimization, off-page authority development, and directory consistency \u2014 this cannot be compressed into a short-term project. Pricing is value-based and customized to each practice&apos;s size, specialties, provider count, and market.
+              </p>
             </FadeIn>
           </div>
         </div>
       </section>
 
-      {/* ─── FAQ: ledger ────────────────────────────────────────── */}
-      <section
-        className="section-white px-5 sm:px-6 md:px-10"
-        style={{ paddingTop: 'clamp(60px, 8vw, 100px)', paddingBottom: 'clamp(60px, 8vw, 100px)' }}
-      >
-        <div className="max-w-[1200px] mx-auto">
-          <FadeIn blur={6} y={30}>
-            <p className="text-caption-sm text-ps-faint mb-3">FAQ</p>
-          </FadeIn>
-          <FadeIn blur={6} y={30} delay={0.05}>
-            <h2 className="text-heading-lg text-ps-ink mb-10">
-              Frequently asked <span className="font-serif italic">questions</span>
-            </h2>
-          </FadeIn>
+      {/* ─── FAQ ──────────────────────────────────────────────── */}
+      <section className="section section-white">
+        <div className="container">
+          <div className="max-w-[720px]">
+            <FadeIn blur={6} y={30}>
+              <p className="text-caption-sm text-ps-faint mb-3">FAQ</p>
+            </FadeIn>
+            <FadeIn blur={6} y={30} delay={0.05}>
+              <h2 className="text-heading-lg text-ps-ink mb-10">
+                Frequently asked <span className="font-serif italic">questions</span>
+              </h2>
+            </FadeIn>
 
-          <div className="border-t border-ps-line">
-            {FAQS.map((faq, i) => (
-              <FadeIn key={faq.q} blur={4} y={16} delay={0.08 + i * 0.05}>
-                <div className="grid grid-cols-1 md:grid-cols-[0.35fr_1fr] gap-3 md:gap-12 py-5 border-b border-ps-line">
-                  <p className="text-body-sm font-semibold text-ps-ink">{faq.q}</p>
-                  <p className="text-body-sm text-ps-muted leading-relaxed"><BrandText text={faq.a} /></p>
-                </div>
-              </FadeIn>
-            ))}
+            <div className="border-t border-ps-line">
+              {FAQS.map((faq, i) => (
+                <FadeIn key={faq.q} blur={4} y={16} delay={0.08 + i * 0.05}>
+                  <div className="py-5 border-b border-ps-line">
+                    <p className="text-body font-semibold text-ps-ink mb-2">{faq.q}</p>
+                    <p className="text-body-sm text-ps-muted leading-relaxed"><BrandText text={faq.a} /></p>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ─── CTA ────────────────────────────────────────────────── */}
-      <section className="section-white px-4" style={{ paddingBottom: 'clamp(60px, 8vw, 100px)' }}>
+      {/* ─── CTA ──────────────────────────────────────────────── */}
+      <section className="section section-white !pb-0 px-4">
         <div className="bg-ps-black texture-lines texture-shimmer rounded-[20px] sm:rounded-[28px] max-w-[1200px] mx-auto px-5 sm:px-6 md:px-[60px] py-[50px] sm:py-[60px] md:py-[100px] text-center">
           <FadeIn blur={4} y={16}>
             <p className="text-caption-sm text-white/45 mb-4 text-center">Start here</p>
