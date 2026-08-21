@@ -25,7 +25,7 @@ const PROMISES = [
 ];
 
 const FAQS = [
-  { q: 'What is AEO?', a: 'AI Engine Optimization \u2014 optimizing your online presence so AI systems like ChatGPT, Perplexity, and Google AI Overviews can find, understand, and recommend you. Different from SEO, which targets search result pages.' },
+  { q: 'What is AEO?', a: 'AI Engine Optimization — optimizing your online presence so AI systems like ChatGPT, Perplexity, and Google AI Overviews can find, understand, and recommend you. Different from SEO, which targets search result pages.' },
   { q: 'Does Pager Studio offer SEO?', a: 'No. AEO for healthcare providers only. No general SEO, paid ads, or social media.' },
   { q: 'Which markets?', a: 'United States, United Kingdom, and United Arab Emirates.' },
   { q: 'How long is a typical engagement?', a: 'Minimum six months. AI engines need sustained signals to build measurable trust.' },
@@ -83,7 +83,7 @@ export default function AboutPageClient() {
               animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
               transition={{ duration: 0.6, delay: 0.1, ease: EASE }}
             >
-              A boutique AEO (AI Engine Optimization) agency. We help elite healthcare practices get recommended inside AI answer engines \u2014 ChatGPT, Perplexity, Google AI Overviews, and Gemini.
+              A boutique AEO (AI Engine Optimization) agency. We help elite healthcare practices get recommended inside AI answer engines — ChatGPT, Perplexity, Google AI Overviews, and Gemini.
             </motion.p>
 
             <motion.p
@@ -109,7 +109,7 @@ export default function AboutPageClient() {
             </FadeIn>
             <FadeIn blur={4} y={20} delay={0.05}>
               <p className="text-body text-ps-muted mb-4">
-                <strong className="text-ps-ink font-semibold">Sandeep Kumar GR</strong> \u2014 founder and sole strategist. Based in Coimbatore, India. Runs every client engagement personally.
+                <strong className="text-ps-ink font-semibold">Sandeep Kumar GR</strong> — founder and sole strategist. Based in Coimbatore, India. Runs every client engagement personally.
               </p>
             </FadeIn>
             <FadeIn blur={4} y={20} delay={0.1}>
@@ -121,7 +121,7 @@ export default function AboutPageClient() {
             </FadeIn>
             <FadeIn blur={4} y={20} delay={0.15}>
               <p className="text-body-sm text-ps-muted mb-3">
-                Patients researching IVF, hair restoration, and other high-stakes procedures were increasingly asking AI engines directly \u2014 and most practices had no visibility there at all.
+                Patients researching IVF, hair restoration, and other high-stakes procedures were increasingly asking AI engines directly — and most practices had no visibility there at all.
               </p>
             </FadeIn>
             <FadeIn blur={4} y={20} delay={0.2}>
@@ -131,7 +131,7 @@ export default function AboutPageClient() {
             </FadeIn>
             <FadeIn blur={4} y={20} delay={0.25}>
               <p className="text-body-sm text-ps-muted">
-                He also built Pager <span className="font-serif italic">Studio</span>&apos;s proprietary AI visibility audit tool \u2014 a Next.js application powered by Groq and OpenAI that scores healthcare websites on their current AI visibility. This tool underpins every Audit phase.
+                He also built Pager <span className="font-serif italic">Studio</span>&apos;s proprietary AI visibility audit tool — a Next.js application powered by Groq and OpenAI that scores healthcare websites on their current AI visibility. This tool underpins every Audit phase.
               </p>
             </FadeIn>
           </div>
@@ -182,7 +182,7 @@ export default function AboutPageClient() {
             </FadeIn>
             <FadeIn blur={4} y={20} delay={0.05}>
               <p className="text-body text-ps-muted mb-6">
-                Six healthcare specialties. Each involves high-value, research-intensive patient decisions \u2014 exactly where AI engines are becoming the first stop.
+                Six healthcare specialties. Each involves high-value, research-intensive patient decisions — exactly where AI engines are becoming the first stop.
               </p>
             </FadeIn>
 
@@ -277,7 +277,7 @@ export default function AboutPageClient() {
           </FadeIn>
           <FadeIn blur={4} y={16} delay={0.1}>
             <p className="text-body-sm text-white/45 max-w-[460px] mx-auto mb-10">
-              Get a free audit showing exactly how ChatGPT and Google AI Overviews see your practice \u2014 and what your competitors are doing that you are not.
+              Get a free audit showing exactly how ChatGPT and Google AI Overviews see your practice — and what your competitors are doing that you are not.
             </p>
           </FadeIn>
           <FadeIn blur={4} y={16} delay={0.15}>
