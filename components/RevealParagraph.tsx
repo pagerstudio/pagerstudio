@@ -44,7 +44,6 @@ export default function RevealParagraph() {
     if (prefersReducedMotion) {
       el.querySelectorAll<HTMLElement>('.word').forEach((w) => {
         w.style.opacity = '1';
-        w.style.filter = 'blur(0px)';
         w.style.transform = 'translateY(0px)';
       });
       return;
@@ -55,9 +54,8 @@ export default function RevealParagraph() {
 
     wordEls.forEach((w) => {
       w.style.opacity = '0';
-      w.style.filter = 'blur(10px)';
       w.style.transform = 'translateY(10px)';
-      w.style.willChange = 'opacity, filter, transform';
+      w.style.willChange = 'opacity, transform';
     });
 
     let ticking = false;
@@ -86,7 +84,6 @@ export default function RevealParagraph() {
       if (range <= 0) {
         wordEls.forEach((w) => {
           w.style.opacity = '1';
-          w.style.filter = 'blur(0px)';
           w.style.transform = 'translateY(0px)';
         });
         return;
@@ -111,11 +108,9 @@ export default function RevealParagraph() {
         }
 
         const eased = easeInOutCubic(Math.max(0, Math.min(1, lp)));
-        const blur = (1 - eased) * 10;
         const y = (1 - eased) * 10;
 
         wordEls[i].style.opacity = String(eased);
-        wordEls[i].style.filter = `blur(${blur.toFixed(2)}px)`;
         wordEls[i].style.transform = `translateY(${y.toFixed(2)}px)`;
       }
     };

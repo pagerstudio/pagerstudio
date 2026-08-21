@@ -44,8 +44,8 @@ export default function ShockingStats() {
       <div className="container">
         <motion.p
           className="text-caption-sm text-ps-faint mb-4"
-          initial={{ opacity: 0, y: 20, filter: 'blur(4px)' }}
-          whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
@@ -53,8 +53,8 @@ export default function ShockingStats() {
         </motion.p>
         <motion.h2
           className="text-heading-xl text-ps-ink mb-12"
-          initial={{ opacity: 0, y: 30, filter: 'blur(6px)' }}
-          whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.7, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
         >

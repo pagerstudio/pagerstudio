@@ -14,8 +14,8 @@ export default function FooterCta() {
       <div className="bg-ps-black texture-lines texture-shimmer rounded-[20px] sm:rounded-[28px] max-w-[1200px] mx-auto px-5 sm:px-6 md:px-[60px] py-[50px] sm:py-[60px] md:py-[100px] text-center">
         <motion.p
           className="text-caption-sm text-white/45 mb-4 text-center"
-          initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
-          whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6, ease: EASE }}
         >
@@ -23,8 +23,8 @@ export default function FooterCta() {
         </motion.p>
         <motion.h2
           className="text-heading-xl text-white mb-5"
-          initial={{ opacity: 0, y: 30, filter: 'blur(6px)' }}
-          whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.7, delay: 0.1, ease: EASE }}
         >
@@ -33,16 +33,16 @@ export default function FooterCta() {
         </motion.h2>
         <motion.p
           className="text-body-sm text-white/45 max-w-[460px] mx-auto mb-10"
-          initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
-          whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6, delay: 0.2, ease: EASE }}
         >
           Run your free audit — no credit card, no commitment. Find out in 48 hours where you stand inside ChatGPT and Google AI Overviews.
         </motion.p>
         <motion.div
-          initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
-          whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6, delay: 0.3, ease: EASE }}
         >

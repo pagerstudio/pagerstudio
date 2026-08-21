@@ -36,26 +36,26 @@ export default function Page() {
       <Nav />
       <Hero />
       <RevealParagraph />
-      <FadeIn blur={10} y={50} amount={0.05}>
+      <FadeIn y={50} amount={0.05}>
         <ShockingStats />
       </FadeIn>
-      <FadeIn blur={8} y={40} delay={0.1}>
+      <FadeIn y={40} delay={0.1}>
         <StrategyCall />
       </FadeIn>
       <HowWeWork />
-      <FadeIn blur={8} y={40} amount={0.05}>
+      <FadeIn y={40} amount={0.05}>
         <WhoWeWorkWith />
       </FadeIn>
-      <FadeIn blur={10} y={50} amount={0.05}>
+      <FadeIn y={50} amount={0.05}>
         <WhyPagerStudio />
       </FadeIn>
-      <FadeIn blur={8} y={40}>
+      <FadeIn y={40}>
         <PlatformPills />
       </FadeIn>
-      <FadeIn blur={8} y={40} amount={0.05}>
+      <FadeIn y={40} amount={0.05}>
         <Faq />
       </FadeIn>
-      <FadeIn blur={10} y={50} amount={0.05}>
+      <FadeIn y={50} amount={0.05}>
         <FooterCta />
       </FadeIn>
       <Footer />

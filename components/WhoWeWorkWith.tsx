@@ -4,11 +4,10 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { CORE_SPECIALTIES } from '@/lib/specialties';
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 24, filter: 'blur(6px)' },
+  hidden: { opacity: 0, y: 24 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    filter: 'blur(0px)',
     transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as [number, number, number, number], delay: i * 0.08 },
   }),
 };
@@ -24,8 +23,8 @@ export default function WhoWeWorkWith() {
         <div className="text-center mb-12 sm:mb-16">
           <motion.h2
             className="text-heading-xl text-ps-ink mb-4"
-            initial={{ opacity: 0, y: 30, filter: 'blur(6px)' }}
-            whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
@@ -33,8 +32,8 @@ export default function WhoWeWorkWith() {
           </motion.h2>
           <motion.p
             className="text-body-sm text-ps-muted max-w-[560px] mx-auto"
-            initial={prefersReducedMotion ? {} : { opacity: 0, y: 16, filter: 'blur(4px)' }}
-            whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+            initial={prefersReducedMotion ? {} : { opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           >
@@ -67,8 +66,8 @@ export default function WhoWeWorkWith() {
         {/* Closing statement */}
         <motion.p
           className="text-body-sm text-ps-faint text-center mt-12 sm:mt-16 max-w-[600px] mx-auto"
-          initial={prefersReducedMotion ? {} : { opacity: 0, y: 16, filter: 'blur(4px)' }}
-          whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={prefersReducedMotion ? {} : { opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >

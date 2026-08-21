@@ -6,7 +6,6 @@ interface FadeInStaggerProps {
   children: React.ReactNode;
   className?: string;
   stagger?: number;
-  blur?: number;
   y?: number;
   once?: boolean;
   amount?: number;
@@ -27,7 +26,6 @@ export default function FadeInStagger({
   children,
   className = '',
   stagger = 0.1,
-  blur = 8,
   y = 40,
   once = true,
   amount = 0.1,
@@ -36,12 +34,10 @@ export default function FadeInStagger({
     hidden: {
       opacity: 0,
       y,
-      filter: `blur(${blur}px)`,
     },
     visible: {
       opacity: 1,
       y: 0,
-      filter: 'blur(0px)',
       transition: {
         duration: 0.8,
         ease: EASE,

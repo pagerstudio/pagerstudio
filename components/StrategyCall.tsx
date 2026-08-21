@@ -14,8 +14,8 @@ export default function StrategyCall() {
           <div className="flex flex-col">
             <motion.h2
               className="text-heading-xl text-ps-ink mb-6"
-              initial={{ opacity: 0, y: 30, filter: 'blur(6px)' }}
-              whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             >
@@ -23,8 +23,8 @@ export default function StrategyCall() {
             </motion.h2>
             <motion.p
               className="text-body text-ps-muted max-w-[480px] mb-10"
-              initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
-              whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
@@ -32,8 +32,8 @@ export default function StrategyCall() {
             </motion.p>
             <motion.div
               className="flex flex-col sm:flex-row sm:items-center gap-3"
-              initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
-              whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.6, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             >
@@ -72,8 +72,8 @@ export default function StrategyCall() {
             </motion.div>
             <motion.p
               className="text-caption-sm text-ps-muted mt-3"
-              initial={{ opacity: 0, filter: 'blur(4px)' }}
-              whileInView={{ opacity: 1, filter: 'blur(0px)' }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.05 }}
               transition={{ duration: 0.6, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             >

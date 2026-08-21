@@ -6,7 +6,6 @@ interface FadeInProps {
   children: React.ReactNode;
   className?: string;
   delay?: number;
-  blur?: number;
   y?: number;
   once?: boolean;
   amount?: number;
@@ -17,7 +16,6 @@ export default function FadeIn({
   children,
   className = '',
   delay = 0,
-  blur = 0,
   y = 16,
   once = true,
   amount = 0.15,

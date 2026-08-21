@@ -14,8 +14,8 @@ function FaqItemRow({ item, openId, onToggle, index }: { item: FaqItem; openId: 
       className={`bg-white border border-ps-line/60 rounded-[12px] transition-shadow duration-300 ${
         isOpen ? 'shadow-[0_1px_4px_rgba(0,0,0,0.04)]' : 'shadow-none hover:shadow-[0_1px_3px_rgba(0,0,0,0.03)]'
       }`}
-      initial={{ opacity: 0, y: 24, filter: 'blur(6px)' }}
-      whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.6, delay: index * 0.05, ease: EASE }}
     >
@@ -59,8 +59,8 @@ export default function Faq() {
       <div className="container mx-auto">
         <motion.p
           className="text-caption-sm text-ps-faint mb-4 text-center eyebrow"
-          initial={{ opacity: 0, y: 20, filter: 'blur(4px)' }}
-          whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6, ease: EASE }}
         >
@@ -68,8 +68,8 @@ export default function Faq() {
         </motion.p>
         <motion.h2
           className="text-heading-xl text-ps-ink mb-5 text-center section-heading"
-          initial={{ opacity: 0, y: 30, filter: 'blur(6px)' }}
-          whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.7, delay: 0.05, ease: EASE }}
         >
@@ -77,8 +77,8 @@ export default function Faq() {
         </motion.h2>
         <motion.p
           className="text-body-sm text-ps-muted text-center max-w-[520px] mx-auto mb-8 sm:mb-16 section-sub"
-          initial={{ opacity: 0, y: 16, filter: 'blur(4px)' }}
-          whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6, delay: 0.1, ease: EASE }}
         >
