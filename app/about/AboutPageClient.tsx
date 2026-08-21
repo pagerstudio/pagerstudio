@@ -333,7 +333,7 @@ export default function AboutPageClient() {
       </section>
 
       {/* ─── CTA ──────────────────────────────────────────────── */}
-      <section className="section section-white !pb-0 px-4">
+      <section className="section section-white px-4">
         <div className="bg-ps-black texture-lines texture-shimmer rounded-[20px] sm:rounded-[28px] max-w-[1200px] mx-auto px-5 sm:px-6 md:px-[60px] py-[50px] sm:py-[60px] md:py-[100px] text-center">
           <FadeIn blur={4} y={16}>
             <p className="text-caption-sm text-white/45 mb-4 text-center">Start here</p>
