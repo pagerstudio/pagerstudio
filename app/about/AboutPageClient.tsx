@@ -38,7 +38,7 @@ function BrandText({ text }: { text: string }) {
     <>
       {parts.map((part, i) =>
         part === 'Pager Studio' ? (
-          <span key={i} className="font-serif italic">Pager Studio</span>
+          <span key={i}>Pager <span className="font-serif italic">Studio</span></span>
         ) : (
           <span key={i}>{part}</span>
         )
@@ -74,7 +74,7 @@ export default function AboutPageClient() {
               animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
               transition={{ duration: 0.7, ease: EASE }}
             >
-              What is <span className="font-serif italic">Pager Studio</span>?
+              What is Pager <span className="font-serif italic">Studio</span>?
             </motion.h1>
 
             <motion.p
@@ -104,7 +104,7 @@ export default function AboutPageClient() {
           <div className="max-w-[720px]">
             <FadeIn blur={6} y={30}>
               <h2 className="text-heading-lg text-ps-ink mb-6">
-                Who is behind <span className="font-serif italic">Pager Studio</span>?
+                Who is behind Pager <span className="font-serif italic">Studio</span>?
               </h2>
             </FadeIn>
             <FadeIn blur={4} y={20} delay={0.05}>
@@ -131,7 +131,7 @@ export default function AboutPageClient() {
             </FadeIn>
             <FadeIn blur={4} y={20} delay={0.25}>
               <p className="text-body-sm text-ps-muted">
-                He also built <span className="font-serif italic">Pager Studio</span>&apos;s proprietary AI visibility audit tool \u2014 a Next.js application powered by Groq and OpenAI that scores healthcare websites on their current AI visibility. This tool underpins every Audit phase.
+                He also built Pager <span className="font-serif italic">Studio</span>&apos;s proprietary AI visibility audit tool \u2014 a Next.js application powered by Groq and OpenAI that scores healthcare websites on their current AI visibility. This tool underpins every Audit phase.
               </p>
             </FadeIn>
           </div>
@@ -149,7 +149,7 @@ export default function AboutPageClient() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: EASE }}
             >
-              What we <span className="font-serif italic">promise</span>
+              What we promise
             </motion.h2>
 
             <div className="border-t border-white/15">
@@ -177,7 +177,7 @@ export default function AboutPageClient() {
           <div className="max-w-[720px]">
             <FadeIn blur={6} y={30}>
               <h2 className="text-heading-lg text-ps-ink mb-4">
-                Who we <span className="font-serif italic">serve</span>
+                Who we serve
               </h2>
             </FadeIn>
             <FadeIn blur={4} y={20} delay={0.05}>
@@ -189,7 +189,7 @@ export default function AboutPageClient() {
             <div className="flex flex-wrap items-baseline gap-x-[0.35em] gap-y-1">
               {SPECIALTIES.map((s, i) => (
                 <span key={s} className="contents">
-                  <span className="font-serif italic text-ps-ink" style={{ fontSize: 'clamp(1.5rem, 2.8vw, 2.25rem)', lineHeight: 1.25, letterSpacing: '-0.01em' }}>
+                  <span className="font-sans font-semibold text-ps-ink" style={{ fontSize: 'clamp(1.5rem, 2.8vw, 2.25rem)', lineHeight: 1.25, letterSpacing: '-0.01em' }}>
                     {s}
                   </span>
                   {i < SPECIALTIES.length - 1 && (
@@ -208,7 +208,7 @@ export default function AboutPageClient() {
           <div className="max-w-[720px]">
             <FadeIn blur={6} y={30}>
               <h2 className="text-heading-lg text-ps-ink mb-6">
-                How we <span className="font-serif italic">work</span>
+                How we work
               </h2>
             </FadeIn>
 
@@ -220,7 +220,7 @@ export default function AboutPageClient() {
               ].map((f, i) => (
                 <FadeIn key={f.phase} blur={4} y={20} delay={0.1 + i * 0.08}>
                   <div className="flex gap-6 py-5 border-b border-ps-line">
-                    <span className="font-serif italic text-ps-faint shrink-0 pt-0.5" style={{ fontSize: 'clamp(1.25rem, 2vw, 1.5rem)', lineHeight: 1.2 }}>
+                    <span className="font-sans font-semibold text-ps-ink shrink-0 pt-0.5" style={{ fontSize: 'clamp(1.25rem, 2vw, 1.5rem)', lineHeight: 1.2 }}>
                       {f.phase}
                     </span>
                     <p className="text-body-sm text-ps-muted leading-relaxed">
@@ -246,7 +246,7 @@ export default function AboutPageClient() {
           <div className="max-w-[720px]">
             <FadeIn blur={6} y={30}>
               <h2 className="text-heading-lg text-ps-ink mb-10">
-                Frequently asked <span className="font-serif italic">questions</span>
+                Frequently asked questions
               </h2>
             </FadeIn>
 
@@ -272,7 +272,7 @@ export default function AboutPageClient() {
           </FadeIn>
           <FadeIn blur={6} y={30} delay={0.05}>
             <h2 className="text-heading-xl text-white mb-5">
-              Ready to find out where you <span className="font-serif italic">stand</span>?
+              Ready to find out where you stand?
             </h2>
           </FadeIn>
           <FadeIn blur={4} y={16} delay={0.1}>
