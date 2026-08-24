@@ -36,7 +36,22 @@ function hasGPC(): boolean {
 }
 
 export default function CookieConsent() {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(() => {
+    if (typeof window === "undefined") return false;
+    const stored = getStoredConsent();
+    if (stored) return false;
+    if (hasGPC()) {
+      const state: ConsentState = {
+        necessary: true,
+        analytics: false,
+        timestamp: new Date().toISOString(),
+        version: CONSENT_VERSION,
+      };
+      storeConsent(state);
+      return false;
+    }
+    return true;
+  });
   const [analyticsConsent, setAnalyticsConsent] = useState(false);
 
   useEffect(() => {
@@ -61,8 +76,6 @@ export default function CookieConsent() {
       );
       return;
     }
-
-    setVisible(true);
   }, []);
 
   function accept() {

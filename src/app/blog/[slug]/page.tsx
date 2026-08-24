@@ -95,7 +95,7 @@ function extractFAQs(content: string) {
 
 function splitContent(content: string): { intro: string; sections: { heading: string; body: string }[] } {
   const lines = content.split("\n");
-  let introLines: string[] = [];
+  const introLines: string[] = [];
   const sections: { heading: string; body: string[] }[] = [];
   let current: { heading: string; body: string[] } | null = null;
 

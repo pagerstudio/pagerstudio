@@ -2,23 +2,21 @@
 
 import { useEffect } from "react";
 
-declare global {
-  interface Window {
-    Cal: any;
-  }
-}
-
 export default function CalEmbed() {
   useEffect(() => {
+    // Third-party Cal.com embed script
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (function (C: any, A: string, L: string) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const p = function (a: any, ar: any) {
         a.q.push(ar);
       };
       const d = C.document;
-      C.Cal =
-        C.Cal ||
-        function () {
+        C.Cal =
+          C.Cal ||
+          function () {
           const cal = C.Cal;
+          // eslint-disable-next-line prefer-rest-params
           const ar = arguments;
           if (!cal.loaded) {
             cal.ns = {};
@@ -28,8 +26,9 @@ export default function CalEmbed() {
           }
           if (ar[0] === L) {
             const api = function () {
+              // eslint-disable-next-line prefer-rest-params
               p(api, arguments);
-            } as any;
+            } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
             const namespace = ar[1] as string;
             api.q = api.q || [];
             if (typeof namespace === "string") {
@@ -49,11 +48,15 @@ export default function CalEmbed() {
       "init"
     );
 
-    window.Cal("init", "30min", { origin: "https://app.cal.com" });
-    window.Cal.config = window.Cal.config || {};
-    window.Cal.config.forwardQueryParams = true;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (window as any).Cal("init", "30min", { origin: "https://app.cal.com" });
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (window as any).Cal.config = (window as any).Cal.config || {};
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (window as any).Cal.config.forwardQueryParams = true;
 
-    window.Cal.ns["30min"]("inline", {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (window as any).Cal.ns["30min"]("inline", {
       elementOrSelector: "#my-cal-inline-30min",
       config: {
         layout: "month_view",
@@ -63,7 +66,8 @@ export default function CalEmbed() {
       calLink: "pagerstudio/30min",
     });
 
-    window.Cal.ns["30min"]("ui", {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (window as any).Cal.ns["30min"]("ui", {
       hideEventTypeDetails: true,
       layout: "month_view",
     });
