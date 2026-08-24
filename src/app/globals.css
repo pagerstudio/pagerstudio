@@ -68,15 +68,15 @@
   --color-white: #FFFFFF;
   --color-text-primary: rgba(0, 0, 0, 1);
   --color-text-secondary: rgba(0, 0, 0, 0.65);
-  --color-text-tertiary: rgba(0, 0, 0, 0.6);
+  --color-text-tertiary: rgba(0, 0, 0, 0.4);
   --color-text-inverse: rgba(255, 255, 255, 1);
   --color-text-inverse-secondary: rgba(255, 255, 255, 0.75);
   --color-border-subtle: rgba(0, 0, 0, 0.08);
   --color-border-default: rgba(0, 0, 0, 0.15);
   --color-border-strong: rgba(0, 0, 0, 0.25);
   --color-fill-primary: rgba(0, 0, 0, 0.03);
-  --color-fill-secondary: rgba(0, 0, 0, 0.06);
-  --color-fill-hover: rgba(0, 0, 0, 0.05);
+  --color-fill-secondary: rgba(0, 0, 0, 0.12);
+  --color-fill-hover: rgba(0, 0, 0, 0.08);
   --color-fill-active: rgba(0, 0, 0, 0.9);
 
   /* ─── Font Weights ─── */

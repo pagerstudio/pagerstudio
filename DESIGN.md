@@ -11,6 +11,7 @@ This document defines the design system, tokens, patterns, and conventions used 
 3. **Content-first** — The interface disappears. Content is the product.
 4. **Accessible** — WCAG AA compliant. Keyboard navigable. Reduced motion respected.
 5. **AEO-aware** — Every design decision considers how AI models parse and understand the page.
+6. **Light-first** — No dark mode. The site is light-themed by design. Dark backgrounds are used sparingly for emphasis (blog cards, footer, menu, guide hero) — not as a full theme. Favicon adapts to system theme via `prefers-color-scheme` media queries.
 
 ---
 
@@ -18,22 +19,27 @@ This document defines the design system, tokens, patterns, and conventions used 
 
 Monochrome only. No exceptions.
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--color-black` | `#000000` | Primary text, buttons, dark backgrounds |
-| `--color-white` | `#FFFFFF` | Page background, inverse text |
-| `--color-text-primary` | `rgba(0,0,0,1)` | Headings, body text |
-| `--color-text-secondary` | `rgba(0,0,0,0.65)` | Descriptions, supporting text |
-| `--color-text-tertiary` | `rgba(0,0,0,0.6)` | Timestamps, metadata, placeholders |
-| `--color-text-inverse` | `rgba(255,255,255,1)` | Text on dark backgrounds |
-| `--color-text-inverse-secondary` | `rgba(255,255,255,0.75)` | Supporting text on dark backgrounds |
-| `--color-border-subtle` | `rgba(0,0,0,0.08)` | Card borders, dividers |
-| `--color-border-default` | `rgba(0,0,0,0.15)` | Button borders, input borders |
-| `--color-border-strong` | `rgba(0,0,0,0.25)` | Active borders, emphasis |
-| `--color-fill-primary` | `rgba(0,0,0,0.03)` | Hover states, subtle fills |
-| `--color-fill-secondary` | `rgba(0,0,0,0.06)` | Active fills |
-| `--color-fill-hover` | `rgba(0,0,0,0.05)` | Hover background |
-| `--color-fill-active` | `rgba(0,0,0,0.9)` | Primary button hover |
+| Token | Value | Contrast (on white) | Usage |
+|-------|-------|---------------------|-------|
+| `--color-black` | `#000000` | 21:1 | Primary text, buttons, dark backgrounds |
+| `--color-white` | `#FFFFFF` | — | Page background, inverse text |
+| `--color-text-primary` | `rgba(0,0,0,1)` | 21:1 | Headings, body text |
+| `--color-text-secondary` | `rgba(0,0,0,0.65)` | 5.9:1 | Descriptions, supporting text |
+| `--color-text-tertiary` | `rgba(0,0,0,0.4)` | 3.1:1 | Timestamps, metadata, decorative `+` markers (large text only) |
+| `--color-text-inverse` | `rgba(255,255,255,1)` | — | Text on dark backgrounds |
+| `--color-text-inverse-secondary` | `rgba(255,255,255,0.75)` | — | Supporting text on dark backgrounds |
+| `--color-border-subtle` | `rgba(0,0,0,0.08)` | — | Card borders, dividers |
+| `--color-border-default` | `rgba(0,0,0,0.15)` | — | Button borders, input borders |
+| `--color-border-strong` | `rgba(0,0,0,0.25)` | — | Active borders, emphasis |
+| `--color-fill-primary` | `rgba(0,0,0,0.03)` | — | Subtle background fills |
+| `--color-fill-secondary` | `rgba(0,0,0,0.12)` | — | Active fills, emphasis |
+| `--color-fill-hover` | `rgba(0,0,0,0.08)` | — | Hover background, skeleton placeholders |
+| `--color-fill-active` | `rgba(0,0,0,0.9)` | — | Primary button hover |
+
+### Contrast Notes
+- `text-secondary` (5.9:1) passes WCAG AA for all text sizes
+- `text-tertiary` (3.1:1) passes WCAG AA for large text only (18px+ or 14px bold+). Used exclusively for decorative markers, timestamps, and metadata — never for body text
+- Fill tokens are background-only and don't need contrast compliance
 
 ### Selection Colors
 - Default: Black background, white text
