@@ -1,0 +1,164 @@
+import type { Metadata } from "next";
+import BackButton from "@/components/BackButton";
+import Button from "@/components/Button";
+import Section from "@/components/Section";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Pager Studio is an AEO strategy firm for healthcare, founded by Sandeep Kumar. We help healthcare practices become discoverable, accurately described, and trusted across AI search.",
+  keywords: [
+    "Pager Studio about",
+    "Sandeep Kumar AEO",
+    "healthcare AEO strategist",
+    "answer engine optimization firm",
+    "AI visibility healthcare",
+  ],
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About | Pager Studio",
+    description:
+      "Pager Studio is an AEO strategy firm for healthcare, founded by Sandeep Kumar.",
+    url: "https://pagerstudio.space/about",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About | Pager Studio",
+    description:
+      "Pager Studio is an AEO strategy firm for healthcare, founded by Sandeep Kumar.",
+  },
+};
+
+export default function AboutPage() {
+  return (
+    <>
+      <BackButton />
+      <section className="px-[20px] md:px-[30px] pt-[20px] md:pt-[30px] pb-[90px] md:pb-[180px]">
+        <div className="mx-auto max-w-[720px] flex flex-col items-center">
+
+          {/* Intro */}
+          <Section noSeparator className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] hero-animate" style={{ animationDelay: "0ms" }}>
+            <p className="text-subhead font-medium text-text-secondary">
+              {"// About //"}
+            </p>
+            <h1 className="mt-[20px] md:mt-[30px] text-display md:text-display-xl font-semibold leading-snug tracking-tight">
+              Who we are and why we do this
+            </h1>
+          </Section>
+
+          {/* Founder */}
+          <Section className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] hero-animate" style={{ animationDelay: "80ms" }}>
+            <h2 className="text-title-1 font-semibold tracking-tight">{"// Founder //"}</h2>
+            <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
+              Hello, I&apos;m{" "}
+              <a
+                href="https://www.linkedin.com/in/sandeepkumargr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-black hover:text-text-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 rounded"
+              >
+                Sandeep Kumar
+              </a>
+              .
+            </p>
+            <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
+              I run Pager Studio solo. No team, no outsourced work, no junior copywriter drafting your strategy. When you email about a change in how ChatGPT describes your fertility clinic, I&apos;m the one who reads it and acts on it.
+            </p>
+            <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
+              I&apos;m based in Coimbatore, India. My clients are in the US, UK, and UAE. The geography works because healthcare AEO isn&apos;t synchronous work. I monitor your AI visibility around the clock and we sync on calls during your business hours.
+            </p>
+            <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
+              Before this, I watched healthcare practices spend $4,000-$8,000 a month on SEO firms that delivered blog posts no one reads and backlinks from directories that stopped mattering years ago. The reports looked impressive. The patient referral numbers didn&apos;t change. One dental implant client told me their previous agency&apos;s biggest win was getting them listed on a &quot;top dentists&quot; page that drove exactly zero consultation requests in 14 months.
+            </p>
+            <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
+              That was the old game. Patients don&apos;t search anymore — they ask an AI which practice to trust, and it answers before they ever visit your website. I make sure it answers with your name.
+            </p>
+            <div className="mt-[24px]">
+              <Button href="/book">Book a Discovery Call</Button>
+            </div>
+          </Section>
+
+          {/* About the Firm */}
+          <Section className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] hero-animate" style={{ animationDelay: "160ms" }}>
+            <h2 className="text-title-1 font-semibold tracking-tight">{"// About the Firm //"}</h2>
+            <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
+              Pager Studio is an AEO strategy firm for healthcare practices. We work specifically with IVF and fertility centers, hair restoration clinics, cosmetic dermatology practices, dental implant centers, LASIK and vision correction clinics, and plastic surgery practices. These are high-consideration specialties where patients research extensively before booking, and where AI search is becoming the first touchpoint.
+            </p>
+            <p className="mt-[24px] text-subhead leading-prose text-text-secondary">
+              The work follows three phases.
+            </p>
+            <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
+              <strong className="font-semibold text-black">Audit.</strong> $5,000, fixed. We spend 4-6 weeks analyzing how AI systems currently see your practice. Google AI Overviews, ChatGPT, Perplexity, Gemini. We document what they say about you, what they get wrong, what they leave out entirely. You receive a prioritized report with specific fixes, not a generic checklist.
+            </p>
+            <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
+              <strong className="font-semibold text-black">Implement.</strong> Minimum 6-month engagement. AI authority signals take months to compound. We handle technical optimization, off-page authority building, directory presence, and the structural work that makes AI systems understand your specialties correctly. Anything shorter won&apos;t hold.
+            </p>
+            <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
+              <strong className="font-semibold text-black">Monitor.</strong> We track what AI platforms actually say about you across updates and adjust as the landscape changes. This is where most firms disappear. We don&apos;t.
+            </p>
+            <p className="mt-[24px] text-subhead leading-prose text-text-secondary">
+              A few things to know upfront. We take on up to 10 clients at a time. Every engagement is NDA-covered. We never collect or work with patient data. We don&apos;t publish client names, metrics, or the strategies we build for them — not now, not ever. If you want proof, we&apos;ll run a basic audit of your practice and show you what&apos;s working and what isn&apos;t. Proof on your data, never someone else&apos;s.
+            </p>
+            <div className="mt-[24px]">
+              <Button href="/book">Book a Discovery Call</Button>
+            </div>
+          </Section>
+
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "AboutPage",
+              name: "About | Pager Studio",
+              url: "https://pagerstudio.space/about",
+              speakable: {
+                "@type": "SpeakableSpecification",
+                cssSelector: ["h1"],
+              },
+              mainEntity: {
+                "@type": "ProfessionalService",
+                "@id": "https://pagerstudio.space/#organization",
+                name: "Pager Studio",
+                url: "https://pagerstudio.space",
+                description:
+                  "Pager Studio is an AEO (Answer Engine Optimization) strategy firm for healthcare, helping practices become discoverable, accurately described, and trusted across AI search.",
+                founder: {
+                  "@type": "Person",
+                  name: "Sandeep Kumar",
+                  jobTitle: "AEO Strategist",
+                  url: "https://www.linkedin.com/in/sandeepkumargr/",
+                },
+                areaServed: [
+                  { "@type": "Country", name: "United States" },
+                  { "@type": "Country", name: "United Kingdom" },
+                  { "@type": "Country", name: "United Arab Emirates" },
+                ],
+                serviceType: [
+                  "AEO Strategy",
+                  "AEO Audit",
+                  "AI Visibility Optimization",
+                  "Healthcare Marketing",
+                ],
+              },
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
+                { "@type": "ListItem", position: 2, name: "About", item: "https://pagerstudio.space/about" },
+              ],
+            },
+          ]),
+        }}
+      />
+    </>
+  );
+}
