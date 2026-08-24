@@ -48,7 +48,7 @@ export default function SwipeableCards({ posts }: Props) {
       onTouchEnd={handleTouchEnd}
       onKeyDown={handleKeyDown}
       tabIndex={0}
-      className="flex flex-col overflow-hidden rounded-2xl bg-black text-white p-5 md:p-8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+      className="flex flex-col overflow-hidden rounded-2xl bg-black text-white p-6 md:p-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
     >
       <div className="flex flex-col min-w-0 text-left">
         <h2 className="text-left text-title-2 md:text-title-1 font-normal leading-snug">
