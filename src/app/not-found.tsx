@@ -13,7 +13,7 @@ export default function NotFound() {
     <>
       <BackButton />
       <section className="px-[20px] md:px-[30px] pt-[20px] md:pt-[30px] pb-[60px] md:pb-24">
-        <GlassCard className="mx-auto max-w-3xl px-[20px] md:px-[40px] py-[40px] md:py-[60px] text-center">
+        <GlassCard className="mx-auto max-w-[720px] px-[20px] md:px-[40px] py-[40px] md:py-[60px] text-center">
           <h1 className="text-[80px] md:text-[120px] font-semibold leading-none tracking-tight text-text-tertiary">
             404
           </h1>
