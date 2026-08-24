@@ -36,8 +36,12 @@ export const metadata: Metadata = {
   creator: "Sandeep Kumar",
   metadataBase: new URL("https://pagerstudio.space"),
   icons: {
-    icon: [{ url: "/favicon.png", type: "image/png" }],
-    apple: [{ url: "/favicon.png", type: "image/png", sizes: "180x180" }],
+    icon: [
+      { url: "/favicon.png", type: "image/png", sizes: "128x128" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", type: "image/png", sizes: "180x180" },
+    ],
   },
   openGraph: {
     type: "website",
