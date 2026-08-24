@@ -36,12 +36,8 @@ export const metadata: Metadata = {
   creator: "Sandeep Kumar",
   metadataBase: new URL("https://pagerstudio.space"),
   icons: {
-    icon: [
-      { url: "/favicon.png", type: "image/png", sizes: "128x128" },
-    ],
-    apple: [
-      { url: "/apple-touch-icon.png", type: "image/png", sizes: "180x180" },
-    ],
+    icon: [],
+    apple: [],
   },
   openGraph: {
     type: "website",
@@ -88,7 +84,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${manrope.variable} antialiased`}>
       <head>
-        <meta name="theme-color" content="#000000" />
+        <link rel="icon" href="/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)" />
+        <link rel="icon" href="/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon-dark.png" media="(prefers-color-scheme: light)" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon-light.png" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
         <link rel="alternate" href="/llms.txt" type="text/plain" title="LLM context file" />
         <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Pager Studio Blog" />
         <link rel="manifest" href="/manifest.json" />
