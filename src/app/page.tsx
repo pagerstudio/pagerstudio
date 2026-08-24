@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Pager Studio — AEO Strategist for Healthcare",
     description:
       "Making healthcare discoverable through AI search and agents.",
-    url: "https://pagerstudio.space",
+    url: "https://pagerstudio.vercel.app",
   },
   twitter: {
     card: "summary_large_image",
@@ -121,7 +121,7 @@ export default async function HomePage() {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               name: "Pager Studio",
-              url: "https://pagerstudio.space",
+              url: "https://pagerstudio.vercel.app",
               description:
                 "AEO strategy for healthcare — making practices discoverable through AI search and agents.",
               founder: {
@@ -156,16 +156,16 @@ export default async function HomePage() {
             {
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "@id": "https://pagerstudio.space/#website",
+              "@id": "https://pagerstudio.vercel.app/#website",
               name: "Pager Studio",
-              url: "https://pagerstudio.space",
+              url: "https://pagerstudio.vercel.app",
             },
             {
               "@context": "https://schema.org",
               "@type": "WebPage",
-              "@id": "https://pagerstudio.space/#webpage",
+              "@id": "https://pagerstudio.vercel.app/#webpage",
               name: "Pager Studio — AEO Strategist for Healthcare",
-              url: "https://pagerstudio.space",
+              url: "https://pagerstudio.vercel.app",
               speakable: {
                 "@type": "SpeakableSpecification",
                 cssSelector: ["h1"],

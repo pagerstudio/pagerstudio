@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Book a Discovery Call | Pager Studio",
     description: "Schedule a discovery call to discuss your practice's AI visibility.",
-    url: "https://pagerstudio.space/book",
+    url: "https://pagerstudio.vercel.app/book",
   },
   twitter: {
     card: "summary_large_image",
@@ -91,9 +91,9 @@ export default function BookPage() {
                 "Free discovery call to discuss your practice's AI visibility and AEO strategy.",
               provider: {
                 "@type": "ProfessionalService",
-                "@id": "https://pagerstudio.space/#organization",
+                "@id": "https://pagerstudio.vercel.app/#organization",
                 name: "Pager Studio",
-                url: "https://pagerstudio.space",
+                url: "https://pagerstudio.vercel.app",
               },
               offers: {
                 "@type": "Offer",
@@ -113,8 +113,8 @@ export default function BookPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
-                { "@type": "ListItem", position: 2, name: "Book a Call", item: "https://pagerstudio.space/book" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.vercel.app" },
+                { "@type": "ListItem", position: 2, name: "Book a Call", item: "https://pagerstudio.vercel.app/book" },
               ],
             },
           ]),

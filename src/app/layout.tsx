@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     "healthcare discoverability",
     "Pager Studio",
   ],
-  authors: [{ name: "Sandeep Kumar", url: "https://pagerstudio.com" }],
+  authors: [{ name: "Sandeep Kumar", url: "https://pagerstudio.vercel.app" }],
   creator: "Sandeep Kumar",
-  metadataBase: new URL("https://pagerstudio.space"),
+  metadataBase: new URL("https://pagerstudio.vercel.app"),
   icons: {
     icon: [],
     apple: [],
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://pagerstudio.space",
+    canonical: "https://pagerstudio.vercel.app",
   },
 };
 
@@ -120,10 +120,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "@id": "https://pagerstudio.com/#organization",
+              "@id": "https://pagerstudio.vercel.app/#organization",
               name: "Pager Studio",
-              url: "https://pagerstudio.space",
-              logo: "https://pagerstudio.space/logo-dark.png",
+              url: "https://pagerstudio.vercel.app",
+              logo: "https://pagerstudio.vercel.app/logo-dark.png",
               description:
                 "AEO strategy firm focused on making healthcare practices discoverable through AI search and agents.",
               founder: {
@@ -138,7 +138,7 @@ export default function RootLayout({
               ],
               contactPoint: {
                 "@type": "ContactPoint",
-                email: "hello@pagerstudio.com",
+                email: "hello@pagerstudio.space",
                 contactType: "customer service",
               },
               areaServed: [

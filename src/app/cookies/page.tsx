@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cookie Policy | Pager Studio",
     description: "Pager Studio's cookie policy.",
-    url: "https://pagerstudio.com/cookies",
+    url: "https://pagerstudio.vercel.app/cookies",
   },
   twitter: {
     card: "summary_large_image",
@@ -224,7 +224,7 @@ export default function CookiePolicyPage() {
               <p>
                 Questions about this cookie policy? Email us at{" "}
                 <strong className="font-semibold text-black">
-                  hello@pagerstudio.com
+                  hello@pagerstudio.space
                 </strong>
                 .
               </p>
@@ -243,7 +243,7 @@ export default function CookiePolicyPage() {
               name: "Cookie Policy | Pager Studio",
               description:
                 "Pager Studio's cookie policy — what cookies we use, why, and how to manage your preferences.",
-              url: "https://pagerstudio.space/cookies",
+              url: "https://pagerstudio.vercel.app/cookies",
               dateModified: "2026-08-01",
               speakable: {
                 "@type": "SpeakableSpecification",
@@ -254,8 +254,8 @@ export default function CookiePolicyPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
-                { "@type": "ListItem", position: 2, name: "Cookie Policy", item: "https://pagerstudio.space/cookies" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.vercel.app" },
+                { "@type": "ListItem", position: 2, name: "Cookie Policy", item: "https://pagerstudio.vercel.app/cookies" },
               ],
             },
           ]),

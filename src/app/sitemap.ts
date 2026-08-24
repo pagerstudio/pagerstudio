@@ -4,7 +4,7 @@ import { getCachedAllPosts } from "@/lib/blog";
 const lastModified = new Date("2026-08-01");
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://pagerstudio.space";
+  const baseUrl = "https://pagerstudio.vercel.app";
 
   const staticPages = [
     { url: baseUrl, lastModified, changeFrequency: "monthly" as const, priority: 1 },

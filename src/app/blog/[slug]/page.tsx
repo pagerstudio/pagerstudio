@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.date,
       modifiedTime: post.date,
       authors: ["Sandeep Kumar"],
-      url: `https://pagerstudio.space/blog/${post.slug}`,
+      url: `https://pagerstudio.vercel.app/blog/${post.slug}`,
       siteName: "Pager Studio",
       images: [
         {
@@ -148,12 +148,12 @@ export default async function BlogPostPage({ params }: Props) {
     wordCount,
     articleSection: post.category,
     image: "/og-default.png",
-    url: `https://pagerstudio.space/blog/${post.slug}`,
+    url: `https://pagerstudio.vercel.app/blog/${post.slug}`,
     author: {
       "@type": "Person",
       name: "Sandeep Kumar",
       jobTitle: "AEO Strategist",
-      url: "https://pagerstudio.space",
+      url: "https://pagerstudio.vercel.app",
       sameAs: [
         "https://instagram.com/pagerstudio",
         "https://x.com/pagerstudio",
@@ -163,7 +163,7 @@ export default async function BlogPostPage({ params }: Props) {
     publisher: {
       "@type": "Organization",
       name: "Pager Studio",
-      url: "https://pagerstudio.space",
+      url: "https://pagerstudio.vercel.app",
       logo: {
         "@type": "ImageObject",
         url: "/og-default.png",
@@ -171,7 +171,7 @@ export default async function BlogPostPage({ params }: Props) {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://pagerstudio.space/blog/${post.slug}`,
+      "@id": `https://pagerstudio.vercel.app/blog/${post.slug}`,
     },
     speakable: {
       "@type": "SpeakableSpecification",
@@ -193,9 +193,9 @@ export default async function BlogPostPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://pagerstudio.space/blog" },
-      { "@type": "ListItem", position: 3, name: post.title, item: `https://pagerstudio.space/blog/${post.slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.vercel.app" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://pagerstudio.vercel.app/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://pagerstudio.vercel.app/blog/${post.slug}` },
     ],
   };
 

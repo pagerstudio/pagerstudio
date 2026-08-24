@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Pricing & Process | Pager Studio",
     description:
       "AEO audit, implementation, and monitoring for healthcare practices.",
-    url: "https://pagerstudio.space/pricing",
+    url: "https://pagerstudio.vercel.app/pricing",
   },
   twitter: {
     card: "summary_large_image",
@@ -106,9 +106,9 @@ export default function PricingPage() {
                 "A complete diagnostic of your practice's current AI visibility — how AI engines and agents see (or fail to see) you today, delivered as a clear report with findings and priorities.",
               provider: {
                 "@type": "ProfessionalService",
-                "@id": "https://pagerstudio.space/#organization",
+                "@id": "https://pagerstudio.vercel.app/#organization",
                 name: "Pager Studio",
-                url: "https://pagerstudio.space",
+                url: "https://pagerstudio.vercel.app",
               },
               areaServed: [
                 { "@type": "Country", name: "United States" },
@@ -158,8 +158,8 @@ export default function PricingPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
-                { "@type": "ListItem", position: 2, name: "Pricing & Process", item: "https://pagerstudio.space/pricing" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.vercel.app" },
+                { "@type": "ListItem", position: 2, name: "Pricing & Process", item: "https://pagerstudio.vercel.app/pricing" },
               ],
             },
           ]),

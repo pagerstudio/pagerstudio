@@ -18,17 +18,17 @@ Healthcare practices in the USA, UK, and UAE — including multi-location groups
 
 ## Key Pages
 
-- [Home](https://pagerstudio.space/)
-- [About](https://pagerstudio.space/about)
-- [Pricing & Process](https://pagerstudio.space/pricing)
-- [Blog](https://pagerstudio.space/blog)
-- [Book a Discovery Call](https://pagerstudio.space/book)
+- [Home](https://pagerstudio.vercel.app/)
+- [About](https://pagerstudio.vercel.app/about)
+- [Pricing & Process](https://pagerstudio.vercel.app/pricing)
+- [Blog](https://pagerstudio.vercel.app/blog)
+- [Book a Discovery Call](https://pagerstudio.vercel.app/book)
 
 ## Blog Posts
 
-- [How AI Search Differs from Google](https://pagerstudio.space/blog/how-ai-search-differs-from-google) — Why AI search engines don't rank pages but synthesize answers, and what that means for healthcare.
-- [What Is AEO — And Why Healthcare Practices Need It](https://pagerstudio.space/blog/what-is-aeo-healthcare) — Answer Engine Optimization explained: what it is, how it works, and why healthcare is especially vulnerable.
-- [The Future of Healthcare Discoverability](https://pagerstudio.space/blog/future-of-healthcare-discoverability) — How AI-mediated discovery is replacing traditional search and what practices need to do to prepare.
+- [How AI Search Differs from Google](https://pagerstudio.vercel.app/blog/how-ai-search-differs-from-google) — Why AI search engines don't rank pages but synthesize answers, and what that means for healthcare.
+- [What Is AEO — And Why Healthcare Practices Need It](https://pagerstudio.vercel.app/blog/what-is-aeo-healthcare) — Answer Engine Optimization explained: what it is, how it works, and why healthcare is especially vulnerable.
+- [The Future of Healthcare Discoverability](https://pagerstudio.vercel.app/blog/future-of-healthcare-discoverability) — How AI-mediated discovery is replacing traditional search and what practices need to do to prepare.
 
 ## FAQ
 
@@ -46,7 +46,7 @@ Healthcare practices in the USA, UK, and UAE.
 
 ## Contact
 
-Email: hello@pagerstudio.com
+Email: hello@pagerstudio.space
 
 ## Founder
 

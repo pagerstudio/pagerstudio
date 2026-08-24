@@ -1,6 +1,6 @@
 import { getAllPosts } from "@/lib/blog";
 
-const baseUrl = "https://pagerstudio.space";
+const baseUrl = "https://pagerstudio.vercel.app";
 
 function escapeXml(str: string): string {
   return str
@@ -23,7 +23,7 @@ export async function GET() {
       <guid isPermaLink="true">${baseUrl}/blog/${post.slug}</guid>
       <pubDate>${new Date(post.date + "T00:00:00Z").toUTCString()}</pubDate>
       <category>${escapeXml(post.category)}</category>
-      <author>hello@pagerstudio.com (Sandeep Kumar)</author>
+      <author>hello@pagerstudio.space (Sandeep Kumar)</author>
     </item>`
     )
     .join("\n");

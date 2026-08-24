@@ -182,7 +182,7 @@ export default function Header() {
             <div>
               <p className="text-micro text-text-inverse-secondary mb-3">Contact</p>
               <a
-                href="mailto:hello@pagerstudio.com"
+                href="mailto:hello@pagerstudio.space"
                 role="menuitem"
                 ref={(el) => { menuItemsRef.current[pageLinks.length + socialLinks.length] = el; }}
                 className={`text-body font-medium text-white hover:text-text-inverse-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded ${
@@ -190,7 +190,7 @@ export default function Header() {
                 }`}
                 style={{ animationDelay: closing ? `${(pageLinks.length + socialLinks.length) * 40}ms` : `${(pageLinks.length + socialLinks.length) * 80}ms` }}
               >
-                hello@pagerstudio.com
+                hello@pagerstudio.space
               </a>
             </div>
           </div>

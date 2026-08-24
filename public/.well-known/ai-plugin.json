@@ -2,7 +2,7 @@
   "schema_version": "v1",
   "name": "Pager Studio",
   "description": "AEO strategy firm focused on making healthcare practices discoverable through AI search and agents.",
-  "contact_email": "hello@pagerstudio.com",
+  "contact_email": "hello@pagerstudio.space",
   "auth": {
     "type": "none"
   }
