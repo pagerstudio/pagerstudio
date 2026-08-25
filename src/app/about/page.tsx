@@ -32,6 +32,27 @@ export const metadata: Metadata = {
   },
 };
 
+const specialties = [
+  "IVF & Fertility",
+  "Hair Restoration",
+  "Cosmetic Dermatology",
+  "Dental Implants",
+  "LASIK",
+  "Plastic Surgery",
+  "Orthopedics",
+  "Cardiology",
+];
+
+const expertise = [
+  "Healthcare AEO (Answer Engine Optimization)",
+  "AI Search Visibility (ChatGPT, Gemini, Perplexity, Google AI Overviews)",
+  "Generative Engine Optimization (GEO)",
+  "Medical Entity Optimization",
+  "Schema Markup for Healthcare",
+  "Directory Consistency & Verification",
+  "AI Monitoring & Reporting",
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -79,6 +100,38 @@ export default function AboutPage() {
             <div className="mt-[24px]">
               <Button href="/book">Book a Discovery Call</Button>
             </div>
+          </Section>
+
+          {/* Specialties */}
+          <Section className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] hero-animate" style={{ animationDelay: "120ms" }}>
+            <h2 className="text-title-1 font-semibold tracking-tight">{"// Specialties //"}</h2>
+            <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
+              Pager Studio works exclusively with healthcare practices in
+              high-consideration specialties:
+            </p>
+            <div className="mt-[16px] flex flex-wrap gap-[12px]">
+              {specialties.map((specialty) => (
+                <span
+                  key={specialty}
+                  className="px-[16px] py-[8px] rounded-full bg-fill-secondary text-body font-medium text-text-secondary"
+                >
+                  {specialty}
+                </span>
+              ))}
+            </div>
+          </Section>
+
+          {/* Expertise */}
+          <Section className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] hero-animate" style={{ animationDelay: "160ms" }}>
+            <h2 className="text-title-1 font-semibold tracking-tight">{"// Expertise //"}</h2>
+            <ul className="mt-[16px] space-y-[16px] text-subhead leading-prose text-text-secondary">
+              {expertise.map((item) => (
+                <li key={item} className="flex gap-3">
+                  <span className="text-text-tertiary font-medium shrink-0">+</span>
+                  <p>{item}</p>
+                </li>
+              ))}
+            </ul>
           </Section>
 
           {/* About the Firm */}
@@ -130,6 +183,8 @@ export default function AboutPage() {
                 "Healthcare AEO",
                 "AI Search Optimization",
                 "Generative Engine Optimization",
+                "Medical Entity Optimization",
+                "Schema Markup for Healthcare",
                 "Healthcare Marketing",
               ],
               sameAs: [

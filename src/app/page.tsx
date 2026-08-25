@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Button from "@/components/Button";
 import GlassCard from "@/components/GlassCard";
 import SwipeableCards from "@/components/SwipeableCards";
@@ -86,6 +87,24 @@ export default async function HomePage() {
 
         <div className="mb-[40px] md:mb-[60px] mt-[40px] md:mt-0 w-full max-w-[720px] hero-animate" style={{ animationDelay: "300ms" }}>
           <SwipeableCards posts={posts} />
+        </div>
+      </section>
+
+      {/* Quick Links */}
+      <section className="px-[20px] md:px-[30px] pt-[40px] md:pt-[80px] pb-[40px] md:pb-[80px]">
+        <div className="mx-auto max-w-[720px] grid grid-cols-2 md:grid-cols-4 gap-[16px]">
+          <Link href="/healthcare-aeo" className="block px-[20px] py-[24px] rounded-[16px] bg-fill-primary hover:bg-fill-hover transition-colors text-center">
+            <span className="text-body font-semibold text-black">Healthcare AEO</span>
+          </Link>
+          <Link href="/services" className="block px-[20px] py-[24px] rounded-[16px] bg-fill-primary hover:bg-fill-hover transition-colors text-center">
+            <span className="text-body font-semibold text-black">Services</span>
+          </Link>
+          <Link href="/faq" className="block px-[20px] py-[24px] rounded-[16px] bg-fill-primary hover:bg-fill-hover transition-colors text-center">
+            <span className="text-body font-semibold text-black">FAQ</span>
+          </Link>
+          <Link href="/blog" className="block px-[20px] py-[24px] rounded-[16px] bg-fill-primary hover:bg-fill-hover transition-colors text-center">
+            <span className="text-body font-semibold text-black">Blog</span>
+          </Link>
         </div>
       </section>
 
