@@ -15,11 +15,11 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "Healthcare AEO Strategist — Pager Studio",
+    default: "Healthcare AEO Strategy Firm — Pager Studio",
     template: "%s | Pager Studio",
   },
   description:
-    "Pager Studio is a Healthcare AEO (Answer Engine Optimization) strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
+    "Healthcare AEO Strategy Firm — Pager Studio. Making healthcare practices visible in AI search.",
   keywords: [
     "healthcare AEO",
     "answer engine optimization healthcare",
@@ -43,15 +43,15 @@ export const metadata: Metadata = {
         url: "/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Healthcare AEO Strategist — Pager Studio",
+        alt: "Healthcare AEO Strategy Firm — Pager Studio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Healthcare AEO Strategist — Pager Studio",
+    title: "Healthcare AEO Strategy Firm — Pager Studio",
     description:
-      "Pager Studio is a Healthcare AEO strategy firm. We make healthcare practices visible in AI search.",
+      "Healthcare AEO Strategy Firm — Pager Studio. Making healthcare practices visible in AI search.",
     images: ["/og-default.png"],
     creator: "@pagerstudio",
   },

@@ -5,9 +5,9 @@ import SwipeableCards from "@/components/SwipeableCards";
 import { getCachedAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Healthcare AEO Strategist — Pager Studio",
+  title: "Healthcare AEO Strategist — Sandeep Kumar",
   description:
-    "Pager Studio is a Healthcare AEO (Answer Engine Optimization) strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
+    "Healthcare AEO Strategy Firm — Pager Studio. Making healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
   keywords: [
     "healthcare AEO",
     "AEO strategist",
@@ -21,17 +21,17 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Healthcare AEO Strategist — Pager Studio",
+    title: "Healthcare AEO Strategist — Sandeep Kumar",
     description:
-      "Pager Studio is a Healthcare AEO strategy firm. We make healthcare practices visible in AI search.",
+      "Healthcare AEO Strategy Firm — Pager Studio.",
     url: "https://pagerstudio.space",
     images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Healthcare AEO Strategist — Pager Studio",
+    title: "Healthcare AEO Strategist — Sandeep Kumar",
     description:
-      "Pager Studio is a Healthcare AEO strategy firm. We make healthcare practices visible in AI search.",
+      "Healthcare AEO Strategy Firm — Pager Studio.",
     images: ["/og-default.png"],
   },
 };
@@ -129,7 +129,7 @@ export default async function HomePage() {
               founder: {
                 "@type": "Person",
                 name: "Sandeep Kumar",
-                jobTitle: "Healthcare AEO Strategist",
+                jobTitle: "Healthcare Strategist",
                 url: "https://www.linkedin.com/in/sandeepkumargr/",
               },
               sameAs: [
@@ -162,7 +162,7 @@ export default async function HomePage() {
               "@context": "https://schema.org",
               "@type": "WebPage",
               "@id": "https://pagerstudio.space/#webpage",
-              name: "Healthcare AEO Strategist — Pager Studio",
+              name: "Healthcare AEO Strategist — Sandeep Kumar",
               url: "https://pagerstudio.space",
               speakable: {
                 "@type": "SpeakableSpecification",

@@ -200,7 +200,7 @@ export default function AboutPage() {
               founder: {
                 "@type": "Person",
                 name: "Sandeep Kumar",
-                jobTitle: "Healthcare AEO Strategist",
+              jobTitle: "Healthcare Strategist",
                 url: "https://www.linkedin.com/in/sandeepkumargr/",
               },
               areaServed: "Worldwide",
