@@ -31,19 +31,11 @@ export const metadata: Metadata = {
 const qualifyingPoints = [
   {
     label: "What Happens on the Call",
-    text: "Before the call, we do homework on your practice and prepare a basic AEO overview report. During the 30-minute call, we walk you through how AI currently sees (or doesn't see) your practice. This is a qualification call, not a sales pitch.",
+    text: "Before the call, we prepare a free basic AEO snapshot of your practice — no cost, no obligation. During the 30-minute call, we walk you through it live. This is a qualification call, not a sales pitch.",
   },
   {
-    label: "Healthcare Practices Only",
-    text: "Pager Studio works exclusively with healthcare practices.",
-  },
-  {
-    label: "Transparent Pricing",
-    text: "The End-to-End In-Depth AEO Audit is $5,000, fixed. Implementation and monitoring pricing is shared after the audit.",
-  },
-  {
-    label: "6-Month Minimum",
-    text: "A strong AI visibility foundation requires at least 6 months of engagement.",
+    label: "Pricing",
+    text: "This call and the snapshot are free. If it's a fit, the next step is our End-to-End In-Depth AEO Audit — a separate, deeper engagement at $5,000 fixed.",
   },
 ];
 
