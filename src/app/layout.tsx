@@ -34,10 +34,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Sandeep Kumar", url: "https://pagerstudio.space" }],
   creator: "Sandeep Kumar",
   metadataBase: new URL("https://pagerstudio.space"),
-  icons: {
-    icon: [],
-    apple: [],
-  },
   openGraph: {
     type: "website",
     locale: "en_US",
