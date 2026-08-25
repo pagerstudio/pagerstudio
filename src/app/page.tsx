@@ -89,6 +89,38 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="px-[20px] md:px-[30px] pt-[40px] md:pt-[80px] pb-[40px] md:pb-[80px]">
+        <GlassCard className="mx-auto max-w-[720px] px-[30px] md:px-[60px] py-[30px] md:py-[60px]">
+          <div className="text-center mb-[20px] md:mb-[30px]">
+            <h2 className="text-title-1 font-semibold tracking-tight">{"// FAQ //"}</h2>
+          </div>
+          <div className="space-y-[20px] md:space-y-[30px]">
+            <div>
+              <h3 className="text-body font-semibold text-black">What is Healthcare AEO?</h3>
+              <p className="mt-[8px] text-body leading-relaxed-body text-text-secondary">
+                Healthcare AEO (Answer Engine Optimization) is the practice of structuring your online presence so that AI systems — ChatGPT, Gemini, Perplexity, Google AI Overviews — can find, understand, and recommend your practice when patients ask relevant questions.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-body font-semibold text-black">How is AEO different from SEO?</h3>
+              <p className="mt-[8px] text-body leading-relaxed-body text-text-secondary">
+                SEO focuses on ranking in Google&apos;s search results. AEO focuses on being cited in AI-generated answers. A healthcare practice can rank #1 on Google and still be invisible to AI if its data isn&apos;t structured for AI consumption.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-body font-semibold text-black">How do I check if my practice is visible to AI?</h3>
+              <p className="mt-[8px] text-body leading-relaxed-body text-text-secondary">
+                Ask an AI tool (ChatGPT, Gemini, or Perplexity) a question a patient would ask about your specialty in your area. If your practice isn&apos;t mentioned, AI either doesn&apos;t know you exist or doesn&apos;t trust your data enough to recommend you.
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-center mt-[30px]">
+            <Button href="/faq" variant="secondary">See All FAQs</Button>
+          </div>
+        </GlassCard>
+      </section>
+
       {/* Must Read */}
       <section className="px-[20px] md:px-[30px] pt-[60px] md:pt-[120px] pb-[90px] md:pb-[180px]">
         <GlassCard className="mx-auto max-w-[720px] mt-[20px] md:mt-[30px] px-[30px] md:px-[60px] py-[30px] md:py-[60px]">
@@ -164,6 +196,7 @@ export default async function HomePage() {
               "@id": "https://pagerstudio.space/#webpage",
               name: "Healthcare AEO Strategist — Sandeep Kumar",
               url: "https://pagerstudio.space",
+              dateModified: "2026-08-25",
               speakable: {
                 "@type": "SpeakableSpecification",
                 cssSelector: ["h1"],
