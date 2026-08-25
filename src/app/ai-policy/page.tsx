@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: "AI Policy | Pager Studio",
     description: "Pager Studio's AI policy — responsible AI usage and compliance.",
     url: "https://pagerstudio.space/ai-policy",
+    images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",

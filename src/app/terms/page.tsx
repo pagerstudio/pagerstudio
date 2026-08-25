@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     title: "Terms & Conditions | Pager Studio",
     description: "Pager Studio's terms and conditions.",
     url: "https://pagerstudio.space/terms",
+    images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",

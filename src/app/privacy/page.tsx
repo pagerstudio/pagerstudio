@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     title: "Privacy Policy | Pager Studio",
     description: "Pager Studio's privacy policy.",
     url: "https://pagerstudio.space/privacy",
+    images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",

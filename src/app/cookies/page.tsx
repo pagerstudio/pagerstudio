@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     title: "Cookie Policy | Pager Studio",
     description: "Pager Studio's cookie policy.",
     url: "https://pagerstudio.space/cookies",
+    images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",

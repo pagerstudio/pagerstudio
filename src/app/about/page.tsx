@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description:
       "Pager Studio is an AEO strategy firm for healthcare, founded by Sandeep Kumar.",
     url: "https://pagerstudio.space/about",
+    images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
@@ -67,7 +68,7 @@ export default function AboutPage() {
               I run Pager Studio solo. No team, no outsourced work, no junior copywriter drafting your strategy. When you email about a change in how ChatGPT describes your fertility clinic, I&apos;m the one who reads it and acts on it.
             </p>
             <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
-              I&apos;m based in Coimbatore, India. My clients are in the US, UK, and UAE. The geography works because healthcare AEO isn&apos;t synchronous work. I monitor your AI visibility around the clock and we sync on calls during your business hours.
+              I&apos;m based in Coimbatore, India. Healthcare AEO isn&apos;t synchronous work — I monitor your AI visibility around the clock and we sync on calls during your business hours.
             </p>
             <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
               Before this, I watched healthcare practices spend $4,000-$8,000 a month on SEO firms that delivered blog posts no one reads and backlinks from directories that stopped mattering years ago. The reports looked impressive. The patient referral numbers didn&apos;t change. One dental implant client told me their previous agency&apos;s biggest win was getting them listed on a &quot;top dentists&quot; page that drove exactly zero consultation requests in 14 months.
@@ -135,11 +136,7 @@ export default function AboutPage() {
                   jobTitle: "AEO Strategist",
                   url: "https://www.linkedin.com/in/sandeepkumargr/",
                 },
-                areaServed: [
-                  { "@type": "Country", name: "United States" },
-                  { "@type": "Country", name: "United Kingdom" },
-                  { "@type": "Country", name: "United Arab Emirates" },
-                ],
+              areaServed: "Worldwide",
                 serviceType: [
                   "AEO Strategy",
                   "AEO Audit",

@@ -141,11 +141,7 @@ export default function RootLayout({
                 email: "hello@pagerstudio.space",
                 contactType: "customer service",
               },
-              areaServed: [
-                { "@type": "Country", name: "United States" },
-                { "@type": "Country", name: "United Kingdom" },
-                { "@type": "Country", name: "United Arab Emirates" },
-              ],
+              areaServed: "Worldwide",
             }),
           }}
         />

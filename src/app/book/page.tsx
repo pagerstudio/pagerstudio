@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     title: "Book a Discovery Call | Pager Studio",
     description: "Schedule a discovery call to discuss your practice's AI visibility.",
     url: "https://pagerstudio.space/book",
+    images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
@@ -94,11 +95,7 @@ export default function BookPage() {
                 description: "Free discovery call",
                 availability: "https://schema.org/InStock",
               },
-              areaServed: [
-                { "@type": "Country", name: "United States" },
-                { "@type": "Country", name: "United Kingdom" },
-                { "@type": "Country", name: "United Arab Emirates" },
-              ],
+              areaServed: "Worldwide",
               serviceType: "AEO Consultation",
             },
             {

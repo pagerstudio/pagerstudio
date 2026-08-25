@@ -7,7 +7,7 @@ import { getCachedAllPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Pager Studio — AEO Strategist for Healthcare",
   description:
-    "Sandeep Kumar is an AEO Strategist focused on making healthcare discoverable through AI search and agents. Healthcare practices in the USA, UK, and UAE.",
+    "Sandeep Kumar is an AEO Strategist focused on making healthcare discoverable through AI search and agents.",
   keywords: [
     "AEO strategist",
     "healthcare AEO",
@@ -25,12 +25,14 @@ export const metadata: Metadata = {
     description:
       "Making healthcare discoverable through AI search and agents.",
     url: "https://pagerstudio.space",
+    images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pager Studio — AEO Strategist for Healthcare",
     description:
       "Making healthcare discoverable through AI search and agents.",
+    images: ["/og-default.png"],
   },
 };
 
@@ -140,11 +142,7 @@ export default async function HomePage() {
                 email: "hello@pagerstudio.space",
                 contactType: "customer service",
               },
-              areaServed: [
-                { "@type": "Country", name: "United States" },
-                { "@type": "Country", name: "United Kingdom" },
-                { "@type": "Country", name: "United Arab Emirates" },
-              ],
+              areaServed: "Worldwide",
               serviceType: [
                 "AEO Strategy",
                 "AEO Audit",

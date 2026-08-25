@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     title: "Blog | Pager Studio",
     description: "Insights on AEO, AI search, and healthcare visibility.",
     url: "https://pagerstudio.space/blog",
+    images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",

@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description:
       "AEO audit, implementation, and monitoring for healthcare practices.",
     url: "https://pagerstudio.space/pricing",
+    images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
@@ -110,11 +111,7 @@ export default function PricingPage() {
                 name: "Pager Studio",
                 url: "https://pagerstudio.space",
               },
-              areaServed: [
-                { "@type": "Country", name: "United States" },
-                { "@type": "Country", name: "United Kingdom" },
-                { "@type": "Country", name: "United Arab Emirates" },
-              ],
+              areaServed: "Worldwide",
               serviceType: ["AEO Audit", "AI Visibility Diagnostic"],
               offers: {
                 "@type": "Offer",
