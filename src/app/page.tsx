@@ -182,6 +182,29 @@ export default async function HomePage() {
                 "Healthcare AI Search Optimization",
               ],
               priceRange: "$$",
+              foundingDate: "2025",
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Healthcare AEO Services",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Healthcare AEO Audit",
+                      description: "Complete diagnostic of your practice's AI visibility. $5,000 fixed, delivered in 4-6 weeks.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Healthcare AEO Strategy",
+                      description: "Technical optimization, off-page authority, directory presence, and ongoing monitoring.",
+                    },
+                  },
+                ],
+              },
             },
             {
               "@context": "https://schema.org",
