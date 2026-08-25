@@ -10,7 +10,7 @@ const socialLinks = [
 const pageLinks = [
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
-  { label: "Free Call", href: "/book" },
+  { label: "Book a Call", href: "/book" },
   { label: "Process & Pricing", href: "/pricing" },
 ];
 

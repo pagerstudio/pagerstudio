@@ -89,7 +89,7 @@ export default function PricingPage() {
 
           <div className="mt-[60px]">
             <p className="text-subhead text-text-secondary mb-[30px]">Ready to start?</p>
-            <Button href="/book">Free Discovery Call</Button>
+            <Button href="/book">Book a Discovery Call</Button>
           </div>
         </GlassCard>
       </section>
