@@ -39,8 +39,6 @@ const specialties = [
   "Dental Implants",
   "LASIK",
   "Plastic Surgery",
-  "Orthopedics",
-  "Cardiology",
 ];
 
 const expertise = [

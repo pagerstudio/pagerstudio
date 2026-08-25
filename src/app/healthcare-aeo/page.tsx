@@ -65,8 +65,6 @@ const specialties = [
   "Dental Implants",
   "LASIK",
   "Plastic Surgery",
-  "Orthopedics",
-  "Cardiology",
 ];
 
 export default function HealthcareAEOPage() {
