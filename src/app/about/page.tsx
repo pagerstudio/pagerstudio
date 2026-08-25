@@ -113,7 +113,7 @@ export default function AboutPage() {
               {specialties.map((specialty) => (
                 <span
                   key={specialty}
-                  className="px-[16px] py-[8px] rounded-full bg-fill-secondary text-body font-medium text-text-secondary"
+                  className="px-[16px] py-[8px] rounded-full border border-border-subtle text-footnote font-medium text-text-secondary"
                 >
                   {specialty}
                 </span>
