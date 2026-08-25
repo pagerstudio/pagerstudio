@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Policy | Pager Studio",
     description: "Pager Studio's AI policy — responsible AI usage and compliance.",
-    url: "https://pagerstudio.vercel.app/ai-policy",
+    url: "https://pagerstudio.space/ai-policy",
   },
   twitter: {
     card: "summary_large_image",
@@ -318,7 +318,7 @@ export default function AIPolicyPage() {
               name: "AI Policy | Pager Studio",
               description:
                 "Pager Studio's AI policy — how we use AI responsibly, data protections, and compliance with the EU AI Act.",
-              url: "https://pagerstudio.vercel.app/ai-policy",
+              url: "https://pagerstudio.space/ai-policy",
               dateModified: "2026-08-01",
               speakable: {
                 "@type": "SpeakableSpecification",
@@ -329,8 +329,8 @@ export default function AIPolicyPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.vercel.app" },
-                { "@type": "ListItem", position: 2, name: "AI Policy", item: "https://pagerstudio.vercel.app/ai-policy" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
+                { "@type": "ListItem", position: 2, name: "AI Policy", item: "https://pagerstudio.space/ai-policy" },
               ],
             },
           ]),

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Disclaimer | Pager Studio",
     description: "Pager Studio's disclaimer.",
-    url: "https://pagerstudio.vercel.app/disclaimer",
+    url: "https://pagerstudio.space/disclaimer",
   },
   twitter: {
     card: "summary_large_image",
@@ -223,7 +223,7 @@ export default function DisclaimerPage() {
               "@type": "WebPage",
               name: "Disclaimer | Pager Studio",
               description: "Pager Studio's disclaimer — no guaranteed rankings, not medical advice, third-party platform dependency.",
-              url: "https://pagerstudio.vercel.app/disclaimer",
+              url: "https://pagerstudio.space/disclaimer",
               dateModified: "2026-08-01",
               speakable: {
                 "@type": "SpeakableSpecification",
@@ -234,8 +234,8 @@ export default function DisclaimerPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.vercel.app" },
-                { "@type": "ListItem", position: 2, name: "Disclaimer", item: "https://pagerstudio.vercel.app/disclaimer" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
+                { "@type": "ListItem", position: 2, name: "Disclaimer", item: "https://pagerstudio.space/disclaimer" },
               ],
             },
           ]),

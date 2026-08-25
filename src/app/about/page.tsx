@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "About | Pager Studio",
     description:
       "Pager Studio is an AEO strategy firm for healthcare, founded by Sandeep Kumar.",
-    url: "https://pagerstudio.vercel.app/about",
+    url: "https://pagerstudio.space/about",
   },
   twitter: {
     card: "summary_large_image",
@@ -117,16 +117,16 @@ export default function AboutPage() {
               "@context": "https://schema.org",
               "@type": "AboutPage",
               name: "About | Pager Studio",
-              url: "https://pagerstudio.vercel.app/about",
+              url: "https://pagerstudio.space/about",
               speakable: {
                 "@type": "SpeakableSpecification",
                 cssSelector: ["h1"],
               },
               mainEntity: {
                 "@type": "ProfessionalService",
-                "@id": "https://pagerstudio.vercel.app/#organization",
+                "@id": "https://pagerstudio.space/#organization",
                 name: "Pager Studio",
-                url: "https://pagerstudio.vercel.app",
+                url: "https://pagerstudio.space",
                 description:
                   "Pager Studio is an AEO (Answer Engine Optimization) strategy firm for healthcare, helping practices become discoverable, accurately described, and trusted across AI search.",
                 founder: {
@@ -152,8 +152,8 @@ export default function AboutPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.vercel.app" },
-                { "@type": "ListItem", position: 2, name: "About", item: "https://pagerstudio.vercel.app/about" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
+                { "@type": "ListItem", position: 2, name: "About", item: "https://pagerstudio.space/about" },
               ],
             },
           ]),

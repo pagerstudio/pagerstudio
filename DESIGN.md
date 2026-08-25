@@ -1,6 +1,6 @@
 # Pager Studio — Design Language
 
-This document defines the design system, tokens, patterns, and conventions used across pagerstudio.vercel.app. All contributors must follow this guide to maintain consistency.
+This document defines the design system, tokens, patterns, and conventions used across pagerstudio.space. All contributors must follow this guide to maintain consistency.
 
 ---
 
@@ -354,7 +354,7 @@ src/
 - **Branch:** `main` → auto-deploys to production
 - **Build:** `npm run build` (Next.js 16 + Turbopack)
 - **Lint:** `npm run lint` (ESLint — must pass with 0 errors)
-- **Domain:** `pagerstudio.vercel.app` (pending custom domain resolution)
+- **Domain:** `pagerstudio.space` (pending custom domain resolution)
 
 ---
 

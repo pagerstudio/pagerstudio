@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Blog | Pager Studio",
     description: "Insights on AEO, AI search, and healthcare visibility.",
-    url: "https://pagerstudio.vercel.app/blog",
+    url: "https://pagerstudio.space/blog",
   },
   twitter: {
     card: "summary_large_image",
@@ -113,17 +113,17 @@ export default async function BlogPage() {
             "@type": "CollectionPage",
             name: "Blog | Pager Studio",
             description: "Insights on AEO, AI search, and healthcare visibility.",
-            url: "https://pagerstudio.vercel.app/blog",
+            url: "https://pagerstudio.space/blog",
             publisher: {
               "@type": "Organization",
               name: "Pager Studio",
-              url: "https://pagerstudio.vercel.app",
+              url: "https://pagerstudio.space",
             },
             hasPart: posts.map((post) => ({
               "@type": "Article",
               headline: post.title,
               description: post.description,
-              url: `https://pagerstudio.vercel.app/blog/${post.slug}`,
+              url: `https://pagerstudio.space/blog/${post.slug}`,
               datePublished: post.date,
               dateModified: post.date,
               author: {
