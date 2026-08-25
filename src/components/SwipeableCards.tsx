@@ -63,7 +63,7 @@ export default function SwipeableCards({ posts }: Props) {
             href={`/blog/${post.slug}`}
             className="text-micro md:text-footnote text-text-inverse-secondary hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
           >
-            Read blog ↗
+            Read full blog ↗
           </Link>
 
           {posts.length > 1 && (
