@@ -116,33 +116,56 @@ export default function AboutPage() {
           __html: JSON.stringify([
             {
               "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Sandeep Kumar",
+              jobTitle: "Healthcare AEO Strategist",
+              url: "https://www.linkedin.com/in/sandeepkumargr/",
+              worksFor: {
+                "@type": "Organization",
+                name: "Pager Studio",
+                url: "https://pagerstudio.space",
+              },
+              knowsAbout: [
+                "Answer Engine Optimization",
+                "Healthcare AEO",
+                "AI Search Optimization",
+                "Generative Engine Optimization",
+                "Healthcare Marketing",
+              ],
+              sameAs: [
+                "https://www.linkedin.com/in/sandeepkumargr/",
+              ],
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              "@id": "https://pagerstudio.space/#organization",
+              name: "Pager Studio",
+              url: "https://pagerstudio.space",
+              description:
+                "Pager Studio is a Healthcare AEO (Answer Engine Optimization) strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
+              founder: {
+                "@type": "Person",
+                name: "Sandeep Kumar",
+                jobTitle: "Healthcare AEO Strategist",
+                url: "https://www.linkedin.com/in/sandeepkumargr/",
+              },
+              areaServed: "Worldwide",
+              serviceType: [
+                "Healthcare AEO Strategy",
+                "Healthcare AEO Audit",
+                "AI Visibility Optimization",
+                "Healthcare AI Search Optimization",
+              ],
+            },
+            {
+              "@context": "https://schema.org",
               "@type": "AboutPage",
               name: "About | Pager Studio",
               url: "https://pagerstudio.space/about",
               speakable: {
                 "@type": "SpeakableSpecification",
                 cssSelector: ["h1"],
-              },
-              mainEntity: {
-                "@type": "ProfessionalService",
-                "@id": "https://pagerstudio.space/#organization",
-                name: "Pager Studio",
-                url: "https://pagerstudio.space",
-                description:
-                  "Pager Studio is an AEO (Answer Engine Optimization) strategy firm for healthcare, helping practices become discoverable, accurately described, and trusted across AI search.",
-                founder: {
-                  "@type": "Person",
-                  name: "Sandeep Kumar",
-                  jobTitle: "AEO Strategist",
-                  url: "https://www.linkedin.com/in/sandeepkumargr/",
-                },
-              areaServed: "Worldwide",
-                serviceType: [
-                  "AEO Strategy",
-                  "AEO Audit",
-                  "AI Visibility Optimization",
-                  "Healthcare Marketing",
-                ],
               },
             },
             {

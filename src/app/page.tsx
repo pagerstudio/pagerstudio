@@ -5,33 +5,33 @@ import SwipeableCards from "@/components/SwipeableCards";
 import { getCachedAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Pager Studio — AEO Strategist for Healthcare",
+  title: "Healthcare AEO Strategist — Pager Studio",
   description:
-    "Sandeep Kumar is an AEO Strategist focused on making healthcare discoverable through AI search and agents.",
+    "Pager Studio is a Healthcare AEO (Answer Engine Optimization) strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
   keywords: [
-    "AEO strategist",
     "healthcare AEO",
+    "AEO strategist",
+    "answer engine optimization healthcare",
     "AI search healthcare",
-    "answer engine optimization",
-    "healthcare visibility",
-    "AI marketing healthcare",
+    "healthcare AI visibility",
+    "AEO for healthcare practices",
     "GEO healthcare",
   ],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Pager Studio — AEO Strategist for Healthcare",
+    title: "Healthcare AEO Strategist — Pager Studio",
     description:
-      "Making healthcare discoverable through AI search and agents.",
+      "Pager Studio is a Healthcare AEO strategy firm. We make healthcare practices visible in AI search.",
     url: "https://pagerstudio.space",
     images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pager Studio — AEO Strategist for Healthcare",
+    title: "Healthcare AEO Strategist — Pager Studio",
     description:
-      "Making healthcare discoverable through AI search and agents.",
+      "Pager Studio is a Healthcare AEO strategy firm. We make healthcare practices visible in AI search.",
     images: ["/og-default.png"],
   },
 };
@@ -68,13 +68,13 @@ export default async function HomePage() {
       <section className="flex flex-col items-center text-center px-[20px] md:px-[30px] pt-[60px] md:pt-0 pb-[40px] md:pb-0 min-h-[calc(100vh-76px)]">
         <div className="flex-1 flex flex-col items-center justify-center">
           <h1 className="max-w-[720px] text-[18px] sm:text-[22px] md:text-display-xl leading-[1.3] md:leading-[1.25] font-normal text-black tracking-[-0.03em] hero-animate" style={{ animationDelay: "0ms" }}>
-            <span className="font-semibold"><a href="https://www.linkedin.com/in/sandeepkumargr/" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 rounded">Sandeep Kumar</a></span> {"// founder of Pager Studio //"}
+            <span className="font-semibold"><a href="https://www.linkedin.com/in/sandeepkumargr/" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 rounded">Sandeep Kumar</a></span> {"// Healthcare AEO Strategist //"}
             <br />
-            {"is an AEO Strategist focused on making"}
+            {"Making healthcare practices visible in"}
             <br />
-            {"healthcare discoverable through"}
+            {"AI search — ChatGPT, Gemini,"}
             <br />
-            {"AI search and agents."}
+            {"Perplexity, Google AI Overviews."}
           </h1>
           <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-[16px] md:gap-[30px] mt-[24px] md:mt-[30px] hero-animate" style={{ animationDelay: "150ms" }}>
             <Button href="/book">Book a Discovery Call</Button>
@@ -125,11 +125,11 @@ export default async function HomePage() {
               name: "Pager Studio",
               url: "https://pagerstudio.space",
               description:
-                "AEO strategy for healthcare — making practices discoverable through AI search and agents.",
+                "Healthcare AEO (Answer Engine Optimization) strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
               founder: {
                 "@type": "Person",
                 name: "Sandeep Kumar",
-                jobTitle: "AEO Strategist",
+                jobTitle: "Healthcare AEO Strategist",
                 url: "https://www.linkedin.com/in/sandeepkumargr/",
               },
               sameAs: [
@@ -144,10 +144,10 @@ export default async function HomePage() {
               },
               areaServed: "Worldwide",
               serviceType: [
-                "AEO Strategy",
-                "AEO Audit",
+                "Healthcare AEO Strategy",
+                "Healthcare AEO Audit",
                 "AI Visibility Optimization",
-                "Healthcare Marketing",
+                "Healthcare AI Search Optimization",
               ],
               priceRange: "$$",
             },
@@ -162,7 +162,7 @@ export default async function HomePage() {
               "@context": "https://schema.org",
               "@type": "WebPage",
               "@id": "https://pagerstudio.space/#webpage",
-              name: "Pager Studio — AEO Strategist for Healthcare",
+              name: "Healthcare AEO Strategist — Pager Studio",
               url: "https://pagerstudio.space",
               speakable: {
                 "@type": "SpeakableSpecification",

@@ -15,20 +15,19 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "Pager Studio — AEO Strategist for Healthcare",
+    default: "Healthcare AEO Strategist — Pager Studio",
     template: "%s | Pager Studio",
   },
   description:
-    "Pager Studio makes healthcare discoverable through AI search and agents. AEO strategy, audits, and implementation by Sandeep Kumar.",
+    "Pager Studio is a Healthcare AEO (Answer Engine Optimization) strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
   keywords: [
-    "AEO",
-    "answer engine optimization",
-    "healthcare AI visibility",
+    "healthcare AEO",
+    "answer engine optimization healthcare",
     "AI search healthcare",
-    "healthcare marketing",
-    "AI SEO",
-    "GEO",
-    "generative engine optimization",
+    "healthcare AI visibility",
+    "AEO strategist",
+    "GEO healthcare",
+    "generative engine optimization healthcare",
     "healthcare discoverability",
     "Pager Studio",
   ],
@@ -48,15 +47,15 @@ export const metadata: Metadata = {
         url: "/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Pager Studio — AEO Strategist for Healthcare",
+        alt: "Healthcare AEO Strategist — Pager Studio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pager Studio — AEO Strategist for Healthcare",
+    title: "Healthcare AEO Strategist — Pager Studio",
     description:
-      "Making healthcare discoverable through AI search and agents.",
+      "Pager Studio is a Healthcare AEO strategy firm. We make healthcare practices visible in AI search.",
     images: ["/og-default.png"],
     creator: "@pagerstudio",
   },

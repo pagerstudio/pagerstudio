@@ -7,6 +7,8 @@ import { usePathname } from "next/navigation";
 
 const pageLinks = [
   { label: "Home", href: "/" },
+  { label: "Healthcare AEO", href: "/healthcare-aeo" },
+  { label: "AEO Audit", href: "/healthcare-aeo-audit" },
   { label: "About", href: "/about" },
   { label: "Pricing & Process", href: "/pricing" },
   { label: "Blog", href: "/blog" },

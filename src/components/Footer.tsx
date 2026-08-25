@@ -8,6 +8,8 @@ const socialLinks = [
 ];
 
 const pageLinks = [
+  { label: "Healthcare AEO", href: "/healthcare-aeo" },
+  { label: "AEO Audit", href: "/healthcare-aeo-audit" },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
   { label: "Book a Call", href: "/book" },
