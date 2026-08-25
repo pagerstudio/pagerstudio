@@ -4,7 +4,7 @@ import CalEmbed from "@/components/CalEmbed";
 import GlassCard from "@/components/GlassCard";
 
 export const metadata: Metadata = {
-  title: "Book a Discovery Call",
+  title: "Free Discovery Call",
   description:
     "Schedule a discovery call with Pager Studio to discuss your practice's AI visibility and AEO strategy. Free consultation for healthcare practices.",
   keywords: [
@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     canonical: "/book",
   },
   openGraph: {
-    title: "Book a Discovery Call | Pager Studio",
+    title: "Free Discovery Call | Pager Studio",
     description: "Schedule a discovery call to discuss your practice's AI visibility.",
     url: "https://pagerstudio.vercel.app/book",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Book a Discovery Call | Pager Studio",
+    title: "Free Discovery Call | Pager Studio",
     description: "Schedule a discovery call to discuss your practice's AI visibility.",
   },
 };
@@ -56,7 +56,7 @@ export default function BookPage() {
           <div className="flex flex-col md:flex-row md:items-start gap-[30px]">
             <div className="flex-1">
               <h1 className="text-display md:text-display-xl font-semibold leading-tight tracking-tight">
-                Book a Discovery Call
+                Free Discovery Call
               </h1>
               <p className="mt-[20px] text-subhead leading-relaxed text-text-secondary">
                 Before you book, please review a few things upfront:
@@ -114,7 +114,7 @@ export default function BookPage() {
               "@type": "BreadcrumbList",
               itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.vercel.app" },
-                { "@type": "ListItem", position: 2, name: "Book a Call", item: "https://pagerstudio.vercel.app/book" },
+                { "@type": "ListItem", position: 2, name: "Free Call", item: "https://pagerstudio.vercel.app/book" },
               ],
             },
           ]),

@@ -76,7 +76,7 @@ export default function AboutPage() {
               That was the old game. Patients don&apos;t search anymore — they ask an AI which practice to trust, and it answers before they ever visit your website. I make sure it answers with your name.
             </p>
             <div className="mt-[24px]">
-              <Button href="/book">Book a Discovery Call</Button>
+              <Button href="/book">Free Discovery Call</Button>
             </div>
           </Section>
 
@@ -102,7 +102,7 @@ export default function AboutPage() {
               A few things to know upfront. We take on up to 10 clients at a time. Every engagement is NDA-covered. We never collect or work with patient data. We don&apos;t publish client names, metrics, or the strategies we build for them — not now, not ever. If you want proof, we&apos;ll run a basic audit of your practice and show you what&apos;s working and what isn&apos;t. Proof on your data, never someone else&apos;s.
             </p>
             <div className="mt-[24px]">
-              <Button href="/book">Book a Discovery Call</Button>
+              <Button href="/book">Free Discovery Call</Button>
             </div>
           </Section>
 
