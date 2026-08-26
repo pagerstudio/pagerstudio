@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef } from "react";
 import Logo from "./Logo";
 
 const socialLinks = [
@@ -29,21 +28,6 @@ const legalLinks = [
   { label: "AI Policy", href: "/ai-policy" },
 ];
 
-function PreferredBtn({ className }: { className?: string }) {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (ref.current && !ref.current.hasChildNodes()) {
-      const btn = document.createElement("div");
-      btn.setAttribute("google-add-preferred-source-btn", "");
-      btn.setAttribute("data-theme", "dark");
-      ref.current.appendChild(btn);
-    }
-  }, []);
-
-  return <div ref={ref} className={className} />;
-}
-
 export default function Footer() {
   return (
     <footer className="px-[20px] md:px-8 pb-4">
@@ -51,13 +35,13 @@ export default function Footer() {
         className="mx-auto max-w-5xl text-white rounded-2xl px-[30px] md:px-12 py-[40px] md:py-10"
         style={{ backgroundColor: "#000" }}
       >
-        {/* Row 1: Logo + Social + Preferred Source Button */}
+        {/* Row 1: Logo + Social + Preferred Source */}
         <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between md:items-center md:gap-4">
           <Link href="/" aria-label="Pager Studio — Home" className="shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded">
             <Logo dark={false} />
           </Link>
 
-          <div className="flex items-center gap-6 md:gap-8 flex-wrap justify-center">
+          <div className="flex items-center gap-4 md:gap-6 flex-wrap justify-center">
             <nav aria-label="Social links" className="flex items-center gap-6 md:gap-8">
               {socialLinks.map((link) => (
                 <a
@@ -73,11 +57,19 @@ export default function Footer() {
               ))}
             </nav>
 
-            <PreferredBtn className="shrink-0" />
+            <a
+              href="https://www.google.com/preferences/source?q=pagerstudio.space"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/20 text-footnote md:text-subhead text-text-inverse-secondary hover:text-white hover:border-white/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              <span>★</span>
+              Preferred Source
+            </a>
           </div>
         </div>
 
-        {/* Row 2: Page Links (horizontal) */}
+        {/* Row 2: Page Links */}
         <nav aria-label="Page links" className="mt-6 md:mt-8 flex items-center justify-center flex-wrap gap-x-5 gap-y-2">
           {pageLinks.map((link) => (
             <Link
