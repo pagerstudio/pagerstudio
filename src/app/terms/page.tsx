@@ -348,6 +348,118 @@ export default function TermsPage() {
                 .
               </p>
             </section>
+
+            <section>
+              <h2 className="text-lg font-semibold mb-3">Disclaimer</h2>
+              <p>
+                Pager Studio helps healthcare practices build the technical
+                and content foundation needed to appear in AI-generated
+                answers. However, AI platforms — including ChatGPT, Google
+                Gemini, Perplexity, Claude, Grok, Meta AI, and Google AI
+                Overviews — are independent systems with their own
+                algorithms, data sources, and decision-making processes. We
+                do not control these platforms and cannot guarantee that your
+                practice will be cited, recommended, or ranked in any
+                specific way.
+              </p>
+              <p className="mt-3">
+                Results vary based on your specialty, location, competition,
+                starting baseline, and the current state of AI platform
+                algorithms. Most practices see measurable improvement within
+                60 to 90 days, but timelines are not guaranteed.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold mb-3">No Patient Volume Guarantees</h2>
+              <p>
+                Increased AI visibility does not automatically translate to
+                increased patient appointments or revenue. AI citations drive
+                awareness and consideration — but patients make their own
+                decisions based on many factors including reviews, pricing,
+                location, and personal preference. Pager Studio does not
+                guarantee any specific number of patients, appointments, or
+                revenue.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold mb-3">Audit Reports Reflect a Point in Time</h2>
+              <p>
+                Your audit report shows where your practice stands at the
+                time the audit was conducted. AI platforms update their
+                outputs frequently. Your visibility may change between audits
+                due to factors outside our control, including platform
+                updates, competitor actions, or changes to your website.
+                Audit reports are a snapshot — not a permanent guarantee.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold mb-3">Competitor Actions</h2>
+              <p>
+                AI visibility is a competitive landscape. Even after we build
+                a strong foundation for your practice, competitors may invest
+                in their own AI visibility efforts. We do not guarantee that
+                you will always outperform competitors — only that we will
+                build and maintain the best possible foundation for your
+                practice.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold mb-3">Not Medical, Legal, or Financial Advice</h2>
+              <p>
+                Pager Studio provides marketing and AI visibility strategy
+                services only. Nothing on this website or in our engagements
+                constitutes medical, legal, or financial advice. Healthcare
+                practices should consult qualified professionals for
+                clinical, regulatory, or legal decisions.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold mb-3">Third-Party Platform Dependency</h2>
+              <p>
+                AI search engines and platforms are operated by third parties
+                that can change how they index, rank, and present information
+                at any time and without notice. Pager Studio monitors these
+                platforms and adapts strategies accordingly, but cannot
+                control or guarantee their behavior.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold mb-3">Testimonials and Examples</h2>
+              <p>
+                Any examples, case studies, or testimonials on this website
+                reflect the experiences of specific clients and should not be
+                taken as a guarantee of results for your practice. Individual
+                outcomes depend on many variables including specialty, market,
+                competition, and implementation timeline.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold mb-3">External Links</h2>
+              <p>
+                Our website may contain links to external sites. We are not
+                responsible for the content, accuracy, or privacy practices
+                of third-party sites. Linking to another site does not
+                constitute endorsement.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold mb-3">Content Accuracy</h2>
+              <p>
+                The information on this website is provided for general
+                informational purposes. While we strive for accuracy, Pager
+                Studio makes no warranties about the completeness or
+                reliability of any content published on this site or in
+                client-facing materials.
+              </p>
+            </section>
           </div>
         </GlassCard>
       </section>

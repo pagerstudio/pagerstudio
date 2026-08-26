@@ -137,25 +137,13 @@ export default function AboutPage() {
           <Section className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] hero-animate" style={{ animationDelay: "160ms" }}>
             <h2 className="text-title-1 font-semibold tracking-tight">{"// About the Firm //"}</h2>
             <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
-              Pager Studio is an AEO strategy firm for healthcare practices. We work specifically with IVF and fertility centers, hair restoration clinics, cosmetic dermatology practices, dental implant centers, LASIK and vision correction clinics, and plastic surgery practices. These are high-consideration specialties where patients research extensively before booking, and where AI search is becoming the first touchpoint.
-            </p>
-            <p className="mt-[24px] text-subhead leading-prose text-text-secondary">
-              The work follows three phases.
+              Pager Studio is an AEO strategy firm for healthcare practices — IVF and fertility centers, hair restoration clinics, cosmetic dermatology practices, dental implant centers, LASIK and vision correction clinics, and plastic surgery practices.
             </p>
             <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
-              <strong className="font-semibold text-black">Audit.</strong> $5,000, fixed. We spend 4-6 weeks analyzing how AI systems currently see your practice. Google AI Overviews, ChatGPT, Perplexity, Gemini. We document what they say about you, what they get wrong, what they leave out entirely. You receive a prioritized report with specific fixes, not a generic checklist.
-            </p>
-            <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
-              <strong className="font-semibold text-black">Implement.</strong> Minimum 6-month engagement. AI authority signals take months to compound. We handle technical optimization, off-page authority building, directory presence, and the structural work that makes AI systems understand your specialties correctly. Anything shorter won&apos;t hold.
-            </p>
-            <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
-              <strong className="font-semibold text-black">Monitor.</strong> We track what AI platforms actually say about you across updates and adjust as the landscape changes. This is where most firms disappear. We don&apos;t.
-            </p>
-            <p className="mt-[24px] text-subhead leading-prose text-text-secondary">
-              A few things to know upfront. We take on up to 10 clients at a time. Every engagement is NDA-covered. We never collect or work with patient data. We don&apos;t publish client names, metrics, or the strategies we build for them — not now, not ever. If you want proof, we&apos;ll run a basic audit of your practice and show you what&apos;s working and what isn&apos;t. Proof on your data, never someone else&apos;s.
+              A few things to know upfront. We take on up to 10 clients at a time. Every engagement is NDA-covered. We never collect or work with patient data. We don&apos;t publish client names, metrics, or the strategies we build for them — not now, not ever.
             </p>
             <div className="mt-[24px]">
-              <Button href="/book">Book a Discovery Call</Button>
+              <Button href="/pricing">See Pricing &amp; Process</Button>
             </div>
           </Section>
 

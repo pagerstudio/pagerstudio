@@ -99,19 +99,19 @@ export default async function HomePage() {
             <div>
               <h3 className="text-body font-semibold text-black">What is Healthcare AEO?</h3>
               <p className="mt-[8px] text-body leading-relaxed-body text-text-secondary">
-                Healthcare AEO (Answer Engine Optimization) is the practice of structuring your online presence so that AI systems — ChatGPT, Gemini, Perplexity, Google AI Overviews — can find, understand, and recommend your practice when patients ask relevant questions.
+                The practice of structuring your online presence so AI systems can find, understand, and recommend your practice.
               </p>
             </div>
             <div>
               <h3 className="text-body font-semibold text-black">How is AEO different from SEO?</h3>
               <p className="mt-[8px] text-body leading-relaxed-body text-text-secondary">
-                SEO focuses on ranking in Google&apos;s search results. AEO focuses on being cited in AI-generated answers. A healthcare practice can rank #1 on Google and still be invisible to AI if its data isn&apos;t structured for AI consumption.
+                SEO gets you ranked. AEO gets you recommended. A practice can rank #1 on Google and still be invisible to AI.
               </p>
             </div>
             <div>
               <h3 className="text-body font-semibold text-black">How do I check if my practice is visible to AI?</h3>
               <p className="mt-[8px] text-body leading-relaxed-body text-text-secondary">
-                Ask an AI tool (ChatGPT, Gemini, or Perplexity) a question a patient would ask about your specialty in your area. If your practice isn&apos;t mentioned, AI either doesn&apos;t know you exist or doesn&apos;t trust your data enough to recommend you.
+                Ask an AI tool a question a patient would ask about your specialty in your area. If your practice isn&apos;t mentioned, AI doesn&apos;t trust your data enough to recommend you.
               </p>
             </div>
           </div>

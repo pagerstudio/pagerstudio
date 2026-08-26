@@ -20,6 +20,11 @@ const nextConfig: NextConfig = {
         destination: "/pricing",
         permanent: true,
       },
+      {
+        source: "/disclaimer",
+        destination: "/terms",
+        permanent: true,
+      },
     ];
   },
   headers: async () => [

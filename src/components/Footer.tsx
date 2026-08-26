@@ -20,7 +20,6 @@ const pageLinks = [
 const legalLinks = [
   { label: "Privacy", href: "/privacy" },
   { label: "Terms", href: "/terms" },
-  { label: "Disclaimer", href: "/disclaimer" },
   { label: "Cookies", href: "/cookies" },
   { label: "AI Policy", href: "/ai-policy" },
 ];
