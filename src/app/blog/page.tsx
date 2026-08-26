@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Blog | Pager Studio",
+    title: "Blog",
     description: "Insights on AEO, AI search, and healthcare visibility.",
     url: "https://pagerstudio.space/blog",
     images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog | Pager Studio",
+    title: "Blog",
     description: "Insights on AEO, AI search, and healthcare visibility.",
   },
 };

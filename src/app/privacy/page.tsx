@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     canonical: "/privacy",
   },
   openGraph: {
-    title: "Privacy Policy | Pager Studio",
+    title: "Privacy Policy",
     description: "Pager Studio's privacy policy.",
     url: "https://pagerstudio.space/privacy",
     images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy | Pager Studio",
+    title: "Privacy Policy",
     description: "Pager Studio's privacy policy.",
   },
   robots: {

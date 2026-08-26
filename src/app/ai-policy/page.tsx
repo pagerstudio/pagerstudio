@@ -16,14 +16,14 @@ export const metadata: Metadata = {
     canonical: "/ai-policy",
   },
   openGraph: {
-    title: "AI Policy | Pager Studio",
+    title: "AI Policy",
     description: "Pager Studio's AI policy — responsible AI usage and compliance.",
     url: "https://pagerstudio.space/ai-policy",
     images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Policy | Pager Studio",
+    title: "AI Policy",
     description: "Pager Studio's AI policy — responsible AI usage and compliance.",
   },
   robots: {

@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     canonical: "/disclaimer",
   },
   openGraph: {
-    title: "Disclaimer | Pager Studio",
+    title: "Disclaimer",
     description: "Pager Studio's disclaimer.",
     url: "https://pagerstudio.space/disclaimer",
     images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Disclaimer | Pager Studio",
+    title: "Disclaimer",
     description: "Pager Studio's disclaimer.",
   },
   robots: {

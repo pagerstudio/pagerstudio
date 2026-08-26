@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     canonical: "/cookies",
   },
   openGraph: {
-    title: "Cookie Policy | Pager Studio",
+    title: "Cookie Policy",
     description: "Pager Studio's cookie policy.",
     url: "https://pagerstudio.space/cookies",
     images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cookie Policy | Pager Studio",
+    title: "Cookie Policy",
     description: "Pager Studio's cookie policy.",
   },
   robots: {

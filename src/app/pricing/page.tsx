@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: "/pricing",
   },
   openGraph: {
-    title: "Pricing & Process | Pager Studio",
+    title: "Pricing & Process",
     description:
       "AEO audit, implementation, and monitoring for healthcare practices.",
     url: "https://pagerstudio.space/pricing",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pricing & Process | Pager Studio",
+    title: "Pricing & Process",
     description:
       "AEO audit, implementation, and monitoring for healthcare practices.",
   },

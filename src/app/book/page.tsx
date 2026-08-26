@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     canonical: "/book",
   },
   openGraph: {
-    title: "Book a Discovery Call | Pager Studio",
+    title: "Book a Discovery Call",
     description: "Schedule a discovery call to discuss your practice's AI visibility.",
     url: "https://pagerstudio.space/book",
     images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Book a Discovery Call | Pager Studio",
+    title: "Book a Discovery Call",
     description: "Schedule a discovery call to discuss your practice's AI visibility.",
   },
 };

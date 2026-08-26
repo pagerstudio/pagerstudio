@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: "/about",
   },
   openGraph: {
-    title: "About | Pager Studio",
+    title: "About",
     description:
       "Pager Studio is an AEO strategy firm for healthcare, founded by Sandeep Kumar.",
     url: "https://pagerstudio.space/about",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About | Pager Studio",
+    title: "About",
     description:
       "Pager Studio is an AEO strategy firm for healthcare, founded by Sandeep Kumar.",
   },

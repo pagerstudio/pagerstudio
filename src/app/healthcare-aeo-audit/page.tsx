@@ -5,7 +5,7 @@ import GlassCard from "@/components/GlassCard";
 import Section from "@/components/Section";
 
 export const metadata: Metadata = {
-  title: "Healthcare AEO Audit — $5,000 Fixed | Pager Studio",
+  title: "Healthcare AEO Audit — $5,000 Fixed",
   description:
     "A complete diagnostic of your healthcare practice's AI visibility. $5,000 fixed. Delivered in 4-6 weeks. Covers ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: "/healthcare-aeo-audit",
   },
   openGraph: {
-    title: "Healthcare AEO Audit — $5,000 Fixed | Pager Studio",
+    title: "Healthcare AEO Audit — $5,000 Fixed",
     description:
       "A complete diagnostic of your healthcare practice's AI visibility. $5,000 fixed.",
     url: "https://pagerstudio.space/healthcare-aeo-audit",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Healthcare AEO Audit — $5,000 Fixed | Pager Studio",
+    title: "Healthcare AEO Audit — $5,000 Fixed",
     description:
       "A complete diagnostic of your healthcare practice's AI visibility. $5,000 fixed.",
     images: ["/og-default.png"],

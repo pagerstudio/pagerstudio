@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     canonical: "/terms",
   },
   openGraph: {
-    title: "Terms & Conditions | Pager Studio",
+    title: "Terms & Conditions",
     description: "Pager Studio's terms and conditions.",
     url: "https://pagerstudio.space/terms",
     images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Terms & Conditions | Pager Studio",
+    title: "Terms & Conditions",
     description: "Pager Studio's terms and conditions.",
   },
   robots: {
