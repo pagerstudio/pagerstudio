@@ -29,18 +29,22 @@ const legalLinks = [
   { label: "AI Policy", href: "/ai-policy" },
 ];
 
-export default function Footer() {
-  const preferredRef = useRef<HTMLDivElement>(null);
+function PreferredBtn({ className }: { className?: string }) {
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (preferredRef.current && !preferredRef.current.hasChildNodes()) {
+    if (ref.current && !ref.current.hasChildNodes()) {
       const btn = document.createElement("div");
       btn.setAttribute("google-add-preferred-source-btn", "");
       btn.setAttribute("data-theme", "dark");
-      preferredRef.current.appendChild(btn);
+      ref.current.appendChild(btn);
     }
   }, []);
 
+  return <div ref={ref} className={className} />;
+}
+
+export default function Footer() {
   return (
     <footer className="px-[20px] md:px-8 pb-4">
       <div
@@ -48,27 +52,29 @@ export default function Footer() {
         style={{ backgroundColor: "#000" }}
       >
         {/* Row 1: Logo + Social + Preferred Source Button */}
-        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between md:gap-10">
+        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between md:items-center md:gap-4">
           <Link href="/" aria-label="Pager Studio — Home" className="shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded">
             <Logo dark={false} />
           </Link>
 
-          <nav aria-label="Social links" className="flex items-center justify-center gap-6 md:gap-8">
-            {socialLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer me"
-                aria-label={`${link.label} (opens in new tab)`}
-                className="group text-body md:text-title-1 font-semibold text-white hover:text-text-inverse-secondary transition-colors inline-flex items-center gap-1.5 min-h-[44px] px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
+          <div className="flex items-center gap-6 md:gap-8 flex-wrap justify-center">
+            <nav aria-label="Social links" className="flex items-center gap-6 md:gap-8">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer me"
+                  aria-label={`${link.label} (opens in new tab)`}
+                  className="group text-body md:text-title-1 font-semibold text-white hover:text-text-inverse-secondary transition-colors inline-flex items-center gap-1.5 min-h-[44px] px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
 
-          <div ref={preferredRef} className="shrink-0" />
+            <PreferredBtn className="shrink-0" />
+          </div>
         </div>
 
         {/* Row 2: Page Links (horizontal) */}
