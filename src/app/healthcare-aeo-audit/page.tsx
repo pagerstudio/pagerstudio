@@ -86,7 +86,7 @@ export default function HealthcareAEOAuditPage() {
           </p>
           <div className="mt-[30px] flex flex-col md:flex-row gap-[16px]">
             <Button href="/book">Book a Discovery Call</Button>
-            <Button href="/pricing" variant="secondary">
+            <Button href="/services" variant="secondary">
               See Full Pricing
             </Button>
           </div>

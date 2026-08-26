@@ -78,7 +78,7 @@ export default async function HomePage() {
           </h1>
           <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-[16px] md:gap-[30px] mt-[24px] md:mt-[30px] hero-animate" style={{ animationDelay: "150ms" }}>
             <Button href="/book">Book a Discovery Call</Button>
-            <Button href="/pricing" variant="secondary">
+            <Button href="/services" variant="secondary">
               See Pricing &amp; Process
             </Button>
           </div>

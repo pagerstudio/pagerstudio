@@ -12,12 +12,10 @@ const socialLinks = [
 const pageLinks = [
   { label: "Healthcare AEO", href: "/healthcare-aeo" },
   { label: "Services", href: "/services" },
-  { label: "AEO Audit", href: "/healthcare-aeo-audit" },
   { label: "About", href: "/about" },
   { label: "FAQ", href: "/faq" },
   { label: "Blog", href: "/blog" },
   { label: "Book a Call", href: "/book" },
-  { label: "Pricing & Process", href: "/pricing" },
 ];
 
 const legalLinks = [
