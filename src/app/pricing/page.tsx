@@ -6,12 +6,12 @@ import GlassCard from "@/components/GlassCard";
 export const metadata: Metadata = {
   title: "Pricing & Process",
   description:
-    "Pager Studio's process: a full AEO audit ($5,000, fixed), followed by implementation and ongoing monitoring to make your practice discoverable to AI search.",
+    "Pager Studio's pricing: $5,000 fixed audit. 6-month foundation. Month-to-month after that. No surprises, no hidden fees.",
   keywords: [
     "AEO audit cost",
     "healthcare AEO pricing",
     "AI search optimization pricing",
-    "AEO strategy cost",
+    "AEO pricing",
     "healthcare marketing pricing",
   ],
   alternates: {
@@ -19,16 +19,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Pricing & Process",
-    description:
-      "AEO audit, implementation, and monitoring for healthcare practices.",
+    description: "$5,000 audit. 6-month foundation. Month-to-month. That's it.",
     url: "https://pagerstudio.space/pricing",
     images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pricing & Process",
-    description:
-      "AEO audit, implementation, and monitoring for healthcare practices.",
+    description: "$5,000 audit. 6-month foundation. Month-to-month. That's it.",
   },
 };
 
@@ -36,20 +34,26 @@ const steps = [
   {
     num: "1.",
     title: "Audit",
+    price: "$5,000, fixed",
+    timing: "4-6 weeks",
     description:
-      "A complete diagnostic of your practice's current AI visibility — how AI engines and agents see (or fail to see) you today, delivered as a clear report with findings and priorities.",
+      "One-time diagnostic of your practice's AI visibility. You get a comprehensive report with findings, priorities, and a roadmap. No obligation to continue.",
   },
   {
     num: "2.",
-    title: "Implement",
+    title: "6-Month Foundation",
+    price: "Quoted after audit",
+    timing: "6-month minimum",
     description:
-      "Technical optimization, off-page authority, and directory presence — built around your practice, specialty, and markets.",
+      "Months 1-3: Implementation — structured data, directories, content, entity optimization. Months 4-6: Monitoring — tracking AI mentions, measuring progress, adjusting strategy. Your audit fee is credited toward this.",
   },
   {
     num: "3.",
-    title: "Monitor",
+    title: "Month-to-Month",
+    price: "Quoted after foundation",
+    timing: "No contract",
     description:
-      "Ongoing tracking across AI platforms to keep your practice visible as AI search evolves, with regular reporting.",
+      "Ongoing monitoring and maintenance after the 6-month foundation. Cancel anytime with 30 days notice. No penalties. No renewal negotiations.",
   },
 ];
 
@@ -66,22 +70,28 @@ export default function PricingPage() {
             Make your practice discoverable to AI search and agents
           </h1>
           <p className="mt-[20px] md:mt-[30px] text-subhead leading-prose text-text-secondary">
-            Pager Studio&apos;s process is straightforward: a full audit, followed by
-            implementation and ongoing monitoring.{" "}
-            <strong className="font-semibold text-black">
-              The audit is $5,000, fixed.
-            </strong>{" "}
-            Implementation and monitoring are quoted after your audit, based on
-            your practice, specialties, and markets — your audit fee is credited
-            toward it if you move forward.
+            The pricing is simple. The process is simple. No hidden fees, no
+            long-term contracts to start, no surprises.
           </p>
 
-          <div className="mt-[20px] md:mt-[30px] space-y-[20px] md:space-y-[30px]">
+          <div className="mt-[30px] space-y-[20px] md:space-y-[30px]">
             {steps.map((step) => (
-              <div key={step.title} className="flex gap-3 text-subhead leading-prose text-text-secondary">
-                <span className="font-semibold text-black shrink-0">{step.num}</span>
-                <p>
-                  <span className="font-semibold text-black">{step.title}</span>:{" "}
+              <div
+                key={step.title}
+                className="rounded-xl border border-border-subtle p-5 md:p-6"
+              >
+                <div className="flex items-center justify-between gap-4 flex-wrap">
+                  <div className="flex items-center gap-3">
+                    <span className="font-semibold text-text-tertiary">{step.num}</span>
+                    <h3 className="font-semibold text-black">{step.title}</h3>
+                  </div>
+                  <div className="flex items-center gap-3 text-subhead">
+                    <span className="font-semibold text-black">{step.price}</span>
+                    <span className="text-text-tertiary">·</span>
+                    <span className="text-text-secondary">{step.timing}</span>
+                  </div>
+                </div>
+                <p className="mt-[12px] text-subhead leading-relaxed text-text-secondary">
                   {step.description}
                 </p>
               </div>
@@ -104,7 +114,7 @@ export default function PricingPage() {
               "@type": "Service",
               name: "Pager Studio AEO Audit",
               description:
-                "A complete diagnostic of your practice's current AI visibility — how AI engines and agents see (or fail to see) you today, delivered as a clear report with findings and priorities.",
+                "One-time AEO audit ($5,000 fixed), 6-month foundation implementation and monitoring, then month-to-month. Simple process for making healthcare practices visible in AI search.",
               provider: {
                 "@type": "ProfessionalService",
                 "@id": "https://pagerstudio.space/#organization",
@@ -112,43 +122,13 @@ export default function PricingPage() {
                 url: "https://pagerstudio.space",
               },
               areaServed: "Worldwide",
-              serviceType: ["AEO Audit", "AI Visibility Diagnostic"],
+              serviceType: ["AEO Audit", "AEO Implementation", "AI Visibility Monitoring"],
               offers: {
                 "@type": "Offer",
                 price: "5000",
                 priceCurrency: "USD",
                 description: "Fixed-fee AEO audit for healthcare practices",
                 availability: "https://schema.org/InStock",
-              },
-              hasOfferCatalog: {
-                "@type": "OfferCatalog",
-                name: "Pager Studio Services",
-                itemListElement: [
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "AEO Audit",
-                      description: "Complete diagnostic of AI visibility",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "AEO Implementation",
-                      description: "Technical optimization, off-page authority, and directory presence",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "AEO Monitoring",
-                      description: "Ongoing tracking across AI platforms with regular reporting",
-                    },
-                  },
-                ],
               },
             },
             {
