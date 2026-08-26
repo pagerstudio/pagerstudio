@@ -89,6 +89,7 @@ export default function RootLayout({
         <link rel="alternate" href="/llms.txt" type="text/plain" title="LLM context file" />
         <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Pager Studio Blog" />
         <link rel="manifest" href="/manifest.json" />
+        <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
       </head>
       <body className="min-h-screen flex flex-col relative isolate">
         <noscript>

@@ -35,37 +35,33 @@ export default function Footer() {
         className="mx-auto max-w-5xl text-white rounded-2xl px-[30px] md:px-12 py-[40px] md:py-10"
         style={{ backgroundColor: "#000" }}
       >
-        {/* Row 1: Logo + Social + Preferred Source */}
-        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between md:items-center md:gap-4">
-          <Link href="/" aria-label="Pager Studio — Home" className="shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded">
+        {/* Row 1: Logo + Social (centered) + Preferred Source */}
+        <div className="flex flex-col items-center gap-6 md:grid md:grid-cols-3 md:items-center">
+          <Link href="/" aria-label="Pager Studio — Home" className="shrink-0 justify-self-start focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded">
             <Logo dark={false} />
           </Link>
 
-          <div className="flex items-center gap-4 md:gap-6 flex-wrap justify-center">
-            <nav aria-label="Social links" className="flex items-center gap-6 md:gap-8">
-              {socialLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer me"
-                  aria-label={`${link.label} (opens in new tab)`}
-                  className="group text-body md:text-title-1 font-semibold text-white hover:text-text-inverse-secondary transition-colors inline-flex items-center gap-1.5 min-h-[44px] px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </nav>
+          <nav aria-label="Social links" className="flex items-center justify-center gap-6 md:gap-8">
+            {socialLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer me"
+                aria-label={`${link.label} (opens in new tab)`}
+                className="group text-body md:text-title-1 font-semibold text-white hover:text-text-inverse-secondary transition-colors inline-flex items-center gap-1.5 min-h-[44px] px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
 
-            <a
-              href="https://www.google.com/preferences/source?q=pagerstudio.space"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/20 text-footnote md:text-subhead text-text-inverse-secondary hover:text-white hover:border-white/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-            >
-              <span>★</span>
-              Preferred Source
-            </a>
+          <div className="justify-self-end">
+            <div
+              dangerouslySetInnerHTML={{
+                __html: '<div google-add-preferred-source-btn data-theme="dark"></div>',
+              }}
+            />
           </div>
         </div>
 
