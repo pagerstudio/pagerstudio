@@ -3,6 +3,7 @@ import BackButton from "@/components/BackButton";
 import Button from "@/components/Button";
 import GlassCard from "@/components/GlassCard";
 import Section from "@/components/Section";
+import { Accordion, AccordionItem } from "@/components/Accordion";
 
 export const metadata: Metadata = {
   title: "Pricing & Process",
@@ -14,6 +15,8 @@ export const metadata: Metadata = {
     "AI visibility services",
     "healthcare AI search optimization",
     "AEO process",
+    "healthcare AEO audit cost",
+    "AEO audit for medical practices",
   ],
   alternates: {
     canonical: "/pricing",
@@ -34,7 +37,40 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ServicesPage() {
+const deliverables = [
+  "Current AI visibility score across ChatGPT, Gemini, Perplexity, and Google AI Overviews",
+  "Data consistency audit across all directory listings and web properties",
+  "Structured data (schema markup) coverage report",
+  "Content extractability assessment — can AI parse your service pages?",
+  "Authority signal mapping — what third-party sources validate your practice",
+  "Competitor comparison — how you rank against competitors in AI's view",
+  "Prioritized roadmap with clear next steps",
+];
+
+const platforms = [
+  {
+    name: "ChatGPT",
+    description:
+      "OpenAI's search-enabled AI. Recommendations based on training data and real-time search.",
+  },
+  {
+    name: "Gemini",
+    description:
+      "Google's AI assistant. Integrates with Google Business Profile and search index.",
+  },
+  {
+    name: "Perplexity",
+    description:
+      "AI-native search engine. Cites sources directly and synthesizes answers.",
+  },
+  {
+    name: "Google AI Overviews",
+    description:
+      "AI-generated summaries at the top of Google search results.",
+  },
+];
+
+export default function PricingPage() {
   return (
     <>
       <BackButton className="max-w-[1440px]" />
@@ -89,6 +125,73 @@ export default function ServicesPage() {
                 decide if we&apos;re a match. If not, you keep the report — it&apos;s
                 yours. If yes, we move to Phase 2.
               </p>
+
+              {/* Expandable audit details */}
+              <Accordion className="mt-[24px]">
+                <AccordionItem title="What's Included in the Audit">
+                  <ul className="space-y-[12px] mt-[4px]">
+                    {deliverables.map((item) => (
+                      <li key={item} className="flex gap-3">
+                        <span className="text-text-tertiary font-medium shrink-0">+</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </AccordionItem>
+                <AccordionItem title="Platforms Covered">
+                  <div className="space-y-[16px] mt-[4px]">
+                    {platforms.map((platform) => (
+                      <div key={platform.name}>
+                        <span className="font-semibold text-black">{platform.name}</span>
+                        <span className="text-text-tertiary"> — </span>
+                        <span>{platform.description}</span>
+                      </div>
+                    ))}
+                  </div>
+                </AccordionItem>
+                <AccordionItem title="Audit Timeline">
+                  <div className="space-y-[12px] mt-[4px]">
+                    <p>
+                      <span className="font-semibold text-black">Week 1-2: Data Collection</span>{" "}
+                      — We audit your current AI visibility, directory listings, and
+                      structured data across all platforms.
+                    </p>
+                    <p>
+                      <span className="font-semibold text-black">Week 3-4: Analysis</span>{" "}
+                      — We analyze findings, compare against competitors, and identify
+                      gaps and opportunities.
+                    </p>
+                    <p>
+                      <span className="font-semibold text-black">Week 5-6: Delivery</span>{" "}
+                      — You receive a comprehensive report with a prioritized roadmap
+                      and clear next steps.
+                    </p>
+                  </div>
+                </AccordionItem>
+                <AccordionItem title="Who Is This Audit For?">
+                  <div className="space-y-[12px] mt-[4px]">
+                    <p>
+                      <span className="font-semibold text-black">For:</span>{" "}
+                      Healthcare practices — IVF clinics, fertility centers, dental
+                      practices, cosmetic dermatology, hair restoration, LASIK,
+                      plastic surgery, orthopedics, and cardiology.
+                    </p>
+                    <p>
+                      <span className="font-semibold text-black">Not for:</span>{" "}
+                      Non-healthcare businesses, practices not yet ready to invest in
+                      AI visibility, or anyone looking for a quick SEO fix.
+                    </p>
+                  </div>
+                </AccordionItem>
+                <AccordionItem title="Why $5,000?">
+                  <p className="mt-[4px]">
+                    Because a thorough AEO audit requires manual analysis across
+                    multiple AI platforms, directory verification, structured data
+                    review, and competitive analysis. The $5,000 fee covers all of
+                    this — and is credited toward implementation if you move forward.
+                  </p>
+                </AccordionItem>
+              </Accordion>
             </GlassCard>
 
             {/* Phase 2 */}

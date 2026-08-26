@@ -11,7 +11,6 @@ const socialLinks = [
 
 const pageLinks = [
   { label: "Pricing & Process", href: "/pricing" },
-  { label: "AEO Audit", href: "/healthcare-aeo-audit" },
   { label: "About", href: "/about" },
   { label: "FAQ", href: "/faq" },
   { label: "Blog", href: "/blog" },
