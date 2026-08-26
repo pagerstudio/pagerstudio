@@ -79,11 +79,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${manrope.variable} antialiased`}>
       <head>
-        <link rel="icon" href="/favicon-light.png" type="image/png" media="(prefers-color-scheme: light)" />
-        <link rel="icon" href="/favicon-dark.png" type="image/png" media="(prefers-color-scheme: dark)" />
         <link rel="icon" href="/favicon-dark.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/favicon-light.png" media="(prefers-color-scheme: light)" />
-        <link rel="apple-touch-icon" href="/favicon-dark.png" media="(prefers-color-scheme: dark)" />
+        <link rel="apple-touch-icon" href="/favicon-dark.png" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var m=window.matchMedia('(prefers-color-scheme:dark)');var d=document.querySelector('link[rel=icon]');function u(){d.href=m.matches?'/favicon-dark.png':'/favicon-light.png';}u();m.addEventListener('change',u);})();`,
+          }}
+        />
         <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
         <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
         <link rel="alternate" href="/llms.txt" type="text/plain" title="LLM context file" />
