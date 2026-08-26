@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
         destination: "/pricing",
         permanent: true,
       },
+      {
+        source: "/healthcare-aeo",
+        destination: "/blog/what-is-aeo-healthcare",
+        permanent: true,
+      },
     ];
   },
   headers: async () => [
