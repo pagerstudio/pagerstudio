@@ -79,11 +79,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${manrope.variable} antialiased`}>
       <head>
-        <link rel="icon" href="/favicon-dark.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/favicon-dark.png" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){var m=window.matchMedia('(prefers-color-scheme:dark)');var d=document.querySelector('link[rel=icon]');function u(){d.href=m.matches?'/favicon-light.png':'/favicon-dark.png';}u();m.addEventListener('change',u);})();`,
+            __html: `(function(){var d=document.createElement('link');d.rel='icon';d.type='image/png';var m=window.matchMedia('(prefers-color-scheme:dark)');function u(){d.href=m.matches?'/favicon-light.png':'/favicon-dark.png';}u();m.addEventListener('change',u);document.head.appendChild(d);})();`,
           }}
         />
         <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
