@@ -30,12 +30,8 @@ Healthcare practices — including IVF and fertility centers, hair restoration c
 
 ## Blog Posts
 
-- [What Is AEO — And Why Healthcare Practices Need It](https://pagerstudio.space/blog/what-is-aeo-healthcare) — Answer Engine Optimization explained: what it is, how it works, and why healthcare is especially vulnerable.
-- [How AI Search Differs from Google](https://pagerstudio.space/blog/how-ai-search-differs-from-google) — Why AI search engines don't rank pages but synthesize answers, and what that means for healthcare.
-- [The Future of Healthcare Discoverability](https://pagerstudio.space/blog/future-of-healthcare-discoverability) — How AI-mediated discovery is replacing traditional search and what practices need to do to prepare.
-- [How Google AI Overviews Choose Healthcare Sources](https://pagerstudio.space/blog/ai-overviews-healthcare-sources) — Exactly how Google selects which healthcare sources to cite in AI Overviews.
-- [GEO vs AEO for Healthcare](https://pagerstudio.space/blog/geo-vs-aeo-healthcare) — How GEO and AEO differ, how they overlap, and which one healthcare practices should prioritize.
-- [Healthcare Entity Optimization](https://pagerstudio.space/blog/healthcare-entity-optimization) — How AI identifies, verifies, and trusts your healthcare practice as an entity.
+- [What Is AEO — And Why Healthcare Practices Need It](https://pagerstudio.space/blog/what-is-aeo-healthcare) — The complete guide to Answer Engine Optimization: what it is, how it works, the four pillars, GEO vs AEO, entity optimization, and why healthcare is especially vulnerable.
+- [How AI Search Differs from Google](https://pagerstudio.space/blog/how-ai-search-differs-from-google) — How AI search engines synthesize answers, how Google AI Overviews choose healthcare sources, and what healthcare practices must do to stay visible.
 
 ## FAQ
 
