@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef } from "react";
 import Logo from "./Logo";
 
 const socialLinks = [
@@ -30,7 +30,16 @@ const legalLinks = [
 ];
 
 export default function Footer() {
-  const [showPreferredModal, setShowPreferredModal] = useState(false);
+  const preferredRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (preferredRef.current && !preferredRef.current.hasChildNodes()) {
+      const btn = document.createElement("div");
+      btn.setAttribute("google-add-preferred-source-btn", "");
+      btn.setAttribute("data-theme", "dark");
+      preferredRef.current.appendChild(btn);
+    }
+  }, []);
 
   return (
     <footer className="px-[20px] md:px-8 pb-4">
@@ -38,7 +47,7 @@ export default function Footer() {
         className="mx-auto max-w-5xl text-white rounded-2xl px-[30px] md:px-12 py-[40px] md:py-10"
         style={{ backgroundColor: "#000" }}
       >
-        {/* Row 1: Logo + Social */}
+        {/* Row 1: Logo + Social + Preferred Source Button */}
         <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between md:gap-10">
           <Link href="/" aria-label="Pager Studio — Home" className="shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded">
             <Logo dark={false} />
@@ -58,20 +67,11 @@ export default function Footer() {
               </a>
             ))}
           </nav>
+
+          <div ref={preferredRef} className="shrink-0" />
         </div>
 
-        {/* Row 2: Preferred Source Button */}
-        <div className="mt-6 md:mt-8 flex justify-center">
-          <button
-            onClick={() => setShowPreferredModal(true)}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/20 text-footnote md:text-subhead text-text-inverse-secondary hover:text-white hover:border-white/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-          >
-            <span>★</span>
-            Add as Preferred Source on Google
-          </button>
-        </div>
-
-        {/* Row 3: Page Links (horizontal) */}
+        {/* Row 2: Page Links (horizontal) */}
         <nav aria-label="Page links" className="mt-6 md:mt-8 flex items-center justify-center flex-wrap gap-x-5 gap-y-2">
           {pageLinks.map((link) => (
             <Link
@@ -84,7 +84,7 @@ export default function Footer() {
           ))}
         </nav>
 
-        {/* Row 4: Legal */}
+        {/* Row 3: Legal */}
         <div className="mt-6 md:mt-8 pt-6 border-t border-white/10 flex flex-col items-center gap-4 md:flex-row md:justify-between md:gap-4">
           <p className="text-micro text-text-inverse-secondary text-center">
             &copy; 2026 Pager Studio. All rights reserved.
@@ -102,46 +102,6 @@ export default function Footer() {
           </nav>
         </div>
       </div>
-
-      {/* Preferred Source Modal */}
-      {showPreferredModal && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4"
-          onClick={() => setShowPreferredModal(false)}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Add as Preferred Source"
-        >
-          <div
-            className="bg-white rounded-2xl p-8 max-w-md w-full text-center shadow-xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h3 className="text-title-2 font-semibold text-black">
-              Add Pager Studio as a Preferred Source
-            </h3>
-            <p className="mt-3 text-subhead text-text-secondary leading-relaxed">
-              Click the button below to open Google&apos;s source preferences. Search for <strong>pagerstudio.space</strong> and star it. You&apos;ll start seeing our content with a ★ Preferred badge in Google AI answers.
-            </p>
-            <div className="mt-6 flex flex-col gap-3">
-              <a
-                href="https://www.google.com/preferences/source?q=pagerstudio.space"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-black text-white text-sm font-semibold hover:bg-fill-active transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
-              >
-                <span>★</span>
-                Open Google Preferences
-              </a>
-              <button
-                onClick={() => setShowPreferredModal(false)}
-                className="text-footnote text-text-tertiary hover:text-black transition-colors py-2"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </footer>
   );
 }

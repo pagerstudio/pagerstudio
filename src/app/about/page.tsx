@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import BackButton from "@/components/BackButton";
 import Button from "@/components/Button";
 import Section from "@/components/Section";
+import PreferredSourceButton from "@/components/PreferredSourceButton";
 
 export const metadata: Metadata = {
   title: "About",
@@ -160,20 +161,7 @@ export default function AboutPage() {
 
           {/* Preferred Source */}
           <Section className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] hero-animate" style={{ animationDelay: "200ms" }}>
-            <div className="w-full rounded-2xl border border-border-subtle p-6 md:p-8 text-center">
-              <p className="text-subhead text-text-secondary">
-                Want to keep seeing our content in Google&apos;s AI answers?
-              </p>
-              <a
-                href="https://www.google.com/preferences/source?q=pagerstudio.space"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border-default text-sm font-medium text-black hover:bg-fill-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
-              >
-                <span>★</span>
-                Add as Preferred Source on Google
-              </a>
-            </div>
+            <PreferredSourceButton />
           </Section>
 
         </div>

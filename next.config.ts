@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
         { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
         { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
         { key: "Strict-Transport-Security", value: "max-age=31536000" },
-        { key: "Content-Security-Policy", value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://app.cal.com https://cal.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://app.cal.com https://cal.com; font-src 'self'; connect-src 'self' https://app.cal.com https://cal.com; frame-src 'self' https://app.cal.com https://cal.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'" },
+        { key: "Content-Security-Policy", value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://app.cal.com https://cal.com https://news.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://app.cal.com https://cal.com https://www.gstatic.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://app.cal.com https://cal.com https://news.google.com; frame-src 'self' https://app.cal.com https://cal.com https://news.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'" },
         { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
       ],
     },
