@@ -77,19 +77,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/blog/aeo-for-ivf-clinics`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/aeo-for-fertility-clinics`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/aeo-vs-seo-healthcare`,
+      url: `${baseUrl}/blog/ai-overviews-healthcare-sources`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
@@ -101,37 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/blog/how-chatgpt-finds-healthcare-providers`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/healthcare-practice-ai-search-visibility`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/ai-overviews-healthcare-sources`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
       url: `${baseUrl}/blog/healthcare-entity-optimization`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/aeo-for-dental-implants`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/aeo-for-hair-restoration`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
