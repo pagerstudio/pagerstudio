@@ -17,7 +17,7 @@ const pageLinks = [
   { label: "FAQ", href: "/faq" },
   { label: "Blog", href: "/blog" },
   { label: "Book a Call", href: "/book" },
-  { label: "Pricing", href: "/pricing" },
+  { label: "Pricing & Process", href: "/pricing" },
 ];
 
 const legalLinks = [
