@@ -7,14 +7,17 @@ const socialLinks = [
   { label: "LinkedIn", href: "https://linkedin.com/company/pagerstudio" },
 ];
 
-const pageLinks = [
+const pageLinksLeft = [
   { label: "Healthcare AEO", href: "/healthcare-aeo" },
   { label: "Services", href: "/services" },
   { label: "AEO Audit", href: "/healthcare-aeo-audit" },
+  { label: "Book a Call", href: "/book" },
+];
+
+const pageLinksRight = [
   { label: "About", href: "/about" },
   { label: "FAQ", href: "/faq" },
   { label: "Blog", href: "/blog" },
-  { label: "Book a Call", href: "/book" },
   { label: "Process & Pricing", href: "/pricing" },
 ];
 
@@ -53,16 +56,29 @@ export default function Footer() {
             ))}
           </nav>
 
-          <nav aria-label="Page links" className="flex flex-col items-center md:items-end gap-1">
-            {pageLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="group text-footnote md:text-body text-text-inverse-secondary hover:text-white transition-colors inline-flex items-center gap-1.5 py-1.5 px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
-              >
-                {link.label}
-              </Link>
-            ))}
+          <nav aria-label="Page links" className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-0 md:items-end">
+            <div className="flex flex-col items-center md:items-end">
+              {pageLinksLeft.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="group text-footnote md:text-body text-text-inverse-secondary hover:text-white transition-colors inline-flex items-center gap-1.5 py-1.5 px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+            <div className="flex flex-col items-center md:items-end">
+              {pageLinksRight.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="group text-footnote md:text-body text-text-inverse-secondary hover:text-white transition-colors inline-flex items-center gap-1.5 py-1.5 px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           </nav>
         </div>
 

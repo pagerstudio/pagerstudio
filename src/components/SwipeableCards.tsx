@@ -41,8 +41,8 @@ export default function SwipeableCards({ posts }: Props) {
   if (!post) return null;
 
   return (
-    <article
-      role="group"
+    <div
+      role="region"
       aria-label="Featured blog posts"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
@@ -91,6 +91,6 @@ export default function SwipeableCards({ posts }: Props) {
           )}
         </div>
       </div>
-    </article>
+    </div>
   );
 }
