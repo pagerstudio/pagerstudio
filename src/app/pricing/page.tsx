@@ -5,9 +5,9 @@ import GlassCard from "@/components/GlassCard";
 import Section from "@/components/Section";
 
 export const metadata: Metadata = {
-  title: "Services — How Pager Studio Works",
+  title: "Pricing & Process",
   description:
-    "Pager Studio's process: a one-time AEO audit, then a 6-month foundation if we're a fit, then month-to-month. Simple, no surprises.",
+    "Pager Studio's pricing: $5,000 fixed audit. 6-month foundation. Month-to-month after that. No surprises, no hidden fees.",
   keywords: [
     "healthcare AEO services",
     "AEO audit",
@@ -16,20 +16,20 @@ export const metadata: Metadata = {
     "AEO process",
   ],
   alternates: {
-    canonical: "/services",
+    canonical: "/pricing",
   },
   openGraph: {
-    title: "Services — How Pager Studio Works",
+    title: "Pricing & Process",
     description:
-      "One-time audit. 6-month foundation. Month-to-month. That's it.",
-    url: "https://pagerstudio.space/services",
+      "$5,000 audit. 6-month foundation. Month-to-month. That's it.",
+    url: "https://pagerstudio.space/pricing",
     images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Services — How Pager Studio Works",
+    title: "Pricing & Process",
     description:
-      "One-time audit. 6-month foundation. Month-to-month. That's it.",
+      "$5,000 audit. 6-month foundation. Month-to-month. That's it.",
     images: ["/og-default.png"],
   },
 };
@@ -41,7 +41,7 @@ export default function ServicesPage() {
       <section className="px-[20px] md:px-[30px] pt-[20px] md:pt-[30px] pb-[90px] md:pb-[180px]">
         <GlassCard className="mx-auto max-w-[1440px] px-[30px] md:px-[60px] pt-[30px] md:pt-[60px] pb-[30px] md:pb-[60px]">
           <p className="text-subhead font-medium text-text-secondary">
-            {"// Services //"}
+            {"// Pricing & Process //"}
           </p>
           <h1 className="mt-[20px] md:mt-[30px] text-display md:text-display-xl font-semibold leading-snug tracking-tight">
             How Pager Studio Works
@@ -232,7 +232,7 @@ export default function ServicesPage() {
               "@type": "BreadcrumbList",
               itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
-                { "@type": "ListItem", position: 2, name: "Services", item: "https://pagerstudio.space/services" },
+                { "@type": "ListItem", position: 2, name: "Pricing & Process", item: "https://pagerstudio.space/pricing" },
               ],
             },
           ]),

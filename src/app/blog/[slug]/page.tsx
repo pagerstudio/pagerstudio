@@ -293,7 +293,7 @@ export default async function BlogPostPage({ params }: Props) {
                 Book a Discovery Call
               </Link>
               <Link
-                href="/services"
+                href="/pricing"
                 className="inline-flex items-center justify-center px-7 py-3.5 rounded-full border border-text-primary text-black text-sm font-semibold hover:bg-fill-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
               >
                 See Pricing &amp; Process

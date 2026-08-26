@@ -11,7 +11,7 @@ const socialLinks = [
 
 const pageLinks = [
   { label: "Healthcare AEO", href: "/healthcare-aeo" },
-  { label: "Services", href: "/services" },
+  { label: "Pricing & Process", href: "/pricing" },
   { label: "About", href: "/about" },
   { label: "FAQ", href: "/faq" },
   { label: "Blog", href: "/blog" },
