@@ -83,7 +83,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/favicon-dark.png" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){var m=window.matchMedia('(prefers-color-scheme:dark)');var d=document.querySelector('link[rel=icon]');function u(){d.href=m.matches?'/favicon-dark.png':'/favicon-light.png';}u();m.addEventListener('change',u);})();`,
+            __html: `(function(){var m=window.matchMedia('(prefers-color-scheme:dark)');var d=document.querySelector('link[rel=icon]');function u(){d.href=m.matches?'/favicon-light.png':'/favicon-dark.png';}u();m.addEventListener('change',u);})();`,
           }}
         />
         <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
