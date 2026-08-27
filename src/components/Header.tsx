@@ -20,6 +20,24 @@ const socialLinks = [
   { label: "LinkedIn", href: "https://linkedin.com/company/pagerstudio" },
 ];
 
+function ArrowTopRight({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      className={`absolute top-3 right-3 h-3.5 w-3.5 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 ${className}`}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M7 17L17 7" />
+      <path d="M7 7h10v10" />
+    </svg>
+  );
+}
+
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [closing, setClosing] = useState(false);
@@ -96,6 +114,17 @@ export default function Header() {
 
   return (
     <>
+      {isVisible && (
+        <div
+          className="fixed inset-0 z-[99] bg-white/30 backdrop-blur-sm transition-opacity duration-300"
+          style={{
+            opacity: closing ? 0 : 1,
+            transitionTimingFunction: "cubic-bezier(0.5, 0, 1, 0.5)",
+          }}
+          aria-hidden="true"
+        />
+      )}
+
       <header className="w-full flex items-center justify-center gap-4 md:gap-6 px-3 pt-6 md:pt-10 pb-3">
         <Link href="/" aria-label="Pager Studio — Home" className="shrink-0 flex items-center gap-3">
           <Image
@@ -146,12 +175,13 @@ export default function Header() {
                     ref={(el) => { menuItemsRef.current[i] = el; }}
                     onClick={handleClose}
                     aria-current={pathname === link.href ? "page" : undefined}
-                    className={`text-body font-medium text-white hover:text-text-inverse-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded ${
+                    className={`group relative text-body font-medium text-white hover:text-text-inverse-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded ${
                       closing ? "menu-item-out" : "menu-item-in"
                     }`}
                     style={{ animationDelay: closing ? `${i * 40}ms` : `${i * 80}ms` }}
                   >
                     {link.label}
+                    <ArrowTopRight />
                   </Link>
                 ))}
               </nav>
@@ -169,12 +199,13 @@ export default function Header() {
                     role="menuitem"
                     ref={(el) => { menuItemsRef.current[pageLinks.length + i] = el; }}
                     aria-label={`${link.label} (opens in new tab)`}
-                    className={`text-body font-medium text-white hover:text-text-inverse-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded ${
+                    className={`group relative text-body font-medium text-white hover:text-text-inverse-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded ${
                       closing ? "menu-item-out" : "menu-item-in"
                     }`}
                     style={{ animationDelay: closing ? `${(pageLinks.length + i) * 40}ms` : `${(pageLinks.length + i) * 80}ms` }}
                   >
                     {link.label}
+                    <ArrowTopRight />
                   </a>
                 ))}
               </nav>
@@ -186,12 +217,13 @@ export default function Header() {
                 href="mailto:hello@pagerstudio.space"
                 role="menuitem"
                 ref={(el) => { menuItemsRef.current[pageLinks.length + socialLinks.length] = el; }}
-                className={`text-body font-medium text-white hover:text-text-inverse-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded ${
+                className={`group relative text-body font-medium text-white hover:text-text-inverse-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded ${
                   closing ? "menu-item-out" : "menu-item-in"
                 }`}
                 style={{ animationDelay: closing ? `${(pageLinks.length + socialLinks.length) * 40}ms` : `${(pageLinks.length + socialLinks.length) * 80}ms` }}
               >
                 hello@pagerstudio.space
+                <ArrowTopRight />
               </a>
             </div>
           </div>
