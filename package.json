@@ -6,10 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "index": "node scripts/request-indexing.mjs",
+    "index:all": "node scripts/request-indexing.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.20",
+    "googleapis": "^176.0.0",
     "gray-matter": "^4.0.3",
     "next": "16.3.2",
     "next-mdx-remote": "^6.0.0",
