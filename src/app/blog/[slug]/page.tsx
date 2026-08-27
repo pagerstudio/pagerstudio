@@ -8,6 +8,7 @@ import rehypeSlug from "rehype-slug";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Section from "@/components/Section";
 import PreferredSourceButton from "@/components/PreferredSourceButton";
+import ArrowTopRight from "@/components/ArrowTopRight";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -288,15 +289,17 @@ export default async function BlogPostPage({ params }: Props) {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/book"
-                className="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-fill-active transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
+                className="group relative inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-fill-active transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
               >
                 Book a Discovery Call
+                <ArrowTopRight className="!static !h-3.5 !w-3.5 !text-white" />
               </Link>
               <Link
                 href="/pricing"
-                className="inline-flex items-center justify-center px-7 py-3.5 rounded-full border border-text-primary text-black text-sm font-semibold hover:bg-fill-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
+                className="group relative inline-flex items-center justify-center px-7 py-3.5 rounded-full border border-text-primary text-black text-sm font-semibold hover:bg-fill-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
               >
                 See Pricing &amp; Process
+                <ArrowTopRight className="!static !h-3.5 !w-3.5" />
               </Link>
             </div>
           </Section>

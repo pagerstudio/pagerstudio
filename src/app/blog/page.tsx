@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getCachedAllPosts } from "@/lib/blog";
 import BackButton from "@/components/BackButton";
 import GlassCard from "@/components/GlassCard";
+import ArrowTopRight from "@/components/ArrowTopRight";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -82,7 +83,7 @@ export default async function BlogPage() {
                   href={`/blog/${post.slug}`}
                   className="block group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 rounded-2xl"
                 >
-                  <article className="overflow-hidden rounded-2xl bg-white border border-border-subtle p-6 md:p-8 transition-all duration-200">
+                  <article className="relative overflow-hidden rounded-2xl bg-white border border-border-subtle p-6 md:p-8 transition-all duration-200">
                     <h2 className="text-title-1 font-semibold leading-snug">
                       {post.title}
                     </h2>
@@ -98,6 +99,7 @@ export default async function BlogPage() {
                       })}{" "}
                       · {post.readTime}
                     </p>
+                    <ArrowTopRight />
                   </article>
                 </Link>
               ))}

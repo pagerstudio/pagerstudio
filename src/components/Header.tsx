@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useCallback, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import ArrowTopRight from "./ArrowTopRight";
 
 const pageLinks = [
   { label: "Home", href: "/" },
@@ -19,24 +20,6 @@ const socialLinks = [
   { label: "X", href: "https://x.com/pagerstudio" },
   { label: "LinkedIn", href: "https://linkedin.com/company/pagerstudio" },
 ];
-
-function ArrowTopRight({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      className={`absolute top-3 right-3 h-3.5 w-3.5 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 ${className}`}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      <path d="M7 17L17 7" />
-      <path d="M7 7h10v10" />
-    </svg>
-  );
-}
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -116,6 +99,7 @@ export default function Header() {
     <>
       {isVisible && (
         <div
+          onClick={handleClose}
           className="fixed inset-0 z-[99] bg-white/30 backdrop-blur-sm transition-opacity duration-300"
           style={{
             opacity: closing ? 0 : 1,

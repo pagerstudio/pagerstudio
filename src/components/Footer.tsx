@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Logo from "./Logo";
+import ArrowTopRight from "./ArrowTopRight";
 
 const socialLinks = [
   { label: "Instagram", href: "https://instagram.com/pagerstudio" },
@@ -70,9 +71,10 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer me"
                 aria-label={`${link.label} (opens in new tab)`}
-                className="group text-body md:text-title-1 font-semibold text-white hover:text-text-inverse-secondary transition-colors inline-flex items-center gap-1.5 min-h-[44px] px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
+                className="group relative text-body md:text-title-1 font-semibold text-white hover:text-text-inverse-secondary transition-colors inline-flex items-center gap-1.5 min-h-[44px] px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
               >
                 {link.label}
+                <ArrowTopRight className="!static !h-3 !w-3" />
               </a>
             ))}
           </nav>
@@ -88,9 +90,10 @@ export default function Footer() {
             <Link
               key={link.href}
               href={link.href}
-              className="group text-footnote md:text-body text-text-inverse-secondary hover:text-white transition-colors inline-flex items-center py-1.5 px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
+              className="group relative text-footnote md:text-body text-text-inverse-secondary hover:text-white transition-colors inline-flex items-center py-1.5 px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
             >
               {link.label}
+              <ArrowTopRight className="!static !h-3 !w-3" />
             </Link>
           ))}
         </nav>
@@ -105,9 +108,10 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="group text-micro text-text-inverse-secondary hover:text-white transition-colors inline-flex items-center gap-1 min-h-[44px] px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
+                className="group relative text-micro text-text-inverse-secondary hover:text-white transition-colors inline-flex items-center gap-1 min-h-[44px] px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
               >
                 {link.label}
+                <ArrowTopRight className="!static !h-2.5 !w-2.5" />
               </Link>
             ))}
           </nav>

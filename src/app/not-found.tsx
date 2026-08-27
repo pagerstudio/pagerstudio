@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BackButton from "@/components/BackButton";
 import GlassCard from "@/components/GlassCard";
+import ArrowTopRight from "@/components/ArrowTopRight";
 
 export const metadata: Metadata = {
   title: "Page Not Found",
@@ -26,15 +27,17 @@ export default function NotFound() {
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/"
-              className="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-fill-active transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
+              className="group relative inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-black text-white text-sm font-semibold hover:bg-fill-active transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
             >
               Go Home
+              <ArrowTopRight className="!static !h-3.5 !w-3.5 !text-white" />
             </Link>
             <Link
               href="/blog"
-              className="inline-flex items-center justify-center px-7 py-3.5 rounded-full border border-border-default text-black text-sm font-semibold hover:bg-fill-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
+              className="group relative inline-flex items-center justify-center px-7 py-3.5 rounded-full border border-border-default text-black text-sm font-semibold hover:bg-fill-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
             >
               Read the Blog
+              <ArrowTopRight className="!static !h-3.5 !w-3.5" />
             </Link>
           </div>
         </GlassCard>

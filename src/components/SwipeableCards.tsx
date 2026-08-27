@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useRef, useCallback } from "react";
 import type { BlogPost } from "@/lib/blog";
+import ArrowTopRight from "./ArrowTopRight";
 
 interface Props {
   posts: BlogPost[];
@@ -61,9 +62,10 @@ export default function SwipeableCards({ posts }: Props) {
         <div className="flex items-center justify-between mt-4 md:mt-6 pt-4 md:pt-6">
           <Link
             href={`/blog/${post.slug}`}
-            className="text-micro md:text-footnote text-text-inverse-secondary hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
+            className="group relative text-micro md:text-footnote text-text-inverse-secondary hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
           >
-            Read full blog ↗
+            Read full blog
+            <ArrowTopRight className="!static !h-3 !w-3" />
           </Link>
 
           {posts.length > 1 && (
