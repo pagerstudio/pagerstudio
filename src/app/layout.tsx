@@ -120,11 +120,13 @@ export default function RootLayout({
               url: "https://pagerstudio.space",
               logo: "https://pagerstudio.space/logo-dark.png",
               description:
-                "AEO strategy firm focused on making healthcare practices discoverable through AI search and agents.",
+                "Pager Studio is a healthcare AEO strategy firm. We help healthcare practices get recommended by AI search engines — ChatGPT, Gemini, Perplexity, Google AI Overviews.",
+              foundingDate: "2025",
               founder: {
                 "@type": "Person",
                 name: "Sandeep Kumar",
                 jobTitle: "AEO Strategist",
+                url: "https://pagerstudio.space/about",
               },
               sameAs: [
                 "https://instagram.com/pagerstudio",
@@ -136,7 +138,23 @@ export default function RootLayout({
                 email: "hello@pagerstudio.space",
                 contactType: "customer service",
               },
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Coimbatore",
+                addressRegion: "Tamil Nadu",
+                addressCountry: "IN",
+              },
               areaServed: "Worldwide",
+              knowsAbout: [
+                "Answer Engine Optimization",
+                "AEO",
+                "Healthcare AEO",
+                "AI Search Visibility",
+                "Generative Engine Optimization",
+                "GEO",
+                "Schema Markup for Healthcare",
+                "AI Monitoring",
+              ],
             }),
           }}
         />
