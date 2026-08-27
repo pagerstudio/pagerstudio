@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.pagerstudio.space" }],
+      "destination": "https://pagerstudio.space/:path*",
+      "permanent": true
+    }
+  ]
+}
