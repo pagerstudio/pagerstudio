@@ -61,7 +61,7 @@ const faqs = [
   {
     question: "Who is the AEO Audit for?",
     answer:
-      "Healthcare practices — IVF clinics, fertility centers, dental practices, cosmetic dermatology, hair restoration, LASIK, plastic surgery, orthopedics, and cardiology. Any high-consideration specialty where patients research extensively before booking.",
+      "Healthcare practices — IVF clinics, fertility centers, dental practices, cosmetic dermatology, hair restoration, LASIK, and plastic surgery. Any high-consideration specialty where patients research extensively before booking.",
   },
   {
     question: "Why is the audit $5,000?",

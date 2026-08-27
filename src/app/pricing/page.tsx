@@ -174,7 +174,7 @@ export default function PricingPage() {
                       <span className="font-semibold text-black">For:</span>{" "}
                       Healthcare practices — IVF clinics, fertility centers, dental
                       practices, cosmetic dermatology, hair restoration, LASIK,
-                      plastic surgery, orthopedics, and cardiology.
+                      and plastic surgery.
                     </p>
                     <p>
                       <span className="font-semibold text-black">Not for:</span>{" "}
