@@ -157,15 +157,42 @@ export default async function HomePage() {
           __html: JSON.stringify([
             {
               "@context": "https://schema.org",
+              "@type": "Person",
+              "@id": "https://www.pagerstudio.space/#person",
+              name: "Sandeep Kumar",
+              jobTitle: "Healthcare AEO Strategist",
+              url: "https://www.linkedin.com/in/sandeepkumargr/",
+              sameAs: [
+                "https://www.linkedin.com/in/sandeepkumargr/",
+              ],
+              worksFor: {
+                "@type": "Organization",
+                "@id": "https://www.pagerstudio.space/#organization",
+                name: "Pager Studio",
+                url: "https://www.pagerstudio.space",
+              },
+              knowsAbout: [
+                "Answer Engine Optimization",
+                "Healthcare AEO",
+                "AI Search Visibility",
+                "Generative Engine Optimization",
+                "Medical Entity Optimization",
+                "Schema Markup for Healthcare",
+              ],
+            },
+            {
+              "@context": "https://schema.org",
               "@type": "ProfessionalService",
+              "@id": "https://www.pagerstudio.space/#organization",
               name: "Pager Studio",
               url: "https://www.pagerstudio.space",
               description:
-                "Healthcare AEO (Answer Engine Optimization) strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
+                "Sandeep Kumar's healthcare AEO strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
               founder: {
                 "@type": "Person",
+                "@id": "https://www.pagerstudio.space/#person",
                 name: "Sandeep Kumar",
-                jobTitle: "Healthcare Strategist",
+                jobTitle: "Healthcare AEO Strategist",
                 url: "https://www.linkedin.com/in/sandeepkumargr/",
               },
               sameAs: [

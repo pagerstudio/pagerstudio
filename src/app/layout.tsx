@@ -15,11 +15,11 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "Healthcare AEO Strategy Firm — Pager Studio",
-    template: "%s | Pager Studio",
+    default: "Healthcare AEO Strategist — Sandeep Kumar",
+    template: "%s — Sandeep Kumar | Pager Studio",
   },
   description:
-    "Healthcare AEO Strategy Firm — Pager Studio. Making healthcare practices visible in AI search.",
+    "Sandeep Kumar's Healthcare AEO strategy firm. Making healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
   keywords: [
     "healthcare AEO",
     "answer engine optimization healthcare",
@@ -43,15 +43,15 @@ export const metadata: Metadata = {
         url: "/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Healthcare AEO Strategy Firm — Pager Studio",
+        alt: "Healthcare AEO Strategist — Sandeep Kumar",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Healthcare AEO Strategy Firm — Pager Studio",
+    title: "Healthcare AEO Strategist — Sandeep Kumar",
     description:
-      "Healthcare AEO Strategy Firm — Pager Studio. Making healthcare practices visible in AI search.",
+      "Sandeep Kumar's Healthcare AEO strategy firm. Making healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
     images: ["/og-default.png"],
     creator: "@pagerstudio",
   },
@@ -112,50 +112,68 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "@id": "https://www.pagerstudio.space/#organization",
-              name: "Pager Studio",
-              url: "https://www.pagerstudio.space",
-              logo: "https://www.pagerstudio.space/logo-dark.png",
-              description:
-                "Pager Studio is a healthcare AEO strategy firm. We help healthcare practices get recommended by AI search engines — ChatGPT, Gemini, Perplexity, Google AI Overviews.",
-              foundingDate: "2025",
-              founder: {
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
                 "@type": "Person",
+                "@id": "https://www.pagerstudio.space/#person",
                 name: "Sandeep Kumar",
-                jobTitle: "AEO Strategist",
+                jobTitle: "Healthcare AEO Strategist",
                 url: "https://www.pagerstudio.space/about",
+                sameAs: [
+                  "https://www.linkedin.com/in/sandeepkumargr/",
+                ],
+                worksFor: {
+                  "@type": "Organization",
+                  "@id": "https://www.pagerstudio.space/#organization",
+                  name: "Pager Studio",
+                  url: "https://www.pagerstudio.space",
+                },
+                knowsAbout: [
+                  "Answer Engine Optimization",
+                  "Healthcare AEO",
+                  "AI Search Visibility",
+                  "Generative Engine Optimization",
+                  "Medical Entity Optimization",
+                  "Schema Markup for Healthcare",
+                ],
               },
-              sameAs: [
-                "https://instagram.com/pagerstudio",
-                "https://x.com/pagerstudio",
-                "https://linkedin.com/company/pagerstudio",
-              ],
-              contactPoint: {
-                "@type": "ContactPoint",
-                email: "hello@pagerstudio.space",
-                contactType: "customer service",
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "@id": "https://www.pagerstudio.space/#organization",
+                name: "Pager Studio",
+                url: "https://www.pagerstudio.space",
+                logo: "https://www.pagerstudio.space/logo-dark.png",
+                description:
+                  "Pager Studio is Sandeep Kumar's healthcare AEO strategy firm. We help healthcare practices get recommended by AI search engines — ChatGPT, Gemini, Perplexity, Google AI Overviews.",
+                foundingDate: "2025",
+                founder: {
+                  "@type": "Person",
+                  "@id": "https://www.pagerstudio.space/#person",
+                  name: "Sandeep Kumar",
+                  jobTitle: "Healthcare AEO Strategist",
+                  url: "https://www.linkedin.com/in/sandeepkumargr/",
+                },
+                sameAs: [
+                  "https://instagram.com/pagerstudio",
+                  "https://x.com/pagerstudio",
+                  "https://linkedin.com/company/pagerstudio",
+                ],
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  email: "hello@pagerstudio.space",
+                  contactType: "customer service",
+                },
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Coimbatore",
+                  addressRegion: "Tamil Nadu",
+                  addressCountry: "IN",
+                },
+                areaServed: "Worldwide",
               },
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Coimbatore",
-                addressRegion: "Tamil Nadu",
-                addressCountry: "IN",
-              },
-              areaServed: "Worldwide",
-              knowsAbout: [
-                "Answer Engine Optimization",
-                "AEO",
-                "Healthcare AEO",
-                "AI Search Visibility",
-                "Generative Engine Optimization",
-                "GEO",
-                "Schema Markup for Healthcare",
-                "AI Monitoring",
-              ],
-            }),
+            ]),
           }}
         />
       </body>

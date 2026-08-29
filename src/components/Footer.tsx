@@ -101,7 +101,7 @@ export default function Footer() {
         {/* Row 3: Legal */}
         <div className="mt-6 md:mt-8 pt-6 border-t border-white/10 flex flex-col items-center gap-4 md:flex-row md:justify-between md:gap-4">
           <p className="text-micro text-text-inverse-secondary text-center">
-            &copy; 2026 Pager Studio. All rights reserved.
+            &copy; 2026 Pager Studio. Founded by Sandeep Kumar. All rights reserved.
           </p>
           <nav aria-label="Legal links" className="flex items-center justify-center flex-wrap gap-x-4 gap-y-2">
             {legalLinks.map((link) => (

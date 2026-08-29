@@ -154,12 +154,10 @@ export default async function BlogPostPage({ params }: Props) {
     author: {
       "@type": "Person",
       name: "Sandeep Kumar",
-      jobTitle: "AEO Strategist",
-      url: "https://www.pagerstudio.space",
+      jobTitle: "Healthcare AEO Strategist",
+      url: "https://www.pagerstudio.space/about",
       sameAs: [
-        "https://instagram.com/pagerstudio",
-        "https://x.com/pagerstudio",
-        "https://linkedin.com/company/pagerstudio",
+        "https://www.linkedin.com/in/sandeepkumargr/",
       ],
     },
     publisher: {

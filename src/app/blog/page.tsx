@@ -132,7 +132,11 @@ export default async function BlogPage() {
               author: {
                 "@type": "Person",
                 name: "Sandeep Kumar",
-                jobTitle: "AEO Strategist",
+                jobTitle: "Healthcare AEO Strategist",
+                url: "https://www.pagerstudio.space/about",
+                sameAs: [
+                  "https://www.linkedin.com/in/sandeepkumargr/",
+                ],
               },
               publisher: {
                 "@type": "Organization",

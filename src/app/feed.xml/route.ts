@@ -23,7 +23,7 @@ export async function GET() {
       <guid isPermaLink="true">${baseUrl}/blog/${post.slug}</guid>
       <pubDate>${new Date(post.date + "T00:00:00Z").toUTCString()}</pubDate>
       <category>${escapeXml(post.category)}</category>
-      <author>hello@pagerstudio.space (Sandeep Kumar)</author>
+      <author>Sandeep Kumar (hello@pagerstudio.space)</author>
     </item>`
     )
     .join("\n");
@@ -31,8 +31,8 @@ export async function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pager Studio Blog</title>
-    <description>Insights on AEO, AI search, and healthcare visibility from Pager Studio.</description>
+    <title>Sandeep Kumar — Healthcare AEO Blog</title>
+    <description>Insights on AEO, AI search, and healthcare visibility by Sandeep Kumar, founder of Pager Studio.</description>
     <link>${baseUrl}/blog</link>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>

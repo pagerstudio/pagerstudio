@@ -5,13 +5,13 @@ import Section from "@/components/Section";
 import PreferredSourceButton from "@/components/PreferredSourceButton";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About Sandeep Kumar",
   description:
-    "Pager Studio is an AEO strategy firm for healthcare, founded by Sandeep Kumar. We help healthcare practices become discoverable, accurately described, and trusted across AI search.",
+    "Sandeep Kumar is a Healthcare AEO Strategist and founder of Pager Studio. He helps healthcare practices become discoverable, accurately described, and trusted across AI search.",
   keywords: [
-    "Pager Studio about",
     "Sandeep Kumar AEO",
     "healthcare AEO strategist",
+    "Sandeep Kumar Pager Studio",
     "answer engine optimization firm",
     "AI visibility healthcare",
   ],
@@ -19,17 +19,17 @@ export const metadata: Metadata = {
     canonical: "/about",
   },
   openGraph: {
-    title: "About",
+    title: "About Sandeep Kumar",
     description:
-      "Pager Studio is an AEO strategy firm for healthcare, founded by Sandeep Kumar.",
+      "Sandeep Kumar is a Healthcare AEO Strategist and founder of Pager Studio.",
     url: "https://www.pagerstudio.space/about",
     images: ["/og-default.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "About",
+    title: "About Sandeep Kumar",
     description:
-      "Pager Studio is an AEO strategy firm for healthcare, founded by Sandeep Kumar.",
+      "Sandeep Kumar is a Healthcare AEO Strategist and founder of Pager Studio.",
   },
 };
 
@@ -194,7 +194,7 @@ export default function AboutPage() {
               founder: {
                 "@type": "Person",
                 name: "Sandeep Kumar",
-              jobTitle: "Healthcare Strategist",
+              jobTitle: "Healthcare AEO Strategist",
                 url: "https://www.linkedin.com/in/sandeepkumargr/",
               },
               areaServed: "Worldwide",
@@ -208,7 +208,7 @@ export default function AboutPage() {
             {
               "@context": "https://schema.org",
               "@type": "AboutPage",
-              name: "About | Pager Studio",
+              name: "About | Sandeep Kumar",
               url: "https://www.pagerstudio.space/about",
               speakable: {
                 "@type": "SpeakableSpecification",

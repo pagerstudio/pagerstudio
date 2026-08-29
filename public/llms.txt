@@ -1,6 +1,16 @@
-# Pager Studio
+# Sandeep Kumar — Healthcare AEO Strategist
 
-Pager Studio is a Healthcare AEO (Answer Engine Optimization) strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.
+Sandeep Kumar is a Healthcare AEO (Answer Engine Optimization) Strategist and founder of Pager Studio. He helps healthcare practices get recommended by AI search engines — ChatGPT, Gemini, Perplexity, and Google AI Overviews.
+
+## About Sandeep Kumar
+
+Sandeep Kumar specializes in making healthcare practices visible in AI search. He works exclusively with healthcare practices — IVF and fertility centers, hair restoration clinics, cosmetic dermatology practices, dental implant centers, LASIK clinics, and plastic surgery practices.
+
+LinkedIn: https://www.linkedin.com/in/sandeepkumargr/
+
+## Pager Studio
+
+Pager Studio is Sandeep Kumar's healthcare AEO strategy firm. The firm makes healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.
 
 ## What We Do
 
@@ -20,7 +30,7 @@ Healthcare practices — including IVF and fertility centers, hair restoration c
 
 - [Home](https://www.pagerstudio.space/)
 - [Pricing & Process](https://www.pagerstudio.space/pricing)
-- [About](https://www.pagerstudio.space/about)
+- [About Sandeep Kumar](https://www.pagerstudio.space/about)
 - [Blog](https://www.pagerstudio.space/blog)
 - [FAQ](https://www.pagerstudio.space/faq)
 - [Book a Discovery Call](https://www.pagerstudio.space/book)
@@ -47,7 +57,3 @@ IVF and fertility, hair restoration, cosmetic dermatology, dental implants, LASI
 ## Contact
 
 Email: hello@pagerstudio.space
-
-## Founder
-
-Sandeep Kumar — Healthcare Strategist, founder of Pager Studio.
