@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Pricing & Process",
     description:
       "$5,000 audit. 6-month foundation. Month-to-month. That's it.",
-    url: "https://pagerstudio.space/pricing",
+    url: "https://www.pagerstudio.space/pricing",
     images: ["/og-default.png"],
   },
   twitter: {
@@ -312,9 +312,9 @@ export default function PricingPage() {
                 "One-time AEO audit, 6-month foundation implementation and monitoring, then month-to-month. Simple process for making healthcare practices visible in AI search.",
               provider: {
                 "@type": "ProfessionalService",
-                "@id": "https://pagerstudio.space/#organization",
+                "@id": "https://www.pagerstudio.space/#organization",
                 name: "Pager Studio",
-                url: "https://pagerstudio.space",
+                url: "https://www.pagerstudio.space",
               },
               areaServed: "Worldwide",
               serviceType: [
@@ -334,8 +334,8 @@ export default function PricingPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
-                { "@type": "ListItem", position: 2, name: "Pricing & Process", item: "https://pagerstudio.space/pricing" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.pagerstudio.space" },
+                { "@type": "ListItem", position: 2, name: "Pricing & Process", item: "https://www.pagerstudio.space/pricing" },
               ],
             },
           ]),

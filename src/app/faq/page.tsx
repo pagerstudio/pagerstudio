@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "FAQ — Healthcare AEO Questions Answered",
     description:
       "Answers to common questions about Healthcare AEO and AI search visibility.",
-    url: "https://pagerstudio.space/faq",
+    url: "https://www.pagerstudio.space/faq",
     images: ["/og-default.png"],
   },
   twitter: {
@@ -155,8 +155,8 @@ export default function FAQPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
-                { "@type": "ListItem", position: 2, name: "FAQ", item: "https://pagerstudio.space/faq" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.pagerstudio.space" },
+                { "@type": "ListItem", position: 2, name: "FAQ", item: "https://www.pagerstudio.space/faq" },
               ],
             },
           ]),

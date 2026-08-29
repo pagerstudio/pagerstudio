@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Healthcare AEO Strategist — Sandeep Kumar",
     description:
       "Healthcare AEO Strategy Firm — Pager Studio.",
-    url: "https://pagerstudio.space",
+    url: "https://www.pagerstudio.space",
     images: ["/og-default.png"],
   },
   twitter: {
@@ -68,7 +68,9 @@ export default async function HomePage() {
       <section className="flex flex-col items-center text-center px-[20px] md:px-[30px] pt-[60px] md:pt-0 pb-[40px] md:pb-0 min-h-[calc(100vh-76px)]">
         <div className="flex-1 flex flex-col items-center justify-center">
           <h1 className="max-w-[720px] text-[18px] sm:text-[22px] md:text-display-xl leading-[1.3] md:leading-[1.25] font-normal text-black tracking-[-0.03em] hero-animate" style={{ animationDelay: "0ms" }}>
-            <span className="font-semibold"><a href="https://www.linkedin.com/in/sandeepkumargr/" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 rounded">Sandeep Kumar</a></span> {"// Healthcare AEO Strategist //"}
+            <span className="font-semibold"><a href="https://www.linkedin.com/in/sandeepkumargr/" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 rounded">Sandeep Kumar</a></span>
+            <br />
+            {"// Healthcare AEO Strategist //"}
             <br />
             {"Making healthcare practices visible in"}
             <br />
@@ -155,7 +157,7 @@ export default async function HomePage() {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               name: "Pager Studio",
-              url: "https://pagerstudio.space",
+              url: "https://www.pagerstudio.space",
               description:
                 "Healthcare AEO (Answer Engine Optimization) strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
               founder: {
@@ -209,16 +211,16 @@ export default async function HomePage() {
             {
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "@id": "https://pagerstudio.space/#website",
+              "@id": "https://www.pagerstudio.space/#website",
               name: "Pager Studio",
-              url: "https://pagerstudio.space",
+              url: "https://www.pagerstudio.space",
             },
             {
               "@context": "https://schema.org",
               "@type": "WebPage",
-              "@id": "https://pagerstudio.space/#webpage",
+              "@id": "https://www.pagerstudio.space/#webpage",
               name: "Healthcare AEO Strategist — Sandeep Kumar",
-              url: "https://pagerstudio.space",
+              url: "https://www.pagerstudio.space",
               dateModified: "2026-08-25",
               speakable: {
                 "@type": "SpeakableSpecification",

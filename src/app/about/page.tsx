@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "About",
     description:
       "Pager Studio is an AEO strategy firm for healthcare, founded by Sandeep Kumar.",
-    url: "https://pagerstudio.space/about",
+    url: "https://www.pagerstudio.space/about",
     images: ["/og-default.png"],
   },
   twitter: {
@@ -168,7 +168,7 @@ export default function AboutPage() {
               worksFor: {
                 "@type": "Organization",
                 name: "Pager Studio",
-                url: "https://pagerstudio.space",
+                url: "https://www.pagerstudio.space",
               },
               knowsAbout: [
                 "Answer Engine Optimization",
@@ -186,9 +186,9 @@ export default function AboutPage() {
             {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
-              "@id": "https://pagerstudio.space/#organization",
+              "@id": "https://www.pagerstudio.space/#organization",
               name: "Pager Studio",
-              url: "https://pagerstudio.space",
+              url: "https://www.pagerstudio.space",
               description:
                 "Pager Studio is a Healthcare AEO (Answer Engine Optimization) strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
               founder: {
@@ -209,7 +209,7 @@ export default function AboutPage() {
               "@context": "https://schema.org",
               "@type": "AboutPage",
               name: "About | Pager Studio",
-              url: "https://pagerstudio.space/about",
+              url: "https://www.pagerstudio.space/about",
               speakable: {
                 "@type": "SpeakableSpecification",
                 cssSelector: ["h1"],
@@ -219,8 +219,8 @@ export default function AboutPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
-                { "@type": "ListItem", position: 2, name: "About", item: "https://pagerstudio.space/about" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.pagerstudio.space" },
+                { "@type": "ListItem", position: 2, name: "About", item: "https://www.pagerstudio.space/about" },
               ],
             },
           ]),

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Policy",
     description: "Pager Studio's AI policy — responsible AI usage and compliance.",
-    url: "https://pagerstudio.space/ai-policy",
+    url: "https://www.pagerstudio.space/ai-policy",
     images: ["/og-default.png"],
   },
   twitter: {
@@ -319,7 +319,7 @@ export default function AIPolicyPage() {
               name: "AI Policy | Pager Studio",
               description:
                 "Pager Studio's AI policy — how we use AI responsibly, data protections, and compliance with the EU AI Act.",
-              url: "https://pagerstudio.space/ai-policy",
+              url: "https://www.pagerstudio.space/ai-policy",
               dateModified: "2026-08-01",
               speakable: {
                 "@type": "SpeakableSpecification",
@@ -330,8 +330,8 @@ export default function AIPolicyPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
-                { "@type": "ListItem", position: 2, name: "AI Policy", item: "https://pagerstudio.space/ai-policy" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.pagerstudio.space" },
+                { "@type": "ListItem", position: 2, name: "AI Policy", item: "https://www.pagerstudio.space/ai-policy" },
               ],
             },
           ]),

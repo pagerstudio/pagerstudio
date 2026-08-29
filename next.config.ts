@@ -6,6 +6,17 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "pagerstudio.space",
+          },
+        ],
+        destination: "https://www.pagerstudio.space/:path*",
+        permanent: true,
+      },
+      {
         source: "/services",
         destination: "/pricing",
         permanent: true,

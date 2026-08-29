@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cookie Policy",
     description: "Pager Studio's cookie policy.",
-    url: "https://pagerstudio.space/cookies",
+    url: "https://www.pagerstudio.space/cookies",
     images: ["/og-default.png"],
   },
   twitter: {
@@ -244,7 +244,7 @@ export default function CookiePolicyPage() {
               name: "Cookie Policy | Pager Studio",
               description:
                 "Pager Studio's cookie policy — what cookies we use, why, and how to manage your preferences.",
-              url: "https://pagerstudio.space/cookies",
+              url: "https://www.pagerstudio.space/cookies",
               dateModified: "2026-08-01",
               speakable: {
                 "@type": "SpeakableSpecification",
@@ -255,8 +255,8 @@ export default function CookiePolicyPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
-                { "@type": "ListItem", position: 2, name: "Cookie Policy", item: "https://pagerstudio.space/cookies" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.pagerstudio.space" },
+                { "@type": "ListItem", position: 2, name: "Cookie Policy", item: "https://www.pagerstudio.space/cookies" },
               ],
             },
           ]),

@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     "healthcare discoverability",
     "Pager Studio",
   ],
-  authors: [{ name: "Sandeep Kumar", url: "https://pagerstudio.space" }],
+  authors: [{ name: "Sandeep Kumar", url: "https://www.pagerstudio.space" }],
   creator: "Sandeep Kumar",
-  metadataBase: new URL("https://pagerstudio.space"),
+  metadataBase: new URL("https://www.pagerstudio.space"),
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://pagerstudio.space",
+    canonical: "https://www.pagerstudio.space",
   },
 };
 
@@ -115,10 +115,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "@id": "https://pagerstudio.space/#organization",
+              "@id": "https://www.pagerstudio.space/#organization",
               name: "Pager Studio",
-              url: "https://pagerstudio.space",
-              logo: "https://pagerstudio.space/logo-dark.png",
+              url: "https://www.pagerstudio.space",
+              logo: "https://www.pagerstudio.space/logo-dark.png",
               description:
                 "Pager Studio is a healthcare AEO strategy firm. We help healthcare practices get recommended by AI search engines — ChatGPT, Gemini, Perplexity, Google AI Overviews.",
               foundingDate: "2025",
@@ -126,7 +126,7 @@ export default function RootLayout({
                 "@type": "Person",
                 name: "Sandeep Kumar",
                 jobTitle: "AEO Strategist",
-                url: "https://pagerstudio.space/about",
+                url: "https://www.pagerstudio.space/about",
               },
               sameAs: [
                 "https://instagram.com/pagerstudio",

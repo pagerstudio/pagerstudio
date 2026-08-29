@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Privacy Policy",
     description: "Pager Studio's privacy policy.",
-    url: "https://pagerstudio.space/privacy",
+    url: "https://www.pagerstudio.space/privacy",
     images: ["/og-default.png"],
   },
   twitter: {
@@ -362,7 +362,7 @@ export default function PrivacyPage() {
               "@type": "WebPage",
               name: "Privacy Policy | Pager Studio",
               description: "Pager Studio's privacy policy — what we collect, how we use it, and your rights.",
-              url: "https://pagerstudio.space/privacy",
+              url: "https://www.pagerstudio.space/privacy",
               dateModified: "2026-08-01",
               speakable: {
                 "@type": "SpeakableSpecification",
@@ -373,8 +373,8 @@ export default function PrivacyPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
-                { "@type": "ListItem", position: 2, name: "Privacy Policy", item: "https://pagerstudio.space/privacy" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.pagerstudio.space" },
+                { "@type": "ListItem", position: 2, name: "Privacy Policy", item: "https://www.pagerstudio.space/privacy" },
               ],
             },
           ]),

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terms & Conditions",
     description: "Pager Studio's terms and conditions.",
-    url: "https://pagerstudio.space/terms",
+    url: "https://www.pagerstudio.space/terms",
     images: ["/og-default.png"],
   },
   twitter: {
@@ -473,7 +473,7 @@ export default function TermsPage() {
               "@type": "WebPage",
               name: "Terms & Conditions | Pager Studio",
               description: "Pager Studio's terms and conditions — engagement terms, payment, and legal details.",
-              url: "https://pagerstudio.space/terms",
+              url: "https://www.pagerstudio.space/terms",
               dateModified: "2026-08-01",
               speakable: {
                 "@type": "SpeakableSpecification",
@@ -484,8 +484,8 @@ export default function TermsPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://pagerstudio.space" },
-                { "@type": "ListItem", position: 2, name: "Terms & Conditions", item: "https://pagerstudio.space/terms" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.pagerstudio.space" },
+                { "@type": "ListItem", position: 2, name: "Terms & Conditions", item: "https://www.pagerstudio.space/terms" },
               ],
             },
           ]),

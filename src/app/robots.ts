@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/_next/"],
       },
     ],
-    sitemap: "https://pagerstudio.space/sitemap.xml",
+    sitemap: "https://www.pagerstudio.space/sitemap.xml",
   };
 }

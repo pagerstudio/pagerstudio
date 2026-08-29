@@ -1,6 +1,6 @@
 import { getAllPosts } from "@/lib/blog";
 
-const baseUrl = "https://pagerstudio.space";
+const baseUrl = "https://www.pagerstudio.space";
 
 function escapeXml(str: string): string {
   return str
