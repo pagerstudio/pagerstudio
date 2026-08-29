@@ -71,7 +71,7 @@ export default async function HomePage() {
             <span className="block md:inline font-semibold"><a href="https://www.linkedin.com/in/sandeepkumargr/" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 rounded">Sandeep Kumar</a></span>
             <span className="block md:inline">{"// Healthcare AEO Strategist //"}</span>
           </h1>
-          <p className="max-w-[600px] mt-[20px] md:mt-[24px] text-subhead leading-prose text-text-secondary hero-animate" style={{ animationDelay: "80ms" }}>
+          <p className="max-w-[600px] mt-[20px] md:mt-[24px] text-body leading-relaxed-body text-text-secondary hero-animate" style={{ animationDelay: "80ms" }}>
             Patients don&apos;t Google anymore — they ask AI. We make sure your practice is the one AI recommends.
           </p>
           <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-[16px] md:gap-[30px] mt-[24px] md:mt-[30px] hero-animate" style={{ animationDelay: "150ms" }}>
