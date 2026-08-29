@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/about`, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${baseUrl}/book`, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${baseUrl}/faq`, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${baseUrl}/specialties`, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${baseUrl}/blog`, changeFrequency: "weekly" as const, priority: 0.7 },
     { url: `${baseUrl}/privacy`, changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${baseUrl}/terms`, changeFrequency: "yearly" as const, priority: 0.3 },
