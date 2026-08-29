@@ -74,9 +74,9 @@ export default async function HomePage() {
             <br />
             {"Making healthcare practices"}
             <br />
-            {"visible in AI search"}
+            {"visible in AI search —"}
             <br />
-            {"— ChatGPT, Gemini, Perplexity,"}
+            {"ChatGPT, Gemini, Perplexity,"}
             <br />
             {"Google AI Overviews."}
           </h1>
