@@ -56,7 +56,7 @@ const faqs = [
 export default function HairRestorationAEOPage() {
   return (
     <>
-      <BackButton />
+      <BackButton className="max-w-[1440px]" />
       <section className="px-[20px] md:px-[30px] pt-[20px] md:pt-[30px] pb-[90px] md:pb-[180px]">
         <GlassCard className="mx-auto max-w-[1440px] px-[30px] md:px-[60px] pt-[30px] md:pt-[60px] pb-[30px] md:pb-[60px]">
           <p className="text-subhead font-medium text-text-secondary">

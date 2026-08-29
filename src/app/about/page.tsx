@@ -55,7 +55,7 @@ const expertise = [
 export default function AboutPage() {
   return (
     <>
-      <BackButton />
+      <BackButton className="max-w-[1440px]" />
       <section className="px-[20px] md:px-[30px] pt-[20px] md:pt-[30px] pb-[90px] md:pb-[180px]">
         <div className="mx-auto max-w-[720px] flex flex-col items-center">
 
