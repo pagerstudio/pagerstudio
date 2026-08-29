@@ -4,7 +4,6 @@ import Button from "@/components/Button";
 import GlassCard from "@/components/GlassCard";
 import Section from "@/components/Section";
 import PreferredSourceButton from "@/components/PreferredSourceButton";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Dermatology AEO — Get Recommended by AI Search | Sandeep Kumar",
@@ -53,14 +52,6 @@ const faqs = [
   },
 ];
 
-const specialties = [
-  { name: "IVF & Fertility", href: "/ivf-fertility-aeo", current: false },
-  { name: "Cosmetic Dermatology", href: "/dermatology-aeo", current: true },
-  { name: "Dental Implants", href: "/dental-implant-aeo", current: false },
-  { name: "LASIK", href: "/lasik-aeo", current: false },
-  { name: "Hair Restoration", href: "/hair-restoration-aeo", current: false },
-  { name: "Plastic Surgery", href: "/plastic-surgery-aeo", current: false },
-];
 
 export default function DermatologyAEOPage() {
   return (
@@ -81,26 +72,6 @@ export default function DermatologyAEOPage() {
             <Button href="/book">Book a Discovery Call</Button>
           </div>
         </GlassCard>
-
-        <Section className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] max-w-[1440px] mx-auto">
-          <h2 className="text-title-1 font-semibold tracking-tight">
-            {"// Which Specialties Does Pager Studio Serve? //"}</h2>
-          <div className="mt-[16px] flex flex-wrap gap-[12px]">
-            {specialties.map((s) => (
-              <Link
-                key={s.name}
-                href={s.href}
-                className={`px-[16px] py-[8px] rounded-full border text-footnote font-medium transition-colors ${
-                  s.current
-                    ? "bg-black text-white border-black"
-                    : "border-border-subtle text-text-secondary hover:border-black hover:text-black"
-                }`}
-              >
-                {s.name}
-              </Link>
-            ))}
-          </div>
-        </Section>
 
         <Section className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] max-w-[1440px] mx-auto">
           <h2 className="text-title-1 font-semibold tracking-tight">
