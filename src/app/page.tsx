@@ -72,11 +72,13 @@ export default async function HomePage() {
             <br />
             {"// Healthcare AEO Strategist //"}
             <br />
-            {"Making healthcare practices visible"}
+            {"Making healthcare practices"}
             <br />
-            {"in AI search — ChatGPT, Gemini,"}
+            {"visible in AI search"}
             <br />
-            {"Perplexity, Google AI Overviews."}
+            {"— ChatGPT, Gemini, Perplexity,"}
+            <br />
+            {"Google AI Overviews."}
           </h1>
           <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-[16px] md:gap-[30px] mt-[24px] md:mt-[30px] hero-animate" style={{ animationDelay: "150ms" }}>
             <Button href="/book">Book a Discovery Call</Button>
