@@ -68,17 +68,12 @@ export default async function HomePage() {
       <section className="flex flex-col items-center text-center px-[20px] md:px-[30px] pt-[60px] md:pt-0 pb-[40px] md:pb-0 min-h-[calc(100vh-76px)]">
         <div className="flex-1 flex flex-col items-center justify-center">
           <h1 className="max-w-[720px] text-[22px] sm:text-[26px] md:text-display-xl leading-[1.3] md:leading-[1.25] font-normal text-black tracking-[-0.03em] hero-animate" style={{ animationDelay: "0ms" }}>
-            <span className="font-semibold"><a href="https://www.linkedin.com/in/sandeepkumargr/" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 rounded">Sandeep Kumar</a></span>
-            <br />
-            {"// Healthcare AEO Strategist //"}
-            <br />
-            {"Making healthcare practices"}
-            <br />
-            {"visible in AI search —"}
-            <br />
-            {"ChatGPT, Gemini, Perplexity,"}
-            <br />
-            {"Google AI Overviews."}
+            <span className="block md:inline font-semibold"><a href="https://www.linkedin.com/in/sandeepkumargr/" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 rounded">Sandeep Kumar</a></span>
+            <span className="block md:inline">{"// Healthcare AEO Strategist //"}</span>
+            <span className="block md:inline">{"Making healthcare practices"}</span>
+            <span className="block md:inline">{"visible in AI search —"}</span>
+            <span className="block md:inline">{"ChatGPT, Gemini, Perplexity,"}</span>
+            <span className="block md:inline">{"Google AI Overviews."}</span>
           </h1>
           <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-[16px] md:gap-[30px] mt-[24px] md:mt-[30px] hero-animate" style={{ animationDelay: "150ms" }}>
             <Button href="/book">Book a Discovery Call</Button>
