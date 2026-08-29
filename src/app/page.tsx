@@ -123,7 +123,7 @@ export default async function HomePage() {
       <section className="px-[20px] md:px-[30px] pt-[60px] md:pt-[120px] pb-[90px] md:pb-[180px]">
         <GlassCard className="mx-auto max-w-[720px] mt-[20px] md:mt-[30px] px-[30px] md:px-[60px] py-[30px] md:py-[60px]">
           <div className="text-center mb-[20px] md:mb-[30px]">
-            <h2 className="text-title-1 font-semibold tracking-tight">{"// What Should You Know Before Working With Pager Studio? //"}</h2>
+            <h2 className="text-title-1 font-semibold tracking-tight">{"// Before We Work Together //"}</h2>
             <p className="mt-2 md:mt-3 text-body text-text-secondary">
               Before we work together, a few things to know upfront.
             </p>
