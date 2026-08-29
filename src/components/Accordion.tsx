@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 interface AccordionItemProps {
   title: string;
   children: React.ReactNode;
@@ -13,12 +11,9 @@ export function AccordionItem({
   children,
   defaultOpen = false,
 }: AccordionItemProps) {
-  const [open, setOpen] = useState(defaultOpen);
-
   return (
     <details
       open={defaultOpen}
-      onToggle={(e) => setOpen((e.target as HTMLDetailsElement).open)}
       className="group border border-border-subtle rounded-xl overflow-hidden"
     >
       <summary className="flex items-center justify-between px-[30px] md:px-[40px] py-[20px] md:py-[24px] cursor-pointer list-none text-title-2 font-semibold tracking-tight hover:bg-white/5 transition-colors">

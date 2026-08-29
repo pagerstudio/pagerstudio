@@ -70,7 +70,7 @@ export default function Footer() {
                 key={link.label}
                 href={link.href}
                 target="_blank"
-                rel="noopener noreferrer me"
+                    rel="noopener noreferrer"
                 aria-label={`${link.label} (opens in new tab)`}
                 className="group relative text-body md:text-title-1 font-semibold text-white hover:text-text-inverse-secondary transition-colors inline-flex items-center gap-1.5 min-h-[44px] px-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
               >
