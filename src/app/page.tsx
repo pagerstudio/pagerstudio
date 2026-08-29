@@ -67,7 +67,7 @@ export default async function HomePage() {
       {/* First screen: hero + AEO callout */}
       <section className="flex flex-col items-center text-center px-[20px] md:px-[30px] pt-[60px] md:pt-0 pb-[40px] md:pb-0 min-h-[calc(100vh-76px)]">
         <div className="flex-1 flex flex-col items-center justify-center">
-          <h1 className="max-w-[720px] text-[18px] sm:text-[22px] md:text-display-xl leading-[1.3] md:leading-[1.25] font-normal text-black tracking-[-0.03em] hero-animate" style={{ animationDelay: "0ms" }}>
+          <h1 className="max-w-[720px] text-[22px] sm:text-[26px] md:text-display-xl leading-[1.3] md:leading-[1.25] font-normal text-black tracking-[-0.03em] hero-animate" style={{ animationDelay: "0ms" }}>
             <span className="font-semibold"><a href="https://www.linkedin.com/in/sandeepkumargr/" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 rounded">Sandeep Kumar</a></span>
             <br />
             {"// Healthcare AEO Strategist //"}
