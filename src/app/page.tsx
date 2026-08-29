@@ -72,9 +72,9 @@ export default async function HomePage() {
             <br />
             {"// Healthcare AEO Strategist //"}
             <br />
-            {"Making healthcare practices visible in"}
+            {"Making healthcare practices visible"}
             <br />
-            {"AI search — ChatGPT, Gemini,"}
+            {"in AI search — ChatGPT, Gemini,"}
             <br />
             {"Perplexity, Google AI Overviews."}
           </h1>
