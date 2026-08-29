@@ -69,9 +69,9 @@ export default async function HomePage() {
         <div className="flex-1 flex flex-col items-center justify-center">
           <h1 className="max-w-[720px] text-[22px] sm:text-[26px] md:text-display-xl leading-[1.3] md:leading-[1.25] font-normal text-black tracking-[-0.03em] hero-animate" style={{ animationDelay: "0ms" }}>
             <span className="block md:inline font-semibold"><a href="https://www.linkedin.com/in/sandeepkumargr/" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 rounded">Sandeep Kumar</a></span>
-            <span className="block md:inline">{"// Healthcare AEO Strategist //"}</span>
+            <span className="block md:inline">{"// Healthcare AEO Strategist & Founder of Pager Studio //"}</span>
           </h1>
-          <p className="max-w-[600px] mt-[20px] md:mt-[24px] text-body leading-relaxed-body text-text-secondary hero-animate" style={{ animationDelay: "80ms" }}>
+          <p className="max-w-[600px] mt-[20px] md:mt-[24px] text-subhead leading-relaxed-body text-text-secondary hero-animate" style={{ animationDelay: "80ms" }}>
             Patients don&apos;t Google anymore — they ask AI. We make sure your practice is the one AI recommends.
           </p>
           <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-[16px] md:gap-[30px] mt-[24px] md:mt-[30px] hero-animate" style={{ animationDelay: "150ms" }}>
@@ -95,19 +95,19 @@ export default async function HomePage() {
           </div>
           <div className="space-y-[20px] md:space-y-[30px]">
             <div>
-              <h2 className="text-body font-semibold text-black">What is Healthcare AEO?</h2>
+              <h2 className="text-title-2 font-semibold text-black">What is Healthcare AEO?</h2>
               <p className="mt-[8px] text-body leading-relaxed-body text-text-secondary">
                 The practice of structuring your online presence so AI systems can find, understand, and recommend your practice.
               </p>
             </div>
             <div>
-              <h2 className="text-body font-semibold text-black">How is AEO different from SEO?</h2>
+              <h2 className="text-title-2 font-semibold text-black">How is AEO different from SEO?</h2>
               <p className="mt-[8px] text-body leading-relaxed-body text-text-secondary">
                 SEO gets you ranked. AEO gets you recommended. A practice can rank #1 on Google and still be invisible to AI.
               </p>
             </div>
             <div>
-              <h2 className="text-body font-semibold text-black">How do I check if my practice is visible to AI?</h2>
+              <h2 className="text-title-2 font-semibold text-black">How do I check if my practice is visible to AI?</h2>
               <p className="mt-[8px] text-body leading-relaxed-body text-text-secondary">
                 Ask an AI tool a question a patient would ask about your specialty in your area. If your practice isn&apos;t mentioned, AI doesn&apos;t trust your data enough to recommend you.
               </p>
