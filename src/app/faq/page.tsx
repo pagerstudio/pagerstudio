@@ -41,17 +41,17 @@ const faqs = [
   {
     question: "How is AEO different from SEO?",
     answer:
-      "SEO focuses on ranking in Google's search results. AEO focuses on being cited in AI-generated answers. A healthcare practice can rank #1 on Google and still be invisible to AI if its data isn't structured for AI consumption.",
+      "SEO focuses on ranking in Google's search results. AEO focuses on being cited in AI-generated answers. A healthcare practice can rank #1 on Google and still be invisible to AI if it hasn't structured its data for AI consumption.",
   },
   {
     question: "Why do healthcare practices need AEO?",
     answer:
-      "Patients are increasingly using AI tools instead of Googling. AI gives one answer — not ten links. If your practice isn't structured for AI consumption, AI will recommend a competitor instead.",
+      "Patients are increasingly using AI tools instead of Googling. AI gives one answer — not ten links. If you haven't structured your practice for AI consumption, AI will recommend a competitor instead.",
   },
   {
     question: "How long does AEO take to show results?",
     answer:
-      "Initial improvements in data consistency can be indexed within weeks. Building full AI visibility — structured data, cross-platform consistency, authority signals — typically takes 3-6 months. The compound effect of early action means starting now provides lasting competitive advantage.",
+      "AI systems can index initial improvements in data consistency within weeks. Building full AI visibility — structured data, cross-platform consistency, authority signals — typically takes 3-6 months. The compound effect of early action means starting now provides lasting competitive advantage.",
   },
   {
     question: "What is included in the Healthcare AEO Audit?",

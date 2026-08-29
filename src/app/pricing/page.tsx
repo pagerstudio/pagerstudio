@@ -228,7 +228,7 @@ export default function PricingPage() {
               </div>
 
               <p className="mt-[16px] text-body leading-relaxed-body text-text-secondary">
-                6-month minimum. That&apos;s the only commitment. Pricing is quoted
+                6-month minimum. That&apos;s the only commitment. We quote pricing
                 after your audit, based on your practice, specialties, and markets.
               </p>
             </GlassCard>

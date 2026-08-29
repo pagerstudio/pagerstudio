@@ -43,7 +43,7 @@ const mustReadItems = [
   },
   {
     label: "Client Data Protection",
-    text: "Client results and metrics are never used for Pager Studio's own marketing.",
+    text: "Pager Studio never uses client results or metrics for its own marketing.",
   },
   {
     label: "Minimum Engagement Term",

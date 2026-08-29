@@ -119,8 +119,8 @@ export default function CookiePolicyPage() {
                       <strong className="font-semibold text-black">
                         Plausible Analytics
                       </strong>{" "}
-                      — Privacy-first, cookie-free analytics. No personal
-                      data is collected. Data is processed in the EU.
+                      — Privacy-first, cookie-free analytics. Plausible Analytics collects no
+                      personal data. Data is processed in the EU.
                     </li>
                     <li>
                       <strong className="font-semibold text-black">
@@ -148,7 +148,7 @@ export default function CookiePolicyPage() {
                 Our website embeds a Cal.com scheduling widget on the{" "}
                 <strong className="font-semibold text-black">/book</strong>{" "}
                 page. This widget may set its own cookies for scheduling
-                functionality. These cookies are only loaded after you provide
+                functionality. The widget only loads these cookies after you provide
                 consent via our cookie banner, or if you interact directly
                 with the widget.
               </p>
@@ -202,7 +202,7 @@ export default function CookiePolicyPage() {
                 When you provide or withdraw cookie consent, we store the
                 following information locally in your browser: your consent
                 choices, the timestamp of your decision, and the version of
-                this cookie policy. This record is used to demonstrate
+                this cookie policy. We use this record to demonstrate
                 compliance with privacy regulations.
               </p>
             </section>
@@ -213,7 +213,7 @@ export default function CookiePolicyPage() {
               </h2>
               <p>
                 We may update this cookie policy from time to time. Significant
-                changes will be communicated through the cookie consent banner
+                changes, we will communicate them through the cookie consent banner
                 or by notice on our website. Your continued use of our website
                 after changes are posted constitutes acceptance of the updated
                 policy.

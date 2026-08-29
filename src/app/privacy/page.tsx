@@ -67,7 +67,7 @@ export default function PrivacyPage() {
                   <p>
                     <strong className="font-semibold text-black">When you run a free audit:</strong>{" "}
                     your name, clinic name, email address, phone number,
-                    specialty, and city. This is used solely to deliver your
+                    specialty, and city. We use this solely to deliver your
                     audit report.
                   </p>
                 </li>
@@ -216,7 +216,7 @@ export default function PrivacyPage() {
               <p>
                 Our website uses only essential cookies required for basic
                 functionality. We do not use advertising cookies, retargeting
-                pixels, or cross-site tracking. Analytics data is collected in
+                pixels, or cross-site tracking. We collect analytics data in
                 aggregate — we cannot identify individual visitors from it.
                 For full details, see our{" "}
                 <a href="/cookies" className="underline hover:text-text-secondary transition-colors">
@@ -321,8 +321,8 @@ export default function PrivacyPage() {
               <h2 className="text-lg font-semibold mb-3">Security</h2>
               <p>
                 We use industry-standard encryption for data in transit and at
-                rest. Website access credentials provided by clients are
-                stored securely and never shared with unauthorized parties.
+                rest. We store website access credentials provided by clients
+                securely and never share them with unauthorized parties.
                 No system is completely secure, but we take reasonable
                 measures to protect your information.
               </p>

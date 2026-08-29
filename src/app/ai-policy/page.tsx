@@ -51,7 +51,7 @@ export default function AIPolicyPage() {
                 intelligence tools and technologies in delivering AEO (Answer
                 Engine Optimization) services to healthcare practices. It
                 applies to all staff, contractors, and systems operated by
-                Pager Studio. This policy is designed to comply with the
+                Pager Studio. This policy complies with the
                 EU AI Act (Regulation EU 2024/1689) and applicable data
                 protection regulations.
               </p>
@@ -92,7 +92,7 @@ export default function AIPolicyPage() {
                   tools cleared for use with non-sensitive business data.
                   These include large language models for content generation,
                   AI-powered analytics tools, and automated auditing tools.
-                  All approved tools are vetted for data processing practices
+                  Pager Studio vets all approved tools for data processing practices
                   and privacy compliance.
                 </li>
                 <li>
@@ -142,10 +142,10 @@ export default function AIPolicyPage() {
               </p>
               <ul className="mt-3 space-y-2">
                 {[
-                  "Client data is anonymized before being processed by AI tools where possible",
+                  "We anonymize client data before processing it with AI tools where possible",
                   "We do not use AI tools that train on client data for their own model improvement",
-                  "All AI tool usage is logged for audit purposes",
-                  "Client data is never shared with AI tool providers beyond what is necessary for the service",
+                  "We log all AI tool usage for audit purposes",
+                  "We never share client data with AI tool providers beyond what is necessary for the service",
                   "We maintain data processing agreements with AI tool providers where required",
                 ].map((item) => (
                   <li key={item} className="flex gap-3">
@@ -166,7 +166,7 @@ export default function AIPolicyPage() {
               </p>
               <ul className="mt-3 space-y-2">
                 {[
-                  "We disclose when content on client websites has been created or optimized with AI assistance",
+                  "We disclose when we create or optimize content on client websites with AI assistance",
                   "We inform clients about which AI tools are used in delivering our services",
                   "We clearly label AI-generated content where required by applicable regulations",
                   "We do not use AI to create deceptive or misleading content",
@@ -202,7 +202,7 @@ export default function AIPolicyPage() {
                 ))}
               </ul>
               <p className="mt-3">
-                Training is refreshed annually and completion is tracked.
+                Pager Studio refreshes training annually and tracks completion.
               </p>
             </section>
 
@@ -218,10 +218,10 @@ export default function AIPolicyPage() {
               <ul className="mt-3 space-y-2">
                 {[
                   "Report the incident to the policy owner within 24 hours",
-                  "Affected client data is secured and the exposure is contained",
-                  "The incident is documented and reviewed within 5 business days",
-                  "Affected clients are notified if their data was compromised",
-                  "Corrective measures are implemented and documented",
+                  "The team secures affected client data and contains the exposure",
+                  "The team documents and reviews the incident within 5 business days",
+                  "Pager Studio notifies affected clients if their data was compromised",
+                  "Pager Studio implements and documents corrective measures",
                 ].map((item) => (
                   <li key={item} className="flex gap-3">
                     <span className="text-text-tertiary font-medium shrink-0">+</span>
@@ -277,7 +277,7 @@ export default function AIPolicyPage() {
             <section>
               <h2 className="text-lg font-semibold mb-3">Review Cadence</h2>
               <p>
-                This policy is reviewed at least quarterly and updated
+                Pager Studio reviews this policy at least quarterly and updates it
                 immediately when:
               </p>
               <ul className="mt-3 space-y-2">

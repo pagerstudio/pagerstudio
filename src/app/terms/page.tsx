@@ -59,7 +59,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-lg font-semibold mb-3">Free Audit</h2>
               <p>
-                The free audit is provided at no cost with no obligation. You
+                Pager Studio provides the free audit at no cost with no obligation. You
                 receive a structured report within 48 hours showing where your
                 practice currently stands in ChatGPT and Google AI Overviews.
                 We may follow up once to discuss results. You are under no
@@ -84,8 +84,8 @@ export default function TermsPage() {
               <h2 className="text-lg font-semibold mb-3">Minimum Engagement Term</h2>
               <p>
                 A minimum engagement of six (6) months is required for
-                implementation and monitoring services. Shorter engagements
-                are not offered, as a strong AI visibility foundation requires
+                implementation and monitoring services. Pager Studio does not offer shorter
+                engagements, as a strong AI visibility foundation requires
                 sustained effort.
               </p>
             </section>
@@ -113,7 +113,7 @@ export default function TermsPage() {
                   <span className="text-text-tertiary font-medium shrink-0">+</span>
                   <p>
                     <strong className="font-semibold text-black">Payment methods.</strong>{" "}
-                    Payments are processed through our secure payment processor.
+                    Our secure payment processor handles all payments.
                     We do not store your card details.
                   </p>
                 </li>
@@ -154,8 +154,8 @@ export default function TermsPage() {
                 following: AI visibility audit, schema markup implementation,
                 authority content creation, physician profile optimization,
                 FAQ content, directory citation management, and monthly
-                citation reports. Specific deliverables are outlined in your
-                onboarding documents and plan description.
+                citation reports. Your onboarding documents and plan description outline specific
+                deliverables.
               </p>
             </section>
 
@@ -210,8 +210,8 @@ export default function TermsPage() {
                 30 days written notice. Upon cancellation, we will complete
                 any in-progress work for the current billing cycle. We do not
                 provide partial refunds for unused portions of a billing
-                cycle. All data and assets created for your practice will be
-                made available to you for download within 14 days of
+                cycle. We will make all data and assets created for your practice
+                available for download within 14 days of
                 cancellation.
               </p>
             </section>
@@ -332,7 +332,7 @@ export default function TermsPage() {
               <h2 className="text-lg font-semibold mb-3">Changes to These Terms</h2>
               <p>
                 We may update these terms from time to time. Significant
-                changes will be communicated by email. Continued use of our
+                changes, we will communicate them by email. Continued use of our
                 services after changes are posted constitutes acceptance of
                 the updated terms.
               </p>
@@ -353,7 +353,7 @@ export default function TermsPage() {
               <h2 className="text-lg font-semibold mb-3">Disclaimer</h2>
               <p>
                 Pager Studio helps healthcare practices build the technical
-                and content foundation needed to appear in AI-generated
+                and content foundation they need to appear in AI-generated
                 answers. However, AI platforms — including ChatGPT, Google
                 Gemini, Perplexity, Claude, Grok, Meta AI, and Google AI
                 Overviews — are independent systems with their own
