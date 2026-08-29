@@ -7,7 +7,7 @@ import { getCachedAllPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Healthcare AEO Strategist — Sandeep Kumar",
   description:
-    "Healthcare AEO Strategy Firm — Pager Studio. Making healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
+    "Patients don't Google anymore — they ask AI. Sandeep Kumar makes sure your healthcare practice is the one AI recommends. ChatGPT, Gemini, Perplexity, Google AI Overviews.",
   keywords: [
     "healthcare AEO",
     "AEO strategist",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Healthcare AEO Strategist — Sandeep Kumar",
     description:
-      "Healthcare AEO Strategy Firm — Pager Studio.",
+      "Patients don't Google anymore — they ask AI. We make sure your practice is the one AI recommends.",
     url: "https://www.pagerstudio.space",
     images: ["/og-default.png"],
   },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Healthcare AEO Strategist — Sandeep Kumar",
     description:
-      "Healthcare AEO Strategy Firm — Pager Studio.",
+      "Patients don't Google anymore — they ask AI. We make sure your practice is the one AI recommends.",
     images: ["/og-default.png"],
   },
 };
@@ -70,13 +70,9 @@ export default async function HomePage() {
           <h1 className="max-w-[720px] text-[22px] sm:text-[26px] md:text-display-xl leading-[1.3] md:leading-[1.25] font-normal text-black tracking-[-0.03em] hero-animate" style={{ animationDelay: "0ms" }}>
             <span className="block md:inline font-semibold"><a href="https://www.linkedin.com/in/sandeepkumargr/" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 rounded">Sandeep Kumar</a></span>
             <span className="block md:inline">{"// Healthcare AEO Strategist //"}</span>
-            <span className="block md:inline">{"Making healthcare practices"}</span>
-            <span className="block md:inline">{"visible in AI search —"}</span>
-            <span className="block md:inline">{"ChatGPT, Gemini, Perplexity,"}</span>
-            <span className="block md:inline">{"Google AI Overviews."}</span>
           </h1>
           <p className="max-w-[600px] mt-[20px] md:mt-[24px] text-subhead leading-prose text-text-secondary hero-animate" style={{ animationDelay: "80ms" }}>
-            Sandeep Kumar built Pager Studio to help healthcare practices get recommended by AI search engines. He makes your practice visible where patients actually search — inside AI, not just on Google.
+            Patients don&apos;t Google anymore — they ask AI. We make sure your practice is the one AI recommends.
           </p>
           <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-[16px] md:gap-[30px] mt-[24px] md:mt-[30px] hero-animate" style={{ animationDelay: "150ms" }}>
             <Button href="/book">Book a Discovery Call</Button>
@@ -278,7 +274,7 @@ export default async function HomePage() {
               "@id": "https://www.pagerstudio.space/#webpage",
               name: "Healthcare AEO Strategist — Sandeep Kumar",
               url: "https://www.pagerstudio.space",
-              dateModified: "2026-08-25",
+              dateModified: "2026-08-29",
               speakable: {
                 "@type": "SpeakableSpecification",
                 cssSelector: ["h1"],
