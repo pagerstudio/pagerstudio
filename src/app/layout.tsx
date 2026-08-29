@@ -119,12 +119,14 @@ export default function RootLayout({
                 "@id": "https://www.pagerstudio.space/#person",
                 name: "Sandeep Kumar",
                 jobTitle: "Healthcare AEO Strategist",
-                url: "https://www.pagerstudio.space/about",
+                url: "https://www.linkedin.com/in/sandeepkumargr/",
+                image: "https://www.pagerstudio.space/og-default.png",
+                description: "Healthcare AEO Strategist and founder of Pager Studio. Specializes in making healthcare practices visible in AI search.",
                 sameAs: [
                   "https://www.linkedin.com/in/sandeepkumargr/",
                 ],
                 worksFor: {
-                  "@type": "Organization",
+                  "@type": "ProfessionalService",
                   "@id": "https://www.pagerstudio.space/#organization",
                   name: "Pager Studio",
                   url: "https://www.pagerstudio.space",
@@ -140,7 +142,7 @@ export default function RootLayout({
               },
               {
                 "@context": "https://schema.org",
-                "@type": "Organization",
+                "@type": "ProfessionalService",
                 "@id": "https://www.pagerstudio.space/#organization",
                 name: "Pager Studio",
                 url: "https://www.pagerstudio.space",

@@ -153,20 +153,22 @@ export default async function BlogPostPage({ params }: Props) {
     url: `https://www.pagerstudio.space/blog/${post.slug}`,
     author: {
       "@type": "Person",
+      "@id": "https://www.pagerstudio.space/#person",
       name: "Sandeep Kumar",
       jobTitle: "Healthcare AEO Strategist",
-      url: "https://www.pagerstudio.space/about",
+      url: "https://www.linkedin.com/in/sandeepkumargr/",
       sameAs: [
         "https://www.linkedin.com/in/sandeepkumargr/",
       ],
     },
     publisher: {
-      "@type": "Organization",
+      "@type": "ProfessionalService",
+      "@id": "https://www.pagerstudio.space/#organization",
       name: "Pager Studio",
       url: "https://www.pagerstudio.space",
       logo: {
         "@type": "ImageObject",
-        url: "/og-default.png",
+        url: "https://www.pagerstudio.space/logo-dark.png",
       },
     },
     mainEntityOfPage: {

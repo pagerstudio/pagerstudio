@@ -87,6 +87,9 @@ export default function PricingPage() {
             see if we&apos;re a fit. Then a 6-month foundation. Then
             month-to-month. That&apos;s the whole model.
           </p>
+          <p className="mt-[16px] text-subhead leading-prose text-text-secondary max-w-[720px]">
+            Pager Studio&apos;s process: a $5,000 fixed-fee audit in 4-6 weeks, then a 6-month foundation engagement, then month-to-month. Audit fee is credited toward implementation if you move forward.
+          </p>
           <div className="mt-[30px]">
             <Button href="/book">Book a Discovery Call</Button>
           </div>
@@ -95,7 +98,7 @@ export default function PricingPage() {
         {/* The Three Phases */}
         <Section className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] max-w-[1440px] mx-auto">
           <h2 className="text-title-1 font-semibold tracking-tight">
-            {"// The Three Phases //"}
+            {"// How Does the Pager Studio Process Work? //"}
           </h2>
 
           <div className="mt-[30px] space-y-[20px] md:space-y-[30px]">
@@ -257,7 +260,7 @@ export default function PricingPage() {
         {/* What's NOT included */}
         <Section className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] max-w-[1440px] mx-auto">
           <h2 className="text-title-1 font-semibold tracking-tight">
-            {"// What We Don't Do //"}
+            {"// What Doesn't Pager Studio Do? //"}
           </h2>
           <div className="mt-[16px] space-y-[12px] text-subhead leading-prose text-text-secondary">
             <p>

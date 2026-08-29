@@ -6,9 +6,9 @@ import GlassCard from "@/components/GlassCard";
 import ArrowTopRight from "@/components/ArrowTopRight";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Blog — Healthcare AEO Insights from Sandeep Kumar",
   description:
-    "Insights on AEO, AI search, and healthcare visibility from Pager Studio. Learn how AI search differs from Google and why healthcare practices need AEO.",
+    "Insights on AEO, AI search, and healthcare visibility from Sandeep Kumar at Pager Studio. Learn how AI search differs from Google and why healthcare practices need AEO.",
   keywords: [
     "AEO blog",
     "healthcare AI search",
@@ -111,39 +111,51 @@ export default async function BlogPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            name: "Blog | Pager Studio",
-            description: "Insights on AEO, AI search, and healthcare visibility.",
-            url: "https://www.pagerstudio.space/blog",
-            publisher: {
-              "@type": "Organization",
-              name: "Pager Studio",
-              url: "https://www.pagerstudio.space",
-            },
-            hasPart: posts.map((post) => ({
-              "@type": "Article",
-              headline: post.title,
-              description: post.description,
-              url: `https://www.pagerstudio.space/blog/${post.slug}`,
-              datePublished: post.date,
-              dateModified: post.date,
-              author: {
-                "@type": "Person",
-                name: "Sandeep Kumar",
-                jobTitle: "Healthcare AEO Strategist",
-                url: "https://www.pagerstudio.space/about",
-                sameAs: [
-                  "https://www.linkedin.com/in/sandeepkumargr/",
-                ],
-              },
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              name: "Blog — Healthcare AEO Insights from Sandeep Kumar",
+              description: "Insights on AEO, AI search, and healthcare visibility.",
+              url: "https://www.pagerstudio.space/blog",
               publisher: {
-                "@type": "Organization",
+                "@type": "ProfessionalService",
+                "@id": "https://www.pagerstudio.space/#organization",
                 name: "Pager Studio",
+                url: "https://www.pagerstudio.space",
+                logo: "https://www.pagerstudio.space/logo-dark.png",
               },
-            })),
-          }),
+              hasPart: posts.map((post) => ({
+                "@type": "Article",
+                headline: post.title,
+                description: post.description,
+                url: `https://www.pagerstudio.space/blog/${post.slug}`,
+                datePublished: post.date,
+                dateModified: post.date,
+                author: {
+                  "@type": "Person",
+                  "@id": "https://www.pagerstudio.space/#person",
+                  name: "Sandeep Kumar",
+                  jobTitle: "Healthcare AEO Strategist",
+                  url: "https://www.linkedin.com/in/sandeepkumargr/",
+                },
+                publisher: {
+                  "@type": "ProfessionalService",
+                  "@id": "https://www.pagerstudio.space/#organization",
+                  name: "Pager Studio",
+                  logo: "https://www.pagerstudio.space/logo-dark.png",
+                },
+              })),
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.pagerstudio.space" },
+                { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.pagerstudio.space/blog" },
+              ],
+            },
+          ]),
         }}
       />
     </>

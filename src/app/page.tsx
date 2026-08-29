@@ -75,6 +75,9 @@ export default async function HomePage() {
             <span className="block md:inline">{"ChatGPT, Gemini, Perplexity,"}</span>
             <span className="block md:inline">{"Google AI Overviews."}</span>
           </h1>
+          <p className="max-w-[600px] mt-[20px] md:mt-[24px] text-subhead leading-prose text-text-secondary hero-animate" style={{ animationDelay: "80ms" }}>
+            Sandeep Kumar built Pager Studio to help healthcare practices get recommended by AI search engines. He makes your practice visible where patients actually search — inside AI, not just on Google.
+          </p>
           <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-[16px] md:gap-[30px] mt-[24px] md:mt-[30px] hero-animate" style={{ animationDelay: "150ms" }}>
             <Button href="/book">Book a Discovery Call</Button>
             <Button href="/pricing" variant="secondary">
@@ -92,23 +95,23 @@ export default async function HomePage() {
       <section className="px-[20px] md:px-[30px] pt-[40px] md:pt-[80px] pb-[40px] md:pb-[80px]">
         <GlassCard className="mx-auto max-w-[720px] px-[30px] md:px-[60px] py-[30px] md:py-[60px]">
           <div className="text-center mb-[20px] md:mb-[30px]">
-            <h2 className="text-title-1 font-semibold tracking-tight">{"// FAQ //"}</h2>
+            <h2 className="text-title-1 font-semibold tracking-tight">{"// What Questions Do People Have About Healthcare AEO? //"}</h2>
           </div>
           <div className="space-y-[20px] md:space-y-[30px]">
             <div>
-              <h3 className="text-body font-semibold text-black">What is Healthcare AEO?</h3>
+              <h2 className="text-body font-semibold text-black">What is Healthcare AEO?</h2>
               <p className="mt-[8px] text-body leading-relaxed-body text-text-secondary">
                 The practice of structuring your online presence so AI systems can find, understand, and recommend your practice.
               </p>
             </div>
             <div>
-              <h3 className="text-body font-semibold text-black">How is AEO different from SEO?</h3>
+              <h2 className="text-body font-semibold text-black">How is AEO different from SEO?</h2>
               <p className="mt-[8px] text-body leading-relaxed-body text-text-secondary">
                 SEO gets you ranked. AEO gets you recommended. A practice can rank #1 on Google and still be invisible to AI.
               </p>
             </div>
             <div>
-              <h3 className="text-body font-semibold text-black">How do I check if my practice is visible to AI?</h3>
+              <h2 className="text-body font-semibold text-black">How do I check if my practice is visible to AI?</h2>
               <p className="mt-[8px] text-body leading-relaxed-body text-text-secondary">
                 Ask an AI tool a question a patient would ask about your specialty in your area. If your practice isn&apos;t mentioned, AI doesn&apos;t trust your data enough to recommend you.
               </p>
@@ -124,7 +127,7 @@ export default async function HomePage() {
       <section className="px-[20px] md:px-[30px] pt-[60px] md:pt-[120px] pb-[90px] md:pb-[180px]">
         <GlassCard className="mx-auto max-w-[720px] mt-[20px] md:mt-[30px] px-[30px] md:px-[60px] py-[30px] md:py-[60px]">
           <div className="text-center mb-[20px] md:mb-[30px]">
-            <h2 className="text-title-1 font-semibold tracking-tight">{"// Must Read //"}</h2>
+            <h2 className="text-title-1 font-semibold tracking-tight">{"// What Should You Know Before Working With Pager Studio? //"}</h2>
             <p className="mt-2 md:mt-3 text-body text-text-secondary">
               Before we work together, a few things to know upfront.
             </p>
@@ -161,7 +164,7 @@ export default async function HomePage() {
                 "https://www.linkedin.com/in/sandeepkumargr/",
               ],
               worksFor: {
-                "@type": "Organization",
+                "@type": "ProfessionalService",
                 "@id": "https://www.pagerstudio.space/#organization",
                 name: "Pager Studio",
                 url: "https://www.pagerstudio.space",
@@ -231,6 +234,36 @@ export default async function HomePage() {
                   },
                 ],
               },
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "What is Healthcare AEO?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "The practice of structuring your online presence so AI systems can find, understand, and recommend your practice.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How is AEO different from SEO?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "SEO gets you ranked. AEO gets you recommended. A practice can rank #1 on Google and still be invisible to AI.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How do I check if my practice is visible to AI?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Ask an AI tool a question a patient would ask about your specialty in your area. If your practice isn't mentioned, AI doesn't trust your data enough to recommend you.",
+                  },
+                },
+              ],
             },
             {
               "@context": "https://schema.org",

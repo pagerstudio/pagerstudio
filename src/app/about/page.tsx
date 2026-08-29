@@ -7,7 +7,7 @@ import PreferredSourceButton from "@/components/PreferredSourceButton";
 export const metadata: Metadata = {
   title: "About Sandeep Kumar",
   description:
-    "Sandeep Kumar is a Healthcare AEO Strategist and founder of Pager Studio. He helps healthcare practices become discoverable, accurately described, and trusted across AI search.",
+    "Sandeep Kumar is a Healthcare AEO Strategist who makes healthcare practices visible in AI search. Founder of Pager Studio.",
   keywords: [
     "Sandeep Kumar AEO",
     "healthcare AEO strategist",
@@ -65,13 +65,16 @@ export default function AboutPage() {
               {"// About //"}
             </p>
             <h1 className="mt-[20px] md:mt-[30px] text-display md:text-display-xl font-semibold leading-snug tracking-tight">
-              Who we are and why we do this
+              Who Built Pager Studio and Why
             </h1>
+            <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
+              Sandeep Kumar is a Healthcare AEO Strategist who helps healthcare practices get recommended by AI search engines like ChatGPT, Gemini, and Perplexity. He founded Pager Studio to make AI visibility accessible to every medical specialty.
+            </p>
           </Section>
 
           {/* Founder */}
           <Section className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] hero-animate" style={{ animationDelay: "80ms" }}>
-            <h2 className="text-title-1 font-semibold tracking-tight">{"// Founder //"}</h2>
+            <h2 className="text-title-1 font-semibold tracking-tight">{"// Who Is Sandeep Kumar? //"}</h2>
             <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
               Hello, I&apos;m{" "}
               <a
@@ -103,7 +106,7 @@ export default function AboutPage() {
 
           {/* Specialties */}
           <Section className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] hero-animate" style={{ animationDelay: "120ms" }}>
-            <h2 className="text-title-1 font-semibold tracking-tight">{"// Specialties //"}</h2>
+            <h2 className="text-title-1 font-semibold tracking-tight">{"// Which Medical Specialties Does Sandeep Kumar Serve? //"}</h2>
             <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
               Pager Studio works exclusively with healthcare practices in
               high-consideration specialties:
@@ -122,7 +125,7 @@ export default function AboutPage() {
 
           {/* Expertise */}
           <Section className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] hero-animate" style={{ animationDelay: "160ms" }}>
-            <h2 className="text-title-1 font-semibold tracking-tight">{"// Expertise //"}</h2>
+            <h2 className="text-title-1 font-semibold tracking-tight">{"// How Does Sandeep Kumar Make Practices Visible in AI? //"}</h2>
             <ul className="mt-[16px] space-y-[16px] text-subhead leading-prose text-text-secondary">
               {expertise.map((item) => (
                 <li key={item} className="flex gap-3">
@@ -135,7 +138,7 @@ export default function AboutPage() {
 
           {/* About the Firm */}
           <Section className="px-[30px] md:px-[60px] py-[30px] md:py-[60px] hero-animate" style={{ animationDelay: "160ms" }}>
-            <h2 className="text-title-1 font-semibold tracking-tight">{"// About the Firm //"}</h2>
+            <h2 className="text-title-1 font-semibold tracking-tight">{"// What Is Pager Studio? //"}</h2>
             <p className="mt-[16px] text-subhead leading-prose text-text-secondary">
               Pager Studio is an AEO strategy firm for healthcare practices — IVF and fertility centers, hair restoration clinics, cosmetic dermatology practices, dental implant centers, LASIK and vision correction clinics, and plastic surgery practices.
             </p>
@@ -162,11 +165,15 @@ export default function AboutPage() {
             {
               "@context": "https://schema.org",
               "@type": "Person",
+              "@id": "https://www.pagerstudio.space/#person",
               name: "Sandeep Kumar",
               jobTitle: "Healthcare AEO Strategist",
               url: "https://www.linkedin.com/in/sandeepkumargr/",
+              image: "https://www.pagerstudio.space/og-default.png",
+              description: "Healthcare AEO Strategist and founder of Pager Studio.",
               worksFor: {
-                "@type": "Organization",
+                "@type": "ProfessionalService",
+                "@id": "https://www.pagerstudio.space/#organization",
                 name: "Pager Studio",
                 url: "https://www.pagerstudio.space",
               },
@@ -189,12 +196,14 @@ export default function AboutPage() {
               "@id": "https://www.pagerstudio.space/#organization",
               name: "Pager Studio",
               url: "https://www.pagerstudio.space",
+              logo: "https://www.pagerstudio.space/logo-dark.png",
               description:
-                "Pager Studio is a Healthcare AEO (Answer Engine Optimization) strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
+                "Pager Studio is Sandeep Kumar's Healthcare AEO strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
               founder: {
                 "@type": "Person",
+                "@id": "https://www.pagerstudio.space/#person",
                 name: "Sandeep Kumar",
-              jobTitle: "Healthcare AEO Strategist",
+                jobTitle: "Healthcare AEO Strategist",
                 url: "https://www.linkedin.com/in/sandeepkumargr/",
               },
               areaServed: "Worldwide",
