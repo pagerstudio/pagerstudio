@@ -14,6 +14,7 @@ const pageLinks = [
   { label: "Pricing & Process", href: "/pricing" },
   { label: "About", href: "/about" },
   { label: "FAQ", href: "/faq" },
+  { label: "Specialties", href: "/specialties" },
   { label: "Blog", href: "/blog" },
   { label: "Book a Call", href: "/book" },
 ];
