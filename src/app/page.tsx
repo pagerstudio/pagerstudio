@@ -72,7 +72,7 @@ export default async function HomePage() {
             <span className="block md:inline">{"// Healthcare AEO Strategist & Founder of Pager Studio //"}</span>
           </h1>
           <p className="max-w-[600px] mt-[20px] md:mt-[24px] text-subhead leading-relaxed-body text-text-secondary hero-animate" style={{ animationDelay: "80ms" }}>
-            Patients don&apos;t Google anymore — they ask AI. We make sure your practice is the one AI recommends.
+            Pager Studio helps healthcare practices get recommended by AI search engines — ChatGPT, Gemini, Perplexity, Google AI Overviews.
           </p>
           <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-[16px] md:gap-[30px] mt-[24px] md:mt-[30px] hero-animate" style={{ animationDelay: "150ms" }}>
             <Button href="/book">Book a Discovery Call</Button>

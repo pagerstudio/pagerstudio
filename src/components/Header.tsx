@@ -15,6 +15,15 @@ const pageLinks = [
   { label: "Book a Call", href: "/book" },
 ];
 
+const specialtyLinks = [
+  { label: "IVF & Fertility", href: "/ivf-fertility-aeo" },
+  { label: "Dermatology", href: "/dermatology-aeo" },
+  { label: "Dental Implants", href: "/dental-implant-aeo" },
+  { label: "LASIK", href: "/lasik-aeo" },
+  { label: "Hair Restoration", href: "/hair-restoration-aeo" },
+  { label: "Plastic Surgery", href: "/plastic-surgery-aeo" },
+];
+
 const socialLinks = [
   { label: "Instagram", href: "https://instagram.com/pagerstudio" },
   { label: "X", href: "https://x.com/pagerstudio" },
@@ -172,6 +181,29 @@ export default function Header() {
             </div>
 
             <div>
+              <p className="text-micro text-text-inverse-secondary mb-3">Specialties</p>
+              <nav className="flex flex-col gap-2">
+                {specialtyLinks.map((link, i) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    role="menuitem"
+                    ref={(el) => { menuItemsRef.current[pageLinks.length + i] = el; }}
+                    onClick={handleClose}
+                    aria-current={pathname === link.href ? "page" : undefined}
+                    className={`group relative text-body font-medium text-white hover:text-text-inverse-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded ${
+                      closing ? "menu-item-out" : "menu-item-in"
+                    }`}
+                    style={{ animationDelay: closing ? `${(pageLinks.length + i) * 40}ms` : `${(pageLinks.length + i) * 80}ms` }}
+                  >
+                    {link.label}
+                    <ArrowTopRight />
+                  </Link>
+                ))}
+              </nav>
+            </div>
+
+            <div>
               <p className="text-micro text-text-inverse-secondary mb-3">Follow us on</p>
               <nav className="flex flex-col gap-2">
                 {socialLinks.map((link, i) => (
@@ -181,12 +213,12 @@ export default function Header() {
                     target="_blank"
                     rel="noopener noreferrer"
                     role="menuitem"
-                    ref={(el) => { menuItemsRef.current[pageLinks.length + i] = el; }}
+                    ref={(el) => { menuItemsRef.current[pageLinks.length + specialtyLinks.length + i] = el; }}
                     aria-label={`${link.label} (opens in new tab)`}
                     className={`group relative text-body font-medium text-white hover:text-text-inverse-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded ${
                       closing ? "menu-item-out" : "menu-item-in"
                     }`}
-                    style={{ animationDelay: closing ? `${(pageLinks.length + i) * 40}ms` : `${(pageLinks.length + i) * 80}ms` }}
+                    style={{ animationDelay: closing ? `${(pageLinks.length + specialtyLinks.length + i) * 40}ms` : `${(pageLinks.length + specialtyLinks.length + i) * 80}ms` }}
                   >
                     {link.label}
                     <ArrowTopRight />
@@ -200,11 +232,11 @@ export default function Header() {
               <a
                 href="mailto:hello@pagerstudio.space"
                 role="menuitem"
-                ref={(el) => { menuItemsRef.current[pageLinks.length + socialLinks.length] = el; }}
+                ref={(el) => { menuItemsRef.current[pageLinks.length + specialtyLinks.length + socialLinks.length] = el; }}
                 className={`group relative text-body font-medium text-white hover:text-text-inverse-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded ${
                   closing ? "menu-item-out" : "menu-item-in"
                 }`}
-                style={{ animationDelay: closing ? `${(pageLinks.length + socialLinks.length) * 40}ms` : `${(pageLinks.length + socialLinks.length) * 80}ms` }}
+                style={{ animationDelay: closing ? `${(pageLinks.length + specialtyLinks.length + socialLinks.length) * 40}ms` : `${(pageLinks.length + specialtyLinks.length + socialLinks.length) * 80}ms` }}
               >
                 hello@pagerstudio.space
                 <ArrowTopRight />
