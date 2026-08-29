@@ -51,7 +51,7 @@ const mustReadItems = [
   },
   {
     label: "Transparent Pricing",
-    text: "The audit fee is fixed and disclosed upfront. Any pricing adjustments require your sign-off before proceeding.",
+    text: "The audit fee is fixed and disclosed upfront. No surprise charges — every cost is approved by you before it lands.",
   },
   {
     label: "Limited Capacity",

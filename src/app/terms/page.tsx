@@ -85,8 +85,9 @@ export default function TermsPage() {
               <p>
                 A minimum engagement of six (6) months is required for
                 implementation and monitoring services. Pager Studio does not offer shorter
-                engagements, as a strong AI visibility foundation requires
-                sustained effort.
+                engagements, because AI visibility compounds over time — each
+                month builds on the last, and early gains compound into durable
+                authority.
               </p>
             </section>
 
