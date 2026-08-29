@@ -175,6 +175,16 @@ export default function DentalImplantAEOPage() {
                 { "@type": "ListItem", position: 2, name: "Dental Implant AEO", item: "https://www.pagerstudio.space/dental-implant-aeo" },
               ],
             },
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Dental Implant AEO — Get Recommended by AI Search | Sandeep Kumar",
+              url: "https://www.pagerstudio.space/dental-implant-aeo",
+              speakable: {
+                "@type": "SpeakableSpecification",
+                cssSelector: ["h1"],
+              },
+            },
           ]),
         }}
       />

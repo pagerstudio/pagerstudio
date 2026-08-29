@@ -175,6 +175,16 @@ export default function PlasticSurgeryAEOPage() {
                 { "@type": "ListItem", position: 2, name: "Plastic Surgery AEO", item: "https://www.pagerstudio.space/plastic-surgery-aeo" },
               ],
             },
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Plastic Surgery AEO — Get Recommended by AI Search | Sandeep Kumar",
+              url: "https://www.pagerstudio.space/plastic-surgery-aeo",
+              speakable: {
+                "@type": "SpeakableSpecification",
+                cssSelector: ["h1"],
+              },
+            },
           ]),
         }}
       />

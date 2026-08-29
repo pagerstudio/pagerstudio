@@ -180,6 +180,16 @@ export default function IVFFertilityAEOPage() {
                 { "@type": "ListItem", position: 2, name: "IVF & Fertility AEO", item: "https://www.pagerstudio.space/ivf-fertility-aeo" },
               ],
             },
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "IVF & Fertility AEO — Get Recommended by AI Search | Sandeep Kumar",
+              url: "https://www.pagerstudio.space/ivf-fertility-aeo",
+              speakable: {
+                "@type": "SpeakableSpecification",
+                cssSelector: ["h1"],
+              },
+            },
           ]),
         }}
       />

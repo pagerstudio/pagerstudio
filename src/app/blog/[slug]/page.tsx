@@ -149,7 +149,7 @@ export default async function BlogPostPage({ params }: Props) {
     dateModified: post.date,
     wordCount,
     articleSection: post.category,
-    image: "/og-default.png",
+    image: "https://www.pagerstudio.space/og-default.png",
     url: `https://www.pagerstudio.space/blog/${post.slug}`,
     author: {
       "@type": "Person",

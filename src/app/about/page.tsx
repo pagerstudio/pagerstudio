@@ -164,58 +164,6 @@ export default function AboutPage() {
           __html: JSON.stringify([
             {
               "@context": "https://schema.org",
-              "@type": "Person",
-              "@id": "https://www.pagerstudio.space/#person",
-              name: "Sandeep Kumar",
-              jobTitle: "Healthcare AEO Strategist",
-              url: "https://www.linkedin.com/in/sandeepkumargr/",
-              image: "https://www.pagerstudio.space/og-default.png",
-              description: "Healthcare AEO Strategist and founder of Pager Studio.",
-              worksFor: {
-                "@type": "ProfessionalService",
-                "@id": "https://www.pagerstudio.space/#organization",
-                name: "Pager Studio",
-                url: "https://www.pagerstudio.space",
-              },
-              knowsAbout: [
-                "Answer Engine Optimization",
-                "Healthcare AEO",
-                "AI Search Optimization",
-                "Generative Engine Optimization",
-                "Medical Entity Optimization",
-                "Schema Markup for Healthcare",
-                "Healthcare Marketing",
-              ],
-              sameAs: [
-                "https://www.linkedin.com/in/sandeepkumargr/",
-              ],
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "ProfessionalService",
-              "@id": "https://www.pagerstudio.space/#organization",
-              name: "Pager Studio",
-              url: "https://www.pagerstudio.space",
-              logo: "https://www.pagerstudio.space/logo-dark.png",
-              description:
-                "Pager Studio is Sandeep Kumar's Healthcare AEO strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
-              founder: {
-                "@type": "Person",
-                "@id": "https://www.pagerstudio.space/#person",
-                name: "Sandeep Kumar",
-                jobTitle: "Healthcare AEO Strategist",
-                url: "https://www.linkedin.com/in/sandeepkumargr/",
-              },
-              areaServed: "Worldwide",
-              serviceType: [
-                "Healthcare AEO Strategy",
-                "Healthcare AEO Audit",
-                "AI Visibility Optimization",
-                "Healthcare AI Search Optimization",
-              ],
-            },
-            {
-              "@context": "https://schema.org",
               "@type": "AboutPage",
               name: "About | Sandeep Kumar",
               url: "https://www.pagerstudio.space/about",

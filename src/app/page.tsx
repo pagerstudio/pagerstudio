@@ -151,63 +151,8 @@ export default async function HomePage() {
           __html: JSON.stringify([
             {
               "@context": "https://schema.org",
-              "@type": "Person",
-              "@id": "https://www.pagerstudio.space/#person",
-              name: "Sandeep Kumar",
-              jobTitle: "Healthcare AEO Strategist",
-              url: "https://www.linkedin.com/in/sandeepkumargr/",
-              sameAs: [
-                "https://www.linkedin.com/in/sandeepkumargr/",
-              ],
-              worksFor: {
-                "@type": "ProfessionalService",
-                "@id": "https://www.pagerstudio.space/#organization",
-                name: "Pager Studio",
-                url: "https://www.pagerstudio.space",
-              },
-              knowsAbout: [
-                "Answer Engine Optimization",
-                "Healthcare AEO",
-                "AI Search Visibility",
-                "Generative Engine Optimization",
-                "Medical Entity Optimization",
-                "Schema Markup for Healthcare",
-              ],
-            },
-            {
-              "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "@id": "https://www.pagerstudio.space/#organization",
-              name: "Pager Studio",
-              url: "https://www.pagerstudio.space",
-              description:
-                "Sandeep Kumar's healthcare AEO strategy firm. We make healthcare practices visible in AI search — ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
-              founder: {
-                "@type": "Person",
-                "@id": "https://www.pagerstudio.space/#person",
-                name: "Sandeep Kumar",
-                jobTitle: "Healthcare AEO Strategist",
-                url: "https://www.linkedin.com/in/sandeepkumargr/",
-              },
-              sameAs: [
-                "https://instagram.com/pagerstudio",
-                "https://x.com/pagerstudio",
-                "https://linkedin.com/company/pagerstudio",
-              ],
-              contactPoint: {
-                "@type": "ContactPoint",
-                email: "hello@pagerstudio.space",
-                contactType: "customer service",
-              },
-              areaServed: "Worldwide",
-              serviceType: [
-                "Healthcare AEO Strategy",
-                "Healthcare AEO Audit",
-                "AI Visibility Optimization",
-                "Healthcare AI Search Optimization",
-              ],
-              priceRange: "$$",
-              foundingDate: "2025",
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
                 name: "Healthcare AEO Services",

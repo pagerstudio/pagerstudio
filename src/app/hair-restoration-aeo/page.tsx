@@ -175,6 +175,16 @@ export default function HairRestorationAEOPage() {
                 { "@type": "ListItem", position: 2, name: "Hair Restoration AEO", item: "https://www.pagerstudio.space/hair-restoration-aeo" },
               ],
             },
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Hair Restoration AEO — Get Recommended by AI Search | Sandeep Kumar",
+              url: "https://www.pagerstudio.space/hair-restoration-aeo",
+              speakable: {
+                "@type": "SpeakableSpecification",
+                cssSelector: ["h1"],
+              },
+            },
           ]),
         }}
       />

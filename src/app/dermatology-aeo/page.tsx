@@ -175,6 +175,16 @@ export default function DermatologyAEOPage() {
                 { "@type": "ListItem", position: 2, name: "Dermatology AEO", item: "https://www.pagerstudio.space/dermatology-aeo" },
               ],
             },
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Dermatology AEO — Get Recommended by AI Search | Sandeep Kumar",
+              url: "https://www.pagerstudio.space/dermatology-aeo",
+              speakable: {
+                "@type": "SpeakableSpecification",
+                cssSelector: ["h1"],
+              },
+            },
           ]),
         }}
       />

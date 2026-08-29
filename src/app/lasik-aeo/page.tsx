@@ -175,6 +175,16 @@ export default function LASIKAEOPage() {
                 { "@type": "ListItem", position: 2, name: "LASIK AEO", item: "https://www.pagerstudio.space/lasik-aeo" },
               ],
             },
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "LASIK AEO — Get Recommended by AI Search | Sandeep Kumar",
+              url: "https://www.pagerstudio.space/lasik-aeo",
+              speakable: {
+                "@type": "SpeakableSpecification",
+                cssSelector: ["h1"],
+              },
+            },
           ]),
         }}
       />
