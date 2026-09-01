@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
 import GridTrailWrapper from "@/components/GridTrailWrapper";
+import { Analytics } from "@vercel/analytics/next";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -109,6 +110,7 @@ export default function RootLayout({
           <Footer />
           <CookieConsent />
         </div>
+        <Analytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
