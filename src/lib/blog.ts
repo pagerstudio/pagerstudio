@@ -10,6 +10,7 @@ export interface BlogPost {
   title: string;
   description: string;
   date: string;
+  lastUpdated?: string;
   readTime: string;
   category: string;
   author: string;
@@ -36,6 +37,7 @@ export function getAllPosts(): BlogPost[] {
       title: data.title as string,
       description: data.description as string,
       date: data.date as string,
+      lastUpdated: (data.lastUpdated as string) || undefined,
       readTime: data.readTime as string,
       category: (data.category as string) || "Uncategorized",
       author: (data.author as string) || "Pager Studio",
@@ -66,6 +68,7 @@ export function getPostBySlug(slug: string): BlogPostContent | null {
     title: data.title as string,
     description: data.description as string,
     date: data.date as string,
+    lastUpdated: (data.lastUpdated as string) || undefined,
     readTime: data.readTime as string,
     category: (data.category as string) || "Uncategorized",
     author: (data.author as string) || "Pager Studio",

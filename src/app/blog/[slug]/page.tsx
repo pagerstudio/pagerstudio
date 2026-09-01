@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description,
       type: "article",
       publishedTime: post.date,
-      modifiedTime: post.date,
+      modifiedTime: post.lastUpdated || post.date,
       authors: ["Sandeep Kumar"],
       url: `https://www.pagerstudio.space/blog/${post.slug}`,
       siteName: "Pager Studio",
@@ -146,7 +146,7 @@ export default async function BlogPostPage({ params }: Props) {
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.lastUpdated || post.date,
     wordCount,
     articleSection: post.category,
     image: "https://www.pagerstudio.space/og-default.png",
@@ -242,6 +242,22 @@ export default async function BlogPostPage({ params }: Props) {
                     timeZone: "UTC",
                   })}
                 </time>
+                {post.lastUpdated && post.lastUpdated !== post.date && (
+                  <>
+                    <span>·</span>
+                    <span>
+                      Updated{" "}
+                      <time dateTime={post.lastUpdated}>
+                        {new Date(post.lastUpdated + "T00:00:00Z").toLocaleDateString("en-US", {
+                          year: "numeric",
+                          month: "long",
+                          day: "numeric",
+                          timeZone: "UTC",
+                        })}
+                      </time>
+                    </span>
+                  </>
+                )}
                 <span>·</span>
                 <span>{post.readTime}</span>
               </div>
