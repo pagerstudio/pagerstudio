@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
 import GridTrailWrapper from "@/components/GridTrailWrapper";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -178,6 +179,7 @@ export default function RootLayout({
             ]),
           }}
         />
+        <SpeedInsights />
       </body>
     </html>
   );
