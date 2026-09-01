@@ -36,6 +36,21 @@ const nextConfig: NextConfig = {
         destination: "/terms",
         permanent: true,
       },
+      {
+        source: "/blog/healthcare-entity-optimization",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/blog/healthcare-practice-ai-search-visibility",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/blog/aeo-for-hair-restoration",
+        destination: "/blog",
+        permanent: true,
+      },
     ];
   },
   headers: async () => [
