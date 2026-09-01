@@ -89,6 +89,8 @@ export default function RootLayout({
         <link rel="alternate" href="/llms.txt" type="text/plain" title="LLM context file" />
         <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Pager Studio Blog" />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="dns-prefetch" href="https://app.cal.com" />
+        <link rel="preconnect" href="https://app.cal.com" />
       </head>
       <body className="min-h-screen flex flex-col relative isolate">
         <noscript>
