@@ -67,7 +67,9 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.pagerstudio.space",
+    languages: {
+      "en": "https://www.pagerstudio.space",
+    },
   },
 };
 
@@ -176,6 +178,28 @@ export default function RootLayout({
                   addressCountry: "IN",
                 },
                 areaServed: "Worldwide",
+                hasOfferCatalog: {
+                  "@type": "OfferCatalog",
+                  name: "Healthcare AEO Services",
+                  itemListElement: [
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Healthcare AEO Audit",
+                        description: "Complete diagnostic of your practice's AI visibility. $5,000 fixed, delivered in 4-6 weeks.",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Healthcare AEO Strategy",
+                        description: "Technical optimization, off-page authority, directory presence, and ongoing monitoring.",
+                      },
+                    },
+                  ],
+                },
               },
             ]),
           }}

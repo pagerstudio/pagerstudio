@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Book a Discovery Call",
     description: "Schedule a discovery call to discuss your practice's AI visibility.",
+    images: ["/og-default.png"],
   },
 };
 

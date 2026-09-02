@@ -151,33 +151,6 @@ export default async function HomePage() {
           __html: JSON.stringify([
             {
               "@context": "https://schema.org",
-              "@type": "ProfessionalService",
-              "@id": "https://www.pagerstudio.space/#organization",
-              hasOfferCatalog: {
-                "@type": "OfferCatalog",
-                name: "Healthcare AEO Services",
-                itemListElement: [
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Healthcare AEO Audit",
-                      description: "Complete diagnostic of your practice's AI visibility. $5,000 fixed, delivered in 4-6 weeks.",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "Service",
-                      name: "Healthcare AEO Strategy",
-                      description: "Technical optimization, off-page authority, directory presence, and ongoing monitoring.",
-                    },
-                  },
-                ],
-              },
-            },
-            {
-              "@context": "https://schema.org",
               "@type": "FAQPage",
               mainEntity: [
                 {
@@ -219,7 +192,7 @@ export default async function HomePage() {
               "@id": "https://www.pagerstudio.space/#webpage",
               name: "Healthcare AEO Strategist — Sandeep Kumar",
               url: "https://www.pagerstudio.space",
-              dateModified: "2026-08-29",
+              dateModified: "2026-09-01",
               speakable: {
                 "@type": "SpeakableSpecification",
                 cssSelector: ["h1"],

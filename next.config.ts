@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
+  trailingSlash: false,
   async redirects() {
     return [
       {
@@ -38,17 +39,17 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/blog/healthcare-entity-optimization",
-        destination: "/blog",
+        destination: "/blog/what-is-aeo-healthcare",
         permanent: true,
       },
       {
         source: "/blog/healthcare-practice-ai-search-visibility",
-        destination: "/blog",
+        destination: "/blog/how-ai-search-differs-from-google",
         permanent: true,
       },
       {
         source: "/blog/aeo-for-hair-restoration",
-        destination: "/blog",
+        destination: "/blog/how-to-choose-an-aeo-agency",
         permanent: true,
       },
     ];

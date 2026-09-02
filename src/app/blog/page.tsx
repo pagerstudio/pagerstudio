@@ -20,15 +20,23 @@ export const metadata: Metadata = {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Blog",
-    description: "Insights on AEO, AI search, and healthcare visibility.",
+    title: "Blog — Healthcare AEO Insights from Sandeep Kumar",
+    description: "Insights on AEO, AI search, and healthcare visibility from Sandeep Kumar at Pager Studio.",
     url: "https://www.pagerstudio.space/blog",
-    images: ["/og-default.png"],
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Pager Studio Blog — Healthcare AEO Insights",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog",
-    description: "Insights on AEO, AI search, and healthcare visibility.",
+    title: "Blog — Healthcare AEO Insights from Sandeep Kumar",
+    description: "Insights on AEO, AI search, and healthcare visibility from Sandeep Kumar at Pager Studio.",
+    images: ["/og-default.png"],
   },
 };
 
@@ -131,7 +139,7 @@ export default async function BlogPage() {
                 description: post.description,
                 url: `https://www.pagerstudio.space/blog/${post.slug}`,
                 datePublished: post.date,
-                dateModified: post.date,
+                dateModified: post.lastUpdated || post.date,
                 author: {
                   "@type": "Person",
                   "@id": "https://www.pagerstudio.space/#person",
