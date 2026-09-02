@@ -7,7 +7,7 @@ import { getCachedAllPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Healthcare AEO Strategist — Sandeep Kumar",
   description:
-    "Patients don't Google anymore — they ask AI. Sandeep Kumar makes sure your healthcare practice is the one AI recommends. ChatGPT, Gemini, Perplexity, Google AI Overviews.",
+    "Patients ask AI now. Sandeep Kumar, Healthcare AEO Strategist at Pager Studio, makes practices visible in ChatGPT, Gemini, Perplexity, and Google AI Overviews.",
   keywords: [
     "healthcare AEO",
     "AEO strategist",

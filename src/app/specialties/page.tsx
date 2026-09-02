@@ -10,7 +10,7 @@ import ArrowTopRight from "@/components/ArrowTopRight";
 export const metadata: Metadata = {
   title: "Healthcare Specialties — AEO for IVF, Dermatology, Dental, LASIK, Hair, Plastic Surgery | Sandeep Kumar",
   description:
-    "Sandeep Kumar at Pager Studio serves high-consideration healthcare specialties — IVF & Fertility, Cosmetic Dermatology, Dental Implants, LASIK, Hair Restoration, Plastic Surgery. AEO for each specialty.",
+    "Pager Studio serves healthcare specialties including IVF, dermatology, dental implants, LASIK, hair restoration, and plastic surgery.",
   keywords: [
     "healthcare specialties AEO",
     "IVF AEO",

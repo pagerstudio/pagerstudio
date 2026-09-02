@@ -8,7 +8,7 @@ import PreferredSourceButton from "@/components/PreferredSourceButton";
 export const metadata: Metadata = {
   title: "IVF & Fertility AEO — Get Recommended by AI Search | Sandeep Kumar",
   description:
-    "Sandeep Kumar helps IVF clinics and fertility centers get recommended by AI search engines — ChatGPT, Gemini, Perplexity, Google AI Overviews. Healthcare AEO for fertility practices.",
+    "Sandeep Kumar helps IVF clinics get recommended by AI search. Healthcare AEO for fertility practices.",
   keywords: [
     "IVF AEO",
     "fertility clinic AI visibility",

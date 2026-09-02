@@ -8,7 +8,7 @@ import PreferredSourceButton from "@/components/PreferredSourceButton";
 export const metadata: Metadata = {
   title: "LASIK AEO — Get Recommended by AI Search | Sandeep Kumar",
   description:
-    "Sandeep Kumar helps LASIK and vision correction clinics get recommended by AI search engines — ChatGPT, Gemini, Perplexity, Google AI Overviews. Healthcare AEO for LASIK practices.",
+    "Sandeep Kumar helps LASIK clinics get recommended by AI search. Healthcare AEO for LASIK practices.",
   keywords: [
     "LASIK AEO",
     "LASIK clinic AI visibility",

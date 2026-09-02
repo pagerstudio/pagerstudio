@@ -8,7 +8,7 @@ import PreferredSourceButton from "@/components/PreferredSourceButton";
 export const metadata: Metadata = {
   title: "Hair Restoration AEO — Get Recommended by AI Search | Sandeep Kumar",
   description:
-    "Sandeep Kumar helps hair restoration clinics get recommended by AI search engines — ChatGPT, Gemini, Perplexity, Google AI Overviews. Healthcare AEO for hair transplant practices.",
+    "Sandeep Kumar helps hair restoration clinics get recommended by AI search. Healthcare AEO for hair transplant practices.",
   keywords: [
     "hair restoration AEO",
     "hair transplant AI visibility",

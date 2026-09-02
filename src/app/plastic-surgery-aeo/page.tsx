@@ -8,7 +8,7 @@ import PreferredSourceButton from "@/components/PreferredSourceButton";
 export const metadata: Metadata = {
   title: "Plastic Surgery AEO — Get Recommended by AI Search | Sandeep Kumar",
   description:
-    "Sandeep Kumar helps plastic surgery practices get recommended by AI search engines — ChatGPT, Gemini, Perplexity, Google AI Overviews. Healthcare AEO for plastic surgeons.",
+    "Sandeep Kumar helps plastic surgery practices get recommended by AI search. Healthcare AEO for plastic surgeons.",
   keywords: [
     "plastic surgery AEO",
     "plastic surgeon AI visibility",

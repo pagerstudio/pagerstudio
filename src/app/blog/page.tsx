@@ -8,7 +8,7 @@ import ArrowTopRight from "@/components/ArrowTopRight";
 export const metadata: Metadata = {
   title: "Blog — Healthcare AEO Insights from Sandeep Kumar",
   description:
-    "Insights on AEO, AI search, and healthcare visibility from Sandeep Kumar at Pager Studio. Learn how AI search differs from Google and why healthcare practices need AEO.",
+    "Insights on AEO, AI search, and healthcare visibility from Sandeep Kumar at Pager Studio.",
   keywords: [
     "AEO blog",
     "healthcare AI search",

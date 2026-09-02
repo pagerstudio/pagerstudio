@@ -6,7 +6,7 @@ import GlassCard from "@/components/GlassCard";
 export const metadata: Metadata = {
   title: "FAQ — Healthcare AEO Questions Answered",
   description:
-    "Answers to common questions about Healthcare AEO (Answer Engine Optimization), AI search visibility, and how Pager Studio helps healthcare practices get recommended by AI.",
+    "Answers to common questions about Healthcare AEO, AI search visibility, and how Pager Studio helps healthcare practices get recommended by AI.",
   keywords: [
     "healthcare AEO FAQ",
     "AEO questions",
